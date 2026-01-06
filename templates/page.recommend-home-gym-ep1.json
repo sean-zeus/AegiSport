@@ -1,0 +1,224 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "title": "Home GYM INSPIRATION",
+            "title_size": 56,
+            "subheading": "居家健身風格 · 由你定義",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/head.webp"
+          }
+        },
+        "image_zb4yWk": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Home GYM INSPIRATION",
+            "title_size": 40,
+            "subheading": "居家健身風格 · 由你定義",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/head_3_75bc9ac4-9278-4b6d-b73c-3e16c7da4479.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "image_zb4yWk"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; } div {font-size: 13px; }}"
+      ],
+      "settings": {
+        "style": "minimal",
+        "desktop_size": 0,
+        "mobile_size": 40,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "23c08093-f6ae-4421-826a-891e8e6d5eab": {
+      "type": "rich-text",
+      "blocks": {
+        "b33576af-7595-43e1-9e21-a206609634e1": {
+          "type": "heading",
+          "settings": {
+            "title": "還在煩惱怎麼佈置居家健身房?"
+          }
+        },
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Byzoom 為你精選多種時尚居家健身風格，透過我們的時尚健身器材進行空間改造，製造出獨具一格的居家健身房!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b33576af-7595-43e1-9e21-a206609634e1",
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0 px 0 60px 0;}",
+        "@media only screen and (min-width: 769px) {h2 {font-size: calc(var(--typeHeaderSize) * 0.4); font-weight: 700; } p {font-size: 18px; }}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 20px; font-weight: 700; } p {font-size: 13px; } .rte {margin-top: -15px; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "312da524-b26f-4988-8ab5-379a9292ce91": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 100px 0 60px 0;}",
+        "h2 {font-size: 50px;}",
+        "@media only screen and (max-width: 767px) {.subheading {text-align: center; } .h1 {font-size: 28.8px; text-align: center; } p {text-align: center; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/ep1_cover-01_ed0bf0e0-125a-437a-8fdd-8c2729be415e.webp",
+        "image_mask": "none",
+        "image2_mask": "square",
+        "subtitle": "BYZOOM HOME GYM INSPIRATION — /EP1/",
+        "title": "SERIOUS LIFTER 健身狂熱者",
+        "text": "<p>建立健身狂熱者的健身樂園，擁有多樣化的重量訓練器材且兼具硬派美感，讓精壯的健客們持續進步的樂園！</p><p> <br/> <br/> <br/> </p><p><strong>▍健身型態 ▍</strong><br/>⓵持續雕琢線條、追求精壯的健身狂熱者<br/>⓶立志站上健美健體賽事舞台發光的巨巨<br/>⓷ 認為健身是一種自我意志力突破的象徵</p><p><strong>▍居家空間風格 ▍</strong><br/>工業風、清水模、現代簡約風、暗灰沈穩色系</p><p>▍如何開始打造? ▍<br/>利用BYZOOM全系列健身組合搭配，經典黑的產品質感不只能呼應空間氛圍，採完全陳列的佈置方式，不只方便靈活變化訓練模式與動作，還能同時展示個人的酷帥風格，透過這樣的個人空間，正式宣告對重量訓練的狂熱！</p>",
+        "button_label": "",
+        "button_link": "shopify://blogs/home-gym-inspiration/ep1-serious-lifter",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "66",
+        "layout": "left",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      }
+    },
+    "slideshow_RcT6qn": {
+      "type": "slideshow",
+      "blocks": {
+        "image_9KeEU9": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/HGI-01-04.webp"
+          }
+        },
+        "image_VA6wYe": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/HGI-01-05.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_9KeEU9",
+        "image_VA6wYe"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 6,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_K4zTyY": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        "h2 {font-size: 24px;}",
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {h2 {font-size: 32px; } .overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "what you need",
+        "description": "",
+        "home_featured_products": "ep1",
+        "per_row": "medium",
+        "alt": true
+      }
+    },
+    "slideshow_MkzhU9": {
+      "type": "slideshow",
+      "blocks": {
+        "image_KW6jcT": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/b____1__1.webp",
+            "image_mobile": "shopify://shop_images/b__1_2c7adf53-090d-4972-bfa8-aa83a4b8135a.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_KW6jcT"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin-bottom: -80px;}",
+        "@media only screen and (max-width: 767px) {.index-section--hero {margin-bottom: -50px; }}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "23c08093-f6ae-4421-826a-891e8e6d5eab",
+    "312da524-b26f-4988-8ab5-379a9292ce91",
+    "slideshow_RcT6qn",
+    "featured_collection_slider_K4zTyY",
+    "slideshow_MkzhU9"
+  ]
+}

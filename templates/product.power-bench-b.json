@@ -1,0 +1,782 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "6b31effa-1606-477a-b1e8-f48ceb75f8ee": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "加購優惠",
+            "content": "<p>*凡購買可調式重量系列產品 ，即可享<a href=\"/collections/all-accessories-series\" target=\"_blank\" title=\"Accessories Series\">配件類</a>加價購85折</p><p>*凡購買可調式重量系列產品 ，即可享<a href=\"/collections/all-foldable-bench\" target=\"_blank\" title=\"站立式收納健身椅\">站立式收納健身椅</a>或<a href=\"/collections/全部啞鈴架\" title=\"全部啞鈴架\">啞鈴架</a>加價購9折</p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "信用卡分期零利率",
+            "content": "<p>配合綠界科技合作銀行，可享3期、6期分期零利率</p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "客服聊聊",
+            "phone": false
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "price",
+        "sales_point",
+        "inventory_status",
+        "buy_buttons",
+        "description",
+        "6b31effa-1606-477a-b1e8-f48ceb75f8ee",
+        "tab",
+        "contact"
+      ],
+      "custom_css": [
+        "h1.product-single__title {font-size: 32px;}",
+        "@media only screen and (max-width: 767px) {h1.product-single__title {font-size: 26px; }}"
+      ],
+      "settings": {
+        "product_image_size": "large",
+        "product_image_type": "stacked",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "a4a8d1c5-276b-4e30-8c68-3fa53f1abb2b": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 60,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#1d1d1e",
+        "text_align": "vertical-top horizontal-left",
+        "video_url": "https://youtu.be/Kryl39d3mw8?si=zIO7YVx5iopI9hs8",
+        "section_height": "650px",
+        "mobile_height": "300px"
+      }
+    },
+    "b207b143-5dd1-45c6-9a09-55bfc99d706b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20848152052000__b207b143-5dd1-45c6-9a09-55bfc99d706b-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "如何使用BYZOOM 負角度調整健身椅"
+          }
+        },
+        "template--20848152052000__b207b143-5dd1-45c6-9a09-55bfc99d706b-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h5>調整椅背正角度時：握住支撐桿的把手調整到需要的角度溝槽。調整椅背負角度時：旋轉健身椅後方的旋鈕並拉起，上下調整到需要的角度放開後鎖緊。調整椅墊時：抬起椅墊調整到需要的角度溝槽。確認支撐桿無錯位、旋鈕有鎖緊後即可開始訓練。<br/></h5>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20848152052000__b207b143-5dd1-45c6-9a09-55bfc99d706b-heading-1",
+        "template--20848152052000__b207b143-5dd1-45c6-9a09-55bfc99d706b-text-1"
+      ],
+      "custom_css": [
+        "div {margin-bottom: 10px;}",
+        "h6 {text-transform: none; font-size: 20px;}",
+        "@media only screen and (max-width: 767px) {.theme-block h2 {font-size: 25px; } .theme-block h5 {font-size: 18px; margin-bottom: 30px; } h6 {font-size: 14px; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": false
+      }
+    },
+    "5c66574f-38c3-4e84-b736-59f81c170414": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 60,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#1d1d1e",
+        "text_align": "vertical-top horizontal-left",
+        "video_url": "https://www.youtube.com/watch?v=-EYpqUn_muk",
+        "section_height": "850px",
+        "mobile_height": "300px"
+      }
+    },
+    "847781f0-106b-4d26-a815-514a865f78fc": {
+      "type": "text-and-image",
+      "disabled": true,
+      "custom_css": [
+        "h2.h1.appear-delay {font-size: 40px;}",
+        "@media only screen and (max-width: 767px) {h2.h1.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/25lb-W-how-to-use.gif",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "如何使用byzoom可調式啞鈴",
+        "text": "<p>拉起插銷並向左右滑動到所需重量，放下插銷，在另一側重複相同的步驟即可開始鍛鍊。</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "076b90b3-1d87-423f-9830-3d5d11149a9a": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>10+3段調整</h2><p>增加訓練多樣性</p>",
+            "author": ""
+          }
+        },
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>可負角度調整</h2><p>三種負角度，下斜訓練沒問題</p>",
+            "author": ""
+          }
+        },
+        "63f53112-c02b-437e-be1b-6af7a4f9b663": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>500 kg耐重 </h2><p>高剛性穩固結構，使用更安心</p>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-0",
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-1",
+        "63f53112-c02b-437e-be1b-6af7a4f9b663"
+      ],
+      "custom_css": [
+        "header {margin-bottom: 30px;}",
+        ".slideshow-wrapper {height: 120px;}",
+        "h2 {font-size: 50px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 60px 0 40px 0; } header {margin-bottom: 30px; } .appear-delay {font-size: 26px; } h2 {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "打破角度限制，全新負角度高剛性健身椅",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "advanced_content_GkYQpX": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_f48mVJ": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>椅背和椅墊 皆可調整角度</h2><p>10+3段可調角度，符合各式訓練情境。</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "image_3BDbV6": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_f48mVJ",
+        "image_3BDbV6"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "slideshow_f9Pp9j": {
+      "type": "slideshow",
+      "blocks": {
+        "image_igBdmB": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 56,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-top horizontal-center",
+            "image": "shopify://shop_images/ea16d69689df44f46a40701111839ea8.gif",
+            "image_mobile": "shopify://shop_images/86aba3651b16ce57d65ad6df908e3669.gif"
+          }
+        }
+      },
+      "block_order": [
+        "image_igBdmB"
+      ],
+      "custom_css": [
+        "div {margin-top: 0px;}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "fc1e4b33-92ba-44f9-b590-2ba4b01ebd03": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18969232965920__fc1e4b33-92ba-44f9-b590-2ba4b01ebd03-168429612394c9ead9-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<table class=\"Stable\"><tbody>\n<tr>\n<th style=\"width:30%\">重量</th><th style=\"width:30%\"></th><th>長度</th><th style=\"width:0%\"></th>\n</tr>\n<tr>\n<td>2.2KG(5LB)</td><td><img src=https://cdn.shopify.com/s/files/1/0737/8396/8032/files/25lb_line_314x181_05.png?v=1693899134\"></td><td>175mm</td><td></td>\n</tr><tr><td>4.5KG(10LB)</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/25lb_line_314x181_04.png?v=1693899134\"></td><td>205mm</td><td></td>\n</tr>\n<tr><td>6.8KG(15LB)</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/25lb_line_314x181_03.png?v=1693899133\"></td><td>255mm</td><td></td>\n</tr>\n<tr>\n<td>9KG(20LB)</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/25lb_line_314x181_02.png?v=1693899134\"></td><td>300mm</td><td></td>\n</tr>\n<tr>\n<td>11.3KG(25LB)</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/25lb_line_314x181_01.png?v=1693899134\"></td><td>306mm</td><td></td>\n</tr>\n</tbody>\n</table>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__fc1e4b33-92ba-44f9-b590-2ba4b01ebd03-168429612394c9ead9-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".Stable {border-collapse: collapse; width: 60%; font-size: 20px; font-weight: 800; margin: 0 auto;}",
+        ".Stable img {object-fit: contain; object-position: center; height: 50px; margin: 0 auto;}",
+        ".Stable tr:nth-child(even) td {background-color: #f9f9f9;}",
+        ".Stable th {border-top: 2px solid #000000; border-bottom: 2px solid #000000; text-align: center;}",
+        ".Stable td {padding: 20px 5px; text-align: center;}",
+        "@media only screen and (max-width: 767px) {.Stable {width: 99%; font-size: 14px; font-weight: 500; } .Stable img {height: 35px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "dc8c518c-c54c-4004-8318-5d599cf6d03f": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18969232965920__dc8c518c-c54c-4004-8318-5d599cf6d03f-1684222815714235d4-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>這不只是一張健身椅，更是一張能激發你潛能的神器。</h2>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__dc8c518c-c54c-4004-8318-5d599cf6d03f-1684222815714235d4-0"
+      ],
+      "custom_css": [
+        ".index-section.index-section--alt {padding: 60px 0 0px 0;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "6acbfee6-648c-49eb-93a8-4c3d8295bc79": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 40px 0;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_e16d28c7-2df1-459e-926a-051f85d6ab47.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "突破角度限制",
+        "text": "<h4>-4<strong>°、</strong>-6<strong>°、</strong>-8<strong>° </strong>三種負角度<br/>下斜訓練更靈活</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "25b20d4d-c78b-43f4-beeb-f058f0a10083": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 40px 0;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/07_66f9d208-5706-427b-a154-765c27c8d041.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "多段角度調整",
+        "text": "<h4>椅背10段 · 椅墊3段<br/>滿足多樣訓練需求</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "2b556dd8-bcea-41f9-969a-d306860a6f53": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 40px 0;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/03_fb287dc6-4771-4795-8507-f095e28c5250.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "安全穩固",
+        "text": "<h4>使用75*75mm管材 3mm厚度<br/>高剛性穩固結構 · 耐重500公斤</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "a19694d4-c433-48af-87c0-4a1db71261be": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 40px 0;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/04_c67cdc37-8ec9-4c37-8b18-fdd42aac4784.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "耐用舒適",
+        "text": "<h4>鋼印LOGO<br/>PU皮革包覆高密度泡棉</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_epMqzy": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 40px 0;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/06_44b3bed6-6e4d-4fd9-8e75-cfc916a02d4e.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "大滾輪設計",
+        "text": "<h4>移動平穩 · 順滑好移動</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_DHGbUp": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 40px 0;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/05_abcef300-14c9-4665-b57d-4581d78de769.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "止滑腳墊套",
+        "text": "<h4>保護地板 · 訓練不位移</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "633a3d5f-f2c8-4551-9bd0-ad5875babe76": {
+      "type": "advanced-content",
+      "blocks": {
+        "beba09d1-10c2-46da-921c-7c6b0b4b7f53": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--18969232965920__633a3d5f-f2c8-4551-9bd0-ad5875babe76-16856764078c6df7e8-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n.sean-tDIV {\n  left: 5%;\n  transform:initial;\n}\n.sean-picDIV {\n  background-image: url(https://cdn.shopify.com/s/files/1/0737/8396/8032/files/bg_2590x1080_2.webp?v=1722405072);\n}\n@media only screen and (max-width: 767px) {\n  .sean-tDIV {\n    left: 50%;\n    transform: translateX(-45%);\n  }\n  .sean-picDIV {\n    background-image: none;\n  }\n}\n</style>\n</style>\n\n\n\n{%- assign _specH = product.metafields.custom._spectableh.value -%}\n{%- assign _spectd1 = product.metafields.custom.spectabletd1.value -%}\n{%- assign _spectd2 = product.metafields.custom.spectabletd2.value -%}\n<div class=\"sean-picDIV\" style=\"background-color: rgb(33 33 33);position: relative;\nwidth: 100%;background-repeat: no-repeat;background-position: center;background-size: cover;\">\n  <div class=\"sean-tDIV\" style=\"position: absolute; z-index: 5; top: 13%; left: 45%; text-align: center; color: #fff\">\n    <h1 style=\"margin: 40px auto; text-align: center\">\n  {{_specH[0]}}\n    </h1>\n    <h4 style=\"margin: 20px auto; text-align: center\">\n      <span style=\"background-color: #957834; padding: 4px 30px; border-radius: 50px;text-transform: none;\">\n        {{_specH[1]}}\n      </span>\n    </h4>\n    <table class=\"sean-tb\" style=\"border-collapse: collapse; background: 0 0; margin: 0 auto\">\n      <tbody>\n        <tr>\n          <td style=\"width: 50%\">\n            <p style=\"color: #fff\">\n              {{_spectd1[0]}}\n            </p>\n            {{_spectd1[1]}}\n          </td>\n          <td style=\"width: 50%\">\n            <p style=\"color: #fff\">\n              {{_spectd2[0]}}\n            </p>\n            {{_spectd2[1]}}\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <p style=\"color: #fff\">\n              {{_spectd1[2]}}\n            </p>\n            {{_spectd1[3]}}\n          </td>\n          <td>\n            <p style=\"color: #fff\">\n              {{_spectd2[2]}}\n            </p>\n            {{_spectd2[3]}}\n          </td>\n        </tr>\n       \n      </tbody>\n    </table>\n  </div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "beba09d1-10c2-46da-921c-7c6b0b4b7f53",
+        "template--18969232965920__633a3d5f-f2c8-4551-9bd0-ad5875babe76-16856764078c6df7e8-1"
+      ],
+      "custom_css": [
+        ".sean-picDIV {background-image: url(https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2_11bd213d-f4e0-4270-8bdd-aa3365e59607.webp?v=1732787547);}",
+        "td {font-size: 20px; padding: 14px; background: none; text-align: center; border-bottom: 1px solid #fff;}",
+        "p {font-size: 19px; margin: 8px auto;}",
+        "h1 {font-size: 50px;}",
+        "h4 {font-size: 20px;}",
+        "@media only screen and (max-width: 767px) {.sean-picDIV {background-image: none; } td {padding: 8px; font-size: 14px; } p {font-size: 16px; margin: 5px auto; } h1 {font-size: 26px; } h4 {font-size: 12px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "product_compares_hGUj4X": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_VbmPJV": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/01_0686f776-3a2d-4a7f-b298-99d788e7de95.jpg",
+            "pname": "站立式收納健身椅",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/08.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://collections/all-foldable-bench",
+            "pitem": "<div class=\"cell_td\">5段</div>\n<div class=\"cell_td\">展開：122*36*45.5cm<br>站立：45.3*36*122cm</div>\n<div class=\"cell_td\">0°, 30° , 45°, 60°, 83°<br>五段高度輕鬆調整<br>站立式收納 超省空間<br>安全插銷 穩固腳架</div>"
+          }
+        },
+        "items_cell_HM6KqD": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/02_ca7d1742-1d2f-48fc-b93c-d475f33baefc.jpg",
+            "pname": "負角度調整健身椅",
+            "pspec": "Power series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/power-series-adjustable-decline-degree-bench",
+            "pitem": "<div class=\"cell_td\">10+3段</div>\n<div class=\"cell_td\">129.9*64.4*45cm </div>\n<div class=\"cell_td\">\n<br>高達10段椅背調整：<br>-4°/-6°/-8°/0°/15°/30°/45°/60°/75°/90°<br>三種負角度，下斜訓練沒問題<br>靈活3段椅墊調整：0°/ 15°/ 30° </div>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_VbmPJV",
+        "items_cell_HM6KqD"
+      ],
+      "custom_css": [
+        ".carousel-cell {width: 50%;}",
+        ".cpimage {height: 150px;}",
+        ".cpname {font-size: 18px;}",
+        ".cpspec {font-size: 16px;}",
+        ".cpcolor img {width: 20px;}",
+        ".cpbtm {font-size: 13px;}",
+        ".cell_th {font-size: 15px;}",
+        ".cpitem {font-size: 14px;}",
+        ".cpitem img {width: 20px;}",
+        ".cpitem div {padding: 30px 3px 30px 3px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; } .carousel-cell {width: 50%; } .cpname {font-size: 15px; } .cpspec {font-size: 14px; } .cpbtm {font-size: 12px; } .cell_th {font-size: 14px; } .cpitem {font-size: 13px; } .cpitem div {padding: 25px 3px 25px 3px; }}"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "不知道自己適合哪個產品嗎?",
+        "alt": false,
+        "item-title": "<div class=\"cell_th\"><span style=\"margin-left: -43px;\" class=\"cell_title\">調整段數</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -27px;\" class=\"cell_title\">尺寸</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -27px;\" class=\"cell_title\">描述</span></div>"
+      }
+    },
+    "30d8f219-2e65-4c89-b72a-bad1752798d0": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-0": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        },
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-1": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-0",
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-1"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "更多 BYZOOM FITNESS 重量訓練使用情境",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "18ad561b-13b7-471e-889a-616b5e77f4d9": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18969232965920__18ad561b-13b7-471e-889a-616b5e77f4d9-16842097488fd13220-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/3_d9a06416-523d-419c-aed4-54c2120e2348.webp"
+          }
+        },
+        "38b41b5b-2c83-496a-a5b1-ba9d2504f6b3": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/5_f8b1c4e9-59ea-4d72-a6e6-477e0f674097.webp"
+          }
+        },
+        "490f90e8-4994-4cf9-a07e-f12f333b4ee7": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/2_cbf04fb4-3685-4521-8b3b-323a2ee59efb.webp"
+          }
+        },
+        "image_7gE9mq": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/4_742c0c28-48d1-4dc8-8a11-1705bc809467.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__18ad561b-13b7-471e-889a-616b5e77f4d9-16842097488fd13220-0",
+        "38b41b5b-2c83-496a-a5b1-ba9d2504f6b3",
+        "490f90e8-4994-4cf9-a07e-f12f333b4ee7",
+        "image_7gE9mq"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "818161114263472671": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 60px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        ".overflow-scroll-wrap div[data-pagination-wrapper] {overflow-x: hidden;}",
+        "@media only screen and (max-width: 767px) {.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "product_recommendations_heading": "您可能也喜歡",
+        "related_count": 8
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "febe7454-7ebd-43aa-a56c-9d1b31c24cd5": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 60px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "您可能也喜歡",
+        "description": "",
+        "home_featured_products": "all-adjustable-dumbbell",
+        "per_row": "medium",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "a4a8d1c5-276b-4e30-8c68-3fa53f1abb2b",
+    "b207b143-5dd1-45c6-9a09-55bfc99d706b",
+    "5c66574f-38c3-4e84-b736-59f81c170414",
+    "847781f0-106b-4d26-a815-514a865f78fc",
+    "076b90b3-1d87-423f-9830-3d5d11149a9a",
+    "advanced_content_GkYQpX",
+    "slideshow_f9Pp9j",
+    "fc1e4b33-92ba-44f9-b590-2ba4b01ebd03",
+    "dc8c518c-c54c-4004-8318-5d599cf6d03f",
+    "6acbfee6-648c-49eb-93a8-4c3d8295bc79",
+    "25b20d4d-c78b-43f4-beeb-f058f0a10083",
+    "2b556dd8-bcea-41f9-969a-d306860a6f53",
+    "a19694d4-c433-48af-87c0-4a1db71261be",
+    "text_and_image_epMqzy",
+    "text_and_image_DHGbUp",
+    "633a3d5f-f2c8-4551-9bd0-ad5875babe76",
+    "product_compares_hGUj4X",
+    "30d8f219-2e65-4c89-b72a-bad1752798d0",
+    "18ad561b-13b7-471e-889a-616b5e77f4d9",
+    "818161114263472671",
+    "product-recommendations",
+    "collection-return",
+    "febe7454-7ebd-43aa-a56c-9d1b31c24cd5"
+  ]
+}

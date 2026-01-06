@@ -1,0 +1,297 @@
+{% comment %}
+  { '//unpkg.com/flickity@2/dist/flickity.min.css' | stylesheet_tag: preload: true }}
+  {%- render 'multiLayer-show_css', seanVariable: 'multiLayer-show' -%}
+
+  <!-- <script defer src="{{ '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js' }}"></script> -->
+  <script defer src="{{ 'multiLayer-show.js' | asset_url }}"></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', (e) => { initLoad("multiLayer-show_{{ section.id }}"); });
+  </script>
+{% endcomment %}
+
+<style>
+  .hero {
+    background-image: none;
+  }
+</style>
+
+<div id="multiLayer-show_{{ section.id }}" class="multiLayer-show_section index-section{% if section.settings.alt %} index-section--alt{% endif %}">
+
+  {%- if section.blocks.size > 0 -%}
+    {%- for block in section.blocks -%}
+      <!-- {{ forloop.index }} -->
+
+      {%- if block.type == 'layer-text' -%}
+        <!-- html圖片 -->
+        <style>
+          .hero-natural--{{ block.id }} {
+            height: 0;
+            padding-bottom: {{ block.settings.image_height | plus: 0 }}%;
+          }
+          @media screen and (max-width: 768px) {
+            .hero-natural--{{ block.id }} {
+              padding-bottom: {{ block.settings.mobile_image_height | plus: 0 }}%;
+            }
+          }
+        </style>
+      
+        <div data-section-id="{{ block.id }}" data-section-type="slideshow-section" data-immediate-load data-align-top="true" >
+          <div class="slideshow-wrapper hero-wrapper">
+            <div class="hero-natural--{{ block.id }}">
+              <div id="Slideshow-{{ block.id }}" class="hero hero--{{ block.id }} loaded" data-natural="true" data-autoplay="false" data-speed="7000" data-arrows="true" data-slide-count="1">
+                <div class="slideshow__slide slideshow__slide--{{ block.id }}{{ forloop.index0 }} is-selected" data-index="0" data-id="{{ block.id }}">
+                  
+                  <div class="hero__image-wrapper{% if block.settings.layhtml != blank %} hero__image-wrapper--overlay{% endif %}">
+                    {%- if block.settings.image != blank -%}                
+                      {%- capture image_classes -%}
+                        hero__image hero__image--{{ block.id }} {% if block.settings.image_mobile != blank %} small--hide{% endif %}
+                      {%- endcapture -%}
+                      {%- render 'image-element',
+                        img: block.settings.image,
+                        classes: image_classes,
+                        preload: true,
+                        loading: false
+                      -%}
+                      {%- if block.settings.image_mobile != blank -%}
+                        {% assign image_classes = 'hero__image medium-up--hide hero__image--' | append: block.id %}
+                        {%- render 'image-element',
+                          img: block.settings.image_mobile,
+                          classes: image_classes,
+                          preload: true,
+                          loading: false
+                        -%}
+                      {%- endif -%}                      
+                    {%- else -%}
+                      <!-- {% capture placeholder %}lifestyle-{% cycle '1','2' %}{% endcapture %}
+                      {{ placeholder | placeholder_svg_tag: 'placeholder-svg' }} -->
+                    {%- endif -%}
+                  </div>
+
+                  {%- if block.settings.layhtml != blank -%}
+                    <div class="hero__text-wrap">
+                      <div class="page-width">
+                        {{ block.settings.layhtml }}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      {%- else -%}
+        <!-- 影片 -->
+        <div
+          data-section-id="{{ section.id }}{{ block.id }}"
+          data-section-type="video-section"
+          data-aos="hero__animation"
+          class="video-parent-section hero hero--{{ section.id }}{{ block.id }} hero--{{ block.settings.section_height }} hero--mobile--{{ block.settings.mobile_height }}"
+        >
+          <div class="hero__media hero__media--{{ section.id }}{{ block.id }}">
+            {%- if block.settings.video_url contains 'youtube.com/watch' -%}
+              {%- assign video_id = block.settings.video_url | split: 'v=' -%}
+              {%- assign video_id = video_id[1] | split: '&' | first -%}
+              <div
+                id="YouTubeVideo-{{ section.id }}{{ block.id }}"
+                class="video-div"
+                data-type="youtube"
+                data-video-id="{{ video_id }}"
+              ></div>
+            {%- endif -%}
+
+            {%- if block.settings.video_url contains 'youtu.be/' -%}
+              {%- assign video_id = block.settings.video_url | split: '.be/' -%}
+              {%- assign video_id = video_id[1] | split: '&' | first -%}
+              <div
+                id="YouTubeVideo-{{ section.id }}{{ block.id }}"
+                class="video-div"
+                data-type="youtube"
+                data-video-id="{{ video_id }}"
+              ></div>
+            {%- endif -%}
+
+            {%- if block.settings.video_url contains 'vimeo.com' -%}
+              {%- assign video_id = block.settings.video_url | split: '.com/' -%}
+              {%- assign video_id = video_id[1] | split: '/' | first -%}
+              <div id="Vimeo-{{ section.id }}{{ block.id }}" class="video-div" data-type="vimeo" data-video-id="{{ video_id }}"></div>
+            {%- endif -%}
+
+            {%- if block.settings.video_url contains '.mp4' or block.settings.video_url contains '.MP4' -%}
+              <video
+                id="Mp4Video-{{ section.id }}{{ block.id }}"
+                class="video-div byzoom-lazy lazyload"
+                data-type="mp4"
+                preload="none"
+                src="{{ block.settings.video_url }}"
+                loop
+                muted
+                playsinline
+                data-autoplay
+              ></video>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.multiLayer-show.name",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "alt",
+      "label": "t:sections.multiLayer-show.settings.alt.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "layer-text",
+      "name": "t:sections.multiLayer-show.blocks.layer-text.name",
+      "settings": [
+        {
+          "type":"html",
+          "id": "layhtml",
+          "label": "t:sections.multiLayer-show.blocks.layer-text.settings.layhtml.label",
+          "default": "html"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multiLayer-show.blocks.layer-text.settings.image.label"
+        },
+        {
+          "type": "range",
+          "id": "image_height",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "Desk Image Height",
+          "default": 60
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "t:sections.multiLayer-show.blocks.layer-text.settings.image_mobile.label"
+        },
+        {
+          "type": "range",
+          "id": "mobile_image_height",
+          "min": 10,
+          "max": 100,
+          "step": 5,
+          "unit": "%",
+          "label": "Mobile Image Height",
+          "default": 100
+        }
+      ]
+    },
+    {
+      "type": "layer-video",
+      "name": "t:sections.multiLayer-show.blocks.layer-video.name",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "t:sections.multiLayer-show.blocks.layer-video.settings.video_url.label",
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ]
+        },
+        {
+          "type": "select",
+          "id": "section_height",
+          "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.label",
+          "default": "650px",
+          "options": [
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.options.450px.label",
+              "value": "450px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.options.550px.label",
+              "value": "550px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.options.650px.label",
+              "value": "650px"
+            },
+            {
+              "label": "700px",
+              "value": "700px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.options.750px.label",
+              "value": "750px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.options.850px.label",
+              "value": "850px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.section_height.options.100vh.label",
+              "value": "100vh"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "mobile_height",
+          "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.label",
+          "default": "auto",
+          "options": [
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.options.auto.label",
+              "value": "auto"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.options.250px.label",
+              "value": "250px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.options.300px.label",
+              "value": "300px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.options.400px.label",
+              "value": "400px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.options.500px.label",
+              "value": "500px"
+            },
+            {
+              "label": "t:sections.multiLayer-show.blocks.layer-video.settings.mobile_height.options.100vh.label",
+              "value": "100vh"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.multiLayer-show.presets.multiLayer-show.name",
+      "blocks": [
+        {
+          "type": "layer-text"
+        },
+        {
+          "type": "layer-video"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

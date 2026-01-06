@@ -1,0 +1,127 @@
+{% comment %}
+  {{ '//unpkg.com/flickity@2/dist/flickity.min.css' | stylesheet_tag: preload: true }}
+  {%- render 'multiImageZeus_css', seanVariable: 'multiImageZeus' -%}
+
+  <!-- <script defer src="{{ '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js' }}"></script> -->
+  <script defer src="{{ 'multiImageZeus.js' | asset_url }}"></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', (e) => { initLoad("multiImageZeus_{{ section.id }}"); });
+  </script>
+{% endcomment %}
+
+{{'//unpkg.com/aos@2.3.1/dist/aos.css' | stylesheet_tag: preload: true }}
+<script defer src="{{ '//unpkg.com/aos@2.3.1/dist/aos.js' }}"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<style>
+  #multiImageZeus_{{ section.id }} .deskimage {
+    display:inline; 
+    margin:-4px auto;
+  }
+  #multiImageZeus_{{ section.id }} .mobileimage {
+    display: none; 
+    margin:-4px auto;
+  }  
+  @media screen and (max-width: 768px) {
+    #multiImageZeus_{{ section.id }} .deskimage {
+      display: none;
+      margin:-4px auto;
+    }
+    #multiImageZeus_{{ section.id }} .mobileimage {
+      display:inline; 
+      margin:-4px auto;
+    }
+  }
+</style>
+
+<div id="multiImageZeus_{{ section.id }}" class="multiImageZeus_section {% if section.settings.alt %} index-section--alt{% endif %}">
+  {%- for block in section.blocks -%}
+    <!-- <style>
+      #layer-image_{{ block.id }}_{{ forloop.index }} img {
+        height: 0;
+        padding-bottom: {{ block.settings.image_height | plus: 0 }}%;
+      }
+      @media screen and (max-width: 768px) img {
+        #layer-image_{{ block.id }}_{{ forloop.index }} {
+          padding-bottom: {{ block.settings.mobile_image_height | plus: 0 }}%;
+        }
+      }
+    </style> -->
+    
+    <div id="layer-image_{{ block.id }}_{{ forloop.index }}" class="layer-image_block" data-aos="fade-up" style="text-align: center;">
+      {%- if block.settings.image != blank -%}
+        <!-- 長圖片 --> <!-- {{ forloop.index }} -->
+        {{ block.settings.image| image_url: width: nil | image_tag: width: block.settings.image_width, height: 'auto', srcset: nil, class: 'deskimage' }}
+
+        {%- if block.settings.image_mobile != blank -%}
+          {{ block.settings.image_mobile| image_url: width: nil | image_tag: width: block.settings.image_width, height: 'auto', srcset: nil, class: 'mobileimage'}}
+        {%- endif -%}
+      {%- else -%}
+          {% capture placeholder %}lifestyle-{% cycle '1','2' %}{% endcapture %}
+          {{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+  
+</div>
+
+{% schema %}
+{
+  "name": "multiImageZeus",
+  "max_blocks": 10,
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "alt",
+      "label": "使用ALT顏色",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "layer-image",
+      "name": "Layer-image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "PC圖片"
+        },
+        {
+          "type": "text",
+          "id": "image_width",
+          "label": "PC圖片寬度",
+          "default": "768px"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Mobile圖片"
+        },
+        {
+          "type": "text",
+          "id": "image_mobile_width",
+          "label": "Mobile圖片寬度",
+          "default": "100%"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "multiImageZeus",
+      "blocks": [
+        {
+          "type": "layer-image"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["footer", "header", "custom.popups"]
+  }
+}
+{% endschema %}

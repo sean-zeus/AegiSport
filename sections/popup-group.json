@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "custom.popups",
+  "name": "t:sections.popup-group.name",
+  "sections": {
+    "newsletter-popup": {
+      "type": "newsletter-popup",
+      "blocks": {
+        "reminder-block": {
+          "type": "header",
+          "settings": {
+            "reminder_label": "Byzoom club 會員計畫"
+          }
+        }
+      },
+      "block_order": [
+        "reminder-block"
+      ],
+      "custom_css": [
+        ".modal--newsletter {right: 30%; left: 30%;}",
+        ".h2 {font-size: 26px;}",
+        "@media only screen and (max-width: 767px) {.modal--newsletter {right: 10%; left: 10%; } .h2 {font-size: 28px; margin-top: 30px; }}"
+      ],
+      "settings": {
+        "disable_for_account_holders": false,
+        "popup_seconds": 2,
+        "popup_days": 2,
+        "popup_title": "Byzoom club 會員計畫",
+        "popup_text": "<p>  Byzoom Global 官網專屬<br/>註冊成為Byzoom Club會員，登入購物即可享有點數回饋。</p>",
+        "popup_image": "shopify://shop_images/3-09_aa1a1d73-4ffd-4141-8ea8-c2a8070d8b20.webp",
+        "image_position": "left",
+        "show_social_icons": false,
+        "enable_newsletter": false,
+        "button_label": "了解更多",
+        "button_link": "shopify://pages/membership"
+      }
+    },
+    "age-verification-popup": {
+      "type": "age-verification-popup",
+      "disabled": true,
+      "settings": {
+        "enable_test_mode": false,
+        "blur_image": false,
+        "heading": "Confirm your age",
+        "text": "<p>Are you 18 years old or older?</p>",
+        "decline_button_label": "No I'm not",
+        "approve_button_label": "Yes I am",
+        "decline_heading": "Come back when you're older",
+        "decline_text": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
+        "return_button_label": "Oops, I entered incorrectly"
+      }
+    }
+  },
+  "order": [
+    "newsletter-popup",
+    "age-verification-popup"
+  ]
+}

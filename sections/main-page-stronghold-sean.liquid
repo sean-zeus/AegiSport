@@ -1,0 +1,945 @@
+<script>
+  let location_data = {
+	title: '[台灣商品銷售據點]',
+	editor: '',
+	category_list: {
+		北部: {
+			title: '北部',
+			category_list: {
+				台北: {
+					title: '台北',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '台北店',
+									phone: '02-25643702',
+									address: '台北市 中山區 中山北路一段21號1F',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '南港店',
+									phone: '02-26512296',
+									address: '臺北市 南港區 南港路二段20巷5號B1',
+								},
+								{
+									title: '光復南店',
+									phone: '02-27553151',
+									address: '臺北市 大安區 光復南路612號1、2樓',
+								},
+								{
+									title: '南京松江店',
+									phone: '02-25210980',
+									address: '臺北市 中山區 南京東路二段71號',
+								},
+								{
+									title: '新板店',
+									phone: '02-29566065',
+									address: '新北市 板橋區 中山路一段118號',
+								},
+								{
+									title: '和平店',
+									phone: '02-23658868',
+									address: '臺北市 中正區 和平西路一段20號',
+								},
+							],
+						},
+						{
+							title: '馬拉松世界',
+							location_list: [
+								{
+									title: '馬拉松世界台北店',
+									phone: '02-2358-3797',
+									address: '臺北市 中正區 愛國東路70號',
+								},
+							],
+						},
+						{
+							title: 'ISPO門市',
+							location_list: [
+								{
+									title: '八德門市',
+									phone: '02-6617-6601',
+									address: '臺北市 松山區 八德路三段20-1號1樓',
+								},
+								{
+									title: '大安信義門市',
+									phone: '02-6617-0692',
+									address: '臺北市 大安區 信義路三段122號1樓',
+								},
+								{
+									title: '公館門市',
+									phone: '02-6617-6783',
+									address: '臺北市 中正區 汀州路三段160巷1號1樓',
+								},
+							],
+						},
+					],
+				},
+				新北: {
+					title: '新北',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '中和店',
+									phone: '02-82457400',
+									address: '新北市 中和區 中山路二段291號7樓',
+								},
+								{
+									title: '三峽店',
+									phone: '02-26730125',
+									address: '新北市 三峽區 龍學里學成路398號2樓',
+								},
+								{
+									title: '環球中和店',
+									phone: '02-77515454',
+									address: '新北市 中和區 中山路三段122號2樓',
+								},
+							],
+						},
+						// {
+						// 	title: 'BGYM比勁健身器材',
+						// 	location_list: [
+						// 		{
+						// 			title: '板橋旗艦店',
+						// 			phone: '02-29648234',
+						// 			address: '新北市 板橋區 民族路205號1樓',
+						// 		}
+						// 	],
+						// },                      
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '淡新店',
+									phone: '02-8631-8880',
+									address: '新北市 淡水區 中山北路二段383號',
+								},
+								{
+									title: '蘆洲店',
+									phone: '02-8287-9000',
+									address: '新北市 三重區 五華街282號',
+								},
+								{
+									title: '新店店',
+									phone: '02-8919-3333',
+									address: '新北市 新店區 中興路三段1號',
+								},
+							],
+						},
+						{
+							title: '世運體育用品',
+							location_list: [
+								{
+									title: '世運體育用品',
+									phone: '02-29755922',
+									address: '新北市 三重區 三和路三段61號',
+								},
+							],
+						},
+						{
+							title: 'ISPO門市',
+							location_list: [
+								{
+									title: '板橋大遠百',
+									phone: '02-6637-7723',
+									address: '新北市 板橋區 新站路28號6樓',
+								},
+							],
+						},
+					],
+				},
+				桃園: {
+					title: '桃園',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '中壢店',
+									phone: '03-4336288',
+									address: '桃園市 中壢區 中華路二段508號',
+								},
+								{
+									title: '桃園店',
+									phone: '03-3567118',
+									address: '桃園市 桃園區 中正路896號1-2樓',
+								},
+								{
+									title: '桃園復興店',
+									phone: '03-3383581',
+									address: '桃園市 桃園區 南門里復興路319號1-2樓',
+								},
+							],
+						},    
+						// {
+						// 	title: 'BGYM比勁健身器材',
+						// 	location_list: [
+						// 		{
+						// 			title: '桃園南坎特力屋',
+						// 			phone: '03-3117553',
+						// 			address: '桃園市 蘆竹區 中正路1號1樓(BGYM比勁 櫃位)',
+						// 		},
+						// 		{
+						// 			title: '大興店',
+						// 			phone: '03-3015178',
+						// 			address: '桃園市 桃園區 大興西路二段186號1樓',
+						// 		},
+						// 		{
+						// 			title: '中壢新生店',
+						// 			phone: '03-427-3562',
+						// 			address: '桃園市 中壢區 新生路336號1樓',
+						// 		},
+						// 	],
+						// },
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '內壢店',
+									phone: '0800-688-388',
+									address: '桃園市 中壢區 中華路一段450號',
+								},
+								{
+									title: '經國店',
+									phone: '03-316-0676',
+									address: '桃園市 桃園區 經國路369號',
+								},
+								{
+									title: '中原店',
+									phone: '03-433-4601',
+									address: '桃園市 中壢區 中華路二段501號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '中壢環中東店',
+									phone: '03-4553512',
+									address: '桃園市 中壢區 環中東路263號,265號,267號',
+								},
+								{
+									title: '環北店',
+									phone: '03-4250113',
+									address: '桃園市 中壢區 環北路 160、162號',
+								},
+								{
+									title: '桃園國際店',
+									phone: '03-3693185',
+									address: '桃園市 桃園區 國際路二段476號',
+								},
+								{
+									title: '八德店',
+									phone: '03-3671956',
+									address: '桃園市 八德區 介壽路二段247號',
+								},
+							],
+						},
+					],
+				},
+				新竹: {
+					title: '新竹',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '竹北店',
+									phone: '03-5529378',
+									address: '新竹縣 竹北市 中華路307之1號',
+								},
+								{
+									title: '新竹店',
+									phone: '03-5313917',
+									address: '新竹市 東區 東大路一段132號1-2樓',
+								},
+							],
+						},                      
+						// {
+						// 	title: 'BGYM比勁健身器材',
+						// 	location_list: [
+						// 		{
+						// 			title: '新竹旗艦店',
+						// 			phone: '03-5278107',
+						// 			address: '新竹市 北區 北大路180號1樓',
+						// 		},
+						// 	],
+						// },
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '竹北店',
+									phone: '',
+									address: '新竹縣 竹北市 光明六路89號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '竹北文興店',
+									phone: '03-5501633',
+									address: '新竹縣 竹北市 文興路一段396號',
+								},
+							],
+						},
+						{
+							title: '馬拉松世界',
+							location_list: [
+								{
+									title: '馬松拉世界新竹店',
+									phone: '03-657-2307',
+									address: '新竹縣 竹北市 光明九路129號',
+								},
+							],
+						},
+						{
+							title: '名將體育器材',
+							location_list: [
+								{
+									title: '名將體育器材',
+									phone: '03-5266883',
+									address: '新竹市 東區 勝利路17號',
+								},
+							],
+						},
+						{
+							title: '茂昌體育用品社',
+							location_list: [
+								{
+									title: '茂昌體育用品',
+									phone: '03-5624921',
+									address: '新竹市 東區 光復路二段932號',
+								},
+							],
+						},
+					],
+				},
+			},
+		},
+		中部: {
+			title: '中部',
+			category_list: {
+				苗栗: {
+					title: '苗栗',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '頭份店',
+									phone: '037-695323',
+									address: '苗栗縣 頭份鎮 尚順路66號',
+								}
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '頭份店',
+									phone: '037-676686',
+									address: '苗栗縣 頭份市 中華路1181號',
+								},
+							],
+						},
+					],
+				},
+				台中: {
+					title: '台中',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '市政店',
+									phone: '04-22595661',
+									address: '台中市 西屯區 市政路652號',
+								},
+								{
+									title: '三井店',
+									phone: '04-22130970',
+									address: '台中市 東區 進德路700號3樓',
+								},
+							],
+						},                      
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '西屯店',
+									phone: '04-2465-2028',
+									address: '臺中市 西屯區 台灣大道四段1086號',
+								},
+								{
+									title: '青海店',
+									phone: '04-2707-3866',
+									address: '臺中市 西屯區 青海路二段207-18號',
+								},
+								{
+									title: '文心店',
+									phone: '04-2254-3355',
+									address: '臺中市 南屯區 文心路一段521號',
+								},
+							],
+						},
+						{
+							title: '假期潛水俱樂部',
+							location_list: [
+								{
+									title: '假期室內溫水游泳池',
+									phone: '0423162987',
+									address: '臺中市 西屯區 青海路一段130-1號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '大里店',
+									phone: '',
+									address: '臺中市 大里區 大明路555、557號',
+								},
+								{
+									title: '逢甲店',
+									phone: '04-27010096',
+									address: '臺中市 西屯區 河南路二段363-10號',
+								},
+								{
+									title: '大雅店',
+									phone: '04-25690958',
+									address: '臺中市 大雅區 中清路三段1053號',
+								},
+								{
+									title: '公益店',
+									phone: '04-23283808',
+									address: '臺中市 南屯區 公益路2段117號',
+								},
+								{
+									title: '福科店',
+									phone: '04-24620880',
+									address: '臺中市 西屯區 福科路617號',
+								},
+								{
+									title: '清水店',
+									phone: '04-26234367',
+									address: '臺中市 清水區 中山路29-2號',
+								},
+							],
+						},
+						{
+							title: '永晉體育用品',
+							location_list: [
+								{
+									title: '永晉體育用品',
+									phone: '04-26571472',
+									address: '臺中市 梧棲區 雲集街65號',
+								},
+							],
+						},
+						{
+							title: '造新星拳擊俱樂部',
+							location_list: [
+								{
+									title: '造新星拳擊俱樂部',
+									phone: '04-23156698',
+									address: '臺中市 西屯區 櫻花路121號',
+								},
+							],
+						},
+						{
+							title: '昇活運動用品館',
+							location_list: [
+								{
+									title: '昇活運動用品',
+									phone: '04-24181997',
+									address: '臺中市 大里區 國光路2段737號1樓',
+								},
+							],
+						},
+						{
+							title: '冠軍體育用品',
+							location_list: [
+								{
+									title: '冠軍體育用品',
+									phone: '04-24510886',
+									address: '臺中市 西屯區 河南路二段244號1樓',
+								},
+							],
+						},
+						{
+							title: '魄瘋體能訓練',
+							location_list: [
+								{
+									title: '魄瘋體能訓練',
+									phone: '04-24721101',
+									address: '臺中市 西區 向上南路一段243號2F',
+								},
+							],
+						},
+						{
+							title: '金同利運動聯盟',
+							location_list: [
+								{
+									title: '金同利運動聯盟',
+									phone: '04-26621189',
+									address: '臺中市 沙鹿區 中山路302號',
+								},
+							],
+						},
+						{
+							title: '路寶體育用品',
+							location_list: [
+								{
+									title: '路寶體育用品',
+									phone: '04-25279400',
+									address: '臺中市 豐原區 三民路27號',
+								},
+							],
+						},
+						{
+							title: '永盛體育文教用品',
+							location_list: [
+								{
+									title: '永盛體育用品',
+									phone: '04-23221393',
+									address: '臺中市 西區 公益路325號',
+								},
+							],
+						},
+						{
+							title: '宏明體育用品社',
+							location_list: [
+								{
+									title: '宏明體育用品',
+									phone: '04-23134655',
+									address: '臺中市 西屯區 西屯路2段32之9巷1號',
+								},
+							],
+						},
+						{
+							title: 'ISPO門市',
+							location_list: [
+								{
+									title: '台中逢甲',
+									phone: '04-3609-1819',
+									address: '臺中市 西屯區 福星路407號1樓',
+								},
+							],
+						},
+						{
+							title: '台同健康活力館',
+							location_list: [
+								{
+									title: '五權門市',
+									phone: '04-2383-1159',
+									address: '臺中市 南屯區 五權西路二段 445號',
+								},
+							],
+						},
+					],
+				},
+				彰化: {
+					title: '彰化',
+					category_list: [
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '彰化店',
+									phone: '04-736-7397',
+									address: '彰化縣 彰化市 金馬路二段321號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '金馬店',
+									phone: '04-7512358',
+									address: '彰化縣 彰化市 金馬路三段525號',
+								},
+							],
+						},
+						{
+							title: '台同健康活力館',
+							location_list: [
+								{
+									title: '彰化門市',
+									phone: '04-7277-366',
+									address: '彰化縣 彰化市 中山路二段255號',
+								},
+							],
+						},
+					],
+				},
+				南投: {
+					title: '南投',
+					category_list: [],
+				},
+			},
+		},
+		南部: {
+			title: '南部',
+			category_list: {
+				雲林: {
+					title: '雲林',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '斗六店',
+									phone: '05-5375099',
+									address: '雲林縣 斗六市 崙峯里仁義路6號1-4樓',
+								}
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '虎尾林森店',
+									phone: '05-6327872',
+									address: '雲林縣 虎尾鎮 林森路二段466號',
+								},
+								{
+									title: '斗六店',
+									phone: '05-5320558',
+									address: '雲林縣 斗六市 鎮南路325號',
+								},
+							],
+						},
+					],
+				},
+				嘉義: {
+					title: '嘉義',
+					category_list: [
+						// {
+						// 	title: 'BGYM比勁健身器材',
+						// 	location_list: [
+						// 		{
+						// 			title: '嘉義林森店',
+						// 			phone: '05-2275925',
+						// 			address: '嘉義市 西區 林森西路193號1樓',
+						// 		},
+						// 	],
+						// },
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '嘉義博愛店',
+									phone: '05-2315058',
+									address: '嘉義市 西區 博愛路二段131.131-1號',
+								},
+								{
+									title: '興業西店',
+									phone: '05-2838585',
+									address: '嘉義市 西區 興業西路418.420號',
+								},
+							],
+						},
+					],
+				},
+				台南: {
+					title: '台南',
+					category_list: [
+						// {
+						// 	title: 'BGYM比勁健身器材',
+						// 	location_list: [
+						// 		{
+						// 			title: '台南三井Outle',
+						// 			phone: '06-3033068',
+						// 			address: '臺南市 歸仁區 歸仁大道101號2樓 (SOLE/BGYM比勁櫃位)',
+						// 		},
+						// 		{
+						// 			title: '台南仁德特力屋',
+						// 			phone: '06-2490863',
+						// 			address: '臺南市 仁德區 中山路799號1樓 (BGYM比勁櫃位)',
+						// 		},
+						// 		{
+						// 			title: '台南小北店',
+						// 			phone: '06-2527497',
+						// 			address: '臺南市 北區 西門路四段92號1樓',
+						// 		},
+						// 	],
+						// },
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '安平店',
+									phone: '',
+									address: '臺南市 中西區 中華西路二段16號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '中華東店',
+									phone: '06-2352328',
+									address: '臺南市 東區 中華東路二段236號',
+								},
+								{
+									title: '中華西',
+									phone: '06-3533802',
+									address: '臺南市 中西區 中華西路二段631號',
+								},
+								{
+									title: '文賢店',
+									phone: '06-3505375',
+									address: '臺南市 北區 文賢路589.591號',
+								},
+							],
+						},
+						{
+							title: '美迪亞健康器材',
+							location_list: [
+								{
+									title: '台南店',
+									phone: '06-2132366',
+									address: '臺南市 中西區 健康路一段180號',
+								},
+							],
+						},
+					],
+				},
+				高雄: {
+					title: '高雄',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '夢時代',
+									phone: '07-9701910',
+									address: '高雄市 前鎮區 中華五路789號4樓',
+								}
+							],
+						}, 
+						// {
+						// 	title: 'BGYM比勁健身器材',
+						// 	location_list: [
+						// 		{
+						// 			title: '高雄左營特力屋',
+						// 			phone: '07-3424270',
+						// 			address: '高雄市 左營區 民族一路948號B1 (BGYM比勁櫃位)',
+						// 		},
+						// 		{
+						// 			title: '高雄夢時代',
+						// 			phone: '07-9700656',
+						// 			address: '高雄市 前鎮區 中華五路789號B2樓 (BGYM比勁櫃位)',
+						// 		},
+						// 	],
+						// },
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '楠梓店',
+									phone: '07-591-1899',
+									address: '高雄市 楠梓區 藍田路288號',
+								},
+								{
+									title: '鼎山店',
+									phone: '07-394-5588',
+									address: '高雄市 三民區 大順二路849號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '博愛店',
+									phone: '07-3418178',
+									address: '高雄市 左營區 博愛三路36、38號',
+								},
+								{
+									title: '民族店',
+									phone: '07-3477997',
+									address: '高雄市 三民區 明誠一路836,838號',
+								},
+								{
+									title: '鳳山五甲店',
+									phone: '07-7194083',
+									address: '高雄市 鳳山區 五甲一路261號',
+								},
+								{
+									title: '德惠店',
+									phone: '07-3641298',
+									address: '高雄市 楠梓區 德惠路73.75號',
+								},
+								{
+									title: '小港店',
+									phone: '07-8063280',
+									address: '高雄市 小港區 漢民路393號',
+								},
+							],
+						},
+						{
+							title: '馬拉松世界高雄店',
+							location_list: [
+								{
+									title: '馬拉松世界高雄店',
+									phone: '07-5566290',
+									address: '高雄市 左營區 明誠二路392號',
+								},
+							],
+						},
+						{
+							title: 'ISPO門市',
+							location_list: [
+								{
+									title: '高雄夢時代',
+									phone: '07-963-5263',
+									address: '高雄市 前鎮區 中華五路789號6樓',
+								},
+							],
+						},
+						{
+							title: '三普健康生活世界',
+							location_list: [
+								{
+									title: '高雄本館店',
+									phone: '07-379-0003',
+									address: '高雄市 鳥松區 本館路92-9號',
+								},
+								{
+									title: '高雄光華店',
+									phone: '07-224-0153',
+									address: '高雄市 新興區 光華一路168號',
+								},
+							],
+						},
+						{
+							title: '雅典娜體適能中心',
+							location_list: [
+								{
+									title: '高雄店',
+									phone: '07-331-3382',
+									address: '高雄市 前鎮區 三多三路213號13樓',
+								},
+							],
+						},
+					],
+				},
+				屏東: {
+					title: '屏東',
+					category_list: [
+						{
+							title: '家樂福',
+							location_list: [
+								{
+									title: '屏東店',
+									phone: '08-738-0310',
+									address: '屏東縣 屏東市 仁愛路188號',
+								},
+							],
+						},
+						{
+							title: '全國電子',
+							location_list: [
+								{
+									title: '屏東信義店',
+									phone: '08-7668911',
+									address: '屏東縣 屏東市 自由路493號、信義路220號',
+								},
+							],
+						},
+						{
+							title: '慶豐體育用品',
+							location_list: [
+								{
+									title: '慶豐體育用品',
+									phone: '08-7661859',
+									address: '屏東縣 屏東市 逢甲路6號',
+								},
+							],
+						},
+					],
+				},
+			},
+		},
+		東部: {
+			title: '東部',
+			category_list: {
+				宜蘭: {
+					title: '宜蘭',
+					category_list: [
+						{
+							title: '城市綠洲',
+							location_list: [
+								{
+									title: '宜蘭店',
+									phone: '03-9312684',
+									address: '宜蘭市 民權路二段38巷6號1-2樓',
+								},
+								{
+									title: '羅東店',
+									phone: '03-9602092',
+									address: '宜蘭縣 五結鄉 五結路三段498號',
+								}                       
+							],
+						}
+					],
+				},
+        	},
+		},
+      }
+}
+</script>
+
+{{ 'bootstrap.min.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'bootstrap-select.min.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'aos.css' | asset_url | stylesheet_tag: preload: true }}
+{{ 'stronghold.css' | asset_url | stylesheet_tag: preload: true }}
+
+<div class="page-full page-content background-div" style="background-color: #4d566e;">
+  
+  <!-- <div class="grid">
+    <div class="grid__item medium-up--three-quarters medium-up--push-one-eighth"> -->
+    
+      <!-- <header class="section-header">
+        <h2 class="text-white text-hover-golden">
+          {{ page.title }}
+        </h2>
+      </header> -->
+  
+      <div class="rte rte--nomargin">
+        {{ page.content }}
+      </div>
+
+    <!-- </div>
+  </div> -->
+</div>
+
+<!-- <script src="{{ 'jquery.min.js' | asset_url }}" defer="defer"></script> -->
+<script src="{{ 'popper.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'bootstrap.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'bootstrap-select.min.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'aos.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'stronghold.js' | asset_url }}" defer="defer"></script>
+
+{% schema %}
+{
+  "name": "t:sections.main-page-full-width.name",
+  "tag": "section"
+}
+{% endschema %}

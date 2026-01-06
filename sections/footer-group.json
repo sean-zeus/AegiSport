@@ -1,0 +1,56 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:sections.footer-group.name",
+  "sections": {
+    "social": {
+      "type": "social",
+      "disabled": true,
+      "settings": {
+        "enable_home": true,
+        "enable_product": false,
+        "enable_collection": true,
+        "title": "使用者推薦",
+        "description": "<p>@byzoomfitness</p>"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "custom_css": [
+        ".seanFooter {padding: 0px 5px;}",
+        ".newsletter-form-group {margin: initial;}",
+        ".site-footer__section--newsletter {background-color: #000; margin-bottom: 40px; padding-bottom: 50px;}",
+        ".site-footer__copyright {font-size: 14px;}",
+        ".rte--block {margin-bottom: 10px;}",
+        "ul {margin: 0 0;}",
+        "ul.noneStyle > li {margin: 8px 0; list-style: none;}",
+        ".text-hover-golden:hover {color: #9e7d53;}"
+      ],
+      "settings": {
+        "show_newsletter": true,
+        "newsletter_title": "",
+        "newsletter_richtext": "<p>接收最新的居家健身電子書、新品資訊與獨家優惠訊息。</p>",
+        "show_locale_selector": false,
+        "show_currency_selector": false,
+        "show_currency_flags": false,
+        "show_social_icons": false,
+        "menu": "main-footers",
+        "show_payment_icons": false,
+        "show_copyright": true,
+        "copyright_text": "© BYZOOM FITNESS CO., LTD. All Rights Reserved. Designed by 2023"
+      }
+    }
+  },
+  "order": [
+    "social",
+    "footer"
+  ]
+}

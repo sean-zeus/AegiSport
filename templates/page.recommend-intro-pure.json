@@ -1,0 +1,466 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "title": "PURE SERIES",
+            "title_size": 56,
+            "subheading": "美型× 輕量× 靈活搭配",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/head_55caa760-687c-4f05-a9b3-d7ffb456712f.webp"
+          }
+        },
+        "image_zb4yWk": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Home GYM INSPIRATION",
+            "title_size": 40,
+            "subheading": "居家健身風格 · 由你定義",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/head_3_75bc9ac4-9278-4b6d-b73c-3e16c7da4479.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0",
+        "image_zb4yWk"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; } div {font-size: 13px; }}"
+      ],
+      "settings": {
+        "style": "minimal",
+        "desktop_size": 0,
+        "mobile_size": 40,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "23c08093-f6ae-4421-826a-891e8e6d5eab": {
+      "type": "rich-text",
+      "blocks": {
+        "b33576af-7595-43e1-9e21-a206609634e1": {
+          "type": "heading",
+          "settings": {
+            "title": "打造最「好看又好練」的居家訓練選擇"
+          }
+        },
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Pure 系列是 BYZOOM 最受歡迎的美型訓練器材，擁有最廣的重量範圍、可擴充性高、彈性強，專為重視生活質感、想在家輕鬆養成運動習慣的妳設計。以俐落外型、黑白雙色選擇、快速切重與高擴充性為核心，適合新手、女性用戶與小空間居家使用者。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b33576af-7595-43e1-9e21-a206609634e1",
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0 px 0 60px 0;}",
+        "@media only screen and (min-width: 769px) {h2 {font-size: calc(var(--typeHeaderSize) * 0.4); font-weight: 700; } p {font-size: 18px; }}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 19px; font-weight: 700; } p {font-size: 13px; } .rte {margin-top: -15px; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "logo_list_Vcyf4Y": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_KF9tAa": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1_327e2576-f69b-4813-9c6d-a6ecc588d5d6.webp",
+            "link": ""
+          }
+        },
+        "logo_image_AddDeM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1_7ae3e1f8-4a7c-44e4-a1a6-4972872e570b.webp",
+            "link": ""
+          }
+        },
+        "logo_image_ngteJL": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1_2_f48f5539-af1a-4521-94e5-d956219c9df4.webp",
+            "link": ""
+          }
+        },
+        "logo_image_DKr98x": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/1_3.webp",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_KF9tAa",
+        "logo_image_AddDeM",
+        "logo_image_ngteJL",
+        "logo_image_DKr98x"
+      ],
+      "custom_css": [
+        "h2 {font-size: 40px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; }}"
+      ],
+      "name": "t:sections.logo-list.presets.logo_list.name",
+      "settings": {
+        "title": "適用對象",
+        "logo_opacity": 76,
+        "alt": false
+      }
+    },
+    "hero_video_gdmcYX": {
+      "type": "hero-video",
+      "name": "t:sections.hero-video.presets.video_hero.name",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://www.youtube.com/watch?v=SuX7LEYukMs",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "text_columns_JiUqEq": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_aDtdJp": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/2_a1000ea4-920f-49dc-bdc3-d9b3b458a4b5.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "流線外觀",
+            "text": "<p>俐落造型，擺著也是裝飾品</p>",
+            "show_text_top": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_P39yBG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/788fd726a23b606a7f5368838289bdc8.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "美感簡約設計",
+            "text": "<p>純白/全黑風格，融入居家不突兀</p>",
+            "show_text_top": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_V68irC": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/4_2db78d74-9b1b-47ea-889d-73010eb76628.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "最廣的重量選擇範圍",
+            "text": "<p>從新手到進階訓練者，都可以在這裡找到適合自己的訓練器材。</p>",
+            "show_text_top": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_aDtdJp",
+        "text_block_P39yBG",
+        "text_block_V68irC"
+      ],
+      "custom_css": [
+        "div.h2 {font-size: 36px;}",
+        "p {font-size: 18px;}",
+        "@media only screen and (max-width: 767px) {div.h2 {font-size: 28px; } p {font-size: 14px; }}"
+      ],
+      "name": "t:sections.text-columns.presets.text_columns_with_images.name",
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "hero_video_4xxc68": {
+      "type": "hero-video",
+      "custom_css": [
+        "p {font-size: 20px; margin-top: 20px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; } p {font-size: 14px; }}"
+      ],
+      "name": "t:sections.hero-video.presets.video_hero.name",
+      "settings": {
+        "title": "彈性擴充\n<p>啞鈴➜Easy Bar➜啞鈴槓鈴轉換架\n 一組槓片多種用法可與健身椅、壺鈴搭配，打造完整訓練系統</p>",
+        "title_size": 60,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#fdfdfd",
+        "text_align": "vertical-center horizontal-right",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/721cd91cbcad422c80a12c2708ac1165.mp4",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "hero_video_XTEnUN": {
+      "type": "hero-video",
+      "custom_css": [
+        "p {font-size: 20px; margin-top: 20px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; } p {font-size: 14px; }}"
+      ],
+      "name": "t:sections.hero-video.presets.video_hero.name",
+      "settings": {
+        "title": "一秒切重\n<p>一拉即快速切換重量，無須換槓片、不需中斷訓練</p>",
+        "title_size": 60,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#fdfdfd",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/0528776c979e442a90c8ad74fc32219e.mp4",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "hero_animated_3kWEmD": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_EcXDEE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_a53a9b56-2879-40cc-9cd7-33cc75f5b414.webp"
+          }
+        },
+        "image_pJACYx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_944a51bb-e8d6-4689-b7f1-062a03c86d67.webp"
+          }
+        },
+        "image_RJKFr6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_b9ae5dfc-314f-4925-be3a-6bd9a6bc00bd.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_EcXDEE",
+        "image_pJACYx",
+        "image_RJKFr6"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".hero__text-content.vertical-center {padding-top: 0px;}",
+        "p {font-size: 20px; margin-top: 20px;}"
+      ],
+      "name": "t:sections.hero-animated.presets.animated_image_hero.name",
+      "settings": {
+        "style": "fading",
+        "title": "彈性擴充\n<p>啞鈴➜Easy Bar➜啞鈴槓鈴轉換架\n 一組槓片多種用法可與健身椅、壺鈴搭配，打造完整訓練系統</p>",
+        "title_size": 60,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-right",
+        "desktop_size": -10,
+        "mobile_size": 0
+      }
+    },
+    "image_compare_nP6MLy": {
+      "type": "image-compare",
+      "blocks": {
+        "image_XHrj7W": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_index_Image-comparison_black_83a40138-c256-4d5d-8abb-f77de6350dca.webp"
+          }
+        },
+        "image_npmxwW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_index_Image-comparison_white_f84fd98d-c9ec-4924-9122-b167e76c265d.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_XHrj7W",
+        "image_npmxwW"
+      ],
+      "custom_css": [
+        "h2 {font-size: 40px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; }}"
+      ],
+      "name": "t:sections.image-comparison.name",
+      "settings": {
+        "heading": "黑白雙色可選",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "fullwidth": true,
+        "slider_style": "classic",
+        "height": 680,
+        "color": "#ffffff",
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_4WKtgX": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        "h2 {font-size: 40px;}",
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; }}"
+      ],
+      "name": "t:sections.featured-collection-slider.presets.featured_collection.name",
+      "settings": {
+        "title": "PURE SERIES 可調式啞鈴",
+        "description": "",
+        "home_featured_products": "pure-series",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "featured_collection_slider_qyztHH": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        "h2 {font-size: 40px;}",
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; }}"
+      ],
+      "name": "t:sections.featured-collection-slider.presets.featured_collection.name",
+      "settings": {
+        "title": "PURE SERIES 可調式壺鈴",
+        "description": "",
+        "home_featured_products": "all-adjustable-kettlebell",
+        "per_row": "small",
+        "alt": true
+      }
+    },
+    "featured_collection_slider_H77RYt": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        "h2 {font-size: 40px;}",
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; }}"
+      ],
+      "name": "t:sections.featured-collection-slider.presets.featured_collection.name",
+      "settings": {
+        "title": "PURE SERIES 可調式槓鈴",
+        "description": "",
+        "home_featured_products": "all-adjustable-barbell",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "featured_collection_slider_4qWUwh": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        "h2 {font-size: 40px;}",
+        ".index-section {margin: 50px 0; margin-bottom: 0px;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; }}"
+      ],
+      "name": "t:sections.featured-collection-slider.presets.featured_collection.name",
+      "settings": {
+        "title": "PURE SERIES 站立式收納健身椅",
+        "description": "",
+        "home_featured_products": "all-foldable-bench",
+        "per_row": "small",
+        "alt": true
+      }
+    },
+    "slideshow_MkzhU9": {
+      "type": "slideshow",
+      "blocks": {
+        "image_KW6jcT": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/b____1__1.webp",
+            "image_mobile": "shopify://shop_images/b__1_2c7adf53-090d-4972-bfa8-aa83a4b8135a.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_KW6jcT"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin-bottom: -80px;}",
+        "@media only screen and (max-width: 767px) {.index-section--hero {margin-bottom: -50px; }}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "23c08093-f6ae-4421-826a-891e8e6d5eab",
+    "logo_list_Vcyf4Y",
+    "hero_video_gdmcYX",
+    "text_columns_JiUqEq",
+    "hero_video_4xxc68",
+    "hero_video_XTEnUN",
+    "hero_animated_3kWEmD",
+    "image_compare_nP6MLy",
+    "featured_collection_slider_4WKtgX",
+    "featured_collection_slider_qyztHH",
+    "featured_collection_slider_H77RYt",
+    "featured_collection_slider_4qWUwh",
+    "slideshow_MkzhU9"
+  ]
+}

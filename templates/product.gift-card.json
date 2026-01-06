@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {}
+    },
+    "331962580150436977": {
+      "type": "apps",
+      "blocks": {
+        "8d1be6e9-1dfb-4f10-9858-2e14dff7b494": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/featured-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "disabled": true,
+          "settings": {
+            "heading": "Featured reviews",
+            "description": "Featured reviews"
+          }
+        }
+      },
+      "block_order": [
+        "8d1be6e9-1dfb-4f10-9858-2e14dff7b494"
+      ],
+      "settings": {}
+    },
+    "075292698546989014": {
+      "type": "apps",
+      "blocks": {
+        "009f42e3-36a3-495f-bd77-782f35cbc32c": {
+          "type": "shopify://apps/dadao-product-reviews/blocks/product-reviews/3cc4253a-05eb-4164-8778-b76d83ce00cc",
+          "settings": {
+            "heading": "Comment",
+            "description": "Product Review list",
+            "color": "#222020",
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "009f42e3-36a3-495f-bd77-782f35cbc32c"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {}
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "text": {
+          "type": "text",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "description",
+        "variant_picker",
+        "buy_buttons",
+        "share"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "075292698546989014",
+    "sub",
+    "331962580150436977"
+  ]
+}

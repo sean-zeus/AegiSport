@@ -1,0 +1,115 @@
+{%- liquid
+    unless limit
+        assign limit = main_menu.links.size
+    endunless
+    unless offset
+        assign offset = 0
+    endunless
+-%}
+
+<ul
+        class="site-nav site-navigation small--hide">
+    {%- for link in main_menu.links limit: limit offset: offset -%}
+        {%- liquid
+            assign has_dropdown = false
+            if link.links != blank
+                assign has_dropdown = true
+            endif
+        -%}
+
+        <li class="site-nav__item site-nav__expanded-item{% if has_dropdown %} site-nav--has-dropdown{% endif %}{% unless template == 'index' %}{% if link.active %} site-nav--active{% endif %}{% endunless %}">
+
+        {% if has_dropdown %}
+            <details
+                    id="site-nav-item--{{ forloop.index }}"
+                    class="site-nav__details"
+                    data-hover="true" on
+            >
+                <summary
+                        data-link="{{ link.url }}"
+                        aria-expanded="false"
+                        aria-controls="site-nav-item--{{ forloop.index }}"
+                        class="site-nav__link site-nav__link--underline{% if has_dropdown %} site-nav__link--has-dropdown{% endif %}"
+                >
+                    {{ link.title }}
+                    <svg aria-hidden="true" focusable="false" role="presentation"
+                         class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16">
+                        <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/>
+                    </svg>
+                </summary>
+                {% else %}
+                    <a
+                            href="{{ link.url }}"
+                            class="site-nav__link"
+                    >
+                        {{ link.title }}
+                    </a>
+                {% endif %}
+                {% assign has_more = false %}
+                {%- if has_dropdown -%}
+                    <div class="site-nav__dropdown text-left">
+                        <div class="white">
+                            <div class="page-width byzoom-menu">
+                                {%- liquid
+                                    assign subcategories_size = 0
+                                    for childlink in link.links
+                                        assign id_more = childlink.title | downcase
+                                        if id_more != 'more'
+                                            assign subcategories_size = subcategories_size | plus: 1
+                                        endif
+                                    endfor
+                                -%}
+                                <ul class="menu-subcategories subcategories_size{{ subcategories_size }}" role="menu">
+                                    {%- for childlink in link.links -%}
+                                        {% assign id_more = childlink.title | downcase %}
+                                        {% if id_more != 'more' %}
+                                            {% assign menu_image = childlink.object.metafields.custom.menu_img.value %}
+                                            <li class="dropdown-itemX" role="menuitem">
+                                                <a href="{{ childlink.url }}">
+                                                  <div class="img"{% if menu_image %} style="background-image: url('{{ menu_image | img_url: '400x' }}');" {% endif %}></div>
+                                                </a>
+                                                <!-- <div class="img"{% if menu_image %} style="background-image: url('{{ menu_image | img_url: '400x' }}');" {% endif %}></div> -->
+                                                <a href="{{ childlink.url }}" class="bold-name">{{ childlink.title }}</a>
+                                                {%- for childlink2 in childlink.links -%}
+                                                    <a href="{{ childlink2.url }}" class="">{{ childlink2.title }}</a>
+                                                {%- endfor -%}
+                                            </li>
+                                        {% else %}
+                                            {% assign has_more = true %}
+                                        {% endif %}
+                                    {%- endfor -%}
+                                </ul>
+                            </div>
+                        </div>
+                        {% if has_more %}
+                        <div class="transparent">
+                            <div class="page-width byzoom-menu">
+                                {%- for childlink in link.links -%}
+                                    {% assign id_more = childlink.title | downcase %}
+                                    {% if id_more == 'more' %}
+                                        <div class="content-asset">
+                                            <div class="menu-content">
+                                                <div class="more-asset">
+                                                    <div class="more-title">MORE SET</div>
+                                                    <div class="more-icon"><span class="icon-arrow-right2"></span></div>
+                                                    {%- for childlink2 in childlink.links -%}
+                                                        <a href="{{ childlink2.url }}" role="menuitem"
+                                                           class="header-link">{{ childlink2.title }}</a>
+                                                    {%- endfor -%}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {% endif %}
+                                {%- endfor -%}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                {%- endif -%}
+
+                {% if has_dropdown %}
+            </details>
+            {% endif %}
+        </li>
+    {%- endfor -%}
+</ul>

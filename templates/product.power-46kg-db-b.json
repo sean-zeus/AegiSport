@@ -1,0 +1,906 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "disabled": true,
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "6b31effa-1606-477a-b1e8-f48ceb75f8ee": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "加購優惠",
+            "content": "<p>*凡購買可調式重量系列產品 ，即可享<a href=\"/collections/all-accessories-series\" target=\"_blank\" title=\"Accessories Series\">配件類</a>加價購85折</p><p>*凡購買可調式重量系列產品 ，即可享<a href=\"/collections/all-foldable-bench\" target=\"_blank\" title=\"站立式收納健身椅\">站立式收納健身椅</a>或<a href=\"/collections/全部啞鈴架\" title=\"全部啞鈴架\">啞鈴架</a>加價購9折</p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "信用卡分期零利率",
+            "content": "<p>配合綠界科技合作銀行 ，可享3期、6期分期零利率</p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "客服聊聊",
+            "phone": false
+          }
+        }
+      },
+      "block_order": [
+        "variant_picker",
+        "price",
+        "sales_point",
+        "inventory_status",
+        "buy_buttons",
+        "description",
+        "6b31effa-1606-477a-b1e8-f48ceb75f8ee",
+        "tab",
+        "contact"
+      ],
+      "custom_css": [
+        "h1.product-single__title {font-size: 32px;}",
+        "@media only screen and (max-width: 767px) {h1.product-single__title {font-size: 26px; }}"
+      ],
+      "settings": {
+        "product_image_size": "large",
+        "product_image_type": "stacked",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "a4a8d1c5-276b-4e30-8c68-3fa53f1abb2b": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 60,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#1d1d1e",
+        "text_align": "vertical-top horizontal-left",
+        "video_url": "https://youtu.be/Kryl39d3mw8?si=zIO7YVx5iopI9hs8",
+        "section_height": "750px",
+        "mobile_height": "300px"
+      }
+    },
+    "6cb642d7-243f-47db-8422-52ee6e6af548": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20818394448160__6cb642d7-243f-47db-8422-52ee6e6af548-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "如何使用Power Series 抗摔可調式啞鈴"
+          }
+        },
+        "template--20818394448160__6cb642d7-243f-47db-8422-52ee6e6af548-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h5>將鐵管上的調整拉銷拉起至所需的重量後放開。將小配重調整旋鈕拉起並旋轉至所需重量後放開。<br/>確認鐵槓拉銷/旋鈕有確實和中心齊平，兩邊重量片皆已固定後，將啞鈴從底盤上垂直向上提起即可開始訓練。</h5>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20818394448160__6cb642d7-243f-47db-8422-52ee6e6af548-heading-1",
+        "template--20818394448160__6cb642d7-243f-47db-8422-52ee6e6af548-text-1"
+      ],
+      "custom_css": [
+        "div {margin-bottom: 10px;}",
+        "h6 {text-transform: none;}",
+        "@media only screen and (max-width: 767px) {.theme-block h2 {font-size: 25px; } .theme-block h5 {font-size: 18px; margin-bottom: 30px; } h6 {font-size: 14px; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": false
+      }
+    },
+    "36ff9ab8-ae01-4e3c-be12-3590befff863": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 60,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "#1d1d1e",
+        "text_align": "vertical-top horizontal-left",
+        "video_url": "https://www.youtube.com/watch?v=TdqoQT8J5hw",
+        "section_height": "850px",
+        "mobile_height": "300px"
+      }
+    },
+    "076b90b3-1d87-423f-9830-3d5d11149a9a": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>QCD system</h2><p>快速輕鬆調整18段重量</p>",
+            "author": ""
+          }
+        },
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>安全調鈕</h2><p>秒速調整 · 安全確位設計</p>",
+            "author": ""
+          }
+        },
+        "63f53112-c02b-437e-be1b-6af7a4f9b663": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>All-level Flat </h2><p>同等級最短尺寸 · 扁平槓片無突出物</p>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-0",
+        "template--18969232965920__076b90b3-1d87-423f-9830-3d5d11149a9a-1684145203eebdcfad-1",
+        "63f53112-c02b-437e-be1b-6af7a4f9b663"
+      ],
+      "custom_css": [
+        "header {margin-bottom: 30px;}",
+        ".slideshow-wrapper {height: 120px;}",
+        "h2 {font-size: 50px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 60px 0 40px 0; } header {margin-bottom: 30px; } .appear-delay {font-size: 26px; } h2 {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "POWER SERIES 全球最重的抗摔可調式啞鈴",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "fc1e4b33-92ba-44f9-b590-2ba4b01ebd03": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18969232965920__fc1e4b33-92ba-44f9-b590-2ba4b01ebd03-168429612394c9ead9-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "{%- assign _plain_ths = product.metafields.custom._explainTable.value -%}\n<table class=\"Stable\"><tbody>\n<tr>\n<th style=\"width:15%\"></th><th style=\"width:15%\"></th><th>{{_plain_ths[0]}}</th><th style=\"width:45%\">{{_plain_ths[1]}}</th>\n</tr>\n<tr>\n<td>11KG</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/01_e82944f8-6687-4cb8-9e7e-9343c818714b.png?v=1731546928\"></td><td>274mm</td><td>7KG　9KG　11KG</td>\n</tr>\n<tr><td>18KG</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/02_cf20622c-24be-4ff0-808e-46d51eb9714a.png?v=1731546927\"></td><td>308mm</td><td>14KG　16KG　18KG</td>\n</tr>\n<tr><td>25KG</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/03_fff9aa63-eef4-4681-a639-a9476a275fc7.png?v=1731546928\"></td><td>340mm</td><td>21KG　23KG　25KG</td>\n</tr>\n<tr>\n<td>32KG</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/04_ddd3c589-a10e-499a-bf69-74ef044d6e4b.png?v=1731546927\"></td><td>372mm</td><td>28KG　30KG　32KG</td>\n</tr>\n<tr>\n<td>39KG</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/05_a6f6a837-572b-421b-8df7-53f19b18f91c.png?v=1731546927\"></td><td>404mm</td><td>35KG　37KG　39KG</td>\n</tr>\n<tr>\n<td>46KG</td><td><img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/06_f1fcea99-28cb-49c4-a9b8-e34ed3a8f426.png?v=1731546927\"></td><td>436mm</td><td>42KG　44KG　46KG</td>\n</tr>\n\n</tbody>\n</table>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__fc1e4b33-92ba-44f9-b590-2ba4b01ebd03-168429612394c9ead9-1"
+      ],
+      "custom_css": [
+        ".Stable {border-collapse: collapse; width: 70%; font-size: 20px; font-weight: 800; margin: 0 auto;}",
+        ".Stable img {object-fit: contain; object-position: center; height: 50px; margin: 0 auto;}",
+        ".Stable tr:nth-child(even) td {background-color: #f9f9f9;}",
+        ".Stable th {border-top: 2px solid #000000; border-bottom: 2px solid #000000; text-align: center;}",
+        ".Stable td {padding: 20px 5px; text-align: center;}",
+        "@media only screen and (max-width: 767px) {.Stable {width: 99%; font-size: 14px; font-weight: 500; } .Stable img {height: 35px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "slideshow_KUhbnM": {
+      "type": "slideshow",
+      "blocks": {
+        "image_RrWMkw": {
+          "type": "image",
+          "settings": {
+            "title": "經萬次衝擊測試",
+            "title_size": 55,
+            "subheading": "打造無懈可擊的訓練夥伴",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/53a3f2006e8d86b8354bf70995c1d742.jpg",
+            "image_mobile": "shopify://shop_images/mb.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_RrWMkw"
+      ],
+      "custom_css": [
+        "h2 {font-weight: 700;}",
+        "div {margin-bottom: 10px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; } .hero__subtitle {font-size: 16px; }}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "00aaf515-b9ae-4bef-b40a-410faa556a05": {
+      "type": "text-columns",
+      "blocks": {
+        "template--18969232965920__00aaf515-b9ae-4bef-b40a-410faa556a05-1684136284e9fccb7e-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/100LB-_-final_2.gif",
+            "image_mask": "none",
+            "image_width": 600,
+            "title": "",
+            "text": "<h3><strong>超抗摔</strong></h3><p>高達300公分摔落 · 正常使用</p>",
+            "show_text_top": true,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--18969232965920__00aaf515-b9ae-4bef-b40a-410faa556a05-1684136284e9fccb7e-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/100LB-_-final.gif",
+            "image_mask": "none",
+            "image_width": 600,
+            "title": "",
+            "text": "<h3><strong>超穩固</strong></h3><p>300公斤承重 · 不掉片</p>",
+            "show_text_top": true,
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__00aaf515-b9ae-4bef-b40a-410faa556a05-1684136284e9fccb7e-1",
+        "template--18969232965920__00aaf515-b9ae-4bef-b40a-410faa556a05-1684136284e9fccb7e-0"
+      ],
+      "custom_css": [
+        ".div {margin-top: 30px;}",
+        "h2 {font-weight: 700;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 30px; font-weight: 700; } h3 {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "從一開始，就玩真的！",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "dc8c518c-c54c-4004-8318-5d599cf6d03f": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18969232965920__dc8c518c-c54c-4004-8318-5d599cf6d03f-1684222815714235d4-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<h2>這不是一對普通的啞鈴，而是一種改變生活的力量。</h2>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__dc8c518c-c54c-4004-8318-5d599cf6d03f-1684222815714235d4-0"
+      ],
+      "custom_css": [
+        ".index-section.index-section--alt {padding: 60px 0 0px 0;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "6acbfee6-648c-49eb-93a8-4c3d8295bc79": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 40px 0;}",
+        "h2 {font-size: 60px;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_6fd382f8-6259-43d3-8ea9-57542f4027b7.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "QCD system",
+        "text": "<h4>專利調整機制<br/>快速輕鬆調整多段重量</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "25b20d4d-c78b-43f4-beeb-f058f0a10083": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 40px 0;}",
+        "h2 {font-size: 52px;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/02_dc09c658-f04f-40c2-92c1-4468b463d056.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "All-level Flat technology",
+        "text": "<h4>同等級最短尺寸<br/>扁平槓片無突出物</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "2b556dd8-bcea-41f9-969a-d306860a6f53": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 40px 0;}",
+        "h2 {font-size: 60px;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/05_0bdb8b58-7b1d-4d8a-aa77-1715c680b2ae.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "全金屬槓片",
+        "text": "<h4>摔落不用擔心塑件破裂<br/>底部平角設計增加平穩度<br/></h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "a19694d4-c433-48af-87c0-4a1db71261be": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 40px 0;}",
+        "h2 {font-size: 60px;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/856dc853e625d6ece510fded9a67ee0f.gif",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "安全調鈕",
+        "text": "<h4>重量鈕確位設計<br/>確保調到正確位置</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_GKkMDK": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 40px 0;}",
+        "h2 {font-size: 60px;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/03_7de05434-b875-4067-bad6-476240d5f21d.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "金屬鋁把手",
+        "text": "<h4>菱格紋超止滑的鋁把手<br/>提供牢固的抓握力<br/></h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_4xLm3W": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 40px 0;}",
+        "h2 {font-size: 60px;}",
+        "@media only screen and (max-width: 767px) {.feature-row {margin: 0px 0 -20px 0; } h2 {font-size: 33.66px; } h4 {font-size: 20.6px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/04_254b0260-6ba0-4852-b34f-f291f1db4b01.webp",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "耐用鐵底座",
+        "text": "<h4>增加放置重物的耐用性</h4>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "slideshow_mJYC8r": {
+      "type": "slideshow",
+      "blocks": {
+        "image_kDMKhk": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/02_bb9774fe-3087-4cff-9ad7-e3954b59e71b.webp",
+            "image_mobile": "shopify://shop_images/1_399a8c13-2ac1-44f5-a4fe-25d26c32bd8a.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_kDMKhk"
+      ],
+      "custom_css": [
+        "div {margin-bottom: -50px;}",
+        "@media only screen and (max-width: 767px) {div {margin-bottom: -20px; }}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "633a3d5f-f2c8-4551-9bd0-ad5875babe76": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18969232965920__633a3d5f-f2c8-4551-9bd0-ad5875babe76-16856764078c6df7e8-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n.sean-tDIV {\n  left: 5%;\n  transform:initial;\n}\n.sean-picDIV {\n  background-image: url(https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2_55b59759-4577-4c05-a601-e11f7281bfdb.webp?v=1732262233);\n}\n@media only screen and (max-width: 767px) {\n  .sean-tDIV {\n    left: 50%;\n    transform: translateX(-45%);\n  }\n  .sean-picDIV {\n    background-image: none;\n  }\n}\n</style>\n</style>\n\n\n{%- assign _specH = product.metafields.custom._spectableh.value -%}\n{%- assign _spectd1 = product.metafields.custom.spectabletd1.value -%}\n{%- assign _spectd2 = product.metafields.custom.spectabletd2.value -%}\n<div class=\"sean-picDIV\" style=\"background-color: rgb(33 33 33);position: relative;\nwidth: 100%;background-repeat: no-repeat;background-position: center;background-size: cover;\">\n  <div class=\"sean-tDIV\" style=\"position: absolute; z-index: 5; top: 13%; left: 45%; text-align: center; color: #fff\">\n    <h1 style=\"margin: 40px auto; text-align: center\">\n  {{_specH[0]}}\n    </h1>\n    <h4 style=\"margin: 20px auto; text-align: center\">\n      <span style=\"background-color: #957834; padding: 4px 30px; border-radius: 50px;text-transform: none;\">\n        {{_specH[1]}}\n      </span>\n    </h4>\n    <table class=\"sean-tb\" style=\"border-collapse: collapse; background: 0 0; margin: 0 auto\">\n      <tbody>\n        <tr>\n          <td style=\"width: 50%\">\n            <p style=\"color: #957834\">\n              {{_spectd1[0]}}\n            </p>\n            {{_spectd1[1]}}\n          </td>\n          <td style=\"width: 50%\">\n            <p style=\"color: #957834\">\n              {{_spectd2[0]}}\n            </p>\n            {{_spectd2[1]}}\n          </td>\n        </tr>\n        <tr>\n          <td>\n            <p style=\"color: #957834\">\n              {{_spectd1[2]}}\n            </p>\n            {{_spectd1[3]}}\n          </td>\n          <td>\n            <p style=\"color: #957834\">\n              {{_spectd2[2]}}\n            </p>\n            {{_spectd2[3]}}\n          </td>\n        </tr>\n        <tr>\n          <td style=\"border-bottom-width: 0px\">\n            <p style=\"color: #957834\">\n              {{_spectd1[4]}}\n            </p>\n            {{_spectd1[5]}}\n          </td>\n          <td style=\"border-bottom-width: 0px\">\n            <p style=\"color: #957834\">\n              {{_spectd2[4]}}\n            </p>\n            {{_spectd2[5]}}\n          </td>\n        </tr>\n      </tbody>\n    </table>\n  </div>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__633a3d5f-f2c8-4551-9bd0-ad5875babe76-16856764078c6df7e8-1"
+      ],
+      "custom_css": [
+        "td {font-size: 20px; padding: 14px; background: none; text-align: center; border-bottom: 1px solid #957834;}",
+        "p {font-size: 19px; margin: 8px auto;}",
+        "h1 {font-size: 50px;}",
+        "h4 {font-size: 20px;}",
+        "@media only screen and (max-width: 767px) {.sean-picDIV {background-image: none; } td {padding: 8px; font-size: 14px; } p {font-size: 16px; margin: 5px auto; } h1 {font-size: 26px; } h4 {font-size: 12px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "product_compares_x988b6": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_e6YXiR": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/12.5_9508c854-d8d3-4ddf-8223-5a918be96bfc.jpg",
+            "pname": "5.6KG(12.5LB)可調式啞鈴",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/08.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/pure-series-adjustable-dumbbell-12-5lb-black",
+            "pitem": "<div class=\"cell_td\">5段</div>\n<div class=\"cell_td\">1.1kg(2.5LB)~5.6kg(12.5LB)</div>\n<div class=\"cell_td\">32.5*15.5*12.6cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">質感圓形槓片<br>輕量超值好入手<br>適合初學者使用</div>"
+          }
+        },
+        "items_cell_a7mmbn": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/25_f5da1044-a664-4b73-a3f2-6df85bbcafc3.jpg",
+            "pname": "11.3KG(25LB)可調式啞鈴",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/08.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/pure-series-adjustable-dumbbell-25lb-black",
+            "pitem": "<div class=\"cell_td\">5段</div>\n<div class=\"cell_td\">2.2kg(5LB)~11.3kg(25LB)</div>\n<div class=\"cell_td\">31.5*19*16.5cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">質感圓形槓片<br>輕量超值好入手<br>適合初學者使用</div>"
+          }
+        },
+        "items_cell_aPqKam": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/27.5_4b6035eb-f544-47b2-b136-9686aa1c48a4.jpg",
+            "pname": "12.5KG(27.5LB)可調式啞鈴",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/08.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/pure-series-adjustable-dumbbell-27-5lb-black",
+            "pitem": "<div class=\"cell_td\">10段</div>\n<div class=\"cell_td\">2.2kg(5LB)~12.5kg(27.5LB)</div>\n<div class=\"cell_td\">39.5*20.5*16cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">質感圓形槓片<br>輕量級距 最佳CP值之王<br>更細微的重量調整<br>適合初學者使用</div>"
+          }
+        },
+        "items_cell_yhjQ4r": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/50-c_0e5a1779-4957-429a-abb7-41c40f7c958d.jpg",
+            "pname": "22.6KG(50LB)可調式啞鈴",
+            "pspec": "Classic Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/classic-series-adjustable-dumbbell-50lb-black",
+            "pitem": "<div class=\"cell_td\">5段</div>\n<div class=\"cell_td\">4.5kg(10LB)~22.6kg(50LB)</div>\n<div class=\"cell_td\">41*28*22cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">經典12邊包膠槓片<br>中階等級 CP值最高<br>每片大小不同 更有流線感<br>適合有重訓基礎者</div>"
+          }
+        },
+        "items_cell_fh7JMk": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/55-c_bc17317b-3e91-42bf-9ec3-d667a79d234b.jpg",
+            "pname": "25KG(55LB)可調式啞鈴",
+            "pspec": "Classic Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/classic-series-adjustable-dumbbell-55lb-black",
+            "pitem": "<div class=\"cell_td\">15段</div>\n<div class=\"cell_td\">4.5kg(10LB)~25kg(55LB)</div>\n<div class=\"cell_td\">49*28*22cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">經典12邊包膠槓片<br>每片大小不同 更有流線感<br>適合進階者及在意訓練重量<br>的配置</div>"
+          }
+        },
+        "items_cell_EXTT8e": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/50_ecc67851-bbf9-4adc-bfbc-9e1a607533cd.jpg",
+            "pname": "22.6KG(50LB)可調式啞鈴",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/08.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/pure-series-adjustable-dumbbell-50lb-black",
+            "pitem": "<div class=\"cell_td\">5段</div>\n<div class=\"cell_td\">4.5kg(10LB)~22.6kg(50LB)</div>\n<div class=\"cell_td\">37.5*21.5*18.5cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">質感圓形槓片<br>黑白兩色可選<br>適合有重訓基礎者</div>"
+          }
+        },
+        "items_cell_XL6YdJ": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/55_af11e7ed-b74b-43b0-8a67-8e5397ca80d8.jpg",
+            "pname": "25KG(55LB)可調式啞鈴",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/08.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/pure-series-adjustable-dumbbell-55lb-black",
+            "pitem": "<div class=\"cell_td\">15段</div>\n<div class=\"cell_td\">4.5kg(10LB)~25kg(55LB)</div>\n<div class=\"cell_td\">44.5*21.5*18.5cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">質感圓形槓片<br>黑白兩色可選<br>適合進階者及在意訓練<br>重量的配置</div>"
+          }
+        },
+        "items_cell_M9qqEa": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/75_d9950918-54b8-4167-9de7-ae12a0addfcb.jpg",
+            "pname": "34KG(75LB)可調式啞鈴",
+            "pspec": "Pure Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/pure-series-adjustable-dumbbell-75lb-black",
+            "pitem": "<div class=\"cell_td\">21段</div>\n<div class=\"cell_td\">4.5kg(10LB)~34kg(75LB)</div>\n<div class=\"cell_td\">53.5*22*18.5cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">質感圓形槓片<br>全球唯一21段重量調整<br>適合健身狂熱者</div>"
+          }
+        },
+        "items_cell_aDhHpJ": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/100.jpg",
+            "pname": "46KG 可調式啞鈴",
+            "pspec": "Power Series",
+            "pcolor": "<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/07_0238b9fc-efc7-4b5d-8a7c-533d218f7a7d.png?v=1726221238\">",
+            "pbtm_txt": "SHOP NOW",
+            "pbtm_url": "shopify://products/power-series-adjustable-dumbbell-46kg-black",
+            "pitem": "<div class=\"cell_td\">18段</div>\n<div class=\"cell_td\">7kg~46kg</div>\n<div class=\"cell_td\">43.6*21*20.8cm<br>\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">\n<img src=\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/x.png?v=1746514014\">\n</div>\n<div class=\"cell_td\">全球最重耐摔可調式啞鈴<br>全金屬圓形槓片<br>同等級最短尺寸<br>適合健身狂熱者</div>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_e6YXiR",
+        "items_cell_a7mmbn",
+        "items_cell_aPqKam",
+        "items_cell_yhjQ4r",
+        "items_cell_fh7JMk",
+        "items_cell_EXTT8e",
+        "items_cell_XL6YdJ",
+        "items_cell_M9qqEa",
+        "items_cell_aDhHpJ"
+      ],
+      "custom_css": [
+        ".carousel-cell {width: 33.3%;}",
+        ".cpimage {height: 150px;}",
+        ".cpname {font-size: 18px;}",
+        ".cpspec {font-size: 16px;}",
+        ".cpcolor img {width: 20px;}",
+        ".cpbtm {font-size: 13px;}",
+        ".cell_th {font-size: 15px;}",
+        ".cpitem {font-size: 14px;}",
+        ".cpitem img {width: 20px;}",
+        ".cpitem div {padding: 30px 3px 30px 3px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; } .carousel-cell {width: 50%; } .cpname {font-size: 15px; } .cpspec {font-size: 14px; } .cpbtm {font-size: 12px; } .cell_th {font-size: 14px; } .cpitem {font-size: 13px; } .cpitem div {padding: 25px 3px 25px 3px; }}"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "不知道自己適合哪個產品嗎?",
+        "alt": false,
+        "item-title": "<div class=\"cell_th\"><span style=\"margin-left: -40px;\" class=\"cell_title\">調整段數</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -60px;\" class=\"cell_title\">最小-最大重量</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -40px;\" class=\"cell_title\">啞鈴尺寸</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -60px;\" class=\"cell_title\">適用Easy Bar</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -80px;\" class=\"cell_title\">適用啞鈴槓鈴轉換架</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -40px;\" class=\"cell_title\">美型組合</span></div>\n    <div class=\"cell_th\"><span style=\"margin-left: -25px;\" class=\"cell_title\">描述</span></div>"
+      }
+    },
+    "30d8f219-2e65-4c89-b72a-bad1752798d0": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-0": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        },
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-1": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-0",
+        "template--18969232965920__30d8f219-2e65-4c89-b72a-bad1752798d0-1686107289dc30adf9-1"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "更多 BYZOOM FITNESS 重量訓練使用情境",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "18ad561b-13b7-471e-889a-616b5e77f4d9": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18969232965920__18ad561b-13b7-471e-889a-616b5e77f4d9-16842097488fd13220-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/5_f8b1c4e9-59ea-4d72-a6e6-477e0f674097.webp"
+          }
+        },
+        "490f90e8-4994-4cf9-a07e-f12f333b4ee7": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/2_cbf04fb4-3685-4521-8b3b-323a2ee59efb.webp"
+          }
+        },
+        "38b41b5b-2c83-496a-a5b1-ba9d2504f6b3": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/3_d9a06416-523d-419c-aed4-54c2120e2348.webp"
+          }
+        },
+        "image_BtxDxB": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/4_742c0c28-48d1-4dc8-8a11-1705bc809467.webp"
+          }
+        },
+        "image_GfidzE": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/1_290b5cce-7365-4fb3-98f1-76a9bf17c7d0.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--18969232965920__18ad561b-13b7-471e-889a-616b5e77f4d9-16842097488fd13220-0",
+        "490f90e8-4994-4cf9-a07e-f12f333b4ee7",
+        "38b41b5b-2c83-496a-a5b1-ba9d2504f6b3",
+        "image_BtxDxB",
+        "image_GfidzE"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "953983983400040711": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 60px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        ".overflow-scroll-wrap div[data-pagination-wrapper] {overflow-x: hidden;}",
+        "@media only screen and (max-width: 767px) {.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "product_recommendations_heading": "您可能也喜歡",
+        "related_count": 8
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "6d070637-63d0-49f2-9523-bea64749c162": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 60px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "您可能也喜歡",
+        "description": "",
+        "home_featured_products": "power-series",
+        "per_row": "small",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "a4a8d1c5-276b-4e30-8c68-3fa53f1abb2b",
+    "6cb642d7-243f-47db-8422-52ee6e6af548",
+    "36ff9ab8-ae01-4e3c-be12-3590befff863",
+    "076b90b3-1d87-423f-9830-3d5d11149a9a",
+    "fc1e4b33-92ba-44f9-b590-2ba4b01ebd03",
+    "slideshow_KUhbnM",
+    "00aaf515-b9ae-4bef-b40a-410faa556a05",
+    "dc8c518c-c54c-4004-8318-5d599cf6d03f",
+    "6acbfee6-648c-49eb-93a8-4c3d8295bc79",
+    "25b20d4d-c78b-43f4-beeb-f058f0a10083",
+    "2b556dd8-bcea-41f9-969a-d306860a6f53",
+    "a19694d4-c433-48af-87c0-4a1db71261be",
+    "text_and_image_GKkMDK",
+    "text_and_image_4xLm3W",
+    "slideshow_mJYC8r",
+    "633a3d5f-f2c8-4551-9bd0-ad5875babe76",
+    "product_compares_x988b6",
+    "30d8f219-2e65-4c89-b72a-bad1752798d0",
+    "18ad561b-13b7-471e-889a-616b5e77f4d9",
+    "953983983400040711",
+    "product-recommendations",
+    "collection-return",
+    "6d070637-63d0-49f2-9523-bea64749c162"
+  ]
+}

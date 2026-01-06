@@ -1,0 +1,398 @@
+{% liquid
+  assign show_selectors = false
+  assign currency_selector = false
+  assign locale_selector = false
+
+  if section.settings.show_currency_selector and shop.enabled_currencies.size > 1
+    assign currency_selector = true
+  endif
+
+  if section.settings.show_locale_selector and shop.enabled_locales.size > 1
+    assign locale_selector = true
+  endif
+
+  if currency_selector or locale_selector
+    assign show_selectors = true
+  endif
+%}
+
+{% if settings.color_newsletter == settings.color_body_bg %}
+  {% style %}
+    .site-footer__section--newsletter {
+      padding: 0;
+    }
+  {% endstyle %}
+{% endif %}
+
+<footer class="site-footer text-center" data-section-id="{{ section.id }}" data-section-type="footer-section">
+{% if section.settings.show_newsletter %}
+    <div class="site-footer__section site-footer__section--newsletter" data-aos>
+      <div class="page-width seanFooter">
+<!-- sean20230530  -->              
+<!--     電子報 -->
+      	<div class="seanFooterDiv1">
+            <div class="rte rte--block">
+              <img src="https://cdn.shopify.com/s/files/1/0737/8396/8032/files/01_index_1_logo-3.svg?v=1685347015" alt="byzoom" width="150" height="50">
+            </div>
+            {% if section.settings.newsletter_title != blank %}
+              <h2 class="h2 appear-delay">{{ section.settings.newsletter_title }}</h2>
+            {% endif %}
+      
+            {% if section.settings.newsletter_richtext != blank %}
+              <div class="rte rte--block appear-delay-1">
+                {{ section.settings.newsletter_richtext }}
+              </div>
+            {% endif %}
+      
+            <div class="appear-delay-2">
+              {% render 'newsletter-form', section_id: section.id, snippet_context: 'footer' %}
+            </div>   
+        </div> 
+        
+        {% if linklists[section.settings.menu].links.size > 0 %}        
+          {% for linkFooters in linklists[section.settings.menu].links %}    
+               
+<!--     BYZOOM商城     -->        
+            {% if forloop.index == 1 %}  
+              	<div class="seanFooterDiv2">
+              		<h6 class="d-block mb-3">{{ linkFooters.title }}</h6>
+              		<ul class="noneStyle text-AFAFAF">
+                      {% for childlinkFooters in linkFooters.links %} 
+              			<li class="mb-2"><a class="text-hover-golden" href="{{ childlinkFooters.url }}">{{ childlinkFooters.title }}</a></li>
+                      {% endfor %}
+              		</ul>
+              	</div>               
+            {% endif %}
+<!--     顧客服務     -->
+            {% if forloop.index == 2 %}  
+              	<div class="seanFooterDiv3">
+              		<h6 class="d-block mb-3">{{ linkFooters.title }}</h6>
+              		<ul class="noneStyle text-AFAFAF">
+                      {% for childlinkFooters in linkFooters.links %}         			
+                          {% if childlinkFooters.title == '全球銷售據點' or childlinkFooters.title == 'Global Sales Office' %}
+                            <li class="mb-2"><a class="text-hover-golden" href="#" onclick="Swal.fire({showCloseButton: true, allowEscapeKey: true, allowEnterKey: true, showConfirmButton: false, allowOutsideClick: false, html: htmlContent, backdrop: `rgba(0,0,0,0.1)`}); return false; event.preventDefault();">{{ childlinkFooters.title }}</a></li>
+                          {% else %}
+                            <li class="mb-2"><a class="text-hover-golden" href="{{ childlinkFooters.url }}">{{ childlinkFooters.title }}</a></li>
+                          {% endif %}
+                      {% endfor %}
+              		</ul>
+              	</div>               
+            {% endif %}        
+<!--     與我們連繫     -->
+            {% if forloop.index == 3 %}  
+              	<div class="seanFooterDiv4">
+              		<h6 class="d-block mb-3">{{ linkFooters.title }}</h6>
+              		<ul class="noneStyle text-AFAFAF">
+                      {% for childlinkFooters in linkFooters.links %} 
+                        {% if childlinkFooters.title contains '電子信箱 :' or childlinkFooters.title contains 'Email:' %}
+                          <li class="mb-2"><a class="text-hover-golden" href="mailto:happytohelp@byzoomfitness.com">{{ childlinkFooters.title }}</a></li>
+                        {% else %}
+                          <li class="mb-2">{{ childlinkFooters.title }}</li>
+                        {% endif %}                   
+                      {% endfor %}
+              		</ul>
+
+<!-- /* ****************************Footer加入fb、ig、line、youtube by zeus20241018**************************************************** */    -->
+<ul class="society flex-align-center noneStyle row pt-1 pt-md-0 mt-4 mt-md-0">
+    <li class="px-2">
+        <a href="https://www.facebook.com/byZoomFitness" class="flex-center text-hover-golden" style="width:32px;" target="_blank"
+            title="FB">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 10 22" version="1.1"
+                xml:space="preserve"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                class="svg fb replaced-svg">
+                <g transform="matrix(1,0,0,1,-1418.78,-7351.34)">
+                    <g transform="matrix(1,0,0,0.954465,-53,7222.5)">
+                        <g transform="matrix(0.619461,0,0,0.649014,1471.2,134.504)">
+                            <path
+                                d="M4.462,35.314L4.462,17.999L0.943,17.999L0.943,12.259L4.462,12.259L4.462,8.788C4.462,4.107 5.862,0.731 10.988,0.731L17.086,0.731L17.086,6.458L12.792,6.458C10.642,6.458 10.152,7.887 10.152,9.384L10.152,12.259L16.769,12.259L15.866,17.999L10.152,17.999L10.152,35.314L4.462,35.314Z"
+                                style="fill:rgb(245,245,245);"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </li>
+    <li class="px-2">
+        <a href="https://www.instagram.com/byzoomfitness/" class="flex-center text-hover-golden" style="width:32px;" target="_blank"
+            title="IG">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 20 20" version="1.1"
+                xml:space="preserve"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                class="svg ig replaced-svg">
+                <g transform="matrix(1,0,0,1,-1455.85,-7353.05)">
+                    <g transform="matrix(1,0,0,0.954465,-53,7222.5)">
+                        <g transform="matrix(0.204082,0,0,0.204082,1284.39,140.93)">
+                            <g transform="matrix(1,0,0,1.04771,1084.85,-36.0906)">
+                                <path
+                                    d="M83,23C95.069,23 105,32.931 105,45L105,83C105,95.069 95.069,105 83,105L45,105C32.931,105 23,95.069 23,83L23,45C23,32.931 32.931,23 45,23L83,23M83,15L45,15C28.561,15.049 15.049,28.561 15,45L15,83C15.049,99.439 28.561,112.951 45,113L83,113C99.439,112.951 112.951,99.439 113,83L113,45C112.951,28.561 99.439,15.049 83,15Z"
+                                    style="fill:white;fill-rule:nonzero;"></path>
+                            </g>
+                            <g transform="matrix(1,0,0,1.04771,1084.85,-36.0906)">
+                                <path
+                                    d="M90.14,32C86.997,32 84.41,34.587 84.41,37.73C84.41,40.873 86.997,43.46 90.14,43.46C93.283,43.46 95.87,40.873 95.87,37.73C95.87,34.587 93.283,32 90.14,32Z"
+                                    style="fill:white;fill-rule:nonzero;"></path>
+                            </g>
+                            <g transform="matrix(1,0,0,1.04771,1084.85,-36.0906)">
+                                <path
+                                    d="M64.27,46.47C64.273,46.47 64.277,46.47 64.28,46.47C73.979,46.47 81.96,54.451 81.96,64.15C81.96,73.849 73.979,81.83 64.28,81.83C54.581,81.83 46.6,73.849 46.6,64.15C46.6,64.147 46.6,64.143 46.6,64.14C46.616,54.453 54.583,46.486 64.27,46.47M64.27,38.47C50.201,38.497 38.64,50.081 38.64,64.15C38.64,78.238 50.232,89.83 64.32,89.83C78.408,89.83 90,78.238 90,64.15C90,64.147 90,64.143 90,64.14C89.995,50.056 78.404,38.47 64.32,38.47C64.303,38.47 64.287,38.47 64.27,38.47Z"
+                                    style="fill:white;fill-rule:nonzero;"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </li>
+    <li class="px-2">
+        <a href="https://lin.ee/J3Skfyo" class="flex-center text-hover-golden" style="width:32px;" target="_blank" title="Line">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 22 21" version="1.1"
+                xml:space="preserve"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                class="svg line replaced-svg">
+                <g transform="matrix(1,0,0,1,-1506.44,-7352.52)">
+                    <g transform="matrix(1,0,0,0.954465,-53,7222.5)">
+                        <g transform="matrix(0.177305,0,0,0.185764,1577.2,149.613)">
+                            <path
+                                d="M0,-24.075C1.791,-24.075 3.25,-22.617 3.25,-20.821C3.25,-19.03 1.791,-17.57 0,-17.57L-9.076,-17.57L-9.076,-11.75L0,-11.75C1.787,-11.75 3.25,-10.291 3.25,-8.499C3.25,-6.7 1.787,-5.242 0,-5.242L-12.334,-5.242C-14.121,-5.242 -15.584,-6.7 -15.584,-8.499L-15.584,-33.15C-15.584,-34.942 -14.123,-36.405 -12.334,-36.405L0,-36.405C1.791,-36.405 3.25,-34.942 3.25,-33.15C3.25,-31.354 1.791,-29.894 0,-29.894L-9.076,-29.894L-9.076,-24.075L0,-24.075ZM-19.949,-8.499C-19.949,-7.091 -20.844,-5.851 -22.178,-5.41C-22.512,-5.299 -22.857,-5.242 -23.207,-5.242C-24.223,-5.242 -25.193,-5.727 -25.807,-6.545L-38.44,-23.746L-38.44,-8.499C-38.44,-6.7 -39.897,-5.242 -41.694,-5.242C-43.487,-5.242 -44.948,-6.7 -44.948,-8.499L-44.948,-33.15C-44.948,-34.552 -44.051,-35.792 -42.721,-36.237C-42.387,-36.346 -42.04,-36.405 -41.692,-36.405C-40.676,-36.405 -39.702,-35.919 -39.092,-35.1L-26.457,-17.893L-26.457,-33.15C-26.457,-34.942 -24.996,-36.405 -23.203,-36.405C-21.408,-36.405 -19.949,-34.942 -19.949,-33.15L-19.949,-8.499ZM-49.625,-8.499C-49.625,-6.7 -51.085,-5.242 -52.876,-5.242C-54.67,-5.242 -56.129,-6.7 -56.129,-8.499L-56.129,-33.15C-56.129,-34.942 -54.67,-36.405 -52.876,-36.405C-51.085,-36.405 -49.625,-34.942 -49.625,-33.15L-49.625,-8.499ZM-62.377,-5.242L-74.702,-5.242C-76.494,-5.242 -77.952,-6.7 -77.952,-8.499L-77.952,-33.15C-77.952,-34.942 -76.494,-36.405 -74.702,-36.405C-72.908,-36.405 -71.45,-34.942 -71.45,-33.15L-71.45,-11.75L-62.377,-11.75C-60.578,-11.75 -59.123,-10.291 -59.123,-8.499C-59.123,-6.7 -60.578,-5.242 -62.377,-5.242M23.951,-21.759C23.951,-49.518 -3.879,-72.104 -38.086,-72.104C-72.293,-72.104 -100.129,-49.518 -100.129,-21.759C-100.129,3.125 -78.056,23.975 -48.244,27.918C-46.223,28.35 -43.475,29.253 -42.778,30.976C-42.152,32.541 -42.368,34.999 -42.579,36.583C-42.579,36.583 -43.302,40.96 -43.459,41.9C-43.734,43.466 -44.709,48.029 -38.086,45.24C-31.467,42.449 -2.361,24.201 10.652,9.218L10.65,9.218C19.645,-0.639 23.951,-10.647 23.951,-21.759"
+                                style="fill:white;fill-rule:nonzero;"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </li>
+    <li class="px-2">
+        <a href="https://www.youtube.com/channel/UC0qjA2o4Fyl5Uxm5A4Nx3BQ" class="flex-center text-hover-golden" style="width:32px;"
+            target="_blank" title="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:serif="http://www.serif.com/" width="100%" height="100%" viewBox="0 0 22 16" version="1.1"
+                xml:space="preserve"
+                style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+                class="svg youtube replaced-svg">
+                <g transform="matrix(1,0,0,1,-1558,-7355.72)">
+                    <g transform="matrix(1,0,0,0.954465,-53,7222.5)">
+                        <g id="Fill-195" transform="matrix(0.573687,0,0,0.601056,1610.53,139.002)">
+                            <path d="M38.792,6.762C38.792,6.762 38.417,4.119 37.267,2.955C35.809,1.428 34.174,1.421 33.425,1.331C28.058,0.943 20.009,0.943 20.009,0.943L19.991,0.943C19.991,0.943 11.942,0.943 6.575,1.331C5.826,1.421 4.192,1.428 2.733,2.955C1.583,4.119 1.209,6.762 1.209,6.762C1.209,6.762 0.826,9.865 0.826,12.968L0.826,15.878C0.826,18.981 1.209,22.084 1.209,22.084C1.209,22.084 1.583,24.727 2.733,25.891C4.192,27.418 6.108,27.369 6.962,27.529C10.03,27.824 20,27.915 20,27.915C20,27.915 28.058,27.903 33.425,27.515C34.174,27.425 35.809,27.418 37.267,25.891C38.417,24.727 38.792,22.084 38.792,22.084C38.792,22.084 39.174,18.981 39.174,15.878L39.174,12.968C39.174,9.865 38.792,6.762 38.792,6.762ZM16.041,19.403L16.039,8.628L26.401,14.034L16.041,19.403Z" style="fill:rgb(245,245,245);"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
+    </li>
+</ul>
+<!-- /* ****************************Footer加入fb、ig、line、youtube by zeus20241018**************************************************** */                   -->
+                  
+              	</div>               
+            {% endif %}       
+         {% endfor %}        
+        {% endif %}
+    
+      </div>
+    </div>
+{% endif %}
+
+  <div class="page-width" style="margin-top: -40px;padding-top: 20px;padding-bottom: 20px;background-color: black;color: white;max-width: 100%;border-top: 1px solid #787878;">
+    {% if show_selectors %}
+      {% form 'localization', class: 'multi-selectors site-footer__section', data-disclosure-form: '' %}
+        {% if locale_selector %}
+          <div class="multi-selectors__item">
+            <h2 class="visually-hidden" id="LangHeading">
+              {{ 'general.language.dropdown_label' | t }}
+            </h2>
+
+            <div class="disclosure" data-disclosure-locale>
+              <button type="button" class="faux-select disclosure__toggle" aria-expanded="false" aria-controls="LangList" aria-describedby="LangHeading" data-disclosure-toggle>
+                <span class="multi-picker__label">
+                  {{ form.current_locale.endonym_name | capitalize }}
+                </span>
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
+              </button>
+              <ul id="LangList" class="disclosure-list" data-disclosure-list>
+                {% for locale in form.available_locales %}
+                  <li class="disclosure-list__item {% if locale.iso_code == form.current_locale.iso_code %}disclosure-list__item--current{% endif %}">
+                    <a class="disclosure-list__option" href="#" lang="{{ locale.iso_code }}" {% if locale.iso_code == form.current_locale.iso_code %}aria-current="true"{% endif %} data-value="{{ locale.iso_code }}" data-disclosure-option>
+                      {{ locale.endonym_name | capitalize }}
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+              <input type="hidden" name="locale_code" id="LocaleSelector" value="{{ form.current_locale.iso_code }}" data-disclosure-input>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if currency_selector %}
+          <div class="multi-selectors__item">
+            <h2 class="visually-hidden" id="CurrencyHeading">
+              {{ 'general.currency.dropdown_label' | t }}
+            </h2>
+
+            <div class="disclosure" data-disclosure-currency>
+              <button type="button" class="faux-select disclosure__toggle" aria-expanded="false" aria-controls="CurrencyList" aria-describedby="CurrencyHeading" data-disclosure-toggle>
+                {% if section.settings.show_currency_flags %}
+                  <span class="currency-flag currency-flag--small currency-flag--{{ localization.country.iso_code | downcase }}" data-flag="{{ localization.country.currency.iso_code }}" aria-hidden="true"></span>
+                {% endif %}
+                <span class="multi-picker__label">
+                  {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
+                </span>
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
+              </button>
+              <ul id="CurrencyList" class="disclosure-list" data-disclosure-list>
+                {% for country in form.available_countries %}
+                  <li class="disclosure-list__item {% if country.iso_code == localization.country.iso_code %}disclosure-list__item--current{% endif %}">
+                    <a class="disclosure-list__option" href="#" {% if country.iso_code == localization.country.currency.iso_code %}aria-current="true"{% endif %} data-value="{{ country.iso_code }}" data-disclosure-option>
+                      {% if section.settings.show_currency_flags %}
+                        <span class="currency-flag currency-flag--{{ country.iso_code | downcase }}" data-flag="{{ country.currency.iso_code }}" aria-hidden="true"></span>
+                      {% endif %}
+                      <span class="multi-picker__label">
+                        {{ country.name }} {{ country.currency.iso_code }} {% if country.currency.symbol %}{{ country.currency.symbol }}{% endif %}
+                      </span>
+                    </a>
+                  </li>
+                {% endfor %}
+              </ul>
+              <input type="hidden" name="country_code" value="{{ localization.country.currency.iso_code }}" data-disclosure-input>
+            </div>
+          </div>
+        {% endif %}
+      {% endform %}
+    {% endif %}
+
+    {% if section.settings.show_social_icons %}
+      <div class="site-footer__section">
+        {% render 'social-icons', social_class: 'footer__social' %}
+      </div>
+    {% endif %}
+
+    {% if linklists[section.settings.menu].links.size > 100 %}
+      <div class="site-footer__section">
+        <ul class="no-bullets inline-list site-footer__linklist">
+          {% for link in linklists[section.settings.menu].links %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
+    {% if section.settings.show_payment_icons %}
+      {% unless shop.enabled_payment_types == empty %}
+        <div class="site-footer__section">
+          <ul class="inline-list payment-icons">
+            {% for type in shop.enabled_payment_types %}
+              <li class="icon--payment">
+                {{ type | payment_type_svg_tag }}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endunless %}
+    {% endif %}
+
+
+    <div class="site-footer__section site-footer__copyright">
+      {% if section.settings.show_copyright %}
+        <span>
+<!--      &copy; {{ 'now' | date: '%Y' }} {{ shop.name }} -->
+          {% if section.settings.copyright_text != blank %}
+            {{ section.settings.copyright_text }}
+          {% endif %}
+        </span>
+      {% endif %}      
+    </div>
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "t:sections.footer.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_newsletter"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_newsletter",
+      "label": "t:sections.footer.settings.show_newsletter.label",
+      "info": "t:sections.footer.settings.show_newsletter.info",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "newsletter_title",
+      "label": "t:sections.footer.settings.newsletter_title.label",
+      "default": "Sign up and save"
+    },
+    {
+      "type": "richtext",
+      "id": "newsletter_richtext",
+      "label": "t:sections.footer.settings.newsletter_richtext.label",
+      "default": "<p>Let customers know about the key benefits of joining your newsletter.</p>"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_language_selector",
+      "info": "t:sections.footer.settings.header_language_selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_locale_selector",
+      "label": "t:sections.footer.settings.show_locale_selector.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_currency_selector",
+      "info": "t:sections.footer.settings.header_currency_selector"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_selector",
+      "label": "t:sections.footer.settings.show_currency_selector.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_currency_flags",
+      "label": "t:sections.footer.settings.show_currency_flags.label",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header_additional_footer_content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social_icons",
+      "label": "t:sections.footer.settings.show_social_icons.label",
+      "default": true
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "t:sections.footer.settings.menu.label",
+      "default": "footer",
+      "info": "t:sections.footer.settings.menu.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_payment_icons",
+      "label": "t:sections.footer.settings.show_payment_icons.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_copyright",
+      "label": "t:sections.footer.settings.show_copyright.label"
+    },
+    {
+      "type": "text",
+      "id": "copyright_text",
+      "label": "t:sections.footer.settings.copyright_text.label"
+    }
+  ]
+}
+{% endschema %}

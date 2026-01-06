@@ -1,0 +1,759 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero-video": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 55,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/a93217726fc94f3d9c9ece92bbb00364.mp4",
+        "section_height": "850px",
+        "mobile_height": "500px"
+      }
+    },
+    "scrolling_text_eiHAX7": {
+      "type": "scrolling-text",
+      "disabled": true,
+      "custom_css": [
+        ".scrolling-text__inner {background-color: #9e7d54;}",
+        ".scrolling-text--template--23933624058144__scrolling_text_eiHAX7 span {font-size: 18px;}",
+        ".scrolling-text--template--23933624058144__scrolling_text_eiHAX7 {--move-speed: 450s;}"
+      ],
+      "settings": {
+        "text": "✦春節最後出貨日 1/21 (二) ✦農曆年節1/27～ 2/2官網可正常下單，出貨及客服暫停 ✦2/3 (ㄧ)開始陸續出貨。",
+        "link": "",
+        "text_size": 20,
+        "text_spacing": true,
+        "color_scheme": "button",
+        "direction": "left",
+        "speed": 300
+      }
+    },
+    "78367844-baf6-4924-85cb-46229b781e92": {
+      "type": "countdown",
+      "blocks": {
+        "template--18883932324128__78367844-baf6-4924-85cb-46229b781e92-1683258169c95c9a44-0": {
+          "type": "content",
+          "settings": {
+            "heading": "",
+            "heading_size": "h3",
+            "text": "<h3><a href=\"/pages/recommend-power-series-pbc\" title=\"Power Series 抗摔啞鈴系列\"><strong>Power Series<br/>全球最重的抗摔可調式啞鈴</strong></a></h3>",
+            "content_alignment": "center"
+          }
+        },
+        "template--18883932324128__78367844-baf6-4924-85cb-46229b781e92-1683258169c95c9a44-1": {
+          "type": "timer",
+          "disabled": true,
+          "settings": {
+            "year": "2025",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "01",
+            "hide_timer": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932324128__78367844-baf6-4924-85cb-46229b781e92-1683258169c95c9a44-0",
+        "template--18883932324128__78367844-baf6-4924-85cb-46229b781e92-1683258169c95c9a44-1"
+      ],
+      "custom_css": [
+        "h2.h3 {margin: 0px; width: 1000px;}",
+        "h3 {font-size: 26px; margin-bottom: 60px;}",
+        ".countdown__content {padding: 0px 0;}",
+        ".countdown__display-block h2 {font-size: 32px !important;}",
+        "@media only screen and (max-width: 767px) {h2.h3 {width: 240px; } .countdown__display-block {padding: 0 0.5rem; width: 75px; } .countdown-layout--banner .countdown__content {padding: 1rem 2rem; } h2 {font-size: 26px; } .h3 {font-size: 22px; } .countdown__block {margin: 0.2rem auto; } span {margin-top: -5px; } .countdown__content .h3 {font-size: 20px; }}"
+      ],
+      "settings": {
+        "layout": "banner",
+        "full_width": true,
+        "text_color": "#ffffff",
+        "background_color": "#000000",
+        "overlay_color": "#1d1d1e",
+        "overlay_opacity": 0,
+        "lazyload_images": false
+      }
+    },
+    "slideshow_PPwkK6": {
+      "type": "slideshow",
+      "blocks": {
+        "image_iwHN9w": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/20241015__11_2__1.webp"
+          }
+        },
+        "image_CMFRey": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/01-02_d1277631-64fc-4de5-93d7-d68c259eccc2.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_iwHN9w",
+        "image_CMFRey"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "0a34a559-e184-40b1-9954-07fc5e0d4cf8": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18883932324128__0a34a559-e184-40b1-9954-07fc5e0d4cf8-168431476256964989-0": {
+          "type": "heading",
+          "settings": {
+            "title": "為你即刻展開率性有型的訓練生活！"
+          }
+        },
+        "template--18883932324128__0a34a559-e184-40b1-9954-07fc5e0d4cf8-168431476256964989-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Byzoom Fitness豐富的產品線，包含可調式重量器材、質感訓練配件，搭配經典黑與冰河白雙色視覺呈現，完整滿足你的全方位健身計畫！</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932324128__0a34a559-e184-40b1-9954-07fc5e0d4cf8-168431476256964989-0",
+        "template--18883932324128__0a34a559-e184-40b1-9954-07fc5e0d4cf8-168431476256964989-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 34px;}",
+        "p {font-size: 15px;}",
+        ".index-section {margin: 60px 0;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 30px 0 30px 0; } .theme-block {margin-bottom: 5px; } h2 {font-size: 20px; font-weight: 600; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "90b149fb-c0d7-4316-a274-4917c0a1522a": {
+      "type": "image-compare",
+      "blocks": {
+        "template--18883932324128__90b149fb-c0d7-4316-a274-4917c0a1522a-1684312314d5001026-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/00_index___0730_6bb18b06-f9f1-46ab-bf14-ee7ff3ff5288.webp"
+          }
+        },
+        "template--18883932324128__90b149fb-c0d7-4316-a274-4917c0a1522a-1684312314d5001026-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/00_index___0730_6796fba0-b7f2-446d-a92c-2943e3bde929.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932324128__90b149fb-c0d7-4316-a274-4917c0a1522a-1684312314d5001026-0",
+        "template--18883932324128__90b149fb-c0d7-4316-a274-4917c0a1522a-1684312314d5001026-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 60px 0;}"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_position": "center",
+        "fullwidth": false,
+        "slider_style": "classic",
+        "height": 550,
+        "color": "#ffffff",
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_AECMRQ": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_wGXmLj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/58585.webp",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_hRwxwP": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.</p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_wGXmLj",
+        "liquid_hRwxwP"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 0px 0 0px 0; background-color: #000000;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "b70f8c04-cb32-4a33-8554-1b3ae2d0d30e": {
+      "type": "hotspots",
+      "blocks": {
+        "product_YbQkRp": {
+          "type": "product",
+          "settings": {
+            "featured_product": "power-series-adjustable-dumbbell-46kg-black",
+            "vertical": 82,
+            "horizontal": 50
+          }
+        },
+        "product_tg4gph": {
+          "type": "product",
+          "settings": {
+            "featured_product": "power-series-adjustable-decline-degree-bench",
+            "vertical": 59,
+            "horizontal": 81
+          }
+        },
+        "83a345c6-6f45-4078-a612-2e7944f84050": {
+          "type": "product",
+          "settings": {
+            "featured_product": "power-series-adjustable-dumbbell-stand-46kg-black",
+            "vertical": 71,
+            "horizontal": 10
+          }
+        },
+        "9d1dfae7-86af-4333-9c97-7f44d579ca56": {
+          "type": "paragraph",
+          "disabled": true,
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "content": "",
+            "button_text": "立即購買",
+            "button_link": "",
+            "vertical": 18,
+            "horizontal": 24
+          }
+        }
+      },
+      "block_order": [
+        "product_YbQkRp",
+        "product_tg4gph",
+        "83a345c6-6f45-4078-a612-2e7944f84050",
+        "9d1dfae7-86af-4333-9c97-7f44d579ca56"
+      ],
+      "custom_css": [
+        ".hotspots {margin-bottom: 100px;}",
+        ".index-section {margin: 0px 0 0px 0; background-color: #000000;}",
+        "h2 {color: #fff;}",
+        ".grid-product__meta {color: #fff;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: -40px 0 20px 0; } .hotspots__title {font-size: 42px; }}"
+      ],
+      "settings": {
+        "title": "NEW ARRIVAL",
+        "heading_size": "h1",
+        "heading_position": "center",
+        "image": "shopify://shop_images/01_index_Image-hotspots_1205.webp",
+        "indent_image": false,
+        "image_position": "left",
+        "hotspot_style": "bag",
+        "hotspot_color": "#000000",
+        "lazyload_images": true
+      }
+    },
+    "hero_video_YBbN7Y": {
+      "type": "hero-video",
+      "disabled": true,
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h2 {font-size: 24px; }}"
+      ],
+      "settings": {
+        "title": "POWER SERIES",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "立即購買",
+        "link": "shopify://collections/power-series",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://youtu.be/Kryl39d3mw8?si=Aix2oc099w39aV-k",
+        "section_height": "750px",
+        "mobile_height": "500px"
+      }
+    },
+    "featured_collection_slider_X7Mi43": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "power-series",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "33fbc0a8-5211-490b-9389-18f37882445f": {
+      "type": "hero-video",
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h2 {font-size: 24px; }}"
+      ],
+      "settings": {
+        "title": "PURE SERIES WHITE",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "立即購買",
+        "link": "shopify://collections/pure-series-white",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://www.youtube.com/watch?v=8SKeiH-cy9I",
+        "section_height": "750px",
+        "mobile_height": "500px"
+      }
+    },
+    "featured-collection-slider2": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "pure-series-white",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "01bdc680-e096-4ee8-be63-4c5d024676a6": {
+      "type": "text-and-image-index1",
+      "custom_css": [
+        ".appear-delay {font-size: 40px; width: 115%; margin-left: -20px;}",
+        ".index-section--alt {padding: 30px 0;}",
+        ".feature-row-wrapper {max-width: none;}",
+        ".feature-row__item--overlap-images > :first-child {transform: translate(0px, 0px); width: 100%;}",
+        ".image-wrap.loaded {height: 500px;}",
+        "@media only screen and (max-width: 767px) {.feature-row__item--overlap-images {margin: 0; padding: 0; } .image-wrap.loaded {height: 400px; } .image-wrap-sean {height: 180px !important; } .image-wrap {object-fit: contain; } .feature-row__first-image {margin: 20px 0 10px 0; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_index_Image-with-text_classic-series.webp",
+        "image_mask": "none",
+        "image2": "shopify://shop_images/01_index_Image-with-text_classic-series-R.webp",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "PURE SERIES BLACK",
+        "text": "",
+        "button_label": "立即購買",
+        "button_link": "shopify://collections/pure-series-black",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "66",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "9e2000b7-fef4-4f08-9798-38a36b7c56cc": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "pure-series-black",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "72e6892a-8cdb-42b1-862c-e09356c241d8": {
+      "type": "hero-video",
+      "settings": {
+        "title": "CLASSIC SERIES",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "立即購買",
+        "link": "shopify://collections/classic-series",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://www.youtube.com/watch?v=_rIyGRPIO54",
+        "section_height": "750px",
+        "mobile_height": "auto"
+      }
+    },
+    "c3f1bcc8-cfc9-4582-9055-26a5acd72f75": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "classic-series",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "2d18b5a0-1446-463f-9921-37e40f310358": {
+      "type": "hero-video",
+      "custom_css": [],
+      "settings": {
+        "title": "ACCESSORIES",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "立即購買",
+        "link": "shopify://collections/all-accessories-series",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://youtu.be/fOOt5tO51WQ",
+        "section_height": "750px",
+        "mobile_height": "auto"
+      }
+    },
+    "featured_collection_slider_3aC8jb": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 50px 0;}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-accessories-series",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "hero_video_zAhKKy": {
+      "type": "hero-video",
+      "settings": {
+        "title": "DUMBBELL TO BARBELL CONVERTER",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "立即購買",
+        "link": "shopify://collections/all-dumbbell-to-barbell-converter",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/f3ac046f48a143459a9a647fed466e88.mp4",
+        "section_height": "750px",
+        "mobile_height": "500px"
+      }
+    },
+    "a336f498-cf68-4d31-853c-e81ace72895a": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 50px 0 -60px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 50px 0 30px 0; } .appear-delay {font-size: 26px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-dumbbell-to-barbell-converter",
+        "per_row": "medium",
+        "alt": false
+      }
+    },
+    "64f30952-820f-469a-ab50-1a5a51682e46": {
+      "type": "blog-posts",
+      "custom_css": [
+        "h2 {font-size: 50px;}",
+        ".h3 a {font-size: 20px;}",
+        ".index-section {margin: px 0;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin-top: 0px; } .appear-delay {font-size: 40px; }}"
+      ],
+      "settings": {
+        "title": "最新消息",
+        "blog": "all-post",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_show_excerpt": false,
+        "blog_image_size": "wide",
+        "view_all": false,
+        "alt": false
+      }
+    },
+    "21a5393c-d182-474e-aef7-123b94c6b15c": {
+      "type": "testimonials",
+      "blocks": {
+        "template--18883932324128__21a5393c-d182-474e-aef7-123b94c6b15c-1683276411f3de556d-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>承襲一貫方便、快速以及節省空間的優勢，不止在家方便，出門帶一組也相當的不麻煩，的確是可調式槓啞鈴屆的王者！</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-3.jpg",
+            "author": "ZACK"
+          }
+        },
+        "d888cbf9-1693-4f6a-93e3-626033aedf10": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>設計外觀很有質感的訓練裝備，讓我訓練起來更有活力，外出攜帶也超級方便，很實用，非常喜歡！</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-15.jpg",
+            "author": "綠島潛水教練 Jying"
+          }
+        },
+        "template--18883932324128__21a5393c-d182-474e-aef7-123b94c6b15c-1683276411f3de556d-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>快速且方便，整體的設計上也為啞鈴增添的時尚感，重點是不像傳統的啞鈴一樣非常的佔空間</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-13.jpg",
+            "author": "蔓蔓"
+          }
+        },
+        "71568e9c-a206-4a7f-a8c9-5d1e8998e92c": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>好看美型、時尚，戴起來非常舒適，訓練效果好，無論是加強臀部訓練或是上肢緊實不分，實用度滿分！</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-14.jpg",
+            "author": "咪咪愛運動"
+          }
+        },
+        "fdaa6ab8-5fd5-4b89-9051-ae8a0b7370a2": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>調節式啞鈴必買商品，在家就可以訓練無敵方便，來不及去健身房的大救星，放在家裡當擺設也很有質感。</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-12.jpg",
+            "author": "Rody"
+          }
+        },
+        "c0759e95-26e6-46ed-8630-065565659e73": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>方便攜帶，無時無刻訓練，重量強度夠！最重要的是，放在家裡，家人隨時隨刻都可用，送禮也不失大方，居家必備！</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-5.jpg",
+            "author": "小綠"
+          }
+        },
+        "b180b3e8-890f-4d93-830f-25453bf25969": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>夠有重量與高品質的結合，調整重量快速、方便，讓我在使用時能保持高效率的訓練，值得推薦</p>",
+            "image": "shopify://shop_images/01_index_Testimonials-KOL-10.jpg",
+            "author": "健身名人 Peeta"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932324128__21a5393c-d182-474e-aef7-123b94c6b15c-1683276411f3de556d-0",
+        "d888cbf9-1693-4f6a-93e3-626033aedf10",
+        "template--18883932324128__21a5393c-d182-474e-aef7-123b94c6b15c-1683276411f3de556d-1",
+        "71568e9c-a206-4a7f-a8c9-5d1e8998e92c",
+        "fdaa6ab8-5fd5-4b89-9051-ae8a0b7370a2",
+        "c0759e95-26e6-46ed-8630-065565659e73",
+        "b180b3e8-890f-4d93-830f-25453bf25969"
+      ],
+      "custom_css": [
+        "h2 {font-size: 50px;}",
+        "header {margin-bottom: 40px; margin-top: -120px;}",
+        ".index-section {margin: -50px 0;}",
+        ".testimonials-slider__text p {font-size: calc(var(--typeHeaderSize) * 0.33);}",
+        ".testimonials-slider__text {padding: 20px 20px 70px 20px;}",
+        ".text-spacing p {font-size: 15px;}",
+        "@media only screen and (max-width: 767px) {header {margin-top: -10px; margin-bottom: 0px; } .index-section {margin: -20px 0; } ol {bottom: 5px !important; } h2 {font-size: 40px; }}"
+      ],
+      "settings": {
+        "title": "使用者推薦",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "58fbb3d2-6566-43dd-9fa5-9ac37399e689": {
+      "type": "testimonials",
+      "blocks": {
+        "d3f75f1a-09d6-4fba-a725-fa9d8cb9ba75": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name"
+          }
+        }
+      },
+      "block_order": [
+        "d3f75f1a-09d6-4fba-a725-fa9d8cb9ba75"
+      ],
+      "custom_css": [
+        "h2 {font-size: 50px;}",
+        ".index-section {margin: 80px 0 60px 0; margin-top: 150px; margin-bottom: -40px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 60px 0 50px 0; } .appear-delay {font-size: 40px; }}"
+      ],
+      "settings": {
+        "title": "HOME GYM INSPIRATION",
+        "align_text": "left",
+        "round_images": false,
+        "alt": false
+      }
+    },
+    "29094674-aaf6-4cf3-9c89-8dab22f0495a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18883932324128__29094674-aaf6-4cf3-9c89-8dab22f0495a-16832793210325aeab-0": {
+          "type": "image",
+          "settings": {
+            "title": "Garage Gym Beasts",
+            "title_size": 48,
+            "subheading": "硬派健身巨獸",
+            "link": "shopify://blogs/home-gym-inspiration/garage-gym-beasts",
+            "link_text": "了解更多",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/00_index_Hero-home-gym-inspiration-100lb.webp"
+          }
+        },
+        "9d33cf93-5c8f-4bb4-a20a-b5aa0ce84e9f": {
+          "type": "image",
+          "settings": {
+            "title": "Serious Lifter",
+            "title_size": 48,
+            "subheading": "健身狂熱者",
+            "link": "shopify://blogs/home-gym-inspiration/ep1-serious-lifter-健身狂熱者",
+            "link_text": "了解更多",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/00_index_Hero-home-gym-inspiration-75lb.webp"
+          }
+        },
+        "02113c0c-7f81-437c-bb35-0adf96177126": {
+          "type": "image",
+          "settings": {
+            "title": "Elegant Home Gym Set",
+            "title_size": 48,
+            "subheading": "時尚鍛鍊潮人",
+            "link": "shopify://blogs/home-gym-inspiration/ep7-designer-gym-時尚鍛鍊潮人",
+            "link_text": "了解更多",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/00_index_Hero-home-gym-inspiration-75lb-W.webp"
+          }
+        },
+        "6a5523a6-38e5-4a04-99a9-e7e2d82aa67a": {
+          "type": "image",
+          "settings": {
+            "title": "Lady Gym",
+            "title_size": 48,
+            "subheading": "質感極致女力",
+            "link": "shopify://blogs/home-gym-inspiration/ep6-lady-gym-質感極致女力",
+            "link_text": "了解更多",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/00_index_Hero-home-gym-inspiration-12.5lb.webp"
+          }
+        },
+        "fa532710-dcef-4a8a-bd03-d263b368b771": {
+          "type": "image",
+          "settings": {
+            "title": "Best Value Home Gym",
+            "title_size": 48,
+            "subheading": "高效女子健身",
+            "link": "shopify://blogs/home-gym-inspiration/ep4-wonder-woman-高效女子健身",
+            "link_text": "了解更多",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/00_index_Hero-home_gym_inspiration_aa92d233-3083-4fd2-bbb5-5c8cfab00022.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932324128__29094674-aaf6-4cf3-9c89-8dab22f0495a-16832793210325aeab-0",
+        "9d33cf93-5c8f-4bb4-a20a-b5aa0ce84e9f",
+        "02113c0c-7f81-437c-bb35-0adf96177126",
+        "6a5523a6-38e5-4a04-99a9-e7e2d82aa67a",
+        "fa532710-dcef-4a8a-bd03-d263b368b771"
+      ],
+      "custom_css": [
+        ".hero__text-wrap > div {max-width: 35%; margin-left: 8%;}",
+        ".hero__text-content {padding-right: initial !important;}",
+        "@media only screen and (max-width: 767px) {.hero-wrapper {margin: -10px 0 -40px 0; padding-bottom: 80px; } .hero__text-wrap {width: 60%; } .hero__title {font-size: 20px; } .hero__text-wrap > div {max-width: 70%; margin-left: 0%; }}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "hero-video",
+    "scrolling_text_eiHAX7",
+    "78367844-baf6-4924-85cb-46229b781e92",
+    "slideshow_PPwkK6",
+    "0a34a559-e184-40b1-9954-07fc5e0d4cf8",
+    "90b149fb-c0d7-4316-a274-4917c0a1522a",
+    "advanced_content_AECMRQ",
+    "b70f8c04-cb32-4a33-8554-1b3ae2d0d30e",
+    "hero_video_YBbN7Y",
+    "featured_collection_slider_X7Mi43",
+    "33fbc0a8-5211-490b-9389-18f37882445f",
+    "featured-collection-slider2",
+    "01bdc680-e096-4ee8-be63-4c5d024676a6",
+    "9e2000b7-fef4-4f08-9798-38a36b7c56cc",
+    "72e6892a-8cdb-42b1-862c-e09356c241d8",
+    "c3f1bcc8-cfc9-4582-9055-26a5acd72f75",
+    "2d18b5a0-1446-463f-9921-37e40f310358",
+    "featured_collection_slider_3aC8jb",
+    "hero_video_zAhKKy",
+    "a336f498-cf68-4d31-853c-e81ace72895a",
+    "64f30952-820f-469a-ab50-1a5a51682e46",
+    "21a5393c-d182-474e-aef7-123b94c6b15c",
+    "58fbb3d2-6566-43dd-9fa5-9ac37399e689",
+    "29094674-aaf6-4cf3-9c89-8dab22f0495a"
+  ]
+}

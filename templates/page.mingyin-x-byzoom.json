@@ -1,0 +1,184 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "a24efc25-b8ec-43ae-8a5f-2061ef9a5178": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20271371026720__a24efc25-b8ec-43ae-8a5f-2061ef9a5178-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/banner__1_daa23131-592a-4c74-9707-c6f15d475083.webp",
+            "image_mobile": "shopify://shop_images/banner-02_68800a84-fa24-49e7-9d5b-0c054772a381.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--20271371026720__a24efc25-b8ec-43ae-8a5f-2061ef9a5178-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "6c7786df-ba27-4090-b02e-2173d2ff71d7": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 32px; margin-top: -50px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 30px; margin: 20px; }}"
+      ],
+      "settings": {
+        "title": "閉閉團購｜專屬優惠88折",
+        "description": "結帳時輸入折扣碼COWCAT987，特定品項享88折優惠!",
+        "home_featured_products": "cowcat",
+        "rows": 4,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    },
+    "product_compares_qQJHY8": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_EGY34Y": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/5_70f647f7-0e41-4350-a305-aeb4d4d84e69.webp",
+            "pname": "6mm高密度彈性",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>厚實柔軟，提供穩定支撐與舒適回彈讓每一次訓練更安心。</p>"
+          }
+        },
+        "items_cell_4QH6t3": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/7.webp",
+            "pname": "熱血聯名圖樣",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>悟空、達爾限定設計，專屬戰士風格限量發售錯過不再！</p>"
+          }
+        },
+        "items_cell_CbtMmi": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/6_03eab186-d9c0-40fc-a7ed-d9ade5e1861e.webp",
+            "pname": "環境與肌膚友善材質",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>採用無毒PVC，6P Free環保製程安心接觸肌膚，無負擔又耐用。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_EGY34Y",
+        "items_cell_4QH6t3",
+        "items_cell_CbtMmi"
+      ],
+      "custom_css": [
+        ".carousel-cell {width: 380px; margin: 30px;}",
+        ".index-section {background: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2-10.webp\") center/cover;}",
+        "h2 {font-size: 42px; color: #262626;}",
+        ".cpname {font-size: 36px; margin-top: 30px; color: #fff;}",
+        "p {font-size: 18px; color: #fff;}",
+        "@media (max-width: 767px) {.cpimage {height: 498px; } h2 {font-size: 28px; } .cpname {font-size: 24px; }}"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "不論健身、瑜珈或訓練，讓你像賽亞人般突破極限！",
+        "alt": true,
+        "item-title": ""
+      }
+    },
+    "product_compares_BJTnLN": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_fkbe9J": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/5_70f647f7-0e41-4350-a305-aeb4d4d84e69.webp",
+            "pname": "6mm高密度彈性",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>厚實柔軟，提供穩定支撐與舒適回彈讓每一次訓練更安心。</p>"
+          }
+        },
+        "items_cell_Gjq7GY": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/7.webp",
+            "pname": "熱血聯名圖樣",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>悟空、達爾限定設計，專屬戰士風格限量發售錯過不再！</p>"
+          }
+        },
+        "items_cell_weLqMD": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/6_03eab186-d9c0-40fc-a7ed-d9ade5e1861e.webp",
+            "pname": "環境與肌膚友善材質",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>採用無毒PVC，6P Free環保製程安心接觸肌膚，無負擔又耐用。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_fkbe9J",
+        "items_cell_Gjq7GY",
+        "items_cell_weLqMD"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "不論健身、瑜珈或訓練，讓你像賽亞人般突破極限！",
+        "alt": true,
+        "item-title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a24efc25-b8ec-43ae-8a5f-2061ef9a5178",
+    "6c7786df-ba27-4090-b02e-2173d2ff71d7",
+    "product_compares_qQJHY8",
+    "product_compares_BJTnLN"
+  ]
+}

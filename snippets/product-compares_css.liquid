@@ -1,0 +1,175 @@
+{%- liquid
+  assign testVariable = seanVariable
+-%}
+
+{%- assign secId = '#shopify-section-' | append:  section.id  -%}
+
+<style>
+  /* :root {
+    --seanVar: {{ testVariable }};
+  }
+  .seanTest {
+    height: calc(var(--seanVar) * 0.85);
+  } */
+  
+    {{ secId }} .carousel {
+        /* background: #FAFAFA; */
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    {{ secId }} .carousel-cell {
+        /* background: #8C8; */
+        margin-right: 0px;
+        /* width: 25%; 外*/
+    }
+    {{ secId }} .carousel-cell.is-selected {
+      /* background: #ED2; */
+    }
+    {{ secId }} .flickity-prev-next-button {
+      top: 25%;
+    }
+    /*  dots position */
+    {{ secId }} .flickity-page-dots {
+      bottom: -10px;
+    }
+    /* dots white circles */
+    /* {{ secId }} .flickity-page-dots .dot {
+      width: 20px;
+      height: 20px;
+      opacity: 1;
+      background: transparent;
+      border: 2px solid #4a5568;
+    } */
+    /* dots fill-in selected */
+    /* {{ secId }} .flickity-page-dots .dot.is-selected {
+      background: #4a5568;
+    } */    
+/* ************************************************************************************* */
+    {{ secId }} .product-compares_section {
+        margin: 60px 0;
+    }
+    {{ secId }} .page-width {
+        /* max-width: 1800px; */
+        padding: 0 10px;
+    }
+    {{ secId }} .section-header {
+        margin: 0px 20px 20px 20px;
+    }
+    {{ secId }} .cphead {
+      font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+      font-weight: var(--typeHeaderWeight);
+      font-style: normal;
+      letter-spacing: var(--typeHeaderSpacing);
+      line-height: var(--typeHeaderLineHeight);
+      word-break: break-word;
+      text-transform: initial;
+    }
+    {{ secId }} .cpimage {
+      object-fit: contain;
+      object-position: center;
+      /* height: 100px; 外*/
+      margin: 0px auto;
+    }
+    {{ secId }} .cpname {
+      word-break: break-word;
+      font-weight: 500;
+      color: black;
+      /* font-size: 18px; 外*/
+      margin: 0px;
+    }
+    {{ secId }} .cpspec {
+      /* color: #4a5568; */
+      /* font-size: 16px; 外*/
+      margin: 5px;
+    }
+    {{ secId }} .cpcolor {
+      margin: 5px;
+    }
+    {{ secId }} .cpcolor img {
+      display: inline-block;
+      /* width: 20px; 外*/
+      margin: -3px 3px -6px 3px;
+    }
+    {{ secId }} .cpbtm {
+      /* font-size: 13px; */
+      padding: 5px 3px;
+      margin: 5px 5px 15px 5px;
+    } 
+    {{ secId }} .cell_th {
+      position: absolute;
+      z-index: 10;
+      text-align: center;      
+      border-top: black 1px groove;
+      width: 1800px;
+      /* font-size: 15px; 外*/
+      font-weight: 500;
+    }
+    {{ secId }} .cell_title {
+      position: absolute;
+      z-index: 11;
+      /* background-color: rgb(250, 250, 250); */
+      background-color: #fff;
+      padding: 0px 10px 0px 10px;
+      margin-top: -13px;
+    }
+    {{ secId }} .cpitem {
+      margin: 10px;
+      /* font-size: 14px; 外*/
+      color: #5d697b;
+    }
+    {{ secId }} .cpitem div {
+      /* padding: 17px 3px 17px 3px;  */
+    }
+    {{ secId }} .cpitem img {
+      display: inline-block;
+      /* width: 20px; 外*/
+      margin: -3px 3px -6px 3px;
+    }
+    /* {{ secId }} table tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    } */
+/* ************************************************************************************* */
+
+    @media only screen and (max-width: 767px) {
+      {{ secId }} .carousel-cell {
+        /* width: 50%; 外*/
+      }
+      {{ secId }} .flickity-prev-next-button {
+        top: 39%;
+      }      
+      {{ secId }} .cpimage {
+        height: 80px;
+      }    
+      {{ secId }} .cpname {
+        /* font-size: 15px; 外*/
+        margin: 0px;
+      }
+      {{ secId }} .cpspec {
+        /* font-size: 14px; 外*/
+        margin: 0px;
+      }
+      {{ secId }} .cpcolor img {
+        width: 15px;
+        margin: 0px;
+      }
+      {{ secId }} .cpbtm {
+        /* font-size: 12px; 外*/
+        padding: 4px 3px;
+        margin: 0px 3px 15px 3px;
+      }
+      {{ secId }} .cell_th {
+        /* font-size: 14px; 外*/
+      }
+      {{ secId }} .cpitem {
+        /* font-size: 13px; 外*/
+      }
+      {{ secId }} .cpitem div {
+        /* padding: 15px 3px 15px 3px; 外*/
+      }
+      {{ secId }} .cpitem img {
+        width: 15px;
+        margin: 0px 3px -5px 3px;
+      }      
+    }
+</style>

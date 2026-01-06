@@ -1,0 +1,119 @@
+/* ****************************過濾功能調整靠左 by zeus20230913**************************************************** */
+  main#MainContent {
+    overflow: hidden;
+  }
+  /* #shopify-section-template--20366162231584__collection-filters {
+      width: 20%;
+      float: left;
+  }
+  #shopify-section-template--20366162231584__main-collection {
+    width: 80%;
+    float: right;
+  } */
+
+[id$="__collection-filters"]{
+      width: 20%;
+      float: left;
+}
+
+[id$="__main-collection"]{
+    width: 80%;
+    float: right;
+}
+
+  /* .collection-dropdowns {
+      margin-bottom: 50px;
+  } */
+
+  #CollectionFiltersSection .page-width {
+      padding: 0px 10px;
+  }
+
+  .tag--remove {
+      margin: 3px 10px;
+  }
+
+  #CollectionFiltersSection .page-width .text-center {
+      text-align: right!important;
+  }
+
+  #CollectionGrid .page-width {
+      max-width: 95%;
+      padding: 0 10px;
+  }
+
+  .collection-dropdowns__item {
+      flex: 0 1 70%;
+  }
+
+  .collection-dropdowns {
+      justify-content: right;
+  }
+
+  .collection-filter__group {
+      max-width: 100%;
+      text-align: right;
+      width: 100%;
+  }
+
+  label.tag__checkbox-wrapper {
+      justify-content: right;
+  }
+
+  @media only screen and (max-width: 767px) {
+  main#MainContent {
+    overflow: initial;
+  }
+  /* #shopify-section-template--20366162231584__collection-filters {
+      width: initial;
+      float: initial;
+  }
+  #shopify-section-template--20366162231584__main-collection {
+    width: initial;
+    float: initial;
+  } */
+  [id$="__collection-filters"]{
+      width: initial;
+      float: initial;
+  }
+  
+  [id$="__main-collection"]{
+    width: initial;
+    float: initial;
+  }
+    
+  #CollectionFiltersSection .page-width {
+      padding: initial;
+  }
+
+  .tag--remove {
+      margin: initial;
+  }
+
+  #CollectionFiltersSection .page-width .text-center {
+      text-align: center!important;
+  }
+
+  #CollectionGrid .page-width {
+    margin: 0 auto;
+    max-width: 1300px;
+  }
+
+  .collection-dropdowns__item {
+      flex: 0 1 70%;
+  }
+
+  .collection-dropdowns {
+      justify-content: center;
+  }
+
+  .collection-filter__group {
+      max-width: initial;
+      text-align: initial;
+      width: initial;
+  }
+
+  label.tag__checkbox-wrapper {
+      justify-content: initial;
+  }
+}

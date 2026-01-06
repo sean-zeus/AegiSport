@@ -1,0 +1,917 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-top horizontal-center",
+            "image": "shopify://shop_images/1_2_4b0c1ff0-76a1-419a-9d3d-c1844b638e7e.webp",
+            "image_mobile": "shopify://shop_images/2MB-01.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "custom_css": [
+        ".hero__image {background-color: #fff;}"
+      ],
+      "settings": {
+        "style": "minimal",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "23c08093-f6ae-4421-826a-891e8e6d5eab": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>七龍珠Z 官方授權系列</p>"
+          }
+        },
+        "text_PWgYBE": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h1><strong>Dragon Ball Z X Byzoom</strong></h1>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1",
+        "text_PWgYBE"
+      ],
+      "custom_css": [
+        ".index-section--alt {background-color: #fff; margin-top: -100px; margin-bottom: 50px;}",
+        "h1 {font-size: 45px; margin: -20px 0 0px 0; text-transform: none; color: #000;}",
+        "p {font-size: 18px; color: #000; text-transform: none;}",
+        "@media only screen and (max-width: 767px) {h1 {font-size: 26px; } p {font-size: 16px; text-align: center; margin-top: -15px; } .index-section {margin: 0px 0 0px 0; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "hero_video_c699JA": {
+      "type": "hero-video",
+      "settings": {
+        "title": "",
+        "title_size": 47,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/f8da83d99378458083df88d97631283b.mp4",
+        "section_height": "750px",
+        "mobile_height": "500px"
+      }
+    },
+    "b441079a-9f0c-441b-8c48-01e9ba0540d3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18883932389664__b441079a-9f0c-441b-8c48-01e9ba0540d3-1689747339d43dfd34-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 48,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/06_7ab8e189-fd60-475e-bed5-f333a2dc1d4c.webp",
+            "image_mobile": "shopify://shop_images/2MB-02.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932389664__b441079a-9f0c-441b-8c48-01e9ba0540d3-1689747339d43dfd34-0"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin: 0px 0;}",
+        ".horizontal-left {padding-right: 0px;}",
+        ".horizontal-right {padding-left: 0px;}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "slideshow_yPHV8X": {
+      "type": "slideshow",
+      "blocks": {
+        "image_Dijz6i": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 48,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/07_3279b272-5d87-43ab-b8c8-9d404cdb298a.webp",
+            "image_mobile": "shopify://shop_images/2MB-14.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_Dijz6i"
+      ],
+      "custom_css": [],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": false
+      }
+    },
+    "slideshow_4T3w8B": {
+      "type": "slideshow",
+      "blocks": {
+        "image_HUdpXj": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 48,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/2-04.webp",
+            "image_mobile": "shopify://shop_images/2MB__14.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_HUdpXj"
+      ],
+      "custom_css": [
+        ".hero__image {margin-top: -3px;}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": false
+      }
+    },
+    "slideshow_sean_GLGQny": {
+      "type": "slideshow-sean",
+      "blocks": {
+        "image_HPHgnX": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "video",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s_5ea558c9-da95-4063-9692-d6ba94f56445.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_HPHgnX"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 50,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "product_compares_CednDq": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_ywPPzf": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/1_6c4c85c4-6052-4565-bf4c-cfb9129aa21a.webp",
+            "pname": "觔斗雲專用底盤",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>收納底座，方便、不占空間</p>"
+          }
+        },
+        "items_cell_EYf9Bd": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/2_bfe7ba3a-83b9-4578-8fee-7346ce9d5eaf.webp",
+            "pname": "快速選重",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>輕鬆調整多段重量</p>"
+          }
+        },
+        "items_cell_mM7wcY": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/3_69e0e72d-5066-41ef-82ad-e2bce670146e.webp",
+            "pname": "15段重量可調",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>取代15支啞鈴</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_ywPPzf",
+        "items_cell_EYf9Bd",
+        "items_cell_mM7wcY"
+      ],
+      "custom_css": [
+        ".carousel-cell {width: 380px; margin: 30px;}",
+        ".index-section {background: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2-05.webp\") center/cover; margin: 0;}",
+        "h2 {font-size: 42px; color: #fff;}",
+        ".cpname {font-size: 36px; margin-top: 30px; color: #fff;}",
+        "p {font-size: 18px; color: #fff;}",
+        "@media (max-width: 767px) {.cpimage {height: 498px; } h2 {font-size: 28px; } .cpname {font-size: 24px; }}"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "悟空戰士｜每一次訓練都全力以赴，突破極限無所畏懼！",
+        "alt": true,
+        "item-title": ""
+      }
+    },
+    "slideshow_d9qbXE": {
+      "type": "slideshow",
+      "blocks": {
+        "image_pm3HwL": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 48,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/2-06.webp",
+            "image_mobile": "shopify://shop_images/2MB__14_7.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_pm3HwL"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": false
+      }
+    },
+    "slideshow_sean_ECGnHK": {
+      "type": "slideshow-sean",
+      "blocks": {
+        "image_jwqHaY": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "video",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s_ede976c0-c605-4641-aebe-96093c16d152.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_jwqHaY"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 50,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "product_compares_iUR7pA": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_wnWzUN": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/1_6c4c85c4-6052-4565-bf4c-cfb9129aa21a.webp",
+            "pname": "探測器專用底盤",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>收納底座，方便、不占空間</p>"
+          }
+        },
+        "items_cell_eLAqYQ": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/2_bfe7ba3a-83b9-4578-8fee-7346ce9d5eaf.webp",
+            "pname": "快速選重",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>輕鬆調整多段重量</p>"
+          }
+        },
+        "items_cell_FyCJDm": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/3_69e0e72d-5066-41ef-82ad-e2bce670146e.webp",
+            "pname": "15段重量可調",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>取代15支啞鈴</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_wnWzUN",
+        "items_cell_eLAqYQ",
+        "items_cell_FyCJDm"
+      ],
+      "custom_css": [
+        ".carousel-cell {width: 380px; margin: 30px;}",
+        ".index-section {background: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2-07.webp\") center/cover; margin: 0px;}",
+        "h2 {font-size: 42px; color: #fff;}",
+        ".cpname {font-size: 36px; margin-top: 30px; color: #fff;}",
+        "p {font-size: 18px; color: #fff;}",
+        "@media (max-width: 767px) {.cpimage {height: 498px; } h2 {font-size: 28px; } .cpname {font-size: 24px; }}"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "達爾戰士｜對力量的執著與渴望，是永不止步的驅動力！",
+        "alt": true,
+        "item-title": ""
+      }
+    },
+    "featured_collection_slider_dc3KQ3": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {background: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2-08.webp?v=1752826457\") center/cover; margin-top: -80px;}",
+        "h2 {font-size: 40px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 28px; } .index-section {margin: -10px; }}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "七龍珠Z 官方授權系列｜25KG(55LB) 可調式啞鈴",
+        "description": "選擇你的戰士精神",
+        "home_featured_products": "power-series",
+        "per_row": "small",
+        "alt": true
+      }
+    },
+    "slideshow_JFhMgY": {
+      "type": "slideshow",
+      "blocks": {
+        "image_cfrkX8": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 48,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/2-09.webp",
+            "image_mobile": "shopify://shop_images/2MB__14_9.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_cfrkX8"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin-top: 0px;}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": false
+      }
+    },
+    "slideshow_sean_zCgmNi": {
+      "type": "slideshow-sean",
+      "blocks": {
+        "image_RjAa88": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "video",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/ebde3135a85bfbb0f5c31f3cd87d999b.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_RjAa88"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 50,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "product_compares_kF74nW": {
+      "type": "product-compares",
+      "blocks": {
+        "items_cell_waxxp6": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/5_70f647f7-0e41-4350-a305-aeb4d4d84e69.webp",
+            "pname": "6mm高密度彈性",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>厚實柔軟，提供穩定支撐與舒適回彈讓每一次訓練更安心。</p>"
+          }
+        },
+        "items_cell_zNHKEg": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/7.webp",
+            "pname": "熱血聯名圖樣",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>悟空、達爾限定設計，專屬戰士風格限量發售錯過不再！</p>"
+          }
+        },
+        "items_cell_ykg9qW": {
+          "type": "items-cell",
+          "settings": {
+            "pimage": "shopify://shop_images/6_03eab186-d9c0-40fc-a7ed-d9ade5e1861e.webp",
+            "pname": "環境與肌膚友善材質",
+            "pspec": "",
+            "pcolor": "",
+            "pbtm_txt": "",
+            "pbtm_url": "",
+            "pitem": "<p>採用無毒PVC，6P Free環保製程安心接觸肌膚，無負擔又耐用。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "items_cell_waxxp6",
+        "items_cell_zNHKEg",
+        "items_cell_ykg9qW"
+      ],
+      "custom_css": [
+        ".carousel-cell {width: 380px; margin: 30px;}",
+        ".index-section {background: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2-10.webp\") center/cover; margin: 0;}",
+        "h2 {font-size: 42px; color: #262626;}",
+        ".cpname {font-size: 36px; margin-top: 30px; color: #fff;}",
+        "p {font-size: 18px; color: #fff;}",
+        "@media (max-width: 767px) {.cpimage {height: 498px; } h2 {font-size: 28px; } .cpname {font-size: 24px; }}"
+      ],
+      "name": "t:sections.product-compares.presets.product-compares.name",
+      "settings": {
+        "title": "不論健身、瑜珈或訓練，讓你像賽亞人般突破極限！",
+        "alt": true,
+        "item-title": ""
+      }
+    },
+    "featured_collection_slider_6tjHTW": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {background: #244884 url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2-16.webp?v=1753165961\") center/cover no-repeat; margin-top: 0;}",
+        "h2 {margin-top: 30pt; font-size: 40px; color: #262626;}",
+        ".section-header__title + .section-header__description,.grid-product__title,div {color: #262626;}",
+        "@media (max-width: 767px) {h2 {font-size: 26px; } .index-section {margin: -10px; }}",
+        "@media (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "七龍珠Z 官方授權系列｜PVC 健身墊 6mm",
+        "description": "選擇你的戰士精神",
+        "home_featured_products": "all-yoga-mat",
+        "per_row": "small",
+        "alt": true
+      }
+    },
+    "slideshow_4kMwtj": {
+      "type": "slideshow",
+      "blocks": {
+        "image_NytYy9": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 48,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/2-11.webp",
+            "image_mobile": "shopify://shop_images/2MB__14_11.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_NytYy9"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": false
+      }
+    },
+    "hero_video_GkdhMw": {
+      "type": "hero-video",
+      "name": "t:sections.hero-video.presets.video_hero.name",
+      "settings": {
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/f8da83d99378458083df88d97631283b.mp4",
+        "section_height": "750px",
+        "mobile_height": "500px"
+      }
+    },
+    "text_columns_YL66Pi": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_zQUaxN": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/8.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "60-65D紮實硬度",
+            "text": "<p>針對深層肌群，提供堅實肌肉群最佳按摩效果。</p>",
+            "show_text_top": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_L9CtHT": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/9.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "安全無毒",
+            "text": "<p>採用純天然橡膠製成，環保耐用、持久不變形。</p>",
+            "show_text_top": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_wrjBUF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/10_621d840a-ecf3-49af-98fc-ae852e3a2f2a.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "龍珠迷專屬回憶",
+            "text": "<p>致敬悟空的起點與羈絆，訓練之餘也能喚起熱血回憶！</p>",
+            "show_text_top": false,
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_zQUaxN",
+        "text_block_L9CtHT",
+        "text_block_wrjBUF"
+      ],
+      "custom_css": [
+        ".index-section {background: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/3__1.webp?v=1753666311\") center/cover; margin-bottom: -120px;}",
+        ".index-section--alt .btn--tertiary {margin: 30px 0 0 40px; background: #000; width: 180px; font-size: 18px;}",
+        "h1 {font-size: 42px;}",
+        "div.h2 {font-size: 36px;}",
+        "p {font-size: 18px;}",
+        "@media (max-width: 767px) {.index-section {background-image: url(\"https://cdn.shopify.com/s/files/1/0737/8396/8032/files/2MB__14_12.webp\"); } h1 {font-size: 28px; } div.h2 {font-size: 24px; } p {font-size: 16px; }}"
+      ],
+      "name": "t:sections.text-columns.presets.text_columns_with_images.name",
+      "settings": {
+        "title": "<h1>戰士傳說，從四星龍珠開始！</h1>",
+        "align_text": "center",
+        "alt": true,
+        "button_label_out": "SHOP NOW",
+        "button_link_out": ""
+      }
+    },
+    "image_compare_zeus_MtCCKk": {
+      "type": "image-compareZeus",
+      "blocks": {
+        "image_g7RnVG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2-15.webp"
+          }
+        },
+        "image_aVJLJN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2-14.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_g7RnVG",
+        "image_aVJLJN"
+      ],
+      "custom_css": [
+        ".index-section {margin: 120px 0px 0px 0px; background-color: #000; padding: 0px 0px 120px 0px;}",
+        "@media only screen and (max-width: 767px) {.index-section {display: none; }}"
+      ],
+      "name": "image-compareZeus",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "heading_position": "left",
+        "fullwidth": true,
+        "height": 900,
+        "lazyload_images": false,
+        "Button_Image": "shopify://shop_images/1_DD.png",
+        "Button_Top": 90,
+        "Button_Size": 6
+      }
+    },
+    "image_compare_zeus_bB9Qge": {
+      "type": "image-compareZeus",
+      "blocks": {
+        "image_JDrWD6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2MB-11.webp"
+          }
+        },
+        "image_3THaHh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2MB-12.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_JDrWD6",
+        "image_3THaHh"
+      ],
+      "custom_css": [
+        ".index-section {margin: 120px 0px -50px 0px; background-color: #000; padding: 0px 0px 120px 0px;}",
+        "@media only screen and (min-width: 767px) {.index-section {display: none; }}"
+      ],
+      "name": "image-compareZeus",
+      "settings": {
+        "heading": "",
+        "heading_size": "h3",
+        "heading_position": "center",
+        "fullwidth": true,
+        "height": 900,
+        "lazyload_images": false,
+        "Button_Image": "shopify://shop_images/1_DD.png",
+        "Button_Top": 90,
+        "Button_Size": 11
+      }
+    },
+    "slideshow_sean_dzPxQ3": {
+      "type": "slideshow-sean",
+      "blocks": {
+        "image_4GdNEE": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s.jpg"
+          }
+        },
+        "image_GArXfq": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s_5ea558c9-da95-4063-9692-d6ba94f56445.jpg"
+          }
+        },
+        "image_4WpzcR": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s_ede976c0-c605-4641-aebe-96093c16d152.jpg"
+          }
+        },
+        "image_UKeFDh": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s_00c788a9-b730-4625-a43b-2f1490f864ce.jpg"
+          }
+        },
+        "image_e6RzU9": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/s_fd9ba3c6-510f-4b1f-9628-9ed0e95b1a30.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_4GdNEE",
+        "image_GArXfq",
+        "image_4WpzcR",
+        "image_UKeFDh",
+        "image_e6RzU9"
+      ],
+      "custom_css": [],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "style": "arrows",
+        "desktop_size": -10,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_F7RdWt": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {background-color: #000; margin-bottom: -100px;}",
+        "h2 {font-size: 40px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; }}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "七龍珠Z 官方授權系列",
+        "description": "",
+        "home_featured_products": "power-series",
+        "per_row": "small",
+        "alt": true
+      }
+    },
+    "slideshow_UcyFzH": {
+      "type": "slideshow",
+      "blocks": {
+        "image_BRxh9b": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/2-17.webp",
+            "image_mobile": "shopify://shop_images/2MB__14_13.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_BRxh9b"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin-bottom: -80px;}"
+      ],
+      "name": "t:sections.slideshow.presets.hero_optional_slideshow.name",
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow",
+    "23c08093-f6ae-4421-826a-891e8e6d5eab",
+    "hero_video_c699JA",
+    "b441079a-9f0c-441b-8c48-01e9ba0540d3",
+    "slideshow_yPHV8X",
+    "slideshow_4T3w8B",
+    "slideshow_sean_GLGQny",
+    "product_compares_CednDq",
+    "slideshow_d9qbXE",
+    "slideshow_sean_ECGnHK",
+    "product_compares_iUR7pA",
+    "featured_collection_slider_dc3KQ3",
+    "slideshow_JFhMgY",
+    "slideshow_sean_zCgmNi",
+    "product_compares_kF74nW",
+    "featured_collection_slider_6tjHTW",
+    "slideshow_4kMwtj",
+    "hero_video_GkdhMw",
+    "text_columns_YL66Pi",
+    "image_compare_zeus_MtCCKk",
+    "image_compare_zeus_bB9Qge",
+    "slideshow_sean_dzPxQ3",
+    "featured_collection_slider_F7RdWt",
+    "slideshow_UcyFzH"
+  ]
+}

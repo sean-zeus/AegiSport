@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "a24efc25-b8ec-43ae-8a5f-2061ef9a5178": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20271371026720__a24efc25-b8ec-43ae-8a5f-2061ef9a5178-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/20250519__6___1_3.webp",
+            "image_mobile": "shopify://shop_images/20250519__6_-01.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--20271371026720__a24efc25-b8ec-43ae-8a5f-2061ef9a5178-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_FA9e4A": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 32px; margin-top: -50px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 30px; margin: 20px; }}"
+      ],
+      "settings": {
+        "title": "8/1 - 8/10 ｜最強老爸限定優惠",
+        "description": "結帳時輸入折扣碼BZLOVE88，Pure Series享88折優惠!",
+        "home_featured_products": "pure-series",
+        "rows": 4,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    },
+    "featured_collection_PTbN6a": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 32px; margin-top: -50px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 30px; margin: 20px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-adjustable-kettlebell",
+        "rows": 4,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    },
+    "featured_collection_fKKXcY": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {font-size: 32px; margin-top: -50px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 30px; margin: 20px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-adjustable-barbell",
+        "rows": 4,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    },
+    "featured_collection_YpqJ4D": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-foldable-bench",
+        "rows": 4,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    },
+    "featured_collection_RKhMhn": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 32px; margin-top: -50px;}",
+        "@media only screen and (max-width: 767px) {h2 {font-size: 30px; margin: 20px; }}"
+      ],
+      "settings": {
+        "title": "全系列配件9折",
+        "description": "健康苗條同步到位，加入購物車自動優惠",
+        "home_featured_products": "all-accessories-series",
+        "rows": 4,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a24efc25-b8ec-43ae-8a5f-2061ef9a5178",
+    "featured_collection_FA9e4A",
+    "featured_collection_PTbN6a",
+    "featured_collection_fKKXcY",
+    "featured_collection_YpqJ4D",
+    "featured_collection_RKhMhn"
+  ]
+}

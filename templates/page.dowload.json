@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "86e7878d-1467-4344-847b-3509e1912032": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20271888236832__86e7878d-1467-4344-847b-3509e1912032-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "PRODUCT MANUAL",
+            "title_size": 60,
+            "subheading": "正確的使用Byzoom Fitness產品，享受我們提供的優質體驗並減少受傷的風險。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/banner__1_2.jpg",
+            "image_mobile": "shopify://shop_images/banner-07.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--20271888236832__86e7878d-1467-4344-847b-3509e1912032-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "69d154af-836e-4f1d-9f7f-073645f8d206": {
+      "type": "rich-text_page_download",
+      "blocks": {
+        "template--20411013005600__69d154af-836e-4f1d-9f7f-073645f8d206-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "下載產品說明書"
+          }
+        },
+        "template--20411013005600__69d154af-836e-4f1d-9f7f-073645f8d206-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>您的產品說明書不見了，或是被家裡的狗狗藏起來了？<br/>沒關係！這裡提供您下載該產品的說明書</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20411013005600__69d154af-836e-4f1d-9f7f-073645f8d206-heading-1",
+        "template--20411013005600__69d154af-836e-4f1d-9f7f-073645f8d206-text-1"
+      ],
+      "custom_css": [
+        "span[name=\"sean_th1\"] {color: rgb(141 144 141);}",
+        "@media (max-width: 768px) {.align-center {align-items: start; } span[name=\"sean_th1\"] {margin-top: -20px; margin-left: 30px; text-align: left; } span[name=\"sean_th2\"] {margin-top: -20px; text-align: left; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "86e7878d-1467-4344-847b-3509e1912032",
+    "main",
+    "69d154af-836e-4f1d-9f7f-073645f8d206"
+  ]
+}

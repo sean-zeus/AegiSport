@@ -1,0 +1,784 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_video_c699JA": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "有氧減脂組",
+        "title_size": 47,
+        "subheading": "甩開纏身的熱量脂肪",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-bottom horizontal-center",
+        "video_url": "https://youtu.be/pbER2URtsHQ?si=qOlssii8Z7JFdu26&t=29",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slideshow-0": {
+          "type": "image",
+          "settings": {
+            "title": "增肌減脂組",
+            "title_size": 50,
+            "subheading": "甩開纏身的熱量脂肪",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify://shop_images/head_8b87a341-fee3-4fa2-9c76-f7ac8d84895b.webp"
+          }
+        }
+      },
+      "block_order": [
+        "slideshow-0"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; } div {font-size: 13px; }}"
+      ],
+      "settings": {
+        "style": "minimal",
+        "desktop_size": 0,
+        "mobile_size": 40,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "23c08093-f6ae-4421-826a-891e8e6d5eab": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>年後進補吃太多?<br/>我們替您精選了燃燒脂肪最適合的訓練器材菜單<br/>幫助你早日甩開纏身的熱量脂肪!<br/><br/>不過江湖上說七分吃．三分練<br/>所以想成功瘦身還是得留心每日的三餐營養攝取哦!</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932389664__23c08093-f6ae-4421-826a-891e8e6d5eab-1689752656ba7bb83e-1"
+      ],
+      "custom_css": [
+        ".index-section {margin: -50px 0 0px 0; height: 350px;}",
+        "@media only screen and (min-width: 769px) {p {font-size: 18px; }}",
+        "@media only screen and (max-width: 767px) {.rte {margin-top: 30px; } .index-section {height: 260px; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "logo_list_mBK96L": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_8AqrzU": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_7.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_Q7QKz7": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_6.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_y4tpXn": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_5.jpg",
+            "link": ""
+          }
+        },
+        "logo_image_ecNV6Q": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/logo__1_4.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_8AqrzU",
+        "logo_image_Q7QKz7",
+        "logo_image_y4tpXn",
+        "logo_image_ecNV6Q"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
+      "settings": {
+        "title": "",
+        "logo_opacity": 100,
+        "alt": false
+      }
+    },
+    "text_columns_THLARb": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_4BihHQ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/12.5set-4_472c75fc-4480-41fc-b05d-0afbec101161.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "5.6KG(12.5LB)美型組合",
+            "text": "<p><a href=\"/products/pure-series-adjustable-dumbbell-12-5lb-white\" title=\"Pure Series 5.6kg(12.5LB) 5段重量 可調式啞鈴(白)\"><strong>12.5LB可調式啞鈴</strong></a><br/><a href=\"/products/pure-series-adjustable-kettlebell-30lb-white\" title=\"Pure Series 13.6 kg(30LB) 5段重量 可調式壺鈴(白)\">30LB可調式壺鈴</a><br/><a href=\"/products/pure-series-easy-bar-10lb-white\" title=\"Pure Series Easy Bar 4.5KG(10LB) 專用槓鈴桿(白)\">10LB Easy Bar</a><br/><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-white\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(白)\">5.6 / 11.3 / 12.4 KG 啞鈴專用架</a><br/><br/>$9,800</p>",
+            "show_text_top": false,
+            "button_label": "立即購買",
+            "button_link": "shopify://products/pure-series-set-12-5lb-white"
+          }
+        },
+        "text_block_XAthAA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/25set-w-4_5892b58e-d128-47eb-9971-4b23472149cf.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "11.3KG(25LB)美型組合",
+            "text": "<p><a href=\"/products/pure-series-adjustable-dumbbell-25lb-white\" title=\"Pure Series 11.3kg(25LB) 5段重量 可調式啞鈴(白)\"><strong>25LB可調式啞鈴</strong></a><br/><a href=\"/products/pure-series-adjustable-kettlebell-30lb-white\" title=\"Pure Series 13.6 kg(30LB) 5段重量 可調式壺鈴(白)\">30LB可調式壺鈴</a><br/><a href=\"/products/pure-series-easy-bar-10lb-white\" title=\"Pure Series Easy Bar 4.5KG(10LB) 專用槓鈴桿(白)\">10LB Easy Bar</a><br/><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-white\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(白)\">5.6 / 11.3 / 12.4 KG 啞鈴專用架<br/></a><br/>$10,800</p>",
+            "show_text_top": false,
+            "button_label": "立即購買",
+            "button_link": "shopify://products/pure-series-set-25lb-white"
+          }
+        },
+        "text_block_zAKUEq": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/27.5set-w-01_b282a6da-9469-4fbd-897b-db4ee4aaf103.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "12.4KG(27.5LB)美型組合",
+            "text": "<p><a href=\"/products/pure-series-adjustable-dumbbell-27-5lb-white\" title=\"Pure Series 12.4kg(27.5LB) 10段重量 可調式啞鈴(白)\"><strong>27.5LB可調式啞鈴</strong></a><strong><br/></strong><a href=\"/products/pure-series-adjustable-kettlebell-40lb-white\" title=\"Pure Series 18.1kg(40LB) 5段重量 可調式壺鈴(白)\"><strong>40LB可調式壺鈴</strong></a><br/><a href=\"/products/pure-series-easy-bar-10lb-white\" title=\"Pure Series Easy Bar 4.5KG(10LB) 專用槓鈴桿(白)\">10LB Easy Bar</a><br/><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-white\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(白)\">5.6 / 11.3 / 12.4 KG 啞鈴專用架<br/></a><br/>$13,980</p>",
+            "show_text_top": false,
+            "button_label": "立即購買",
+            "button_link": "shopify://products/pure-series-set-27-5lb-white"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_4BihHQ",
+        "text_block_XAthAA",
+        "text_block_zAKUEq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div.h2 {font-size: 26px;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "312da524-b26f-4988-8ab5-379a9292ce91": {
+      "type": "text-and-image",
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 100px 0 60px 0;}",
+        "@media only screen and (max-width: 767px) {.h1 {font-size: 28.8px; }}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_about_Custom-content_BRAND-CONCEPT-2.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "BRAND CONCEPT",
+        "title": "TRAINING FOCUSED",
+        "text": "<p>BYZOOM FITNESS創立的理念是希望每個人在日常工作之餘，也別忘多聚焦自己的健康生活。品牌名取自英文 \"BY\" 及 \"ZOOM\" 兩個單字結合而成，就是要呼應我們的品牌理念：只要專注意志，隨時就能展開訓練；家，也可以是你的健身房！用更有效率的方式為自己打造健康生活。</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "66",
+        "layout": "left",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "978475ed-0085-4335-a8c5-7be6ef3d38d0": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--18883932389664__978475ed-0085-4335-a8c5-7be6ef3d38d0-1689674588f83085f3-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/12.5LB-01.webp",
+            "link": "",
+            "width": "100%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932389664__978475ed-0085-4335-a8c5-7be6ef3d38d0-1689674588f83085f3-0"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 60px 0 120px 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": false
+      }
+    },
+    "71d4f8f8-22da-41a4-a1fb-51dcafc632cf": {
+      "type": "text-and-image",
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 60px 0;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/01_about_Custom-content_BRAND-CONCEPT.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "",
+        "text": "<h6><strong>多種重量隨意調整，長度隨重量改變</strong></h6><p>不論是剛開始運動的初階使用者或是進階的居家訓練者皆可針對不同肌群輕鬆調整適合重量， 一組調整啞鈴可滿足多個使用者重量的需求，在家隨時想運動就運動，懶惰外出運動從此不再是藉口。</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "66",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "96a08faf-d6a2-48ab-a175-6b0e38e66bda": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--18883932389664__96a08faf-d6a2-48ab-a175-6b0e38e66bda-1689751348f18b57f0-0": {
+          "type": "text_block",
+          "settings": {
+            "icon": "shield",
+            "title": "Quality",
+            "text": "<p>品質講究</p>"
+          }
+        },
+        "template--18883932389664__96a08faf-d6a2-48ab-a175-6b0e38e66bda-1689751348f18b57f0-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "thumbs-up",
+            "title": "Stylish",
+            "text": "<p>風格美學</p>"
+          }
+        },
+        "template--18883932389664__96a08faf-d6a2-48ab-a175-6b0e38e66bda-1689751348f18b57f0-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "gears",
+            "title": "Performance",
+            "text": "<p>專注機能</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932389664__96a08faf-d6a2-48ab-a175-6b0e38e66bda-1689751348f18b57f0-0",
+        "template--18883932389664__96a08faf-d6a2-48ab-a175-6b0e38e66bda-1689751348f18b57f0-1",
+        "template--18883932389664__96a08faf-d6a2-48ab-a175-6b0e38e66bda-1689751348f18b57f0-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "BRAND INSISTENCE",
+        "align_text": "center",
+        "desktop_columns_per_row": 3,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": false
+      }
+    },
+    "b441079a-9f0c-441b-8c48-01e9ba0540d3": {
+      "type": "slideshow",
+      "blocks": {
+        "template--18883932389664__b441079a-9f0c-441b-8c48-01e9ba0540d3-1689747339d43dfd34-0": {
+          "type": "image",
+          "settings": {
+            "title": "# 啞鈴訓練",
+            "title_size": 48,
+            "subheading": "不但可以增加肌肉、幫助燃燒更多脂肪還可促進葡萄糖代謝及運用以穩定血糖、提升身體的基礎代謝率。Byzoom的啞鈴有多種訓練重量 ，可依不同肌群的需求隨時切換，CP值超高！",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/05_4165f79c-b7b6-4efe-bf87-753b55fc52fc.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--18883932389664__b441079a-9f0c-441b-8c48-01e9ba0540d3-1689747339d43dfd34-0"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin: 0px 0;}",
+        ".horizontal-left {padding-right: 0px;}",
+        ".horizontal-right {padding-left: 0px;}",
+        "@media only screen and (max-width: 767px) {.hero__text-shadow {width: 60%; } .hero__title {font-size: 22px; } .hero__subtitle {font-size: 12px; }}",
+        "@media only screen and (min-width: 767px) {.horizontal-left {/* vertical-align:top; padding-top: 70px; */ left: -70px; } .hero__text-shadow {width: 35%; }}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": -20,
+        "mobile_size": 10,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_DfK3PT": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 30px 0 30px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 50px 0 30px 0; } .appear-delay {font-size: 26px; }}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-dumbbell",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "slideshow_4T3w8B": {
+      "type": "slideshow",
+      "blocks": {
+        "image_HUdpXj": {
+          "type": "image",
+          "settings": {
+            "title": "#高轉速鋼索跳繩",
+            "title_size": 48,
+            "subheading": "結束後再做跳繩有氧運動，延長脂肪燃燒時間。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/08_2eac7d48-daf8-45a2-a3b2-0188820e8275.webp"
+          }
+        },
+        "image_APnNmi": {
+          "type": "image",
+          "settings": {
+            "title": "#健腹滾輪",
+            "title_size": 48,
+            "subheading": "全面刺激核心肌群，幫助減少頑固脂肪，<br>快速感受體態變化。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/09_6595daf3-45ed-4222-baf0-f192c444de39.webp"
+          }
+        },
+        "image_EGPVXa": {
+          "type": "image",
+          "settings": {
+            "title": "#俯臥撐支架",
+            "title_size": 48,
+            "subheading": "針對手臂、胸、腰、腹部等上肢肌群，<br>打造緊實線條。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/10.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_HUdpXj",
+        "image_APnNmi",
+        "image_EGPVXa"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin: 0px 0;}",
+        ".horizontal-left {padding-right: 0px;}",
+        ".horizontal-right {padding-left: 0px;}",
+        "@media only screen and (max-width: 767px) {.hero__text-shadow {width: 60%; } .hero__title {font-size: 22px; } .hero__subtitle {font-size: 12px; }}",
+        "@media only screen and (min-width: 767px) {.horizontal-left {/* vertical-align:top; padding-top: 70px; */ left: -70px; } .hero__text-shadow {width: 35%; }}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": -20,
+        "mobile_size": 10,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_MJE4G8": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 30px 0 30px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 50px 0 30px 0; } .appear-delay {font-size: 26px; }}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "recommended-aerobic-fat-loss-set",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "slideshow_b78z8G": {
+      "type": "slideshow",
+      "blocks": {
+        "image_xwtXzn": {
+          "type": "image",
+          "settings": {
+            "title": "#重量手環",
+            "title_size": 48,
+            "subheading": "想讓運動的成效加倍，也可考慮在以上組合外，再加購運動專用的重量環，配戴於四肢，整體熱量燃燒的效果也更強。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/06_2a900f16-9773-42fb-85ad-b1965333f473.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_xwtXzn"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin: 0px 0;}",
+        ".horizontal-left {padding-right: 0px;}",
+        ".horizontal-right {padding-left: 0px;}",
+        "@media only screen and (max-width: 767px) {.hero__text-shadow {width: 60%; } .hero__title {font-size: 22px; } .hero__subtitle {font-size: 12px; }}",
+        "@media only screen and (min-width: 767px) {.horizontal-left {/* vertical-align:top; padding-top: 70px; */ left: -70px; } .hero__text-shadow {width: 35%; }}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": -20,
+        "mobile_size": 10,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_cUTyKa": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 30px 0 30px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 50px 0 30px 0; } .appear-delay {font-size: 26px; }}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-weighted-bracelet",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "slideshow_kmfVeV": {
+      "type": "slideshow",
+      "blocks": {
+        "image_mpMmY3": {
+          "type": "image",
+          "settings": {
+            "title": "#天然厚實瑜珈墊",
+            "title_size": 48,
+            "subheading": "在運動的同時，擁有高度支撐力的瑜珈墊可以帶給你更舒適的健身體驗！簡約的正位線設計，不管是做瑜珈練習、或運動之後的舒緩動作，都能精準校正。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify://shop_images/07_67f1766b-46b2-41e2-86b7-45b79503c360.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_mpMmY3"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin: 0px 0;}",
+        ".horizontal-left {padding-right: 0px;}",
+        ".horizontal-right {padding-left: 0px;}",
+        "@media only screen and (max-width: 767px) {.hero__text-shadow {width: 60%; } .hero__title {font-size: 22px; } .hero__subtitle {font-size: 12px; }}",
+        "@media only screen and (min-width: 767px) {.horizontal-left {/* vertical-align:top; padding-top: 70px; */ left: -70px; } .hero__text-shadow {width: 35%; }}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": -20,
+        "mobile_size": 10,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_KKUFKq": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {margin: 30px 0 30px 0;}",
+        ".overflow-scroller .grid__item:first-child {margin-left: 30px;}",
+        "@media only screen and (max-width: 767px) {.index-section {margin: 50px 0 30px 0; } .appear-delay {font-size: 26px; }}",
+        "@media only screen and (min-width: 767px) {.overflow-scroller {overflow-x: hidden; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "all-yoga-mat",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "slideshow_xDRwj8": {
+      "type": "slideshow",
+      "blocks": {
+        "image_kTfNVe": {
+          "type": "image",
+          "settings": {
+            "title": "05\nQUICK CHANGE\n扭轉調整",
+            "title_size": 48,
+            "subheading": "一手扭轉設計，快速準確選擇 5 種重量。 解決傳統壺鈴變換重量緩慢及重量選擇不足所帶來的困擾。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-left",
+            "image": "shopify://shop_images/12.5LB-02-5.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_kTfNVe"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".index-section--hero {margin: 60px 0;}",
+        ".horizontal-left {padding-right: 0px;}",
+        ".horizontal-right {padding-left: 0px;}",
+        "@media only screen and (max-width: 767px) {.hero__text-shadow {width: 60%; } .hero__title {font-size: 22px; } .hero__subtitle {font-size: 12px; }}",
+        "@media only screen and (min-width: 767px) {.horizontal-left {/* vertical-align:top; padding-top: 70px; */ left: -70px; } .hero__text-shadow {width: 35%; }}"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": -20,
+        "mobile_size": 10,
+        "autoplay": true,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "image_compare_VpnBa3": {
+      "type": "image-compare",
+      "blocks": {
+        "image_gUy3na": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_index_Image-comparison_black.webp"
+          }
+        },
+        "image_9PLng9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_index_Image-comparison_white.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_gUy3na",
+        "image_9PLng9"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2 {font-size: 32px;}"
+      ],
+      "settings": {
+        "heading": "質感雙色可選",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "fullwidth": true,
+        "slider_style": "classic",
+        "height": 760,
+        "color": "#ffffff",
+        "lazyload_images": true
+      }
+    },
+    "text_columns_GyqCnF": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_PPkd4X": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/12.5set-b_550634b4-4cf9-4152-b287-51367ff70ef1.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "5.6KG(12.5LB)美型組合",
+            "text": "<p><a href=\"/products/pure-series-adjustable-dumbbell-12-5lb-white\" target=\"_blank\" title=\"Pure Series 5.6kg(12.5LB) 5段重量 可調式啞鈴(白)\"><strong>12.5LB可調式啞鈴</strong></a><br/><a href=\"/products/pure-series-adjustable-kettlebell-30lb-black\" target=\"_blank\" title=\"Pure Series 13.6 kg(30LB) 5段重量 可調式壺鈴(黑)\">30LB可調式壺鈴</a><br/><a href=\"/products/pure-series-easy-bar-10lb-black\" target=\"_blank\" title=\"Pure Series Easy Bar 4.5KG(10LB) 專用槓鈴桿(黑)\">10LB Easy Bar</a><br/><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-black\" target=\"_blank\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(黑)\">5.6 / 11.3 / 12.4 KG 啞鈴專用架</a><br/><br/>$9,800</p>",
+            "show_text_top": false,
+            "button_label": "立即購買",
+            "button_link": "shopify://products/pure-series-set-12-5lb-black"
+          }
+        },
+        "text_block_KQCxRh": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/25set-3_41bb28ec-d0e3-4a30-a41b-9e4721f336d5.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "11.3KG(25LB)美型組合",
+            "text": "<p><a href=\"/products/pure-series-adjustable-dumbbell-25lb-white\" title=\"Pure Series 11.3kg(25LB) 5段重量 可調式啞鈴(白)\"><strong>25LB可調式啞鈴</strong></a><br/><a href=\"/products/pure-series-adjustable-kettlebell-30lb-black\" title=\"Pure Series 13.6 kg(30LB) 5段重量 可調式壺鈴(黑)\">30LB可調式壺鈴</a><br/><a href=\"/products/pure-series-easy-bar-10lb-black\" title=\"Pure Series Easy Bar 4.5KG(10LB) 專用槓鈴桿(黑)\">10LB Easy Bar</a><br/><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-black\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(黑)\">5.6 / 11.3 / 12.4 KG 啞鈴專用架</a><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-white\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(白)\"><br/></a><br/>$10,800</p>",
+            "show_text_top": false,
+            "button_label": "立即購買",
+            "button_link": "shopify://products/pure-series-set-25lb-black"
+          }
+        },
+        "text_block_yLeNiy": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify://shop_images/27.5-set-b-01.webp",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "12.4KG(27.5LB)美型組合",
+            "text": "<p><a href=\"/products/pure-series-adjustable-dumbbell-27-5lb-black\" title=\"Pure Series 12.4kg(27.5LB) 10段重量 可調式啞鈴(黑)\"><strong>27.5LB可調式啞鈴</strong></a><strong><br/></strong><a href=\"/products/pure-series-adjustable-kettlebell-40lb-black\" title=\"Pure Series 18.1kg(40LB) 5段重量 可調式壺鈴(黑)\"><strong>40LB可調式壺鈴</strong></a><br/><a href=\"/products/pure-series-easy-bar-10lb-black\" title=\"Pure Series Easy Bar 4.5KG(10LB) 專用槓鈴桿(黑)\">10LB Easy Bar</a><br/><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-black\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(黑)\">5.6 / 11.3 / 12.4 KG 啞鈴專用架</a><a href=\"/products/pure-series-adjustable-dumbbell-stand-12-5lb-25lb-white\" title=\"Pure Series 5.6 / 11.3 / 12.4 kg可調式啞鈴專用架(白)\"><br/></a><br/>$13,980</p>",
+            "show_text_top": false,
+            "button_label": "立即購買",
+            "button_link": "shopify://products/pure-series-set-27-5lb-black"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_PPkd4X",
+        "text_block_KQCxRh",
+        "text_block_yLeNiy"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "div.h2 {font-size: 26px;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "slideshow_hyrXRz": {
+      "type": "slideshow",
+      "blocks": {
+        "image_McUDpn": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/b____1__1.webp",
+            "image_mobile": "shopify://shop_images/b__1_2c7adf53-090d-4972-bfa8-aa83a4b8135a.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_McUDpn"
+      ],
+      "custom_css": [
+        ".index-section--hero {margin-bottom: -80px;}",
+        "@media only screen and (max-width: 767px) {.index-section--hero {margin-bottom: -50px; }}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 10,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "f17065cd-e40b-4595-a7bb-0c2314e5acf6": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--18883932389664__f17065cd-e40b-4595-a7bb-0c2314e5acf6-168974351506e5e410-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/01_about_Animated_image_hero_international-patent.jpg"
+          }
+        },
+        "image_YtYgky": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "template--18883932389664__f17065cd-e40b-4595-a7bb-0c2314e5acf6-168974351506e5e410-0",
+        "image_YtYgky"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {div.hero__subtitle {font-size: 14px; }}"
+      ],
+      "settings": {
+        "style": "fading",
+        "title": "INTERNATIONAL PATENT\n多國專利",
+        "title_size": 48,
+        "subheading": "BYZOOM FITNESS內部擁有多位工程師和設計師一同組成研發團隊，我們不斷精進研發、測試與改進，只為了提供消費者最好、同時符合高品質標準的產品。我們擁有涵蓋東西方市場的專利，不僅可以確保我們的智慧財產權，更能進一步的控制品質，確保BYZOOM FITNESS的產品不會被低信譽的製造商拿去複製，避免低品質的產品流入消費者手中。目前已經擁有全球超過30項專利。",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": -10,
+        "mobile_size": 90
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_video_c699JA",
+    "slideshow",
+    "23c08093-f6ae-4421-826a-891e8e6d5eab",
+    "logo_list_mBK96L",
+    "text_columns_THLARb",
+    "312da524-b26f-4988-8ab5-379a9292ce91",
+    "978475ed-0085-4335-a8c5-7be6ef3d38d0",
+    "71d4f8f8-22da-41a4-a1fb-51dcafc632cf",
+    "96a08faf-d6a2-48ab-a175-6b0e38e66bda",
+    "b441079a-9f0c-441b-8c48-01e9ba0540d3",
+    "featured_collection_slider_DfK3PT",
+    "slideshow_4T3w8B",
+    "featured_collection_slider_MJE4G8",
+    "slideshow_b78z8G",
+    "featured_collection_slider_cUTyKa",
+    "slideshow_kmfVeV",
+    "featured_collection_slider_KKUFKq",
+    "slideshow_xDRwj8",
+    "image_compare_VpnBa3",
+    "text_columns_GyqCnF",
+    "slideshow_hyrXRz",
+    "f17065cd-e40b-4595-a7bb-0c2314e5acf6"
+  ]
+}

@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "ae2e3327-14e7-4989-ae8f-b2f56b1b65eb": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20366163444000__ae2e3327-14e7-4989-ae8f-b2f56b1b65eb-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Home gym inspiration",
+            "title_size": 66,
+            "subheading": "透過我們的居家健身器材進行多種風格的健身空間改造，製造出充滿獨具風格的居家健身房，讓居家隨處即可展開訓練。",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/banner-17.jpg",
+            "image_mobile": "shopify://shop_images/banner-1-20.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--20366163444000__ae2e3327-14e7-4989-ae8f-b2f56b1b65eb-image-1"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; } div {font-size: 13px; }}"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "277f6632-b84b-4285-a05a-b82a81f9f047": {
+      "type": "blog-posts",
+      "custom_css": [
+        "h2.section-header__title.appear-delay {font-size: 32px;}",
+        ".article__content-meta .h3 {font-size: 22px;}"
+      ],
+      "settings": {
+        "title": "重新定義你對居家健身的想像",
+        "blog": "home-gym-inspiration",
+        "post_limit": 9,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_show_excerpt": false,
+        "blog_image_size": "landscape",
+        "view_all": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ae2e3327-14e7-4989-ae8f-b2f56b1b65eb",
+    "277f6632-b84b-4285-a05a-b82a81f9f047"
+  ]
+}

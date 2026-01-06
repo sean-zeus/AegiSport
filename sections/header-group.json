@@ -1,0 +1,49 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "show_announcement_home_only": true,
+        "announcement_text": "因系統作業升級  4/12~4/17訂購會安排在4/18陸續出貨 造成不便敬請見諒",
+        "announcement_link": ""
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".site-header {padding: 15px 0;}",
+        "@media only screen and (max-width: 749px) {.header-wrapper--overlay {background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3)); position: fixed; }}"
+      ],
+      "settings": {
+        "header_style": "bar",
+        "main_menu_alignment": "right",
+        "sticky_index": true,
+        "sticky_collection": true,
+        "header_search_enable": true,
+        "logo": "shopify://shop_images/01_index_1_logo-2.svg",
+        "logo-inverted": "shopify://shop_images/01_index_1_logo-1.svg",
+        "desktop_logo_width": 200,
+        "mobile_logo_width": 200,
+        "logo_hide_mobile": false,
+        "main_menu_link_list": "new",
+        "hover_menu": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

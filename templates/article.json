@@ -1,0 +1,62 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "article-template",
+      "custom_css": [
+        "h1 {font-size: 32px;}",
+        "h2 {font-size: 26px;}",
+        "h3 {font-size: 24px;}",
+        "h4 {font-size: 22px;}",
+        "p {font-size: 16px; color: #808080;}",
+        "span {font-size: 16px; color: #808080;}",
+        ".blogs-url a {font-size: 16px; color: #95680e;}",
+        ".blogs-details {margin-top: -15px;}",
+        ".article__content {margin: -20px auto; max-width: 850px;}",
+        ".rte--indented-images img:not([style]) {margin: 0px; max-width: 850px; width: 850px;}",
+        "@media (max-width: 767px) {.rte--indented-images img:not([style]) {max-width: 100%; width: 100%; } span {font-size: 14px; color: #808080; }}"
+      ],
+      "settings": {
+        "blog_show_image": true,
+        "blog_show_tags": true,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false,
+        "social_sharing_blog": false
+      }
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "custom_css": [
+        "h2.section-header__title.appear-delay {font-size: 46px;}",
+        ".article__content-meta .h3 {font-size: 22px;}",
+        "@media only screen and (max-width: 767px) {h2.section-header__title.appear-delay {font-size: 32px; }}"
+      ],
+      "settings": {
+        "title": "您可能也喜歡",
+        "blog": "home-gym-inspiration",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_show_excerpt": false,
+        "blog_image_size": "wide",
+        "view_all": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blog-posts"
+  ]
+}

@@ -1,0 +1,67 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1116d578-4deb-4579-a3b3-697bfb2b6e1e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--20366162755872__1116d578-4deb-4579-a3b3-697bfb2b6e1e-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "Home gym inspiration",
+            "title_size": 66,
+            "subheading": "重新定義你對居家健身的想像",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify://shop_images/banner-17.jpg",
+            "image_mobile": "shopify://shop_images/banner-1-20.webp"
+          }
+        }
+      },
+      "block_order": [
+        "template--20366162755872__1116d578-4deb-4579-a3b3-697bfb2b6e1e-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "custom_css": [
+        "h2.section-header__title.appear-delay {font-size: 32px;}",
+        ".article__content-meta .h3 {font-size: 22px;}",
+        "@media only screen and (max-width: 767px) {h1 {font-size: 32px; } div.h3 {font-size: 22px; }}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "post_limit": 9,
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_show_excerpt": false,
+        "blog_image_size": "wide"
+      }
+    }
+  },
+  "order": [
+    "1116d578-4deb-4579-a3b3-697bfb2b6e1e",
+    "main"
+  ]
+}
