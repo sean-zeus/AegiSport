@@ -6,107 +6,110 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
-    "1116d578-4deb-4579-a3b3-697bfb2b6e1e": {
-      "type": "slideshow",
-      "blocks": {
-        "template--20366162755872__1116d578-4deb-4579-a3b3-697bfb2b6e1e-image-1": {
-          "type": "image",
-          "settings": {
-            "title": "Home gym inspiration",
-            "title_size": 66,
-            "subheading": "重新定義你對居家健身的想像",
-            "link": "",
-            "link_text": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/banner-17.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "template--20366162755872__1116d578-4deb-4579-a3b3-697bfb2b6e1e-image-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "style": "arrows",
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "autoplay": false,
-        "autoplay_speed": 7,
-        "lazyload_images": true
-      }
-    },
     "main": {
-      "type": "blog-template",
-      "custom_css": [
-        "h1 {font-size: 50px;}",
-        "a {font-size: 26px;}",
-        "@media only screen and (max-width: 767px) {h1 {font-size: 32px; } div.h3 {font-size: 22px; }}"
-      ],
-      "settings": {
-        "layout": "grid",
-        "post_limit": 9,
-        "blog_show_tag_filter": false,
-        "blog_show_rss": false,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "blog_show_excerpt": false,
-        "blog_image_size": "landscape"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
+      "type": "main-blog",
       "blocks": {
-        "collection2": {
-          "type": "collection",
+        "title": {
+          "type": "text",
+          "name": "Title",
           "settings": {
-            "collection": "pure-series-black"
-          }
+            "text": "<h1>{{ closest.blog.title }}</h1>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 48,
+            "padding-block-end": 48,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         },
-        "ec60a954-8829-45ad-a95b-8fe60b4493df": {
-          "type": "collection",
+        "static-blog-post-card": {
+          "type": "_blog-post-card",
+          "static": true,
           "settings": {
-            "collection": "pure-series-white"
-          }
-        },
-        "collection1": {
-          "type": "collection",
-          "settings": {
-            "collection": "classic-series"
-          }
-        },
-        "collection3": {
-          "type": "collection",
-          "settings": {
-            "collection": "all-accessories-series"
-          }
+            "alignment": "left"
+          },
+          "blocks": {
+            "heading": {
+              "type": "_heading",
+              "name": "t:names.title",
+              "static": true,
+              "settings": {
+                "type_preset": "h4",
+                "font": "var(--font-primary--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "",
+                "text": "",
+                "read_only": true,
+                "alignment": "left",
+                "show_alignment": false,
+                "padding-block-start": 0,
+                "padding-block-end": 10,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "blog-post-details": {
+              "type": "_blog-post-info-text",
+              "name": "t:names.details",
+              "static": true,
+              "settings": {
+                "show_date": true,
+                "show_author": false,
+                "type_preset": "",
+                "alignment": "left",
+                "show_alignment": false,
+                "padding-block-start": 0,
+                "padding-block-end": 0
+              },
+              "blocks": {}
+            },
+            "image": {
+              "type": "_blog-post-image",
+              "static": true,
+              "settings": {
+                "height": "large",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 4
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
         }
       },
       "block_order": [
-        "collection2",
-        "ec60a954-8829-45ad-a95b-8fe60b4493df",
-        "collection1",
-        "collection3"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 48px;}",
-        "@media only screen and (max-width: 767px) {h2 {font-size: 26px; }}"
+        "title"
       ],
       "settings": {
-        "title": "You may also like",
-        "alt": true
+        "color_scheme": "",
+        "padding-block-start": 0,
+        "padding-block-end": 48
       }
     }
   },
   "order": [
-    "1116d578-4deb-4579-a3b3-697bfb2b6e1e",
-    "main",
-    "featured-collections"
+    "main"
   ]
 }

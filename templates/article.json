@@ -6,57 +6,92 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
-    "main": {
-      "type": "article-template",
-      "custom_css": [
-        "h1 {font-size: 32px;}",
-        "h2 {font-size: 26px;}",
-        "h3 {font-size: 24px;}",
-        "h4 {font-size: 22px;}",
-        "p {font-size: 16px; color: #808080;}",
-        "span {font-size: 16px; color: #808080;}",
-        ".blogs-url a {font-size: 16px; color: #95680e;}",
-        ".blogs-details {margin-top: -15px;}",
-        ".article__content {margin: -20px auto; max-width: 850px;}",
-        ".rte--indented-images img:not([style]) {margin: 0px; max-width: 850px; width: 850px;}",
-        "@media (max-width: 767px) {.rte--indented-images img:not([style]) {max-width: 100%; width: 100%; } span {font-size: 14px; color: #808080; }}"
-      ],
+    "section": {
+      "type": "main-blog-post",
+      "blocks": {
+        "blog-post-title": {
+          "type": "text",
+          "name": "Title",
+          "static": true,
+          "settings": {
+            "text": "<h1>{{ article.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "blog-post-details": {
+          "type": "_blog-post-info-text",
+          "name": "Details",
+          "static": true,
+          "settings": {
+            "show_date": true,
+            "show_author": false,
+            "type_preset": "",
+            "alignment": "center",
+            "show_alignment": true,
+            "padding-block-start": 24,
+            "padding-block-end": 0
+          },
+          "blocks": {}
+        },
+        "blog-post-image": {
+          "type": "image",
+          "name": "Featured image",
+          "static": true,
+          "settings": {
+            "image_ratio": "landscape",
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "blog-post-content": {
+          "type": "_blog-post-content",
+          "static": true,
+          "settings": {},
+          "blocks": {}
+        }
+      },
       "settings": {
-        "blog_show_image": true,
-        "blog_show_tags": true,
-        "blog_show_date": true,
-        "blog_show_comments": true,
-        "blog_show_author": false,
-        "social_sharing_blog": false
-      }
-    },
-    "blog-posts": {
-      "type": "blog-posts",
-      "custom_css": [
-        "h2.section-header__title.appear-delay {font-size: 46px;}",
-        ".article__content-meta .h3 {font-size: 22px;}",
-        "@media only screen and (max-width: 767px) {h2.section-header__title.appear-delay {font-size: 32px; }}"
-      ],
-      "settings": {
-        "title": "您可能也喜歡",
-        "blog": "home-gym-inspiration",
-        "post_limit": 3,
-        "blog_show_tags": false,
-        "blog_show_date": true,
-        "blog_show_comments": false,
-        "blog_show_author": false,
-        "blog_show_excerpt": false,
-        "blog_image_size": "wide",
-        "view_all": true,
-        "alt": false
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 80
       }
     }
   },
   "order": [
-    "main",
-    "blog-posts"
+    "section"
   ]
 }

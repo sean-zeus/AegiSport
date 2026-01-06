@@ -6,216 +6,146 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
-      "settings": {}
-    },
-    "98b1f41d-1826-4f53-ad9e-0db2b9cfb4d6": {
-      "type": "slideshow",
       "blocks": {
-        "template--18883932422432__98b1f41d-1826-4f53-ad9e-0db2b9cfb4d6-image-1": {
-          "type": "image",
-          "settings": {
-            "title": "CONTACT US",
-            "title_size": 71,
-            "subheading": "對BYZOOM FITNESS產品有疑問嗎？我們提供服務專線、線上客服、 聯絡表單，回答產品的相關問題",
-            "link": "",
-            "link_text": "",
-            "color_accent": "rgba(0,0,0,0)",
-            "text_align": "vertical-center horizontal-center",
-            "image": "shopify://shop_images/banner__1_349d37cc-3428-438c-bf0a-3e520b4fe3e4.jpg",
-            "image_mobile": "shopify://shop_images/banner-04.webp"
-          }
-        }
-      },
-      "block_order": [
-        "template--18883932422432__98b1f41d-1826-4f53-ad9e-0db2b9cfb4d6-image-1"
-      ],
-      "custom_css": [
-        "@media only screen and (max-width: 767px) {h2 {font-size: 32px; } div {font-size: 13px; }}"
-      ],
-      "settings": {
-        "style": "arrows",
-        "desktop_size": 0,
-        "mobile_size": 0,
-        "autoplay": false,
-        "autoplay_speed": 7,
-        "lazyload_images": true
-      }
-    },
-    "rich-text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "title": "線上表單"
-          }
-        },
-        "text": {
+        "title": {
           "type": "text",
+          "name": "t:names.title",
           "settings": {
-            "enlarge_text": false,
-            "text": "<p>如有訂單問題，請於信息欄備註<strong>訂單編號</strong>，以便客服人員查詢並儘速了解問題。<br/></p>"
-          }
+            "text": "<h1>{{ closest.page.title }}</h1>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "text",
+          "name": "t:names.content",
+          "settings": {
+            "text": "{{ closest.page.content }}",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-primary--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "heading",
-        "text"
-      ],
-      "custom_css": [
-        "h2 {font-size: 32px; margin: -10px;}",
-        ".index-section {margin: 70px;}"
+        "title",
+        "content"
       ],
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "alt": false
+        "content_direction": "column",
+        "gap": 32,
+        "color_scheme": "",
+        "padding-block-start": 40,
+        "padding-block-end": 0
       }
     },
     "form": {
-      "type": "contact-form",
-      "custom_css": [
-        "h2 {font-size: 32px;}",
-        ".appear-delay {text-align: center;}",
-        ".index-section {margin: 0px; margin-bottom: 70px;}"
-      ],
-      "settings": {
-        "title": "",
-        "show_phone": true,
-        "narrow_column": true
-      }
-    },
-    "3c35de91-0c7d-482e-8e7d-ba62e107f959": {
-      "type": "rich-text",
+      "type": "section",
       "blocks": {
-        "template--18883932422432__3c35de91-0c7d-482e-8e7d-ba62e107f959-heading-1": {
-          "type": "heading",
+        "contact_form_UwiCkQ": {
+          "type": "contact-form",
           "settings": {
-            "title": "我們也歡迎您撥打客服專線或使用線上一對一服務，讓我們能即時回覆您的問題。"
-          }
-        },
-        "template--18883932422432__3c35de91-0c7d-482e-8e7d-ba62e107f959-text-1": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": false,
-            "text": "<p>週一至週五 09:30 - 12:00 | 13:30 - 17:00</p>"
-          }
+            "width": "custom",
+            "custom_width": 50,
+            "width_mobile": "custom",
+            "custom_width_mobile": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "submit-button": {
+              "type": "contact-form-submit-button",
+              "static": true,
+              "settings": {
+                "label": "Submit",
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
         }
       },
       "block_order": [
-        "template--18883932422432__3c35de91-0c7d-482e-8e7d-ba62e107f959-heading-1",
-        "template--18883932422432__3c35de91-0c7d-482e-8e7d-ba62e107f959-text-1"
+        "contact_form_UwiCkQ"
       ],
-      "custom_css": [
-        ".sean_Custom {background-color: #efefef; margin: 0px 0 -120px; padding: 60px 0 40px;}",
-        "@media (max-width: 767px) {h2 {font-size: 24px; } p {font-size: 14px; } .sean_Custom {background-color: #efefef; margin: 0px 0 -60px; padding: 60px 0 40px; }}"
-      ],
+      "name": "t:names.contact_form",
       "settings": {
-        "align_text": "center",
-        "narrow_column": true,
-        "alt": false
-      }
-    },
-    "8749f6eb-5bfe-437f-9f01-e783489fbefc": {
-      "type": "text-with-icons",
-      "blocks": {
-        "template--18883932422432__8749f6eb-5bfe-437f-9f01-e783489fbefc-text_block-1": {
-          "type": "text_block",
-          "settings": {
-            "icon": "envelope",
-            "title": "MAIL",
-            "text": "<p><a href=\"mailto:happytohelp@byzoomfitness.com\" target=\"_blank\">happytohelp@byzoomfitness.com</a></p>"
-          }
-        },
-        "template--18883932422432__8749f6eb-5bfe-437f-9f01-e783489fbefc-text_block-2": {
-          "type": "text_block",
-          "settings": {
-            "icon": "chat",
-            "title": "LINE",
-            "text": "<p><a href=\"https://line.me/R/ti/p/%40846kmgzs\" target=\"_blank\">BYZOOM 官方帳號</a></p>"
-          }
-        },
-        "template--18883932422432__8749f6eb-5bfe-437f-9f01-e783489fbefc-text_block-3": {
-          "type": "text_block",
-          "settings": {
-            "icon": "phone",
-            "title": "CALL US",
-            "text": "<p><a href=\"tel:+886-4-2620-2828\" target=\"_blank\">服務專線：04-2620-2828</a></p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--18883932422432__8749f6eb-5bfe-437f-9f01-e783489fbefc-text_block-1",
-        "template--18883932422432__8749f6eb-5bfe-437f-9f01-e783489fbefc-text_block-2",
-        "template--18883932422432__8749f6eb-5bfe-437f-9f01-e783489fbefc-text_block-3"
-      ],
-      "custom_css": [
-        ".text-with-icons {background-color: #efefef;}",
-        ".text-with-icons__block-text p a {text-decoration: underline;}",
-        ".text-with-icons__block-text p a:hover {color: #9e7d53;}"
-      ],
-      "settings": {
-        "title": "",
-        "align_text": "center",
-        "desktop_columns_per_row": 3,
-        "icon_color": "#000000",
-        "button_label": "",
-        "button_link": "",
-        "alt": false
-      }
-    },
-    "d8be73f3-9b04-422f-b971-38f2aafe3f01": {
-      "type": "logo-list",
-      "blocks": {
-        "template--18883932422432__d8be73f3-9b04-422f-b971-38f2aafe3f01-logo_image-2": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/LINE-W.png",
-            "link": ""
-          }
-        },
-        "template--18883932422432__d8be73f3-9b04-422f-b971-38f2aafe3f01-logo_image-3": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        },
-        "template--18883932422432__d8be73f3-9b04-422f-b971-38f2aafe3f01-logo_image-4": {
-          "type": "logo_image",
-          "settings": {
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--18883932422432__d8be73f3-9b04-422f-b971-38f2aafe3f01-logo_image-2",
-        "template--18883932422432__d8be73f3-9b04-422f-b971-38f2aafe3f01-logo_image-3",
-        "template--18883932422432__d8be73f3-9b04-422f-b971-38f2aafe3f01-logo_image-4"
-      ],
-      "disabled": true,
-      "custom_css": [
-        "h2 {font-size: 20px;}"
-      ],
-      "settings": {
-        "title": "我們也歡迎您撥打客服專線或使用線上一對一服務，讓我們能即時回覆您。週一至週五 09:30 - 12:00 、13:30 - 17:00",
-        "logo_opacity": 76,
-        "alt": true
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 32,
+        "padding-block-end": 84
       }
     }
   },
   "order": [
     "main",
-    "98b1f41d-1826-4f53-ad9e-0db2b9cfb4d6",
-    "rich-text",
-    "form",
-    "3c35de91-0c7d-482e-8e7d-ba62e107f959",
-    "8749f6eb-5bfe-437f-9f01-e783489fbefc",
-    "d8be73f3-9b04-422f-b971-38f2aafe3f01"
+    "form"
   ]
 }
