@@ -1,197 +1,199 @@
-{%- liquid
-  assign paginate_by = section.settings.rows | times: section.settings.per_row_desktop
-  assign collection = collections[section.settings.home_featured_products]
+{%- capture section_settings -%}
+{
+  "stackable": {% if section.settings.layout == 'vertical' and section.settings.stack_products == false %}false{% else %}true{% endif %},
+  "layout": {{ section.settings.layout | json }}
+}
+{%- endcapture -%}
 
-  case section.settings.per_row_desktop
-    when 2
-      assign grid_large_width = 'medium-up--one-half'
-    when 3
-      assign grid_large_width = 'medium-up--one-third'
-    when 4
-      assign grid_large_width = 'medium-up--one-quarter'
-  endcase
-  assign per_row_mobile = section.settings.per_row_mobile
-  assign grid_small_width = 'grid-product--padded'
-  if section.settings.per_row_mobile contains '2'
-    assign per_row_mobile = 2
-    assign grid_small_width = 'small--one-half'
-    assign fallback = '50vw'
-  endif
--%}
+<section class="section" data-section-id="{{ section.id }}" data-section-type="featured-collection" data-section-settings="{{ section_settings | escape_once }}">
+  {%- assign collection = section.settings.collection -%}
 
-{%- capture grid_item_width -%}{{ grid_small_width }} {{ grid_large_width}}{%- endcapture -%}
-
-<div class="index-section{% if section.settings.alt %} index-section--alt{% endif %}">
-
-  <div
-    id="CollectionSection-{{ section.id }}"
-    data-section-id="{{ section.id }}"
-    data-section-type="featured-collection"
-    data-scrollable="false"
-    data-product-sliders-mobile="{% if section.settings.per_row_mobile == '1' %}true{% else %}false{% endif %}"
-    data-paginate="false"
-    data-paginate-by="{{ paginate_by }}"
-    data-collection-url="{{ collection.url }}"
-    data-collection-count="{{ collection.all_products_count }}"
-    data-aos>
-    {%- if section.settings.title != blank -%}
-      <div class="page-width">
-        <header class="section-header">
-          <h2 class="section-header__title appear-delay">
-            {{ section.settings.title }}
-          </h2>
-          {%- if section.settings.description != blank -%}
-            <div class="rte section-header__description section-header__description--large appear-delay-1">
-              {{ section.settings.description }}
-            </div>
-          {%- endif -%}
-        </header>
+  <div class="container">
+    <header class="section__header">
+      <div class="section__header-stack">
+        <h2 class="section__title heading h3">{{ section.settings.title | default: collection.title | escape }}</h2>
       </div>
-    {%- endif -%}
 
-    <div class="page-width page-width--flush">
-      <div data-pagination-wrapper>
-        <div
-          class="grid grid--uniform grid--scattered-large-4 grid--scattered-small-{{ per_row_mobile }} appear-delay-3{% if section.settings.per_row_mobile == '2-flush' %} small--grid--flush{% endif %}"
-          data-product-container>
-
-          {%- if section.settings.home_featured_products == blank or collections[section.settings.home_featured_products].empty? or collections[section.settings.home_featured_products].products_count == 0 -%}
-
-            {%- liquid
-              unless emptyState
-                assign emptyState = true
-              endunless
-            -%}
-
-            {%- for i in (1..paginate_by) -%}
-              <div class="grid__item grid-product {{ grid_item_width }}{% if settings.product_hover_details %} grid-product__hover-details{% endif %}">
-                <div class="grid-product__content">
-                  <a href="{{ product.url | within: collection }}" class="grid-product__link {% if sold_out %} grid-product__link--disabled{% endif %}">
-                    <div class="product-slider"
-                      data-image-count="1"
-                      data-id="1234">
-                      <div class="product-slide">
-                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-                        <div class="image-wrap">{{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}</div>
-                      </div>
-                    </div>
-                    <div class="grid-product__meta">
-                      <div class="grid-product__title">{{ 'home_page.onboarding.product_title' | t }}</div>
-                      <!-- zeus 20231027 -->
-                      <div style="text-transform: none; letter-spacing: 0px; font-size:14px; margin-top: 0px; opacity: .65;">{{ product.metafields.custom._subtable}}</div>  
-                      <!-- zeus 20231027 -->   
-                      <div class="grid-product__price">$29</div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            {%- endfor -%}
-
-          {%- else -%}
-
-            {%- for product in collections[section.settings.home_featured_products].products limit: paginate_by -%}
-              {%- render 'product-grid-item'
-                product: product,
-                grid_item_width: grid_item_width,
-                sizeVariable: grid_large_width,
-                fallback: fallback,
-              -%}
-            {%- endfor -%}
-
-          {%- endif -%}
-        </div>
-
-        {%- if section.settings.view_all -%}
-          <div class="text-center">
-            <a href="{{ collections[section.settings.home_featured_products].url }}" class="btn">
-              {{ 'collections.general.all_of_collection' | t }}
-            </a>
-          </div>
-        {%- endif -%}
-      </div>
-    </div>
+      {%- if section.settings.link_title != blank -%}
+        <a href="{{ section.settings.link_url | default: collection.url | default: '#' }}" class="section__action-link link">{{ section.settings.link_title | escape }} {% render 'icon', icon: 'tail-right' %}</a>
+      {%- endif -%}
+    </header>
   </div>
 
-</div>
+  <div class="container {% if section.settings.layout != 'vertical' or section.settings.stack_products %}container--flush{% endif %}">
+    {%- capture product_list -%}
+      <div class="product-list product-list--{{ section.settings.layout }} {% if section.settings.stack_products %}product-list--stackable{% elsif section.settings.layout == 'vertical' %}product-list--scrollable{% endif %}">
+        {%- assign use_placeholder = true -%}
+
+        {%- if collection == blank -%}
+          {%- assign products = (1..section.settings.products_count) -%}
+        {%- else -%}
+          {%- assign products = collection.products -%}
+          {%- assign use_placeholder = false -%}
+        {%- endif -%}
+
+        {%- for product in products limit: section.settings.products_count -%}
+          {%- if section.settings.layout == 'vertical' -%}
+            {%- assign products_per_row = section.settings.products_count | at_most: 6 -%}
+
+            {%- if section.settings.stack_products -%}
+              {%- capture grid_classes -%}1/2 1/4--lap 1/{{ products_per_row | minus: 1 }}--desk 1/{{ products_per_row }}--wide{%- endcapture -%}
+            {%- else -%}
+              {%- capture grid_classes -%}1/4--lap 1/{{ products_per_row | minus: 1 }}--desk 1/{{ products_per_row }}--wide{%- endcapture -%}
+            {%- endif -%}
+
+            {%- if use_placeholder -%}
+              {%- render 'product-item-placeholder', product: product, grid_classes: grid_classes, show_add_to_cart: section.settings.show_quick_buy -%}
+            {%- else -%}
+              {%- render 'product-item', product: product, grid_classes: grid_classes, show_add_to_cart: section.settings.show_quick_buy -%}
+            {%- endif -%}
+          {%- elsif section.settings.layout == 'horizontal' -%}
+            {%- if use_placeholder -%}
+              {%- render 'product-item-placeholder', product: product, horizontal: true, grid_classes: '1/2--tablet 1/3--lap-and-up', show_add_to_cart: false -%}
+            {%- else -%}
+              {%- render 'product-item', product: product, horizontal: true, grid_classes: '1/2--tablet 1/3--lap-and-up', show_add_to_cart: false -%}
+            {%- endif -%}
+          {%- else -%}
+            {%- assign mod = forloop.index0 | modulo: 3 -%}
+
+            {%- if mod == 0 -%}
+              <div class="product-list__column product-list__column--highlight">
+            {%- elsif mod == 1 -%}
+              <div class="product-list__column {% if forloop.last %}product-list__column--shrink{% endif %}">
+            {%- endif -%}
+
+            {%- if mod == 0 -%}
+              {%- if use_placeholder -%}
+                {%- render 'product-item-placeholder', product: product, show_add_to_cart: false -%}
+              {%- else -%}
+                {%- render 'product-item', product: product, show_add_to_cart: false -%}
+              {%- endif -%}
+            {%- else -%}
+              {%- if use_placeholder -%}
+                {%- render 'product-item-placeholder', product: product, horizontal: true, show_add_to_cart: false -%}
+              {%- else -%}
+                {%- render 'product-item', product: product, horizontal: true, show_add_to_cart: false -%}
+              {%- endif -%}
+            {%- endif -%}
+
+            {%- if mod == 0 or mod == 2 or forloop.last -%}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endcapture -%}
+
+    {%- if section.settings.layout == 'vertical' and section.settings.stack_products == false -%}
+      <div class="scroller">
+        <div class="scroller__inner">
+          {{ product_list }}
+        </div>
+      </div>
+    {%- else -%}
+      {{ product_list }}
+    {%- endif -%}
+  </div>
+
+  {%- comment -%}
+  --------------------------------------------------------------------------------------
+  QUICK VIEW CONTAINER
+  --------------------------------------------------------------------------------------
+  {%- endcomment -%}
+
+  <div id="modal-quick-view-{{ section.id }}" class="modal" aria-hidden="true">
+    <div class="modal__dialog modal__dialog--stretch" role="dialog">
+      <button class="modal__close link" data-action="close-modal" title="{{ 'general.accessibility.close' | t | escape }}">
+        {%- render 'icon', icon: 'close' -%}
+      </button>
+
+      <div class="modal__loader">
+        {%- render 'icon', icon: 'search-loader' -%}
+      </div>
+
+      <div class="modal__inner"></div>
+    </div>
+  </div>
+</section>
 
 {% schema %}
 {
-  "name": "t:sections.featured-collection.name",
+  "name": "Featured collection",
   "settings": [
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Collection"
+    },
     {
       "type": "text",
       "id": "title",
-      "label": "t:sections.featured-collection.settings.title.label",
-      "default": "Featured collection grid"
-    },
-    {
-      "type": "text",
-      "id": "description",
-      "label": "t:sections.featured-collection.settings.description.label"
-    },
-    {
-      "type": "collection",
-      "id": "home_featured_products",
-      "label": "t:sections.featured-collection.settings.home_featured_products.label"
+      "label": "Heading",
+      "default": "Featured collection"
     },
     {
       "type": "range",
-      "id": "rows",
-      "label": "t:sections.featured-collection.settings.rows.label",
-      "default": 2,
-      "min": 1,
-      "max": 4,
-      "step": 1
-    },
-    {
-      "type": "range",
-      "id": "per_row_desktop",
-      "label": "t:sections.featured-collection.settings.per_row_desktop.label",
-      "default": 3,
-      "min": 1,
-      "max": 4,
-      "step": 1
+      "id": "products_count",
+      "label": "Products to show",
+      "min": 4,
+      "max": 50,
+      "step": 1,
+      "default": 12,
+      "visible_if": "{{ section.settings.collection != blank }}"
     },
     {
       "type": "select",
-      "id": "per_row_mobile",
-      "label": "t:sections.featured-collection.settings.per_row_mobile.label",
-      "default": "1",
+      "id": "layout",
+      "label": "Product grid layout",
       "options": [
         {
-          "value": "1",
-          "label": "1"
+          "value": "vertical",
+          "label": "Vertical"
         },
         {
-          "value": "2",
-          "label": "t:sections.featured-collection.settings.per_row_mobile.options.2.label"
+          "value": "horizontal",
+          "label": "Horizontal"
         },
         {
-          "value": "2-flush",
-          "label": "t:sections.featured-collection.settings.per_row_mobile.options.2-flush.label"
+          "value": "collage",
+          "label": "Collage"
         }
-      ]
+      ],
+      "default": "vertical"
     },
     {
       "type": "checkbox",
-      "id": "view_all",
-      "label": "t:sections.featured-collection.settings.view_all.label",
-      "default": true
+      "id": "stack_products",
+      "label": "Stack products",
+      "default": false,
+      "visible_if": "{{ section.settings.layout == 'vertical' }}"
     },
     {
       "type": "checkbox",
-      "id": "alt",
-      "label": "t:sections.featured-collection.settings.alt.label"
+      "id": "show_quick_buy",
+      "label": "Show quick buy",
+      "default": false,
+      "visible_if": "{{ section.settings.layout == 'vertical' }}"
+    },
+    {
+      "type": "text",
+      "id": "link_title",
+      "label": "Link title",
+      "default": "View all"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL",
+      "info": "If empty, the collection URL is used."
     }
   ],
   "presets": [
     {
-      "name": "t:sections.featured-collection.presets.featured_collection_grid.name"
+      "category": "Collections",
+      "name": "Featured collection",
+      "settings": {}
     }
-  ],
-  "blocks": [],
-  "disabled_on": {
-    "groups": ["footer", "header", "custom.popups"]
-  }
+  ]
 }
 {% endschema %}
