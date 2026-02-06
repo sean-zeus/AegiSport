@@ -1,1 +1,550 @@
-{"sections":{"video_8RxjnT":{"type":"video","custom_css":[".video-item {max-width: none; margin: -60px auto;}"],"name":"Video","settings":{"title":"","video_url":"https:\/\/www.youtube.com\/watch?v=uF4JH88TCyE","video_id":"uF4JH88TCyE","image":"shopify:\/\/shop_images\/video_cover.webp"}},"slideshow":{"type":"slideshow","blocks":{"image_MUcGpk":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/slide.webp","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}},"image_nYPkMD":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/slide-3.webp","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}},"image-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/slide-2.webp","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":"shopify:\/\/collections\/all"}}},"block_order":["image_MUcGpk","image_nYPkMD","image-2"],"disabled":true,"settings":{"edge_to_edge":true,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":5}},"logo_list_VqrAC6":{"type":"logo-list","blocks":{"logo_bVYcCV":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/logo-1.webp","link":""}},"logo_dnFyzh":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/logo-2.webp","link":""}},"logo_PcafQV":{"type":"logo","settings":{"image":"shopify:\/\/shop_images\/logo-3.webp","link":""}},"logo_RteXdF":{"type":"logo","disabled":true,"settings":{"link":""}},"logo_CGPqWR":{"type":"logo","disabled":true,"settings":{"link":""}},"logo_k3KKKz":{"type":"logo","disabled":true,"settings":{"link":""}}},"block_order":["logo_bVYcCV","logo_dnFyzh","logo_PcafQV","logo_RteXdF","logo_CGPqWR","logo_k3KKKz"],"disabled":true,"custom_css":[],"name":"Logo list","settings":{"title":"","link_title":"","link":""}},"rich_text_cPQPXT":{"type":"rich-text","custom_css":["h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"],"name":"Rich text","settings":{"text_width":"narrow","title":"找產品","content":"<h6>從分類中搜尋最適合自己喜好與需求的產品<\/h6><p><\/p>","button_text":"","button_link":"shopify:\/\/collections\/all"}},"mosaic_TKywia":{"type":"mosaic","blocks":{"item_VwNbAU":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cover-1.webp","show_overlay":true,"overlay_opacity":50,"background":"#000000","text_color":"#f5f5f5","title":"Select your Bench","content":"訓練椅","content_position":"middle_center","button_background":"#f5f5f5","button_text_color":"#ffffff","button_text":"Learn more","link":""}},"item_RHtrHh":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cover-3.webp","show_overlay":true,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#ffffff","title":"Build your Rack","content":"深蹲架","content_position":"middle_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_PGYiUV":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/cover-2.webp","show_overlay":true,"overlay_opacity":50,"background":"#1b1b1b","text_color":"#ffffff","title":"Multi-Function","content":"多功能","content_position":"bottom_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_bNCyeG":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-8_d3351301-6a65-4251-9037-6ebf9555e112.webp","show_overlay":true,"overlay_opacity":50,"background":"#222021","text_color":"#ffffff","title":"Weightlifting","content":"重訓器材","content_position":"middle_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_xMhYtk":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-12.webp","show_overlay":true,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#ffffff","title":"Accessories","content":"配件","content_position":"middle_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}}},"block_order":["item_VwNbAU","item_RHtrHh","item_PGYiUV","item_bNCyeG","item_xMhYtk"],"custom_css":["p {font-size: 21px; line-height: 18px; padding-bottom: 2px;}"],"name":"Mosaic","settings":{"section_size":"large"}},"mosaic_m99DmC":{"type":"mosaic","blocks":{"item_6pmkJb":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/pp-1.webp","show_overlay":true,"overlay_opacity":77,"background":"#222021","text_color":"#ffffff","title":"Space-Saving Design","content":"小空間深蹲架","content_position":"middle_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_9iEXq8":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/pp-2.webp","show_overlay":true,"overlay_opacity":49,"background":"#000000","text_color":"#f5f5f5","title":"Build your Rack","content":"大尺寸深蹲架","content_position":"middle_center","button_background":"#f5f5f5","button_text_color":"#ffffff","button_text":"Learn more","link":""}},"item_ewHCtn":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/TYPE-2.webp","show_overlay":true,"overlay_opacity":50,"background":"#1b1b1b","text_color":"#ffffff","title":"Multi-Function","content":"多功能","content_position":"bottom_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_NBz3DH":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/PP-bench.webp","show_overlay":true,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#ffffff","title":"Select your Bench","content":"健身椅","content_position":"middle_center","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}}},"block_order":["item_6pmkJb","item_9iEXq8","item_ewHCtn","item_NBz3DH"],"disabled":true,"custom_css":["p {font-size: 21px; line-height: 18px; padding-bottom: 2px;}"],"name":"Mosaic","settings":{"section_size":"large"}},"rich_text_7NNp8N":{"type":"rich-text","custom_css":["h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"],"name":"Rich text","settings":{"text_width":"narrow","title":"新品上市","content":"<h6>台灣唯一REP授權販售，現在就入手<\/h6><p><\/p>","button_text":"","button_link":"shopify:\/\/collections\/all"}},"featured_collection_36emQ6":{"type":"featured-collection","disabled":true,"name":"Featured collection","settings":{"collection":"rep-fitness","title":"新品上市","products_count":6,"layout":"horizontal","stack_products":true,"show_quick_buy":true,"link_title":"View all","link_url":"shopify:\/\/products\/rep-ra-5080-3016-blk"}},"featured_collection_bJaKhn":{"type":"featured-collection","custom_css":["div {font-size: 14px;}"],"name":"Featured collection","settings":{"collection":"hito-product","title":"","products_count":4,"layout":"vertical","stack_products":true,"show_quick_buy":true,"link_title":"查看更多","link_url":"shopify:\/\/products\/rep-ra-5080-3016-blk"}},"rich_text_ihc8r6":{"type":"rich-text","disabled":true,"custom_css":["h2 {font-size: 48px; margin-bottom: 5px;}"],"name":"Rich text","settings":{"text_width":"narrow","title":"找品牌","content":"<h3>依據品牌喜好，搜尋需求產品<\/h3><p><\/p>","button_text":"","button_link":"shopify:\/\/collections\/all"}},"collection_with_image_AeKiTm":{"type":"collection-with-image","disabled":true,"name":"Collection with image","settings":{"collection":"rep-fitness","products_count":20,"show_quick_buy":true,"image":"shopify:\/\/shop_images\/logo-bt-1-01.webp","background":"#222021","text_color":"#ffffff","title":"","content":"","button_background":"#aa2424","button_text_color":"#e8e8e8","button_text":"","button_link":""}},"collection_with_image_THQNKi":{"type":"collection-with-image","disabled":true,"name":"Collection with image","settings":{"collection":"atflee","products_count":20,"show_quick_buy":true,"image":"shopify:\/\/shop_images\/logo-bt-1-02.webp","background":"#e95513","text_color":"#ffffff","title":"","content":"","button_background":"#aa2424","button_text_color":"#e8e8e8","button_text":"","button_link":""}},"collection_with_image_gNYgDN":{"type":"collection-with-image","disabled":true,"name":"Collection with image","settings":{"collection":"rep-fitness","products_count":20,"show_quick_buy":true,"image":"shopify:\/\/shop_images\/logo-bt-1-03.webp","background":"#222021","text_color":"#ffffff","title":"","content":"","button_background":"#aa2424","button_text_color":"#e8e8e8","button_text":"","button_link":""}},"rich_text_kbb7yn":{"type":"rich-text","custom_css":["h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"],"name":"Rich text","settings":{"text_width":"narrow","title":"找機型","content":"<p>依訓練方式與自由重量來挑選適合的產品<\/p><p><\/p>","button_text":"","button_link":"shopify:\/\/collections\/all"}},"image_with_text_Am6TEi":{"type":"image-with-text","custom_css":[],"name":"Image with text","settings":{"image":"shopify:\/\/shop_images\/type-1.webp","image_position":"left","image_width":50,"title":"自由重量訓練","content":"<p>支援深蹲、臥推、硬舉等槓鈴動作，強調高負重與多關節訓練。穩固結構搭配安全裝置，提供安心訓練環境，並可透過模組化配件擴充，適合居家與商用訓練空間，打造穩定且持續進步的力量基礎。<\/p>","button_text":"挑選產品","button_link":"shopify:\/\/collections\/free-weight"}},"image_with_text_3g3VzA":{"type":"image-with-text","name":"Image with text","settings":{"image":"shopify:\/\/shop_images\/TYPE-2.webp","image_position":"right","image_width":50,"title":"滑輪重量訓練","content":"<p>滑輪訓練機透過順暢滑輪與可調阻力，提供多角度、穩定張力的訓練方式，適合拉繩、核心與功能性訓練。可搭配多樣把手與模組整合使用，提升動作控制與全身協調性，滿足多元訓練需求。<\/p>","button_text":"挑選產品","button_link":"shopify:\/\/collections\/分類搜尋產品-功能性滑輪訓練"}},"image_with_text_jDGtwn":{"type":"image-with-text","name":"Image with text","settings":{"image":"shopify:\/\/shop_images\/TYPE-3.webp","image_position":"left","image_width":50,"title":"擴充模組化：自由重量+滑輪訓練","content":"<p>整合自由重量與滑輪／功能性訓練系統，同時支援槓鈴深蹲、臥推等高負重訓練，以及拉繩、核心與多角度功能性動作。一機滿足力量、穩定度與協調性訓練需求，適合居家與商用訓練空間，打造完整且彈性的訓練配置。<\/p>","button_text":"挑選產品","button_link":"shopify:\/\/collections\/分類搜尋產品-自由重量-功能性滑輪訓練"}},"recently_viewed_products_pXQ6Wq":{"type":"recently-viewed-products","name":"Recently viewed products","settings":{"title":"Recently viewed","show_quick_buy":true}}},"order":["video_8RxjnT","slideshow","logo_list_VqrAC6","rich_text_cPQPXT","mosaic_TKywia","mosaic_m99DmC","rich_text_7NNp8N","featured_collection_36emQ6","featured_collection_bJaKhn","rich_text_ihc8r6","collection_with_image_AeKiTm","collection_with_image_THQNKi","collection_with_image_gNYgDN","rich_text_kbb7yn","image_with_text_Am6TEi","image_with_text_3g3VzA","image_with_text_jDGtwn","recently_viewed_products_pXQ6Wq"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "video_8RxjnT": {
+      "type": "videoFull-Sean",
+      "custom_css": [".video-item {max-width: none; margin: -60px auto;}"],
+      "name": "VideoFull-Sean",
+      "settings": {
+        "title": "",
+        "video_url": "https://www.youtube.com/watch?v=uF4JH88TCyE",
+        "video_id": "uF4JH88TCyE",
+        "image": "shopify://shop_images/video_cover.webp"
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "image_MUcGpk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/slide.webp",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "",
+            "content": "",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "",
+            "link": ""
+          }
+        },
+        "image_nYPkMD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/slide-3.webp",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "",
+            "content": "",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "",
+            "link": ""
+          }
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/slide-2.webp",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "",
+            "content": "",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "",
+            "link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": ["image_MUcGpk", "image_nYPkMD", "image-2"],
+      "disabled": true,
+      "settings": {
+        "edge_to_edge": true,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "logo_list_VqrAC6": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_bVYcCV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo-1.webp",
+            "link": ""
+          }
+        },
+        "logo_dnFyzh": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo-2.webp",
+            "link": ""
+          }
+        },
+        "logo_PcafQV": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/logo-3.webp",
+            "link": ""
+          }
+        },
+        "logo_RteXdF": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_CGPqWR": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        },
+        "logo_k3KKKz": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_bVYcCV",
+        "logo_dnFyzh",
+        "logo_PcafQV",
+        "logo_RteXdF",
+        "logo_CGPqWR",
+        "logo_k3KKKz"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Logo list",
+      "settings": {
+        "title": "",
+        "link_title": "",
+        "link": ""
+      }
+    },
+    "rich_text_cPQPXT": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "找產品",
+        "content": "<h6>從分類中搜尋最適合自己喜好與需求的產品</h6><p></p>",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "mosaic_TKywia": {
+      "type": "mosaic",
+      "blocks": {
+        "item_VwNbAU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/cover-1.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#000000",
+            "text_color": "#f5f5f5",
+            "title": "Select your Bench",
+            "content": "訓練椅",
+            "content_position": "middle_center",
+            "button_background": "#f5f5f5",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_RHtrHh": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/cover-3.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#ffffff",
+            "title": "Build your Rack",
+            "content": "深蹲架",
+            "content_position": "middle_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_PGYiUV": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/cover-2.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#1b1b1b",
+            "text_color": "#ffffff",
+            "title": "Multi-Function",
+            "content": "多功能",
+            "content_position": "bottom_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_bNCyeG": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-8_d3351301-6a65-4251-9037-6ebf9555e112.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#222021",
+            "text_color": "#ffffff",
+            "title": "Weightlifting",
+            "content": "重訓器材",
+            "content_position": "middle_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_xMhYtk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-12.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#ffffff",
+            "title": "Accessories",
+            "content": "配件",
+            "content_position": "middle_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_VwNbAU",
+        "item_RHtrHh",
+        "item_PGYiUV",
+        "item_bNCyeG",
+        "item_xMhYtk"
+      ],
+      "custom_css": [
+        "p {font-size: 21px; line-height: 18px; padding-bottom: 2px;}"
+      ],
+      "name": "Mosaic",
+      "settings": {
+        "section_size": "large"
+      }
+    },
+    "mosaic_m99DmC": {
+      "type": "mosaic",
+      "blocks": {
+        "item_6pmkJb": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/pp-1.webp",
+            "show_overlay": true,
+            "overlay_opacity": 77,
+            "background": "#222021",
+            "text_color": "#ffffff",
+            "title": "Space-Saving Design",
+            "content": "小空間深蹲架",
+            "content_position": "middle_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_9iEXq8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/pp-2.webp",
+            "show_overlay": true,
+            "overlay_opacity": 49,
+            "background": "#000000",
+            "text_color": "#f5f5f5",
+            "title": "Build your Rack",
+            "content": "大尺寸深蹲架",
+            "content_position": "middle_center",
+            "button_background": "#f5f5f5",
+            "button_text_color": "#ffffff",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_ewHCtn": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/TYPE-2.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#1b1b1b",
+            "text_color": "#ffffff",
+            "title": "Multi-Function",
+            "content": "多功能",
+            "content_position": "bottom_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_NBz3DH": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/PP-bench.webp",
+            "show_overlay": true,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#ffffff",
+            "title": "Select your Bench",
+            "content": "健身椅",
+            "content_position": "middle_center",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_6pmkJb",
+        "item_9iEXq8",
+        "item_ewHCtn",
+        "item_NBz3DH"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "p {font-size: 21px; line-height: 18px; padding-bottom: 2px;}"
+      ],
+      "name": "Mosaic",
+      "settings": {
+        "section_size": "large"
+      }
+    },
+    "rich_text_7NNp8N": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "新品上市",
+        "content": "<h6>台灣唯一REP授權販售，現在就入手</h6><p></p>",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "featured_collection_36emQ6": {
+      "type": "featured-collection",
+      "disabled": true,
+      "name": "Featured collection",
+      "settings": {
+        "collection": "rep-fitness",
+        "title": "新品上市",
+        "products_count": 6,
+        "layout": "horizontal",
+        "stack_products": true,
+        "show_quick_buy": true,
+        "link_title": "View all",
+        "link_url": "shopify://products/rep-ra-5080-3016-blk"
+      }
+    },
+    "featured_collection_bJaKhn": {
+      "type": "featured-collection",
+      "custom_css": ["div {font-size: 14px;}"],
+      "name": "Featured collection",
+      "settings": {
+        "collection": "hito-product",
+        "title": "",
+        "products_count": 4,
+        "layout": "vertical",
+        "stack_products": true,
+        "show_quick_buy": true,
+        "link_title": "查看更多",
+        "link_url": "shopify://products/rep-ra-5080-3016-blk"
+      }
+    },
+    "rich_text_ihc8r6": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": ["h2 {font-size: 48px; margin-bottom: 5px;}"],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "找品牌",
+        "content": "<h3>依據品牌喜好，搜尋需求產品</h3><p></p>",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "collection_with_image_AeKiTm": {
+      "type": "collection-with-image",
+      "disabled": true,
+      "name": "Collection with image",
+      "settings": {
+        "collection": "rep-fitness",
+        "products_count": 20,
+        "show_quick_buy": true,
+        "image": "shopify://shop_images/logo-bt-1-01.webp",
+        "background": "#222021",
+        "text_color": "#ffffff",
+        "title": "",
+        "content": "",
+        "button_background": "#aa2424",
+        "button_text_color": "#e8e8e8",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "collection_with_image_THQNKi": {
+      "type": "collection-with-image",
+      "disabled": true,
+      "name": "Collection with image",
+      "settings": {
+        "collection": "atflee",
+        "products_count": 20,
+        "show_quick_buy": true,
+        "image": "shopify://shop_images/logo-bt-1-02.webp",
+        "background": "#e95513",
+        "text_color": "#ffffff",
+        "title": "",
+        "content": "",
+        "button_background": "#aa2424",
+        "button_text_color": "#e8e8e8",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "collection_with_image_gNYgDN": {
+      "type": "collection-with-image",
+      "disabled": true,
+      "name": "Collection with image",
+      "settings": {
+        "collection": "rep-fitness",
+        "products_count": 20,
+        "show_quick_buy": true,
+        "image": "shopify://shop_images/logo-bt-1-03.webp",
+        "background": "#222021",
+        "text_color": "#ffffff",
+        "title": "",
+        "content": "",
+        "button_background": "#aa2424",
+        "button_text_color": "#e8e8e8",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "rich_text_kbb7yn": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "找機型",
+        "content": "<p>依訓練方式與自由重量來挑選適合的產品</p><p></p>",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "image_with_text_Am6TEi": {
+      "type": "image-with-text",
+      "custom_css": [],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/type-1.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "自由重量訓練",
+        "content": "<p>支援深蹲、臥推、硬舉等槓鈴動作，強調高負重與多關節訓練。穩固結構搭配安全裝置，提供安心訓練環境，並可透過模組化配件擴充，適合居家與商用訓練空間，打造穩定且持續進步的力量基礎。</p>",
+        "button_text": "挑選產品",
+        "button_link": "shopify://collections/free-weight"
+      }
+    },
+    "image_with_text_3g3VzA": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/TYPE-2.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "滑輪重量訓練",
+        "content": "<p>滑輪訓練機透過順暢滑輪與可調阻力，提供多角度、穩定張力的訓練方式，適合拉繩、核心與功能性訓練。可搭配多樣把手與模組整合使用，提升動作控制與全身協調性，滿足多元訓練需求。</p>",
+        "button_text": "挑選產品",
+        "button_link": "shopify://collections/分類搜尋產品-功能性滑輪訓練"
+      }
+    },
+    "image_with_text_jDGtwn": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/TYPE-3.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "擴充模組化：自由重量+滑輪訓練",
+        "content": "<p>整合自由重量與滑輪／功能性訓練系統，同時支援槓鈴深蹲、臥推等高負重訓練，以及拉繩、核心與多角度功能性動作。一機滿足力量、穩定度與協調性訓練需求，適合居家與商用訓練空間，打造完整且彈性的訓練配置。</p>",
+        "button_text": "挑選產品",
+        "button_link": "shopify://collections/分類搜尋產品-自由重量-功能性滑輪訓練"
+      }
+    },
+    "recently_viewed_products_pXQ6Wq": {
+      "type": "recently-viewed-products",
+      "name": "Recently viewed products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": true
+      }
+    }
+  },
+  "order": [
+    "video_8RxjnT",
+    "slideshow",
+    "logo_list_VqrAC6",
+    "rich_text_cPQPXT",
+    "mosaic_TKywia",
+    "mosaic_m99DmC",
+    "rich_text_7NNp8N",
+    "featured_collection_36emQ6",
+    "featured_collection_bJaKhn",
+    "rich_text_ihc8r6",
+    "collection_with_image_AeKiTm",
+    "collection_with_image_THQNKi",
+    "collection_with_image_gNYgDN",
+    "rich_text_kbb7yn",
+    "image_with_text_Am6TEi",
+    "image_with_text_3g3VzA",
+    "image_with_text_jDGtwn",
+    "recently_viewed_products_pXQ6Wq"
+  ]
+}
