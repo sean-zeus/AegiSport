@@ -52,6 +52,12 @@
           "settings": {
             "content": "<h4></h4><h4><strong>安裝配送運費說明</strong></h4><p>一般地區 $5,000<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a><br/>略偏遠地區 $6,500<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a><br/>偏遠地區 $10,000<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a></p>"
           }
+        },
+        "text_wLNrJQ": {
+          "type": "text",
+          "settings": {
+            "content": "<h4></h4><h4><strong>樓層費用說明</strong></h4><p>一樓或是有電梯不須搬運 $0 <a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a><br/>二樓 (含) 以上 $900/樓<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a></p>"
+          }
         }
       },
       "block_order": [
@@ -59,7 +65,8 @@
         "variant_selector",
         "buy_buttons",
         "description",
-        "text_4kCBgf"
+        "text_4kCBgf",
+        "text_wLNrJQ"
       ],
       "settings": {
         "image_size": "large",
