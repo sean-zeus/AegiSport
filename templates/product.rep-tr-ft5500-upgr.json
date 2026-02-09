@@ -1,1 +1,389 @@
-{"sections":{"main":{"type":"main-product","blocks":{"product_meta":{"type":"product_meta","settings":{"show_vendor":true,"show_sku":true,"show_reviews_badge":true,"show_share_buttons":true}},"variant_selector":{"type":"variant_selector","settings":{"selector_mode":"block","color_mode":"swatch","variant_image_options":"","show_quantity_selector":true,"show_taxes_included":false,"show_inventory_quantity":false,"low_inventory_threshold":0,"progress_bar_max_value":50}},"buy_buttons":{"type":"buy_buttons","settings":{"show_payment_button":false,"show_gift_card_recipient":true}},"description":{"type":"description","settings":{"display_mode":"view_more"}}},"block_order":["product_meta","variant_selector","buy_buttons","description"],"settings":{"image_size":"large","enable_video_looping":true,"enable_image_zoom":true,"zoom_effect":"outside","carousel_effect":"fade"}},"image_with_text_overlay_WfF7Nn":{"type":"image-with-text-overlay","custom_css":["h1 {font-size: 60px;}","@media only screen and (max-width: 769px) {h1 {font-size: 32px; }}"],"name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/3-bg_34da5b3f-ba30-40de-8ca0-98547e9719d8.webp","title":"Arcadia™ Max 多功能訓練機 升級套裝","content":"<h4>全尺寸・高重量・高端滑順手感<\/h4>","show_image_overlay":true,"color":"#e8e8e8"}},"custom_liquid_CpRVgx":{"type":"custom-liquid","custom_css":["h2 {font-size: 36px;}","@media only screen and (max-width: 769px) {div {font-size: 15px; margin-top: -20px; margin-left: -15px; }}"],"name":"Custom Liquid","settings":{"title":"","include_margins":true,"liquid":"<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>Arcadia&trade; Max 是一台<strong>真正為長期訓練而生的全尺寸功能性訓練機<\/strong>，由 <strong>REP 美國科羅拉多研發團隊<\/strong> 親自設計與測試，從第一下拉索到最後一組訓練，都能感受到紮實、順暢且充滿信心的使用體驗。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>機台具備 <strong>36 段可調滑輪位置<\/strong>，無論是高位下拉、低位划船、飛鳥、旋轉或單側訓練，都能快速調到最貼近自然發力的角度，讓動作更流暢、肌肉刺激更集中。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>採用 <strong>雙配重塔與 2:1 傳動比設計<\/strong>，每側標準配重 <strong>220 磅（手感 110 磅）<\/strong>，在拉動過程中阻力均勻穩定，行程長、回饋扎實，讓進階訓練者也能持續突破重量瓶頸。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>配重片以 <strong>熱軋鋼<\/strong> 製成，搭配 <strong>磁吸插銷<\/strong>，在不同動作之間切換重量只需一個動作，讓訓練節奏不中斷，特別適合高強度循環訓練與商用環境。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>重量以 <strong>10 磅為單位（手感 5 磅）<\/strong> 調整，並內建 <strong>5 磅微調配重（手感2.5 磅）<\/strong>，讓你在控制型訓練、復健或衝刺個人紀錄時，都能精準拿捏每一分負重。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span><strong>鋁合金滑輪系統<\/strong> 在每一次拉動中都帶來細膩且順滑的回饋，讓阻力彷彿「黏」在肌肉上，不只更耐用，也大幅提升整體訓練質感。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>專利 <strong>滑輪座設計<\/strong> 搭配 <strong>全滾花握把與加大型插銷<\/strong>，只需單手即可快速調整高度，即使在組間休息或超級組中，也能流暢銜接下一個動作。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>隨機附 <strong>兩組全滾花鋼製 D 型把手<\/strong>，握感紮實且不滑手，讓你在高重量拉動時更專注於肌肉發力，而不是擔心握力不足。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>底座與上方配重板 <strong>內建彈力帶插銷<\/strong>，可搭配彈力帶創造漸進式阻力，最高支援 <strong>540 磅<\/strong>，讓爆發力、速度與進階力量訓練更具變化性。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>機台上方整合 <strong>多握位引體向上把手<\/strong>，不同握距與角度帶來截然不同的背部刺激，一台機器即可完成多樣引體訓練。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>機身內建 <strong>洞洞板收納系統<\/strong>，附 <strong>14 支收納插銷<\/strong>，常用配件隨手可取，讓訓練空間始終維持專業、有秩序的狀態。<\/p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ <\/span>Arcadia&trade; Max <strong>高度相容多款拉繩配件<\/strong>，從上肢推拉、下肢訓練到核心穩定動作，都能在同一台機器上完成，真正做到一台取代多項設備，讓每一次訓練都充滿可能性。<\/p>"}},"slideshow_K3Khne":{"type":"slideshow","blocks":{"image_KdJFHV":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_feature-1_6c411e78-fe73-4ef9-ad00-eb6e2a4058f0.webp","mobile_image":"shopify:\/\/shop_images\/2_feature-M-6_41fbcaea-6ea2-4e21-b9bd-bed0b28a63b2.webp","show_overlay":true,"overlay_opacity":66,"text_color":"#ffffff","title":"左右重型配重系統","content":"採用220磅熱軋鋼配重，搭配 2:1 傳動比，拉感110磅，阻力穩定，適合功能訓練；可升級至270磅，滿足高強度需求。","content_position":"bottom_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"image_9iyhU9":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_feature-2_f4e56fc4-3144-4908-b378-dbb6a7687c01.webp","mobile_image":"shopify:\/\/shop_images\/2_feature-M-3_394d3b39-02e5-4a3b-9df2-d0b2fe76b6d2.webp","show_overlay":true,"overlay_opacity":53,"text_color":"#ffffff","title":"鋁合金滑輪","content":"高強度 鋁合金滑輪 比塑膠滑輪更耐用，每一次拉動都更順暢細膩，長時間、高頻率訓練依然保持穩定手感。","content_position":"bottom_left","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"image_4mKEPb":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_feature-3_28428cf4-4dc3-4d52-9545-bce9bb0ba28b.webp","mobile_image":"shopify:\/\/shop_images\/2_feature-M-5_f4382664-fd30-4c1c-ac4d-5f0e031a2f97.webp","show_overlay":true,"overlay_opacity":100,"text_color":"#ffffff","title":"內建配件收納系統","content":"全長式 可客製洞洞板收納，包含 9 支 4 吋掛鉤與 5 支 9 吋掛鉤，讓各式拉繩配件整齊排列、隨手可取，維持專業訓練空間。","content_position":"bottom_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"image_yd3NYY":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_feature-4_35da4f05-ce66-4928-80d2-c0cb17489bfd.webp","mobile_image":"shopify:\/\/shop_images\/2_feature-M-1_4a9f1898-3b47-481a-9b80-b7c865ebf75a.webp","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"內建彈力帶插銷","content":"插銷設置於底座與上方配重板，可搭配彈力帶增加額外阻力，單側最高支援 540 磅，適合爆發力與進階阻力訓練。","content_position":"middle_right","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"image_wfT4Jw":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_feature-5_37daa038-3d73-4f4a-9b97-a4624b80f947.webp","mobile_image":"shopify:\/\/shop_images\/2_feature-M-4_1dd8fcaf-fdac-4b77-8aa9-8dc70ba355b8.webp","show_overlay":true,"overlay_opacity":100,"text_color":"#ffffff","title":"多握位引體向上桿","content":"機台上方整合 多種握距與握法，在不同角度下刺激背部、手臂與前臂肌群，一台機器即可完成多樣引體向上訓練。","content_position":"bottom_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}},"image_jKeWgD":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/2_feature-6_631dceb4-4d52-4eeb-9732-ae454a7da393.webp","mobile_image":"shopify:\/\/shop_images\/2_feature-M-2_f0da1dc6-d4cc-4049-9b2e-54097238320a.webp","show_overlay":true,"overlay_opacity":100,"text_color":"#ffffff","title":"內建微調配重","content":"內建 5 磅下拉式微調配重（實際感受 2.5 磅），可進行精細重量調整，讓訓練進階更平順、控制更精準。","content_position":"bottom_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}}},"block_order":["image_KdJFHV","image_9iyhU9","image_4mKEPb","image_yd3NYY","image_wfT4Jw","image_jKeWgD"],"custom_css":["h2 {font-size: 48px;}","div {font-size: 21px;}","@media only screen and (max-width: 769px) {h2 {font-size: 30px; margin-top: 30px; } div {font-size: 15px; text-align: center; } p {margin-bottom: -110px; padding-left: 10px; padding-right: 10px; line-height: 1.4; }}"],"name":"Slideshow","settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":5}},"mosaic_EFAxgg":{"type":"mosaic","blocks":{"item_39UXVK":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-6_df17e514-522b-41ef-93cd-8b64f26ad75a.webp","show_overlay":false,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#4f5558","title":"","content":"","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_tBxiXk":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-4_5b26891a-8878-4825-810b-037582db8c65.webp","show_overlay":false,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#4f5558","title":"","content":"","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_6tfgc9":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-11.webp","show_overlay":false,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#4f5558","title":"","content":"","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_UnLKPc":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-8_3e912589-62f4-42bb-84e5-56b350e416e9.webp","show_overlay":false,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#4f5558","title":"","content":"","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}},"item_4ghKrN":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/4-lifestyle-3_e759ef3e-21f6-4464-bc32-3f916b5b9152.webp","show_overlay":false,"overlay_opacity":50,"background":"#f3f4f4","text_color":"#4f5558","title":"","content":"","content_position":"top_left","button_background":"#4f5558","button_text_color":"#f3f4f4","button_text":"Learn more","link":""}}},"block_order":["item_39UXVK","item_tBxiXk","item_6tfgc9","item_UnLKPc","item_4ghKrN"],"name":"Mosaic","settings":{"section_size":"large"}},"custom_html_Yeh8dy":{"type":"custom-html","custom_css":["h2 {font-size: 48px;}","p {font-size: 5px;}","@media only screen and (max-width: 769px) {h2 {font-size: 30px; } div {margin-bottom: -30px; }}"],"name":"Custom HTML","settings":{"title":"產品規格","html":"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td width=\"50%\">\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">高度<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">87.6\" \/ 222.5cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">深度<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">44\" \/ 111.7cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">前寬<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">75.5\" \/ 191.7cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">後寬<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">32.9\" \/ 83.5cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">每邊實際配重塊重量<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">標準配重220lb \/ 99.7kg（不含附加配重）<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">配重比例<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">2:1<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">每邊最大可用（感覺）<\/span><\/span><span style=\"color:#777777\"><span style=\"font-size:14px\">重量<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">112.5lb \/ 51kg 或升級配重後 137.5lb \/ 62.3kg<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">每邊最小可用重量<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">10lb \/ 4.5kg<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">高度選項數量<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">36<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">最高滑輪點<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">77.5\" \/ 196.8cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">最低滑輪點<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">12.8\" \/ 32.5cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">鋼索行程長度<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">93.4\" \/ 237.2cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">小洞洞板尺寸（長x寬）<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">28\" x 10.2\" \/ 71.1cm x 25.9cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">大洞洞板尺寸（長x寬）<\/span><\/span><\/p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">28\" x 16.5\" \/ 71.1cm x 41.9cm<\/span><\/span><\/p>\n\t\t\t<\/td>\n\t\t<\/tr>\n\t<\/tbody>\n<\/table>\n\n<p> <\/p>\n\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n<\/table>"}},"video_MbMGhe":{"type":"video","custom_css":["h2 {text-align: left; font-size: 48px; margin-block: -5px;}",".video-item {max-width: none; margin-bottom: 200px;}","@media only screen and (max-width: 769px) {h2 {font-size: 30px; }}",".video-item {max-width: none; margin-bottom: 20px;}"],"name":"Video","settings":{"title":"","video_url":"https:\/\/youtu.be\/jDMrUR2cViw","video_id":"jDMrUR2cViw","image":"shopify:\/\/shop_images\/5-YT_cover_b5768366-d5e5-4312-98be-d7c5074ade74.webp"}},"image_with_text_overlay_thHVz9":{"type":"image-with-text-overlay","custom_css":["header {margin-bottom: 0px;}"],"name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/5-bt_bf78423a-1249-4d86-b364-c9a730c692ce.webp","title":"","content":"","show_image_overlay":false,"color":"#ffffff"}}},"order":["main","image_with_text_overlay_WfF7Nn","custom_liquid_CpRVgx","slideshow_K3Khne","mosaic_EFAxgg","custom_html_Yeh8dy","video_MbMGhe","image_with_text_overlay_thHVz9"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": true,
+            "show_reviews_badge": true,
+            "show_share_buttons": true
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "block",
+            "color_mode": "swatch",
+            "variant_image_options": "",
+            "show_quantity_selector": true,
+            "show_taxes_included": false,
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0,
+            "progress_bar_max_value": 50
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "display_mode": "view_more"
+          }
+        },
+        "text_DjzKLi": {
+          "type": "text",
+          "settings": {
+            "content": "<h4></h4><h4><strong>安裝配送運費說明</strong></h4><p>一般地區 $5,000<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a><br/>略偏遠地區 $6,500<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a><br/>偏遠地區 $10,000<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a></p>"
+          }
+        },
+        "text_kMxLeY": {
+          "type": "text",
+          "settings": {
+            "content": "<h4></h4><h4><strong>樓層費用說明</strong></h4><p>一樓或是有電梯不須搬運 $0 <a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a><br/>二樓 (含) 以上 $900/樓<strong> </strong><a href=\"https://aegisport.com.tw/pages/delivery\"><strong>詳見</strong></a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "description",
+        "text_DjzKLi",
+        "text_kMxLeY"
+      ],
+      "settings": {
+        "image_size": "large",
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "zoom_effect": "outside",
+        "carousel_effect": "fade"
+      }
+    },
+    "image_with_text_overlay_WfF7Nn": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h1 {font-size: 60px;}",
+        "@media only screen and (max-width: 769px) {h1 {font-size: 32px; }}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/3-bg_34da5b3f-ba30-40de-8ca0-98547e9719d8.webp",
+        "title": "Arcadia™ Max 多功能訓練機 升級套裝",
+        "content": "<h4>全尺寸・高重量・高端滑順手感</h4>",
+        "show_image_overlay": true,
+        "color": "#e8e8e8"
+      }
+    },
+    "custom_liquid_CpRVgx": {
+      "type": "custom-liquid",
+      "custom_css": [
+        "h2 {font-size: 36px;}",
+        "@media only screen and (max-width: 769px) {div {font-size: 15px; margin-top: -20px; margin-left: -15px; }}"
+      ],
+      "name": "Custom Liquid",
+      "settings": {
+        "title": "",
+        "include_margins": true,
+        "liquid": "<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>Arcadia&trade; Max 是一台<strong>真正為長期訓練而生的全尺寸功能性訓練機</strong>，由 <strong>REP 美國科羅拉多研發團隊</strong> 親自設計與測試，從第一下拉索到最後一組訓練，都能感受到紮實、順暢且充滿信心的使用體驗。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>機台具備 <strong>36 段可調滑輪位置</strong>，無論是高位下拉、低位划船、飛鳥、旋轉或單側訓練，都能快速調到最貼近自然發力的角度，讓動作更流暢、肌肉刺激更集中。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>採用 <strong>雙配重塔與 2:1 傳動比設計</strong>，每側標準配重 <strong>220 磅（手感 110 磅）</strong>，在拉動過程中阻力均勻穩定，行程長、回饋扎實，讓進階訓練者也能持續突破重量瓶頸。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>配重片以 <strong>熱軋鋼</strong> 製成，搭配 <strong>磁吸插銷</strong>，在不同動作之間切換重量只需一個動作，讓訓練節奏不中斷，特別適合高強度循環訓練與商用環境。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>重量以 <strong>10 磅為單位（手感 5 磅）</strong> 調整，並內建 <strong>5 磅微調配重（手感2.5 磅）</strong>，讓你在控制型訓練、復健或衝刺個人紀錄時，都能精準拿捏每一分負重。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span><strong>鋁合金滑輪系統</strong> 在每一次拉動中都帶來細膩且順滑的回饋，讓阻力彷彿「黏」在肌肉上，不只更耐用，也大幅提升整體訓練質感。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>專利 <strong>滑輪座設計</strong> 搭配 <strong>全滾花握把與加大型插銷</strong>，只需單手即可快速調整高度，即使在組間休息或超級組中，也能流暢銜接下一個動作。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>隨機附 <strong>兩組全滾花鋼製 D 型把手</strong>，握感紮實且不滑手，讓你在高重量拉動時更專注於肌肉發力，而不是擔心握力不足。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>底座與上方配重板 <strong>內建彈力帶插銷</strong>，可搭配彈力帶創造漸進式阻力，最高支援 <strong>540 磅</strong>，讓爆發力、速度與進階力量訓練更具變化性。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>機台上方整合 <strong>多握位引體向上把手</strong>，不同握距與角度帶來截然不同的背部刺激，一台機器即可完成多樣引體訓練。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>機身內建 <strong>洞洞板收納系統</strong>，附 <strong>14 支收納插銷</strong>，常用配件隨手可取，讓訓練空間始終維持專業、有秩序的狀態。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>Arcadia&trade; Max <strong>高度相容多款拉繩配件</strong>，從上肢推拉、下肢訓練到核心穩定動作，都能在同一台機器上完成，真正做到一台取代多項設備，讓每一次訓練都充滿可能性。</p>"
+      }
+    },
+    "slideshow_K3Khne": {
+      "type": "slideshow",
+      "blocks": {
+        "image_KdJFHV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_feature-1_6c411e78-fe73-4ef9-ad00-eb6e2a4058f0.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-6_41fbcaea-6ea2-4e21-b9bd-bed0b28a63b2.webp",
+            "show_overlay": true,
+            "overlay_opacity": 66,
+            "text_color": "#ffffff",
+            "title": "左右重型配重系統",
+            "content": "採用220磅熱軋鋼配重，搭配 2:1 傳動比，拉感110磅，阻力穩定，適合功能訓練；可升級至270磅，滿足高強度需求。",
+            "content_position": "bottom_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        },
+        "image_9iyhU9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_feature-2_f4e56fc4-3144-4908-b378-dbb6a7687c01.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-3_394d3b39-02e5-4a3b-9df2-d0b2fe76b6d2.webp",
+            "show_overlay": true,
+            "overlay_opacity": 53,
+            "text_color": "#ffffff",
+            "title": "鋁合金滑輪",
+            "content": "高強度 鋁合金滑輪 比塑膠滑輪更耐用，每一次拉動都更順暢細膩，長時間、高頻率訓練依然保持穩定手感。",
+            "content_position": "bottom_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        },
+        "image_4mKEPb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_feature-3_28428cf4-4dc3-4d52-9545-bce9bb0ba28b.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-5_f4382664-fd30-4c1c-ac4d-5f0e031a2f97.webp",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "text_color": "#ffffff",
+            "title": "內建配件收納系統",
+            "content": "全長式 可客製洞洞板收納，包含 9 支 4 吋掛鉤與 5 支 9 吋掛鉤，讓各式拉繩配件整齊排列、隨手可取，維持專業訓練空間。",
+            "content_position": "bottom_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        },
+        "image_yd3NYY": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_feature-4_35da4f05-ce66-4928-80d2-c0cb17489bfd.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-1_4a9f1898-3b47-481a-9b80-b7c865ebf75a.webp",
+            "show_overlay": false,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "內建彈力帶插銷",
+            "content": "插銷設置於底座與上方配重板，可搭配彈力帶增加額外阻力，單側最高支援 540 磅，適合爆發力與進階阻力訓練。",
+            "content_position": "middle_right",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        },
+        "image_wfT4Jw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_feature-5_37daa038-3d73-4f4a-9b97-a4624b80f947.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-4_1dd8fcaf-fdac-4b77-8aa9-8dc70ba355b8.webp",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "text_color": "#ffffff",
+            "title": "多握位引體向上桿",
+            "content": "機台上方整合 多種握距與握法，在不同角度下刺激背部、手臂與前臂肌群，一台機器即可完成多樣引體向上訓練。",
+            "content_position": "bottom_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        },
+        "image_jKeWgD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_feature-6_631dceb4-4d52-4eeb-9732-ae454a7da393.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-2_f0da1dc6-d4cc-4049-9b2e-54097238320a.webp",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "text_color": "#ffffff",
+            "title": "內建微調配重",
+            "content": "內建 5 磅下拉式微調配重（實際感受 2.5 磅），可進行精細重量調整，讓訓練進階更平順、控制更精準。",
+            "content_position": "bottom_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KdJFHV",
+        "image_9iyhU9",
+        "image_4mKEPb",
+        "image_yd3NYY",
+        "image_wfT4Jw",
+        "image_jKeWgD"
+      ],
+      "custom_css": [
+        "h2 {font-size: 48px;}",
+        "div {font-size: 21px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 30px; margin-top: 30px; } div {font-size: 15px; text-align: center; } p {margin-bottom: -110px; padding-left: 10px; padding-right: 10px; line-height: 1.4; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "mosaic_EFAxgg": {
+      "type": "mosaic",
+      "blocks": {
+        "item_39UXVK": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-6_df17e514-522b-41ef-93cd-8b64f26ad75a.webp",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#4f5558",
+            "title": "",
+            "content": "",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_tBxiXk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-4_5b26891a-8878-4825-810b-037582db8c65.webp",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#4f5558",
+            "title": "",
+            "content": "",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_6tfgc9": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-11.webp",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#4f5558",
+            "title": "",
+            "content": "",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_UnLKPc": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-8_3e912589-62f4-42bb-84e5-56b350e416e9.webp",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#4f5558",
+            "title": "",
+            "content": "",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        },
+        "item_4ghKrN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/4-lifestyle-3_e759ef3e-21f6-4464-bc32-3f916b5b9152.webp",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "background": "#f3f4f4",
+            "text_color": "#4f5558",
+            "title": "",
+            "content": "",
+            "content_position": "top_left",
+            "button_background": "#4f5558",
+            "button_text_color": "#f3f4f4",
+            "button_text": "Learn more",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_39UXVK",
+        "item_tBxiXk",
+        "item_6tfgc9",
+        "item_UnLKPc",
+        "item_4ghKrN"
+      ],
+      "name": "Mosaic",
+      "settings": {
+        "section_size": "large"
+      }
+    },
+    "custom_html_Yeh8dy": {
+      "type": "custom-html",
+      "custom_css": [
+        "h2 {font-size: 48px;}",
+        "p {font-size: 5px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 30px; } div {margin-bottom: -30px; }}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "title": "產品規格",
+        "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td width=\"50%\">\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">高度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">87.6\" / 222.5cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">深度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">44\" / 111.7cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">前寬</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">75.5\" / 191.7cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">後寬</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">32.9\" / 83.5cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">每邊實際配重塊重量</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">標準配重220lb / 99.7kg（不含附加配重）</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">配重比例</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">2:1</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">每邊最大可用（感覺）</span></span><span style=\"color:#777777\"><span style=\"font-size:14px\">重量</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">112.5lb / 51kg 或升級配重後 137.5lb / 62.3kg</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">每邊最小可用重量</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">10lb / 4.5kg</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">高度選項數量</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">36</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">最高滑輪點</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">77.5\" / 196.8cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">最低滑輪點</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">12.8\" / 32.5cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">鋼索行程長度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">93.4\" / 237.2cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">小洞洞板尺寸（長x寬）</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">28\" x 10.2\" / 71.1cm x 25.9cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">大洞洞板尺寸（長x寬）</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">28\" x 16.5\" / 71.1cm x 41.9cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n</table>"
+      }
+    },
+    "video_MbMGhe": {
+      "type": "video",
+      "custom_css": [
+        "h2 {text-align: left; font-size: 48px; margin-block: -5px;}",
+        ".video-item {max-width: none; margin-bottom: 200px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 30px; }}",
+        ".video-item {max-width: none; margin-bottom: 20px;}"
+      ],
+      "name": "Video",
+      "settings": {
+        "title": "",
+        "video_url": "https://youtu.be/jDMrUR2cViw",
+        "image": "shopify://shop_images/5-YT_cover_b5768366-d5e5-4312-98be-d7c5074ade74.webp"
+      }
+    },
+    "image_with_text_overlay_thHVz9": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "header {margin-bottom: 0px;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/5-bt_bf78423a-1249-4d86-b364-c9a730c692ce.webp",
+        "title": "",
+        "content": "",
+        "show_image_overlay": false,
+        "color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_WfF7Nn",
+    "custom_liquid_CpRVgx",
+    "slideshow_K3Khne",
+    "mosaic_EFAxgg",
+    "custom_html_Yeh8dy",
+    "video_MbMGhe",
+    "image_with_text_overlay_thHVz9"
+  ]
+}
