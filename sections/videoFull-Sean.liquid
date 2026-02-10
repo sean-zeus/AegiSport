@@ -1,21 +1,87 @@
 <style>
-  .fullVideoDiv-sean {
-    position: absolute;
+  /* 手機優先 */
+    .videoFull--sean .video-wrapper:after {
+        content: none !important;
+    }
+
+  .DesktopView {
+    display: none;
+  }
+
+  .MobileView {
+    display: block;
+
+    /* 解決方案 1：使用現代 aspect-ratio 屬性（最推薦） */
+    {% comment %}
+      position: relative; /* 確保內部 iframe 可以定位 */
+      width: 100%;
+      height: auto; /* 讓高度由比例決定 */
+      aspect-ratio: 9 / 16; /* 如果是直式影片 (Shorts) 使用 9/16，橫式則用 16/9 */
+    {% endcomment %}
+
+    /* 解決方案 2：傳統 Padding 比例法（相容性最好） */
+    position: relative;
     overflow: hidden;
     width: 100%;
-    padding-top: 56.25%; /* 16:9 比例 */
+    height: 0;
+    padding-bottom: 177.77%;
+    /* 計算公式：(高 / 寬) * 100% */
+    /* 直式 9:16 為 (16/9)*100 = 177.77% */
+    /* 橫式 16:9 為 (9/16)*100 = 56.25% */
   }
-  .fullVideoDiv-sean iframe {
-    {% comment %} position: absolute; {% endcomment %}
-    top: -10%; /* 稍微放大並往上移，隱藏頂部標題 */
+
+  .MobileView iframe {
+    /* 解決方案 1：使用現代 aspect-ratio 屬性（最推薦） */
+    {% comment %}
+      width: 100%;
+      height: 100%;
+      /* 移除原本可能干擾的固定寬高設定 */
+    {% endcomment %}
+
+    /* 解決方案 2：傳統 Padding 比例法（相容性最好） */
+    position: absolute;
+    top: 0;
     left: 0;
     width: 100%;
-    height: 120% !important; /* 增加高度以裁切掉頂部與底部的黑邊或資訊 */
-    {% comment %} pointer-events: none; {% endcomment %}
+    height: 100%;
+  }
+
+  /* 桌機介面 */
+  @media screen and (min-width: 768px) {
+    .videoFull--sean .video-wrapper:after {
+        content: '' !important;
+    }
+
+    .MobileView {
+      display: none;
+    }
+
+    .DesktopView {
+      display: block;
+
+      position: absolute;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 比例 */
+      /* 橫式 16:9 為 (9/16)*100 = 56.25% */
+    }
+
+    .DesktopView iframe {
+      position: absolute;
+      top: -10%; /* 稍微放大並往上移，隱藏頂部標題 */
+      left: 0;
+      width: 100%;
+      height: 120% !important; /* 增加高度以裁切掉頂部與底部的黑邊或資訊 */
+      {% comment %} pointer-events: none; {% endcomment %}
+    }
   }
 </style>
 
-<section class="section section--text-centered" data-section-id="{{ section.id }}" data-section-type="VideoFull-sean">
+<section
+  class="section section--text-centered videoFull--sean"
+  data-section-id="{{ section.id }}"
+  data-section-type="VideoFull-sean"
+>
   <div class="container" style="padding:0; max-width:100%;">
     {%- if section.settings.title != blank -%}
       <h2 class="heading h3">{{ section.settings.title | escape }}</h2>
@@ -23,49 +89,25 @@
 
     <div class="video-item is-playing" data-action="play-video" style="pointer-events: none;">
       <div class="video-wrapper">
-        <div class="video-wrapper__image-wrapper">
-          {%- if section.settings.image -%}
-            {{-
-              section.settings.image
-              | image_url: width: section.settings.image.width
-              | image_tag:
-                loading: 'lazy',
-                sizes: 'min(100vw, 860px)',
-                widths: '300,400,500,600,700,800,900,1000,1200',
-                class: 'video-wrapper__image'
-            -}}
-          {%- elsif bsectionlock.settings.video_url.type == 'youtube' -%}
-            <img
-              class="video-wrapper__image"
-              src="https://img.youtube.com/vi/{{ section.settings.video_url.id }}/maxresdefault.jpg"
-              alt=""
-            >
-          {%- else -%}
-            <div class="placeholder-background">
-              {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
-            </div>
-          {%- endif -%}
-
-          {% render 'icon', icon: 'play' %}
+        <div class="DesktopView">
+          <iframe
+            src="https://www.youtube.com/embed/{{ section.settings.videoPC_url.id }}?autoplay=1&loop=1&playlist={{ section.settings.videoPC_url.id }}&mute=1&rel=0&modestbranding=1&iv_load_policy=3&controls=0&playsinline=1"
+            frameborder="0"
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          >
+          </iframe>
         </div>
 
-        {% if section.settings.video_url.type == 'youtube' %}
-          {% comment %} <iframe src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1" data-src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?autoplay=1&showinfo=0&controls=1&rel=0&modestbranding=1" frameborder="0" allowfullscreen></iframe> {% endcomment %}
-          <div class="fullVideoDiv-sean">
-            <iframe
-              src="https://www.youtube.com/embed/{{ section.settings.video_id }}?autoplay=1&loop=1&playlist={{ section.settings.video_id }}&mute=1&rel=0&modestbranding=1&iv_load_policy=3&controls=0&playsinline=1"
-              frameborder="0"
-              allow="autoplay; encrypted-media"
-              allowfullscreen
-            >
-            </iframe>
-          </div>
-        {% elsif section.settings.video_url.type == 'vimeo' %}
+        <div class="MobileView">
           <iframe
-            data-src="https://player.vimeo.com/video/{{ section.settings.video_url.id }}?autoplay=1&portrait=0&byline=0&color={{ settings.accent_color | remove_first: '#' }}"
+            src="https://www.youtube.com/embed/{{ section.settings.videoMobile_url.id }}?autoplay=1&loop=1&playlist={{ section.settings.videoMobile_url.id }}&mute=1&rel=0&modestbranding=1&iv_load_policy=3&controls=0&playsinline=1"
             frameborder="0"
-          ></iframe>
-        {% endif %}
+            allow="autoplay; encrypted-media"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -83,22 +125,17 @@
     },
     {
       "type": "video_url",
-      "id": "video_url",
-      "accept": ["vimeo", "youtube"],
-      "label": "Video",
+      "id": "videoPC_url",
+      "accept": ["youtube"],
+      "label": "PC_YouTube_URL",
       "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
-      "type": "text",
-      "id": "video_id",
-      "label": "VideoID",
-      "default": "_9VUPq3SxOc"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image",
-      "info": "1200 x 700px .jpg recommended. Used when video is not loaded (required for Vimeo and YouTube)."
+      "type": "video_url",
+      "id": "videoMobile_url",
+      "accept": ["youtube"],
+      "label": "Mobile_YouTube_URL",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     }
   ],
   "presets": [
