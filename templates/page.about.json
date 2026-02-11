@@ -68,7 +68,7 @@
       "name": "Custom HTML",
       "settings": {
         "title": "",
-        "html": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:85%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<h3 style=\"text-align:center\"><strong>台灣唯一授權的官方代理商</strong></h3>\n\n\t\t\t<p style=\"text-align:center\">我們代理與引進的品牌-<strong>REP Fitness</strong>，來自美國市場已被反覆驗證的專業健身器材品牌，為美國重量器材設備的第一品牌，並以工程結構、模組化系統與完整配件生態聞名，AegiSport是REP Fitness在台灣唯一授權的官方代理商，請認明官方授權來源以確保產品獲得完善的售後服務。</p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>"
+        "html": "<table align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:85%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<h3 style=\"text-align:center\"><strong>台灣唯一授權的官方代理商</strong></h3>\n\n\t\t\t<p style=\"text-align:center\">我們代理與引進的品牌-<strong>REP Fitness</strong>，來自美國市場已被反覆驗證的專業健身器材品牌，為美國重量器材設備的第一品牌，並以工程結構、模組化系統與完整配件生態聞名，AegiSport是REP Fitness在台灣唯一授權的官方代理商，請認明官方授權來源以確保產品獲得完善的售後服務。<br><br><br><br></p>\n\t\t\t</td>\n\t\t</tr>\n</tbody>\n</table>"
       }
     }
   },
