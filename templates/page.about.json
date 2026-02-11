@@ -110,6 +110,9 @@
         "item_7xmpNn",
         "item_nQUcKB"
       ],
+      "custom_css": [
+        "div{padding: 20px;}"
+      ],
       "name": "Text with icons",
       "settings": {
         "stack_mobile": false
