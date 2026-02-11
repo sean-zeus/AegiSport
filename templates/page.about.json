@@ -59,7 +59,7 @@
         "offer_Wfg8Eh"
       ],
       "custom_css": [
-        "div{vertical-align: middle}"
+        "div {vertical-align: middle;}"
       ],
       "name": "Offers",
       "settings": {
@@ -105,20 +105,18 @@
     },
     "custom_html_fRNHfk": {
       "type": "custom-html",
-      "disabled": true,
       "name": "Custom HTML",
       "settings": {
         "title": "",
-        "html": "<h2 style=\"text-align:center\"><strong>Shielding Your Fitness Decisions</strong></h2>\n\n<p style=\"text-align:center\"><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——</strong><strong>宙斯與雅典娜的神盾</strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p>\n\n<h2 style=\"text-align:center\"><strong>神盾優勢 健身選擇，神盾保固</strong></h2>\n\n<p style=\"text-align:center\">Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p>\n\n<p style=\"text-align:center\">Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>"
+        "html": "<h3 style=\"text-align:center\"><strong>Shielding Your Fitness Decisions</strong></h3>\n\n<p style=\"text-align:center\"><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——</strong><strong>宙斯與雅典娜的神盾</strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p>\n\n<h3 style=\"text-align:center\"><strong>神盾優勢 健身選擇，神盾保固</strong></h3>\n\n<p style=\"text-align:center\">Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p>\n\n<p style=\"text-align:center\">Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>"
       }
     },
     "custom_html_iHgy9Y": {
       "type": "custom-html",
-      "disabled": true,
       "name": "Custom HTML",
       "settings": {
         "title": "",
-        "html": "<h2 style=\"text-align:center\"><strong>台灣唯一授權的官方代理商</strong></h2>\n\n<p style=\"text-align:center\">我們代理與引進的品牌-<strong>REP Fitness</strong>，來自美國市場已被反覆驗證的專業健身器材品牌，為美國重量器材設備的第一品牌，並以工程結構、模組化系統與完整配件生態聞名，AegiSport是REP Fitness在台灣唯一授權的官方代理商，請認明官方授權來源以確保產品獲得完善的售後服務。</p>"
+        "html": "<h3 style=\"text-align:center\"><strong>台灣唯一授權的官方代理商</strong></h3>\n\n<p style=\"text-align:center\">我們代理與引進的品牌-<strong>REP Fitness</strong>，來自美國市場已被反覆驗證的專業健身器材品牌，為美國重量器材設備的第一品牌，並以工程結構、模組化系統與完整配件生態聞名，AegiSport是REP Fitness在台灣唯一授權的官方代理商，請認明官方授權來源以確保產品獲得完善的售後服務。</p>"
       }
     }
   },
