@@ -98,14 +98,14 @@
           "type": "offer",
           "settings": {
             "title": "",
-            "content": "<p>Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p><p>Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>"
+            "content": "<p>Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p><p>Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p><p>我們代理與引進的品牌-<strong>REP Fitness</strong>，來自美國市場已被反覆驗證的專業健身器材品牌，為美國重量器材設備的第一品牌，並以工程結構、模組化系統與完整配件生態聞名，AegiSport是REP Fitness在台灣唯一授權的官方代理商，請認明官方授權來源以確保產品獲得完善的售後服務。</p>"
           }
         },
         "offer_NX984R": {
           "type": "offer",
           "settings": {
             "title": "",
-            "content": "<p>我們代理與引進的品牌-<strong>REP Fitness</strong>，來自美國市場已被反覆驗證的專業健身器材品牌，為美國重量器材設備的第一品牌，並以工程結構、模組化系統與完整配件生態聞名，AegiSport是REP Fitness在台灣唯一授權的官方代理商，請認明官方授權來源以確保產品獲得完善的售後服務。</p>"
+            "content": ""
           }
         }
       },
@@ -116,7 +116,7 @@
       "custom_css": [],
       "name": "Offers",
       "settings": {
-        "items_per_row": 2,
+        "items_per_row": 1,
         "stack_mobile": true
       }
     }
