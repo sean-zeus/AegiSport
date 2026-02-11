@@ -32,7 +32,7 @@
     "rich_text_jCGYYz": {
       "type": "rich-text",
       "custom_css": [
-        "h1 {font-size: 48px; line-height: 12px;}",
+        "h1 {font-size: 36px; line-height: 12px;}",
         "div {margin-bottom: -30px;}"
       ],
       "name": "Rich text",
@@ -51,14 +51,16 @@
           "type": "offer",
           "settings": {
             "title": "",
-            "content": "<p></p><p><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——宙斯與雅典娜的神盾</strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p><p></p>"
+            "content": "<p><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——宙斯與雅典娜的神盾</strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p>"
           }
         }
       },
       "block_order": [
         "offer_Wfg8Eh"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "div{vertical-align: middle}"
+      ],
       "name": "Offers",
       "settings": {
         "items_per_row": 1,
