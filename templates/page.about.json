@@ -31,6 +31,7 @@
     },
     "rich_text_jCGYYz": {
       "type": "rich-text",
+      "disabled": true,
       "custom_css": [
         "h1 {font-size: 36px; line-height: 12px;}",
         "div {margin-bottom: -30px;}"
@@ -39,7 +40,7 @@
       "settings": {
         "text_width": "narrow",
         "title": "",
-        "content": "<h1>Aegisport </h1><h3>Shielding Your Fitness Decisions</h3>",
+        "content": "",
         "button_text": "",
         "button_link": "shopify://policies/privacy-policy"
       }
