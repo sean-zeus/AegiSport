@@ -31,7 +31,6 @@
     },
     "rich_text_jCGYYz": {
       "type": "rich-text",
-      "disabled": true,
       "custom_css": [
         "h1 {font-size: 48px; line-height: 12px;}",
         "div {margin-bottom: -30px;}"
@@ -59,7 +58,6 @@
       "block_order": [
         "offer_Wfg8Eh"
       ],
-      "disabled": true,
       "custom_css": [],
       "name": "Offers",
       "settings": {
@@ -69,7 +67,6 @@
     },
     "rich_text_6MgRxB": {
       "type": "rich-text",
-      "disabled": true,
       "custom_css": [
         "h1 {font-size: 60px; line-height: 12px;}",
         "div {margin-bottom: -30px;}"
@@ -97,7 +94,6 @@
       "block_order": [
         "offer_fEGb3Q"
       ],
-      "disabled": true,
       "custom_css": [],
       "name": "Offers",
       "settings": {
@@ -107,6 +103,7 @@
     },
     "custom_html_fRNHfk": {
       "type": "custom-html",
+      "disabled": true,
       "name": "Custom HTML",
       "settings": {
         "title": "",
@@ -115,6 +112,7 @@
     },
     "custom_html_iHgy9Y": {
       "type": "custom-html",
+      "disabled": true,
       "name": "Custom HTML",
       "settings": {
         "title": "",
