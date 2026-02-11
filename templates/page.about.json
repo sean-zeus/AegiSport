@@ -1,1 +1,168 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"image_with_text_overlay_QMtQLr":{"type":"image-with-text-overlay","custom_css":["h1 {font-size: 90px; margin-bottom: -30px;}","header {margin-top: -70px;}"],"name":"Image with text overlay","settings":{"image":"shopify:\/\/shop_images\/about-title.webp","title":"","content":"","show_image_overlay":true,"color":"#ffffff"}},"rich_text_jCGYYz":{"type":"rich-text","custom_css":["h1 {font-size: 60px; line-height: 12px;}","div {margin-bottom: -30px;}"],"name":"Rich text","settings":{"text_width":"narrow","title":"","content":"<h1>Aegisport<\/h1><h2><strong>為重量而生的強力後盾<\/strong><\/h2>","button_text":"","button_link":"shopify:\/\/policies\/privacy-policy"}},"offers_pCU8We":{"type":"offers","blocks":{"offer_Wfg8Eh":{"type":"offer","settings":{"title":"","content":"<p><\/p><p><\/p><p><br\/><strong>Aegisport<\/strong>，由 <strong>Aegis + Sport<\/strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——宙斯與雅典娜的神盾<\/strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。<\/p><p>Aegisport 是一個專注於<strong>國際專業健身器材代理與選品的電商品牌<\/strong>。我們不自行研發器材，而是把全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、能長期使用、適合大重量與高強度訓練的產品<\/strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替你做最重要的判斷。<\/p><p>我們代理與引進的品牌，皆來自國際市場中已被反覆驗證的專業健身器材品牌，例如以工程結構、模組化系統與完整配件生態聞名的 <strong>REP Fitness<\/strong>，以及長期深耕亞洲市場、重視實戰訓練與教練需求的 <strong>Byzoom Fitness<\/strong>。這些品牌的共通點不是行銷話術，而是經得起重量、時間與使用頻率考驗的產品本質。<\/p><p>Aegisport 的角色，不只是把商品上架販售，而是成為<strong>訓練與器材之間的翻譯者<\/strong>。我們深入理解力量訓練、功能性訓練與健身房實際使用情境，將國外品牌複雜的規格、系統與選項，轉化為讓消費者、教練與健身房老闆都能快速理解的資訊與建議。我們關心的不是「哪個最貴」，而是「哪個最適合你現在的訓練階段與空間條件」。<\/p><p>在 Aegisport，我們特別重視 <strong>大重量訓練、安全性與長期投資價值<\/strong>。無論是力量架、纜繩系統、訓練椅或配件，我們都優先評估結構強度、相容性、擴充性與未來升級可能性。因為我們知道，對真正認真訓練的人來說，器材不是消耗品，而是會陪伴你走過多年訓練歷程的重要夥伴。<\/p><p>我們也相信，每一位健身愛好者的需求都不同。有人追求極限重量，有人需要兼顧空間效率，有人希望在家中打造接近商用等級的訓練環境。Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇<\/strong>，而不是一味推銷單一答案。<\/p><p><\/p><p><br\/><\/p>"}}},"block_order":["offer_Wfg8Eh"],"custom_css":[],"name":"Offers","settings":{"items_per_row":1,"stack_mobile":false}}},"order":["main","image_with_text_overlay_QMtQLr","rich_text_jCGYYz","offers_pCU8We"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "image_with_text_overlay_QMtQLr": {
+      "type": "image-with-text-overlay",
+      "custom_css": [
+        "h1 {font-size: 90px; margin-bottom: -30px;}",
+        "header {margin-top: -70px;}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/about-title.webp",
+        "title": "",
+        "content": "",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "rich_text_jCGYYz": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 48px; line-height: 12px;}",
+        "div {margin-bottom: -30px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "",
+        "content": "<h1>Aegisport </h1><h3>Shielding Your Fitness Decisions</h3>",
+        "button_text": "",
+        "button_link": "shopify://policies/privacy-policy"
+      }
+    },
+    "offers_pCU8We": {
+      "type": "offers",
+      "blocks": {
+        "offer_Wfg8Eh": {
+          "type": "offer",
+          "settings": {
+            "title": "",
+            "content": "<p></p><p><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——宙斯與雅典娜的神盾</strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p><p></p>"
+          }
+        }
+      },
+      "block_order": [
+        "offer_Wfg8Eh"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Offers",
+      "settings": {
+        "items_per_row": 1,
+        "stack_mobile": false
+      }
+    },
+    "rich_text_6MgRxB": {
+      "type": "rich-text",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 60px; line-height: 12px;}",
+        "div {margin-bottom: -30px;}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "",
+        "content": "<h2>神盾優勢 健身選擇，神盾保固</h2>",
+        "button_text": "",
+        "button_link": "shopify://policies/privacy-policy"
+      }
+    },
+    "offers_xiwDyK": {
+      "type": "offers",
+      "blocks": {
+        "offer_fEGb3Q": {
+          "type": "offer",
+          "settings": {
+            "title": "",
+            "content": "<p></p><p>Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p><p>Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>"
+          }
+        }
+      },
+      "block_order": [
+        "offer_fEGb3Q"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "Offers",
+      "settings": {
+        "items_per_row": 1,
+        "stack_mobile": false
+      }
+    },
+    "custom_html_fRNHfk": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<h2 style=\"text-align:center\"><strong>Shielding Your Fitness Decisions</strong></h2>\n\n<p style=\"text-align:center\"><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——</strong><strong>宙斯與雅典娜的神盾</strong>。這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p>\n\n<h2 style=\"text-align:center\"><strong>神盾優勢 健身選擇，神盾保固</strong></h2>\n\n<p style=\"text-align:center\">Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p>\n\n<p style=\"text-align:center\">Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>"
+      }
+    },
+    "text_with_icons_tJJ6Gp": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_M4cgF6": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "",
+            "content": "<h4>嚴選</h4><p>專注運動產業選品</p>"
+          }
+        },
+        "item_3VARpR": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-shield",
+            "title": "Satisfied or refunded",
+            "content": "<p>神盾保固業界最長</p>"
+          }
+        },
+        "item_T88JDL": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-shop",
+            "title": "Top-notch support",
+            "content": "<p>在地經營團隊</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_M4cgF6",
+        "item_3VARpR",
+        "item_T88JDL"
+      ],
+      "custom_css": [
+        "h3 {font-size: 48px;}"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "stack_mobile": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_overlay_QMtQLr",
+    "rich_text_jCGYYz",
+    "offers_pCU8We",
+    "rich_text_6MgRxB",
+    "offers_xiwDyK",
+    "custom_html_fRNHfk",
+    "text_with_icons_tJJ6Gp"
+  ]
+}
