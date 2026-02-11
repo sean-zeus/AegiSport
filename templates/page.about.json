@@ -68,21 +68,6 @@
         "stack_mobile": false
       }
     },
-    "rich_text_6MgRxB": {
-      "type": "rich-text",
-      "custom_css": [
-        "h1 {font-size: 60px; line-height: 12px;}",
-        "div {margin-bottom: -30px;}"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "text_width": "narrow",
-        "title": "",
-        "content": "<h2>神盾優勢 健身選擇，神盾保固</h2>",
-        "button_text": "",
-        "button_link": "shopify://policies/privacy-policy"
-      }
-    },
     "offers_xiwDyK": {
       "type": "offers",
       "blocks": {
@@ -97,7 +82,9 @@
       "block_order": [
         "offer_fEGb3Q"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "div{margin-left: 10px; margin-right: 10px;}"
+      ],
       "name": "Offers",
       "settings": {
         "items_per_row": 1,
@@ -126,7 +113,6 @@
     "image_with_text_overlay_QMtQLr",
     "rich_text_jCGYYz",
     "offers_pCU8We",
-    "rich_text_6MgRxB",
     "offers_xiwDyK",
     "custom_html_fRNHfk",
     "custom_html_iHgy9Y"
