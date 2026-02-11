@@ -82,9 +82,7 @@
       "block_order": [
         "offer_fEGb3Q"
       ],
-      "custom_css": [
-        "div{margin-left: 10px; margin-right: 10px;}"
-      ],
+      "custom_css": [],
       "name": "Offers",
       "settings": {
         "items_per_row": 1,
