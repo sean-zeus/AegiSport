@@ -1,3 +1,61 @@
+<style>
+  {% comment %} sean 20260211 修改header inline結構，將nav-bar拉到同一列，並調整CSS以適應新的結構 {% endcomment %}
+  .header {
+    background: var(--secondary-background);
+  }
+
+  .nav-bar__inner .container {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header .container .search-bar__top {
+    justify-content: end;
+  }
+
+  @media screen and (min-width: 1000px) {
+    .header .container .search-bar__input-wrapper {
+      display: none;
+    }
+  }
+
+  /* 桌機介面 */
+  @media screen and (min-width: 1280px) {
+    .header {
+      padding: 5px 0;
+    }
+
+    .header .container {
+      max-width: 100vw;
+    }
+
+    .header .container .search-bar {
+      margin: 0 30px;
+    }
+
+    .header .container .header__action-item {
+      padding: 10px 0;
+    }
+
+    .header .container .header__action-item--account {
+      width: 120px;
+    }
+
+    .header .container .header__action-item--account:after {
+      content: none !important;
+    }
+
+    .header .container .header__action-item-title {
+      width: 80x;
+    }
+
+    .header .container .header__action-item--cart {
+      width: 130px;
+    }
+  }
+</style>
+
 {%- capture section_settings -%}
 {
   "navigationLayout": {{ section.settings.desktop_navigation_layout | json }},
@@ -17,9 +75,9 @@
     <div class="container">
       <div class="header__inner">
         {%- comment -%}
-        --------------------------------------------------------------------------------------
-        MOBILE NAV
-        --------------------------------------------------------------------------------------
+          --------------------------------------------------------------------------------------
+          MOBILE NAV
+          --------------------------------------------------------------------------------------
         {%- endcomment -%}
 
         {%- if navigation_menu.links.size > 0 -%}
@@ -50,9 +108,9 @@
         {%- endif -%}
 
         {%- comment -%}
-        --------------------------------------------------------------------------------------
-        LOGO COMPONENT
-        --------------------------------------------------------------------------------------
+          --------------------------------------------------------------------------------------
+          LOGO COMPONENT
+          --------------------------------------------------------------------------------------
         {%- endcomment -%}
 
         {%- capture header_logo -%}
@@ -78,10 +136,39 @@
           <div class="header__logo">{{ header_logo }}</div>
         {%- endif -%}
 
+        {% comment %} sean 20260211 修改headerinline結構，將nav-bar拉到同一列，並調整CSS以適應新的結構 {% endcomment %}
+        {%- if section.settings.desktop_navigation_layout == 'inline' and navigation_menu.links.size > 0 -%}
+          <nav class="nav-bar">
+            <div class="nav-bar__inner">
+              <div class="container">
+                <ul class="nav-bar__linklist list--unstyled" data-type="menu" role="list">
+                  {%- for link in navigation_menu.links -%}
+                    <li class="nav-bar__item">
+                      {%- if link.links.size == 0 -%}
+                        <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem">{{ link.title }}</a>
+                      {%- else -%}
+                        {%- capture index -%}desktop-menu-0-{{ forloop.index }}{%- endcapture -%}
+
+                        <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem" aria-expanded="false" aria-controls="{{ index }}" aria-haspopup="true">
+                          {{- link.title -}}
+                          {%- render 'icon', icon: 'arrow-bottom' -%}
+                          {%- render 'icon', icon: 'nav-triangle' -%}
+                        </a>
+
+                        {%- render 'desktop-menu', menu: link, index: index -%}
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            </div>
+          </nav>
+        {%- endif -%}
+
         {%- comment -%}
-        --------------------------------------------------------------------------------------
-        SEARCH COMPONENT
-        --------------------------------------------------------------------------------------
+          --------------------------------------------------------------------------------------
+          SEARCH COMPONENT
+          --------------------------------------------------------------------------------------
         {%- endcomment -%}
 
         <div class="header__search-bar-wrapper {% unless section.settings.show_condensed_search %}is-visible{% endunless %}">
@@ -185,9 +272,9 @@
         </div>
 
         {%- comment -%}
-        --------------------------------------------------------------------------------------
-        HEADER ACTIONS
-        --------------------------------------------------------------------------------------
+          --------------------------------------------------------------------------------------
+          HEADER ACTIONS
+          --------------------------------------------------------------------------------------
         {%- endcomment -%}
 
         {%- if section.settings.show_country_selector and localization.available_countries.size > 1 -%}
@@ -311,34 +398,6 @@
       </div>
     </div>
   </header>
-
-  {%- if section.settings.desktop_navigation_layout == 'inline' and navigation_menu.links.size > 0 -%}
-    <nav class="nav-bar">
-      <div class="nav-bar__inner">
-        <div class="container">
-          <ul class="nav-bar__linklist list--unstyled" data-type="menu" role="list">
-            {%- for link in navigation_menu.links -%}
-              <li class="nav-bar__item">
-                {%- if link.links.size == 0 -%}
-                  <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem">{{ link.title }}</a>
-                {%- else -%}
-                  {%- capture index -%}desktop-menu-0-{{ forloop.index }}{%- endcapture -%}
-
-                  <a href="{{ link.url }}" class="nav-bar__link link" data-type="menuitem" aria-expanded="false" aria-controls="{{ index }}" aria-haspopup="true">
-                    {{- link.title -}}
-                    {%- render 'icon', icon: 'arrow-bottom' -%}
-                    {%- render 'icon', icon: 'nav-triangle' -%}
-                  </a>
-
-                  {%- render 'desktop-menu', menu: link, index: index -%}
-                {%- endif -%}
-              </li>
-            {%- endfor -%}
-          </ul>
-        </div>
-      </div>
-    </nav>
-  {%- endif -%}
 </section>
 
 <style>
