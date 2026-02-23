@@ -126,10 +126,35 @@
         "image": "shopify://shop_images/8_REP-RA-5080-3016-BLK.webp",
         "image_position": "right",
         "image_width": 50,
-        "title": "如果你想要一個有槓片存放功能的基本款架子:",
+        "title": "如果您想要具有槓片存放功能的升級選項",
         "content": "<p>您肯定需要這款六柱入門深蹲架。這款 80 吋高的深蹲架，在另一款入門級深蹲架 30 吋深的基礎上，增加了 16 吋（以及兩根立柱），方便您內建槓鈴片存放空間。它還配備了完美的槓鈴片收納支架，讓您輕鬆實現這一目標。<br/></p><p>PR-5000系列槓鈴架套裝採用聚氨酯塗層、直徑1英吋的實心棒材製成，包含三對6吋槓鈴架和三對12吋槓鈴架。總共可容納四個45磅的槓鈴片（總重180磅）或七個45磅的槓鈴片（總重315磅）。這樣可以防止槓鈴片直接接觸地面，無需額外的儲物櫃佔用更多空間。</p><p></p><p>除此之外，它和其他入門級訓練架一樣，配有小型Logo銘版、1.25吋引體向上桿、標準J型鉤，以及經典的插銷式安全鎖。</p>",
         "button_text": "點我了解更多",
         "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+      }
+    },
+    "image_with_text_FgLtaa": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/11_REP-RA-5093-3016-BLK.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "如果您想要高階配置和配件",
+        "content": "<p>選擇這款六柱中級深蹲架。擁有93英寸的高度、多功能引體向上桿、扁平三明治式J型鉤和2.0安全護帶——此外還增加了兩根立柱用於存放槓片。這兩根立柱使深蹲架的深度增加了16吋。這款深蹲架也配備了完整的PR-5000系列槓片收納支架，可承重高達315磅的槓片。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://products/rep-ra-5093-3016-blk"
+      }
+    },
+    "image_with_text_h6B7fm": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果您想要所有齊全功能的升級選項",
+        "content": "<p>這款六柱高階深蹲架是目前預先配置的PR-5000系列中高度最高的型號。它高度達93英寸，深度達41英寸，為您提供充足的訓練空間，並且由於增加了兩根立柱，深度增加了16英寸，可用於存放槓片。產品包含全套5000系列槓片存放支架。</p><p>它還配備了更多收納空間：一個雙槓鈴掛架，方便您存放槓鈴。這個配件可以輕鬆用螺栓固定在您的深蹲架上—無需額外的牆面空間。此外，深蹲架還配有彈力帶掛鉤，可滑入立柱，用於整理彈力帶、鏈條和其他配件。您也可以使用彈力帶掛鉤進行阻力帶訓練。</p><p>這個套裝還包含所有升級選項：Logo 橫樑、多握把引體向上桿、扁平三明治式 J 型鉤和翻轉安全扣。再加上兩個配件——雙槓撐體架和地雷管配件——你就擁有了所有 PR-5000 套裝最齊全的功能，足以讓你練出一身肌肉。</p>",
+        "button_text": "點我了解更多",
+        "button_link": ""
       }
     }
   },
@@ -143,6 +168,8 @@
     "image_with_text_KAj4Gi",
     "image_with_text_YEYHpH",
     "image_with_text_tawtTH",
-    "image_with_text_YAe9RT"
+    "image_with_text_YAe9RT",
+    "image_with_text_FgLtaa",
+    "image_with_text_h6B7fm"
   ]
 }
