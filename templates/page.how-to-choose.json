@@ -50,7 +50,7 @@
     "rich_text_AVhbti": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {font-size: 48px;}",
+        "h2 {font-size: 24px;}",
         "div {margin-bottom: -30px;}"
       ],
       "name": "Rich text",
