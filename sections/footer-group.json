@@ -53,7 +53,9 @@
         "item_9rTYUb",
         "item_maCkPM"
       ],
-      "custom_css": [],
+      "custom_css": [
+        "div {padding-left: 3px; padding-right: 3px;}"
+      ],
       "name": "Text with icons",
       "settings": {
         "stack_mobile": false
