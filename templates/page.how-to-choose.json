@@ -38,14 +38,6 @@
         "html": "<h3 style=\"text-align:center\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:center\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>"
       }
     },
-    "custom_html_GpibRh": {
-      "type": "custom-html",
-      "name": "Custom HTML",
-      "settings": {
-        "title": "",
-        "html": "<h3 style=\"text-align:center\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:center\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>"
-      }
-    },
     "offers_khXRgg": {
       "type": "offers",
       "custom_css": [],
@@ -73,13 +65,6 @@
     "offers_MFkY6G": {
       "type": "offers",
       "blocks": {
-        "offer_NG6RDU": {
-          "type": "offer",
-          "settings": {
-            "title": "PR-5000 榮獲 Reddit r/HomeGym 社群票選「2022 年最受歡迎力量架」。",
-            "content": "<p>在眾多專業訓練者的實際使用與長期評比中脫穎而出，這項肯定來自全球最具影響力的居家健身討論社群之一。這不僅代表高人氣，更象徵資深使用者對其結構強度、穩定度與擴充系統的全面認可。</p>"
-          }
-        },
         "offer_wRb37w": {
           "type": "offer",
           "settings": {
@@ -91,7 +76,7 @@
           "type": "offer",
           "settings": {
             "title": "PR-5000 是 REP 最具擴充性的力量架系統",
-            "content": "<p>擁有完整且持續成長的配件生態系，可加裝纜繩系統與多種訓練附件，依需求打造專屬訓練配置。</p>"
+            "content": "<p>擁有完整且持續成長的配件生態系，可加裝纜繩系統與多種訓練附件，依需求打造專屬訓練配置。從基礎深蹲架配置，到整合拉繩系統、儲片架、功能訓練模組等進階配件，PR-5000 能隨著訓練需求與空間規劃持續升級。</p>"
           }
         },
         "offer_nAfg48": {
@@ -100,18 +85,38 @@
             "title": "PR-5000 全程於同一製程中完成",
             "content": "<p>雷射切割、機械手臂焊接與機械噴塗，確保結構精準、品質一致，並成為居家健身房中最具存在感的核心設備。</p>"
           }
+        },
+        "offer_NG6RDU": {
+          "type": "offer",
+          "settings": {
+            "title": "PR-5000 榮獲 Reddit r/HomeGym 社群票選「2022 年最受歡迎力量架」。",
+            "content": "<p>在眾多專業訓練者的實際使用與長期評比中脫穎而出，這項肯定來自全球最具影響力的居家健身討論社群之一。</p>"
+          }
         }
       },
       "block_order": [
-        "offer_NG6RDU",
         "offer_wRb37w",
         "offer_KRyXQU",
-        "offer_nAfg48"
+        "offer_nAfg48",
+        "offer_NG6RDU"
       ],
       "name": "Offers",
       "settings": {
         "items_per_row": 2,
         "stack_mobile": false
+      }
+    },
+    "image_with_text_YEYHpH": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果您想要升級選項但空間有限",
+        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
+        "button_text": "點我前往商品",
+        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
       }
     },
     "image_with_text_KAj4Gi": {
@@ -127,17 +132,12 @@
         "button_link": "shopify://products/rep-ra-5080-0016-mblk"
       }
     },
-    "image_with_text_YEYHpH": {
-      "type": "image-with-text",
-      "name": "Image with text",
+    "custom_html_GpibRh": {
+      "type": "custom-html",
+      "name": "Custom HTML",
       "settings": {
-        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
-        "image_position": "right",
-        "image_width": 50,
-        "title": "如果您想要升級選項但空間有限",
-        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
-        "button_text": "點我前往商品",
-        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+        "title": "",
+        "html": "<h3 style=\"text-align:center\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:center\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>"
       }
     }
   },
@@ -148,8 +148,8 @@
     "offers_khXRgg",
     "rich_text_AVhbti",
     "offers_MFkY6G",
-    "custom_html_GpibRh",
+    "image_with_text_YEYHpH",
     "image_with_text_KAj4Gi",
-    "image_with_text_YEYHpH"
+    "custom_html_GpibRh"
   ]
 }
