@@ -88,6 +88,13 @@
             "answer": "<p>單筆訂單金額滿 NT$1,000，即享有免運優惠（若訂單未滿 $1,000則另收運費$150），大型機台如深蹲架、多功能訓練機等運費另計(請至配送安裝說明頁)。限台灣本島地區，若需寄送其他地區請另洽客服人員。</p>"
           }
         },
+        "question_G69899": {
+          "type": "question",
+          "settings": {
+            "title": "大型機台配送問題",
+            "answer": "<p>以配送到1樓為主，如有樓層搬運及安裝請至配送安裝說明頁</p>"
+          }
+        },
         "separator_gi8JDF": {
           "type": "separator",
           "settings": {
@@ -121,6 +128,7 @@
         "question_CYCT8C",
         "question_aUtWwc",
         "question_mxqbgi",
+        "question_G69899",
         "separator_gi8JDF",
         "question_BqRVQN",
         "separator_Fnfi8i",
