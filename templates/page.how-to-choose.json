@@ -38,6 +38,14 @@
         "html": "<h3 style=\"text-align:center\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:center\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>"
       }
     },
+    "custom_html_GpibRh": {
+      "type": "custom-html",
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<h3 style=\"text-align:center\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:center\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>"
+      }
+    },
     "offers_khXRgg": {
       "type": "offers",
       "custom_css": [],
@@ -140,6 +148,7 @@
     "offers_khXRgg",
     "rich_text_AVhbti",
     "offers_MFkY6G",
+    "custom_html_GpibRh",
     "image_with_text_KAj4Gi",
     "image_with_text_YEYHpH"
   ]
