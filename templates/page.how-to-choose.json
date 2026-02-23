@@ -156,6 +156,26 @@
         "button_text": "點我了解更多",
         "button_link": ""
       }
+    },
+    "custom_html_M9cQUF": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {margin-bottom: -55px;}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<h3 style=\"text-align:left\"><strong>根據上述的深蹲架規格，你還可以選擇搭配Ares滑輪系統或是Athena滑輪系統，讓PR-5000深蹲架升級變身為小飛鳥訓練機</strong></h3>"
+      }
+    },
+    "video_full_sean_XaLLeV": {
+      "type": "videoFull-Sean",
+      "name": "VideoFull-sean",
+      "settings": {
+        "title": "Videos",
+        "videoPC_url": "https://www.youtube.com/watch?v=N0ezNz-70j0",
+        "videoMobile_url": "https://www.youtube.com/watch?v=N0ezNz-70j0"
+      }
     }
   },
   "order": [
@@ -170,6 +190,8 @@
     "image_with_text_tawtTH",
     "image_with_text_YAe9RT",
     "image_with_text_FgLtaa",
-    "image_with_text_h6B7fm"
+    "image_with_text_h6B7fm",
+    "custom_html_M9cQUF",
+    "video_full_sean_XaLLeV"
   ]
 }
