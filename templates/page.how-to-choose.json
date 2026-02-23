@@ -95,19 +95,6 @@
         "stack_mobile": false
       }
     },
-    "image_with_text_YEYHpH": {
-      "type": "image-with-text",
-      "name": "Image with text",
-      "settings": {
-        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
-        "image_position": "right",
-        "image_width": 50,
-        "title": "如果您想要升級選項但空間有限",
-        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
-        "button_text": "點我前往商品",
-        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
-      }
-    },
     "image_with_text_KAj4Gi": {
       "type": "image-with-text",
       "name": "Image with text",
@@ -117,6 +104,19 @@
         "image_width": 50,
         "title": "你可以先選擇入門級四柱PR-5000",
         "content": "<p>這是最經濟實惠、功能最基本的選擇（雖然它是頂級型號，但絕非“基本款”）。這款訓練架高80吋（較矮款，另有93吋），深度為30吋（中等深度款）。它配備了基本的1.25吋引體向上桿、標準J型鉤和基本型插銷式安全桿，以及小型Logo銘版。</p>",
+        "button_text": "點我前往商品",
+        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+      }
+    },
+    "image_with_text_YEYHpH": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果您想要升級選項但空間有限",
+        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
         "button_text": "點我前往商品",
         "button_link": "shopify://products/rep-ra-5080-0016-mblk"
       }
@@ -136,8 +136,8 @@
     "custom_html_NnBLCA",
     "offers_khXRgg",
     "offers_MFkY6G",
-    "image_with_text_YEYHpH",
     "image_with_text_KAj4Gi",
+    "image_with_text_YEYHpH",
     "custom_html_GpibRh"
   ]
 }
