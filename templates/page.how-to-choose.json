@@ -160,7 +160,7 @@
     "custom_html_M9cQUF": {
       "type": "custom-html",
       "custom_css": [
-        "div {margin-bottom: -25px;}"
+        "div {padding-bottom: 10px;}"
       ],
       "name": "Custom HTML",
       "settings": {
@@ -170,6 +170,9 @@
     },
     "video_full_sean_XaLLeV": {
       "type": "videoFull-Sean",
+      "custom_css": [
+        ".video-item {max-width: none; margin: -60px auto;}"
+      ],
       "name": "VideoFull-sean",
       "settings": {
         "title": "",
