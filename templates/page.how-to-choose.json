@@ -35,7 +35,7 @@
       "name": "Custom HTML",
       "settings": {
         "title": "",
-        "html": "<h3><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p>REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>\n\n<h3><strong>PR-5000基本架構規格</strong></h3>\n\n<ul>\n\t<li>PR-5000 是一款重負載、極高度客製化的力量架，整體結構採用 3×3 吋 11 號鋼材 打造，具備 1,000 磅可上架承重能力，穩定耐用，足以應付長期高重量訓練。立柱全段配置 2 吋孔距搭配 1 吋孔徑，並在每個孔位設有 雷射切割刻度編號，讓配件對齊與訓練設定快速又精準。</li>\n\t<li>PR-5000 是 REP 最具擴充性的力量架系統，擁有完整且持續成長的配件生態系，可加裝纜繩系統與多種訓練附件，依需求打造專屬訓練配置。</li>\n\t<li>PR-5000 全程於同一製程中完成 雷射切割、機械手臂焊接與機械噴塗，確保結構精準、品質一致，並成為居家健身房中最具存在感的核心設備。</li>\n\t<li>PR-5000 榮獲 Reddit r/HomeGym 社群票選「2022 年最受歡迎力量架」。</li>\n</ul>\n\n<h3><strong>為了讓您更輕鬆地選擇，這裡提供一份選購指南，幫助您選擇最符合您需求的預建版本：</strong></h3>\n\n<p>你可以先選擇入門級四柱PR-5000。這是最經濟實惠、功能最基本的選擇（雖然它是頂級型號，但絕非“基本款”）。這款訓練架高80吋（較矮款，另有93吋），深度為30吋（中等深度款）。它配備了基本的1.25吋引體向上桿、標準J型鉤和基本型插銷式安全桿，以及小型Logo銘版。</p>"
+        "html": "<h3 style=\"text-align:center\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:center\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>"
       }
     },
     "offers_khXRgg": {
@@ -47,30 +47,19 @@
         "stack_mobile": true
       }
     },
-    "image_with_text_KAj4Gi": {
-      "type": "image-with-text",
-      "name": "Image with text",
+    "rich_text_AVhbti": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-size: 48px;}",
+        "div {margin-bottom: -30px;}"
+      ],
+      "name": "Rich text",
       "settings": {
-        "image": "shopify://shop_images/14_REP-RA-5080-0016-MBLK.webp",
-        "image_position": "left",
-        "image_width": 55,
-        "title": "你可以先選擇入門級四柱PR-5000",
-        "content": "<p>這是最經濟實惠、功能最基本的選擇（雖然它是頂級型號，但絕非“基本款”）。這款訓練架高80吋（較矮款，另有93吋），深度為30吋（中等深度款）。它配備了基本的1.25吋引體向上桿、標準J型鉤和基本型插銷式安全桿，以及小型Logo銘版。</p>",
-        "button_text": "點我前往商品",
-        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
-      }
-    },
-    "image_with_text_YEYHpH": {
-      "type": "image-with-text",
-      "name": "Image with text",
-      "settings": {
-        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
-        "image_position": "right",
-        "image_width": 55,
-        "title": "如果您想要升級選項但空間有限",
-        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
-        "button_text": "點我前往商品",
-        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+        "text_width": "narrow",
+        "title": "PR-5000基本架構規格",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
       }
     },
     "offers_MFkY6G": {
@@ -116,6 +105,32 @@
         "items_per_row": 2,
         "stack_mobile": false
       }
+    },
+    "image_with_text_KAj4Gi": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/14_REP-RA-5080-0016-MBLK.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "你可以先選擇入門級四柱PR-5000",
+        "content": "<p>這是最經濟實惠、功能最基本的選擇（雖然它是頂級型號，但絕非“基本款”）。這款訓練架高80吋（較矮款，另有93吋），深度為30吋（中等深度款）。它配備了基本的1.25吋引體向上桿、標準J型鉤和基本型插銷式安全桿，以及小型Logo銘版。</p>",
+        "button_text": "點我前往商品",
+        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+      }
+    },
+    "image_with_text_YEYHpH": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果您想要升級選項但空間有限",
+        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
+        "button_text": "點我前往商品",
+        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+      }
     }
   },
   "order": [
@@ -123,8 +138,9 @@
     "main",
     "custom_html_NnBLCA",
     "offers_khXRgg",
+    "rich_text_AVhbti",
+    "offers_MFkY6G",
     "image_with_text_KAj4Gi",
-    "image_with_text_YEYHpH",
-    "offers_MFkY6G"
+    "image_with_text_YEYHpH"
   ]
 }
