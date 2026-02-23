@@ -77,8 +77,8 @@
         "question_aUtWwc": {
           "type": "question",
           "settings": {
-            "title": "運費問題",
-            "answer": "<p>單筆訂單金額滿 NT$1,000，即享有免運優惠（若訂單未滿 $1,000則另收運費$150）。<br/>若需寄送至國外地區請另洽客服人員。</p>"
+            "title": "支援哪些付款方式",
+            "answer": "<p>目前為信用卡一次付清，信用卡分期付款(三期、六期零利率)</p>"
           }
         },
         "separator_gi8JDF": {
