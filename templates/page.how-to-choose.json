@@ -160,7 +160,7 @@
     "custom_html_M9cQUF": {
       "type": "custom-html",
       "custom_css": [
-        "div {margin-bottom: -55px;}"
+        "div {margin-bottom: -25px;}"
       ],
       "name": "Custom HTML",
       "settings": {
@@ -172,7 +172,7 @@
       "type": "videoFull-Sean",
       "name": "VideoFull-sean",
       "settings": {
-        "title": "Videos",
+        "title": "",
         "videoPC_url": "https://www.youtube.com/watch?v=N0ezNz-70j0",
         "videoMobile_url": "https://www.youtube.com/watch?v=N0ezNz-70j0"
       }
