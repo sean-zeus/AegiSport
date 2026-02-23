@@ -193,6 +193,19 @@
         "button_text": "點我了解更多",
         "button_link": "shopify://collections/ares-cable-machine"
       }
+    },
+    "image_with_text_cEyH4A": {
+      "type": "image-with-text",
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/17_REP-RA-SIDE-4-93-S-2-MAX.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "Athena滑輪系統",
+        "content": "<p>配重片在深蹲架的兩側，配備雙170磅選配式配重塔，可擴充到單邊220磅，使用者可進行單邊或雙邊訓練。</p><p>佔地面積小，重量調整方便，整合彈力帶掛鉤，Athena擁有所有功能訓練器中最長的鋼索行程。</p><p>由於內建配重塊，您無需擁有（或存放）槓片即可為鋼索增加重量。它的佔地面積略大於同樣採用選擇式設計的 Ares。但是，如果您不需要/不想要整合式背闊肌下拉和低位划船配件（或者您已經擁有/不介意單獨購買），那麼 Athena 將是您的理想之選。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://collections/athena-rack-cable"
+      }
     }
   },
   "order": [
@@ -210,6 +223,7 @@
     "image_with_text_h6B7fm",
     "custom_html_M9cQUF",
     "video_full_sean_XaLLeV",
-    "image_with_text_BGGRyF"
+    "image_with_text_BGGRyF",
+    "image_with_text_cEyH4A"
   ]
 }
