@@ -48,7 +48,7 @@
       "name": "Offers",
       "settings": {
         "items_per_row": 1,
-        "stack_mobile": false
+        "stack_mobile": true
       }
     },
     "image_with_text_KAj4Gi": {
