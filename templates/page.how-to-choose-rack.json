@@ -12,13 +12,13 @@
     "rich_text_JEHbgL": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {font-size: 48px;}",
+        "h2 {font-size: 30px;}",
         "div {margin-bottom: -30px;}"
       ],
       "name": "Rich text",
       "settings": {
         "text_width": "narrow",
-        "title": "選購指南",
+        "title": "REP深蹲架",
         "content": "",
         "button_text": "",
         "button_link": "shopify://collections/all"
