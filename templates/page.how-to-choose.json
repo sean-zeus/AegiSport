@@ -13,7 +13,7 @@
       "type": "rich-text",
       "custom_css": [
         "h2 {font-size: 48px;}",
-        "div {margin-bottom: -30px;}"
+        "div {margin-bottom: -30px; }"
       ],
       "name": "Rich text",
       "settings": {
