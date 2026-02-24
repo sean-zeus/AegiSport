@@ -32,6 +32,10 @@
     },
     "image_with_text_overlay_t84Bax": {
       "type": "image-with-text-overlay",
+      "custom_css": [
+        "h1 {font-size: 48px;}",
+        "@media only screen and (max-width: 769px) {h1 {font-size: 21px; } p {line-height: 1.4; }}"
+      ],
       "name": "Image with text overlay",
       "settings": {
         "image": "shopify://shop_images/howtochoose_bn-1.webp",
