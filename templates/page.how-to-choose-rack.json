@@ -13,7 +13,8 @@
       "type": "rich-text",
       "custom_css": [
         "h2 {font-size: 48px;}",
-        "div {margin-bottom: -30px;}"
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 30px;}}"
       ],
       "name": "Rich text",
       "settings": {
