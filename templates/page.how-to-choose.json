@@ -30,8 +30,46 @@
       "custom_css": [],
       "settings": {}
     },
+    "slideshow_pTnWX8": {
+      "type": "slideshow",
+      "blocks": {
+        "image_7Hr3Hi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howtochoose_bn-1.webp",
+            "mobile_image": "shopify://shop_images/howtochoose_bn-m.webp",
+            "show_overlay": true,
+            "overlay_opacity": 30,
+            "text_color": "#ffffff",
+            "title": "如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統",
+            "content": "",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_7Hr3Hi"
+      ],
+      "custom_css": [
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 22px; } p {line-height: 1.4; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
     "image_with_text_overlay_t84Bax": {
       "type": "image-with-text-overlay",
+      "disabled": true,
       "custom_css": [
         "h1 {font-size: 48px;}",
         "@media only screen and (max-width: 769px) {h1 {font-size: 21px; } p {line-height: 1.4; }}"
@@ -48,12 +86,13 @@
     "custom_html_NnBLCA": {
       "type": "custom-html",
       "custom_css": [
-        "div {margin-bottom: -35px;}"
+        "div {margin-bottom: -45px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: -35px; margin-top: -35px; }}"
       ],
       "name": "Custom HTML",
       "settings": {
         "title": "",
-        "html": "<h3 style=\"text-align:left\"><strong>PR-5000基本架構規格</strong></h3>"
+        "html": "<p style=\"text-align:left\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>\n你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>\n\n<h3 style=\"text-align:left\"><strong>PR-5000基本架構規格</strong></h3>"
       }
     },
     "offers_bH4AiW": {
@@ -70,6 +109,7 @@
       "block_order": [
         "offer_yNaijW"
       ],
+      "custom_css": [],
       "name": "Offers",
       "settings": {
         "items_per_row": 1,
@@ -79,7 +119,8 @@
     "custom_html_qLcNTg": {
       "type": "custom-html",
       "custom_css": [
-        "div {margin-bottom: -55px;}"
+        "div {margin-bottom: -65px;}",
+        "@media only screen and (max-width: 769px) {div {margin-bottom: -65px; }}"
       ],
       "name": "Custom HTML",
       "settings": {
@@ -98,7 +139,10 @@
     },
     "image_with_text_KAj4Gi": {
       "type": "image-with-text",
-      "custom_css": [],
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
       "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/14_REP-RA-5080-0016-MBLK.webp",
@@ -112,6 +156,10 @@
     },
     "image_with_text_YEYHpH": {
       "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
       "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
@@ -237,6 +285,7 @@
   "order": [
     "rich_text_JEHbgL",
     "main",
+    "slideshow_pTnWX8",
     "image_with_text_overlay_t84Bax",
     "custom_html_NnBLCA",
     "offers_bH4AiW",
