@@ -30,6 +30,17 @@
       "custom_css": [],
       "settings": {}
     },
+    "image_with_text_overlay_t84Bax": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/howtochoose_bn-1.webp",
+        "title": "如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統",
+        "content": "<p>REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
     "custom_html_NnBLCA": {
       "type": "custom-html",
       "custom_css": [
@@ -38,7 +49,7 @@
       "name": "Custom HTML",
       "settings": {
         "title": "",
-        "html": "<h3 style=\"text-align:left\"><strong>如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統</strong></h3>\n\n<p style=\"text-align:left\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。\n你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>\n\n<h3 style=\"text-align:left\"><strong>PR-5000基本架構規格</strong></h3>"
+        "html": "<h3 style=\"text-align:left\"><strong>PR-5000基本架構規格</strong></h3>"
       }
     },
     "offers_bH4AiW": {
@@ -206,11 +217,23 @@
         "button_text": "點我了解更多",
         "button_link": "shopify://collections/athena-rack-cable"
       }
+    },
+    "custom_html_XAdqHW": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {padding-bottom: -0px;}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<h3 style=\"text-align:left\"><strong>如何選擇REP Fitness Arcadia 與 REP Fitness Adonis</strong></h3>"
+      }
     }
   },
   "order": [
     "rich_text_JEHbgL",
     "main",
+    "image_with_text_overlay_t84Bax",
     "custom_html_NnBLCA",
     "offers_bH4AiW",
     "custom_html_qLcNTg",
@@ -224,6 +247,7 @@
     "custom_html_M9cQUF",
     "video_full_sean_XaLLeV",
     "image_with_text_BGGRyF",
-    "image_with_text_cEyH4A"
+    "image_with_text_cEyH4A",
+    "custom_html_XAdqHW"
   ]
 }
