@@ -395,7 +395,7 @@
         "title": "",
         "products_count": 4,
         "layout": "vertical",
-        "stack_products": true,
+        "stack_products": false,
         "show_quick_buy": true,
         "link_title": "查看更多",
         "link_url": "shopify://products/rep-ra-5080-3016-blk"
