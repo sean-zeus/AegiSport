@@ -489,7 +489,10 @@
     },
     "image_with_text_Am6TEi": {
       "type": "image-with-text",
-      "custom_css": [],
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
       "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/type-1.webp",
@@ -503,6 +506,10 @@
     },
     "image_with_text_3g3VzA": {
       "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
       "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/TYPE-2.webp",
