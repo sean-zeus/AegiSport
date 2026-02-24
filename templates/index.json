@@ -153,7 +153,8 @@
     "rich_text_cPQPXT": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"
+        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: -35px; }}"
       ],
       "name": "Rich text",
       "settings": {
@@ -358,7 +359,8 @@
     "rich_text_7NNp8N": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"
+        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: -25px; }}"
       ],
       "name": "Rich text",
       "settings": {
@@ -387,7 +389,8 @@
     "featured_collection_bJaKhn": {
       "type": "featured-collection",
       "custom_css": [
-        "div {font-size: 14px;}"
+        "div {font-size: 14px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; }}"
       ],
       "name": "Featured collection",
       "settings": {
@@ -476,7 +479,8 @@
     "rich_text_kbb7yn": {
       "type": "rich-text",
       "custom_css": [
-        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}"
+        "h2 {font-size: 30px; margin-bottom: 5px; padding-top: 70px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: -35px; }}"
       ],
       "name": "Rich text",
       "settings": {
