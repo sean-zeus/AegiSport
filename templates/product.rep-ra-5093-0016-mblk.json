@@ -101,7 +101,7 @@
       "settings": {
         "title": "",
         "include_margins": true,
-        "liquid": "<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span><strong>PR-5000 是一款重負載、極高度客製化的力量架，設計目標就是讓你永遠不需要再升級。</strong><br />\n整體結構採用 <strong>3&times;3 吋 11 號鋼材</strong> 打造，具備 <strong>1,000 磅可上架承重能力</strong>，穩定耐用，足以應付長期高重量訓練。立柱全段配置 <strong>2 吋孔距搭配 1 吋孔徑</strong>，並在每個孔位設有 <strong>雷射切割刻度編號</strong>，讓配件對齊與訓練設定快速又精準。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>PR-5000 是 REP <strong>最具擴充性的力量架系統</strong>，擁有完整且持續成長的配件生態系，可加裝纜繩系統與多種訓練附件，依需求打造專屬訓練配置。</p>\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>PR-5000 全程於同一製程中完成 <strong>雷射切割、機械手臂焊接與機械噴塗</strong>，確保結構精準、品質一致，並成為居家健身房中最具存在感的核心設備。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span><em>PR-5000 榮獲 Reddit r/HomeGym 社群票選「2022 年最受歡迎力量架」</em>。</p>"
+        "liquid": "<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span><strong>PR-5000 是一款重負載、極高度客製化的深蹲架，設計目標就是讓你永遠不需要再升級。</strong><br />\n整體結構採用 <strong>3&times;3 吋 11 號鋼材</strong> 打造，具備 <strong>1,000 磅承重能力</strong>，穩定耐用，足以應付長期高重量訓練。立柱全段配置 <strong>2 吋孔距搭配 1 吋孔徑</strong>，並在每個孔位設有 <strong>雷射切割刻度編號</strong>，讓配件對齊與訓練設定快速又精準。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>PR-5000 是 REP <strong>最具擴充性的深蹲架系統</strong>，擁有完整且持續更新的配件生態系，可加裝滑輪系統與多種訓練附件，依需求打造專屬訓練配置。</p>\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span>PR-5000 全程於同一製程中完成 <strong>雷射切割、機械手臂焊接與機械噴塗</strong>，確保結構精準、品質一致，並成為居家健身房中最具存在感的核心設備。</p>\n\n<p style=\"margin-left:40px\"><span style=\"color:#1abc9c\">✔️ </span><em>PR-5000 榮獲 Reddit r/HomeGym 社群票選「2022 年最受歡迎深蹲架」</em>。</p>"
       }
     },
     "slideshow_K3Khne": {
@@ -150,7 +150,7 @@
             "overlay_opacity": 40,
             "text_color": "#ffffff",
             "title": "重負載結構設計",
-            "content": "使用 3×3 吋 11 號鋼材 製作，具備 1,000 磅可上架承重能力，適合高重量與長期訓練。",
+            "content": "使用 3×3 吋 11 號鋼材 製作，具備 1,000 磅可承重能力，適合高重量與長期訓練。",
             "content_position": "middle_left",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -201,7 +201,7 @@
             "overlay_opacity": 53,
             "text_color": "#ffffff",
             "title": "外觀與功能兼具",
-            "content": "提供多種 高度、深度與顏色選項，可依空間需求與個人風格打造專屬的高階力量架。",
+            "content": "提供多種 高度、深度與顏色選項，可依空間需求與個人風格打造專屬的高階深蹲架。",
             "content_position": "middle_left",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
