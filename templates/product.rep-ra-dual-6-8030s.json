@@ -347,7 +347,23 @@
       "name": "Custom HTML",
       "settings": {
         "title": "產品規格",
-        "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td width=\"50%\">\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">寬度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">57.6\"/ 146.3cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">滑輪傳動比</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">2 ：1</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">滑輪座承重</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">450lb / 204.1kg</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">cable承重</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">450lb / 204.1kg</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">重量片誤差</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">3%</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">整體高度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">80\" ：82.1\"/ 203.2cm ：208.5cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">cable行程</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">80\" ：71.3\" / 203.2cm ：181.1cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">最大增加寬度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">5.2\" / 13.2cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">增加深度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">6\" / 15.2cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p> </p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n</table>"
+        "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">寬度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">57.6\"/ 146.3cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">滑輪傳動比</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">2 ：1</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">滑輪座承重</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">450lb / 204.1kg</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">cable承重</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">450lb / 204.1kg</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">重量片誤差</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">3%</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">整體高度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">80\" ：82.1\"/ 203.2cm ：208.5cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">cable行程</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">80\" ：71.3\" / 203.2cm ：181.1cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">最大增加寬度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">5.2\" / 13.2cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">增加深度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">6\" / 15.2cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p> </p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n</table>"
+      }
+    },
+    "image_with_text_KziCwG": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-top: -50px;}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/Ares_2.0.png",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
       }
     },
     "video_MbMGhe": {
@@ -387,6 +403,7 @@
     "slideshow_K3Khne",
     "mosaic_QETCkn",
     "custom_html_Yeh8dy",
+    "image_with_text_KziCwG",
     "video_MbMGhe",
     "image_with_text_overlay_thHVz9"
   ]
