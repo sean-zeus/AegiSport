@@ -354,11 +354,11 @@
       "type": "image-with-text",
       "custom_css": [
         "div {margin-top: -50px;}",
-        "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -10px; }}"
+        "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -15px; }}"
       ],
       "name": "Image with text",
       "settings": {
-        "image": "shopify://shop_images/Ares_2.0.png",
+        "image": "shopify://shop_images/Athena_Side_Mount_Selectorized_Dims.webp",
         "image_position": "left",
         "image_width": 40,
         "title": "",
