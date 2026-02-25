@@ -110,13 +110,13 @@
         "image_KdJFHV": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_feature-6_86ecaaeb-12a1-47cf-b0a7-79b06e1ad2a0.webp",
-            "mobile_image": "shopify://shop_images/2_feature-M-6_0f146448-4d01-4e7c-9a6d-ac7d820cb07f.webp",
+            "image": "shopify://shop_images/2_feature-1_d3634e4b-9751-470a-8240-265e4c6bdefe.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-6_1632ed9a-73ea-4290-85d8-80a37ce8ece7.webp",
             "show_overlay": true,
             "overlay_opacity": 47,
             "text_color": "#ffffff",
-            "title": "節省空間設計",
-            "content": "在不佔用獨立式cable機或 Ares 系統體積的情況下，於力量架上直接提供完整功能性訓練體驗，低外型設計讓空間利用更有效率。",
+            "title": "",
+            "content": "",
             "content_position": "middle_right",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -127,13 +127,13 @@
         "image_9iyhU9": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_feature-5_a6229d65-3bb3-45ad-8c24-f916f694d02f.webp",
-            "mobile_image": "shopify://shop_images/2_feature-M-5_999f4259-8752-48de-9b77-518e71d8a47a.webp",
+            "image": "shopify://shop_images/2_feature-2_c0250215-2618-497e-9cb9-9613dc56b8f8.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-5_ed386215-af50-414c-a9f4-1bdb1e005088.webp",
             "show_overlay": true,
             "overlay_opacity": 70,
             "text_color": "#ffffff",
-            "title": "專利結構設計",
-            "content": "滑輪座輕量順暢，搭配滾花把手與加大型快拆插銷，可單手快速調整，同時具備承受高重量的結構強度，內襯特殊塑料有效保護立柱不受磨損。",
+            "title": "",
+            "content": "",
             "content_position": "bottom_left",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -144,13 +144,13 @@
         "image_4mKEPb": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_feature-3_4997ef54-ab11-4390-ac51-0b2ee2782d00.webp",
-            "mobile_image": "shopify://shop_images/2_feature-M-4_095e393a-09f7-4131-93ee-4378a9787a5e.webp",
+            "image": "shopify://shop_images/2_feature-3_0bc78679-630e-4cbd-aae9-270d8c15b5b8.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-4_440eea2f-0a59-4dbe-9dba-2063dbad97a6.webp",
             "show_overlay": true,
             "overlay_opacity": 49,
             "text_color": "#ffffff",
-            "title": "整合式彈力帶插銷",
-            "content": "底座與頭板皆內建彈力帶插銷，可搭配阻力帶增加訓練強度，最高支援 540 磅阻力配置。",
+            "title": "",
+            "content": "",
             "content_position": "middle_right",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -161,13 +161,13 @@
         "image_wfT4Jw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_feature-1_b4632199-2173-40eb-b65e-c30bdb9d215f.webp",
-            "mobile_image": "shopify://shop_images/2_feature-M-1_919926ab-ba8b-4cd4-b3e8-161519738180.webp",
+            "image": "shopify://shop_images/2_feature-4_df20f2ba-d8f2-4550-b824-aa392407bc4d.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-3_49f6694a-ae87-472b-9ffe-64afe40d67a5.webp",
             "show_overlay": true,
             "overlay_opacity": 38,
             "text_color": "#ffffff",
-            "title": "高度配件相容性",
-            "content": "每組隨附一支聚氨酯 D 把手，並相容多款拉繩訓練配件，能依訓練需求自由擴充動作變化。",
+            "title": "",
+            "content": "",
             "content_position": "middle_left",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -178,13 +178,13 @@
         "image_yd3NYY": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_feature-2_f71e026b-9974-4809-90d9-80f1261c210f.webp",
-            "mobile_image": "shopify://shop_images/2_feature-M-2_3c703a24-afd8-4a03-9fb8-fb2cd966ea98.webp",
+            "image": "shopify://shop_images/2_feature-5_d62268b4-045c-4f1c-8ec8-136eb2faf49c.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-2_b3215d89-cde7-4ebc-af7a-880a9e4d3e64.webp",
             "show_overlay": true,
             "overlay_opacity": 55,
             "text_color": "#ffffff",
-            "title": "高品質滑輪座與cable系統",
-            "content": "採用鍍鋅cable（實心鋼芯）與高強度鋁合金滑輪，拉感順暢耐用，前端cable具備 180 度旋轉設計，方便進行架外多方向訓練。",
+            "title": "",
+            "content": "",
             "content_position": "bottom_right",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -195,13 +195,13 @@
         "image_jKeWgD": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/2_feature-4_05bff135-1182-4cb7-9e05-76862e7c80bf.webp",
-            "mobile_image": "shopify://shop_images/2_feature-M-3_c14d3a23-7f93-4c95-adba-dece747900f4.webp",
+            "image": "shopify://shop_images/2_feature-6_19596922-5453-4158-93ff-0f8a2ccd956b.webp",
+            "mobile_image": "shopify://shop_images/2_feature-M-1_61540bb2-588f-4163-9f72-558bb3c5534a.webp",
             "show_overlay": true,
             "overlay_opacity": 48,
             "text_color": "#ffffff",
-            "title": "可升級轉換設計",
-            "content": "未來可透過轉換套件，將插片式版本升級為配重式版本，保留長期擴充與升級彈性。",
+            "title": "",
+            "content": "",
             "content_position": "middle_right",
             "button_background": "#ffffff",
             "button_text_color": "#000000",
@@ -238,7 +238,7 @@
         "item_DQTQQM": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/4-lifestyle-4_d4d65c24-9074-47dd-9140-def3e3d1f9d3.webp",
+            "image": "shopify://shop_images/4-lifestyle-7_c2ac0655-9446-4cb3-b7ca-7564b838913a.webp",
             "show_overlay": false,
             "overlay_opacity": 50,
             "background": "#f3f4f4",
@@ -255,7 +255,7 @@
         "item_XM6tE3": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/4-lifestyle-6_4fbf983e-3e3a-4ebb-83b6-dcc32eb916f5.webp",
+            "image": "shopify://shop_images/4-lifestyle-8_a3dd8e58-2088-4279-a611-1646fd655859.webp",
             "show_overlay": false,
             "overlay_opacity": 50,
             "background": "#f3f4f4",
@@ -289,7 +289,7 @@
         "item_RbkmMg": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/4-lifestyle-2_d6112b2b-6da3-41ee-a8cd-3191f364c575.webp",
+            "image": "shopify://shop_images/4-lifestyle-10_adc1e5ee-6db8-47b1-b4f5-83f5d78d3360.webp",
             "show_overlay": false,
             "overlay_opacity": 50,
             "background": "#f3f4f4",
@@ -306,7 +306,7 @@
         "item_rJFxDi": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/4-lifestyle-5_be194b67-bad1-4060-8de8-0d3a2cc4657e.webp",
+            "image": "shopify://shop_images/4-lifestyle-12_d5fb18b4-e600-45f6-871c-290197d9266c.webp",
             "show_overlay": false,
             "overlay_opacity": 50,
             "background": "#f3f4f4",
