@@ -24,7 +24,7 @@
       "settings": {
         "text_width": "narrow",
         "title": "",
-        "content": "<h1>保固資訊</h1><p>雖然 Aegisport 網站上的產品不提供專門的保固服務，但如果因保固問題需要維修、更換或退款，我們將盡力為您提供協助！為確保您的保固問題有效並儘快解決，請確保您的商品符合以下準則：</p>",
+        "content": "<h1>保固資訊</h1><p>我們對旗下品牌的卓越品質引以為傲。如果您收到的商品有損壞或缺陷，我們一定會妥善解決！我們始終堅持並履行網站上所有品牌的保固政策。我們竭誠為您提供協助！如果您認為您的產品有瑕疵，請來信與我們聯繫，請附上照片並詳細描述問題。我們將盡全力為您提供最佳解決方案。 </p>",
         "button_text": "",
         "button_link": "shopify://policies/privacy-policy"
       }
@@ -36,7 +36,7 @@
           "type": "offer",
           "settings": {
             "title": "",
-            "content": "<h5><br/><strong>第一步： </strong></h5><p>如果您認為您購買的商品有瑕疵，請發送電子郵件至 <a href=\"mailto:happytohelp@aegisport.com\" target=\"_blank\">happytohelp@aegisport.com</a>  ，並提供以下資訊。請盡可能詳細地描述問題。</p><ul><li>你的名字</li><li>訂單編號</li><li>產品品牌</li><li>問題描述以及您發現的問題</li><li>請附上照片</li></ul><h5><strong>第二步： </strong></h5><p>我們將在一至三個工作天內回覆您後續步驟。</p><p><br/></p><p>**<em><strong>請注意，部分品牌可能會需要您直接與他們聯繫售服</strong></em><em>事宜，但我們會盡可能地協助您處理商品瑕疵。如果您對於購買的商品有疑慮，或有任何疑問，都歡迎您寫信告訴我們</em><a href=\"mailto:happytohelp@aegisport.com\" target=\"_blank\">happytohelp@aegisport.com</a>。</p><p></p><p></p><p><br/></p>"
+            "content": "<p><strong>健身器材類保固內容：</strong><br/>※ 大型機台、框架、訓練機類：<strong>保固 7年 業界最長</strong><br/>※ 訓練椅、重訓器材、配件: <strong>保固 2年</strong><br/>※ 自然消耗品不在保固範圍內（如：滑輪、鋼絲繩、插銷、旋鈕、坐墊、椅墊、背墊…等）<br/><br/><strong>【以下情形不在保固範圍內】</strong><br/>(1) 因人為疏失（含不當使用或超限使用）或人為損壞造成者。<br/>(2) 因買家自行修改產品或不當修理造成者。<br/>(3) 因天災造成，如水災、地震等不可抗力因素。<br/>(4) 商用公共空間使用之產品，保固僅提供 1 年。</p><h5><br/><strong>第一步： </strong></h5><p>如果您認為您購買的商品有瑕疵，請發送電子郵件至 <a href=\"mailto:happytohelp@aegisport.com\" target=\"_blank\">happytohelp@aegisport.com</a>  ，並提供以下資訊。請盡可能詳細地描述問題。</p><ul><li>你的名字</li><li>訂單編號</li><li>產品品牌</li><li>問題描述以及您發現的問題</li><li>請附上照片</li></ul><h5><strong>第二步： </strong></h5><p>我們將在一至三個工作天內回覆您後續步驟。</p><p><br/></p><p>**<em><strong>請注意，部分品牌可能會需要您直接與他們聯繫售服</strong></em><em>事宜，但我們會盡可能地協助您處理商品瑕疵。如果您對於購買的商品有疑慮，或有任何疑問，都歡迎您寫信告訴我們</em><a href=\"mailto:happytohelp@aegisport.com\" target=\"_blank\">happytohelp@aegisport.com</a>。</p><p></p><p></p><p><br/></p>"
           }
         }
       },
