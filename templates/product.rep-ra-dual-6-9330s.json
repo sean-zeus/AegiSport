@@ -378,6 +378,23 @@
         "show_image_overlay": false,
         "color": "#ffffff"
       }
+    },
+    "image_with_text_KJGAhh": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-top: -50px;}",
+        "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -10px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/Ares_2.0.png",
+        "image_position": "left",
+        "image_width": 45,
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
     }
   },
   "order": [
@@ -387,6 +404,7 @@
     "slideshow_K3Khne",
     "mosaic_QETCkn",
     "custom_html_Yeh8dy",
+    "image_with_text_KJGAhh",
     "video_MbMGhe",
     "image_with_text_overlay_thHVz9"
   ]
