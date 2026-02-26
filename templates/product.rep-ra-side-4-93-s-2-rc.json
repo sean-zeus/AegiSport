@@ -12,6 +12,24 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "trust_DnGfWB": {
+          "type": "trust",
+          "settings": {
+            "trust_title": "93“ 四柱深蹲架$48,800",
+            "show_payment_icons": true,
+            "custom_security_badge": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
+            "custom_security_badge_width": 200
+          }
+        },
+        "trust_y3mtXV": {
+          "type": "trust",
+          "settings": {
+            "trust_title": "93“ 四柱深蹲架$48,800",
+            "show_payment_icons": true,
+            "custom_security_badge": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
+            "custom_security_badge_width": 170
+          }
+        },
         "product_meta": {
           "type": "product_meta",
           "settings": {
@@ -61,6 +79,8 @@
         }
       },
       "block_order": [
+        "trust_DnGfWB",
+        "trust_y3mtXV",
         "product_meta",
         "variant_selector",
         "buy_buttons",
