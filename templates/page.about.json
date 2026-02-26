@@ -33,7 +33,7 @@
       "type": "rich-text",
       "custom_css": [
         "h1 {font-size: 36px; line-height: 12px;}",
-        "div {margin-bottom: -30px;}"
+        "div {margin-bottom: 10px;}"
       ],
       "name": "Rich text",
       "settings": {
