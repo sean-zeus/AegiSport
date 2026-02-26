@@ -377,6 +377,23 @@
         "show_image_overlay": false,
         "color": "#ffffff"
       }
+    },
+    "image_with_text_byAwhC": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-top: -50px;}",
+        "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -10px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/acf.PR-5000.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
     }
   },
   "order": [
@@ -386,6 +403,7 @@
     "slideshow_K3Khne",
     "mosaic_QETCkn",
     "custom_html_Yeh8dy",
+    "image_with_text_byAwhC",
     "video_MbMGhe",
     "image_with_text_overlay_thHVz9"
   ]
