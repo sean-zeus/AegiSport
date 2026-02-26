@@ -350,6 +350,23 @@
         "html": "<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n\t<tbody>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">材質</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">3×3\"/ 7.6cm x 7.6cm。 11 號鋼材</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">孔徑</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">1“ / 2.5cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">孔距</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">2\" / 5cm</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">底座形式</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">立柱式</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">表面處理</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">粉體塗裝</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">整體寬度</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">50.8\" / 129cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">立柱高度選項</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">80\" / 203cm </span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">橫桿深度選項</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">30\" / 76.2cm</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">Ares 系統相容</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">是</span></span></p>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t<p><span style=\"color:#777777\"><span style=\"font-size:14px\">配件系列</span></span></p>\n\n\t\t\t<p><span style=\"color:#444444\"><span style=\"font-size:20px\">5000 系列</span></span></p>\n\t\t\t</td>\n\t\t</tr>\n\t</tbody>\n</table>\n\n<p> </p>\n\n<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%\">\n</table>"
       }
     },
+    "image_with_text_UUT4qT": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-top: -50px;}",
+        "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -10px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/acf.PR-5000.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
     "video_MbMGhe": {
       "type": "video",
       "custom_css": [
@@ -387,6 +404,7 @@
     "slideshow_K3Khne",
     "mosaic_QETCkn",
     "custom_html_Yeh8dy",
+    "image_with_text_UUT4qT",
     "video_MbMGhe",
     "image_with_text_overlay_thHVz9"
   ]
