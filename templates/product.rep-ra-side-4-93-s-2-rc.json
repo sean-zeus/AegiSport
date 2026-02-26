@@ -12,23 +12,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "trust_DnGfWB": {
-          "type": "trust",
-          "settings": {
-            "trust_title": "93“ 四柱深蹲架$48,800",
-            "show_payment_icons": true,
-            "custom_security_badge": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
-            "custom_security_badge_width": 200
-          }
-        },
-        "trust_y3mtXV": {
-          "type": "trust",
-          "settings": {
-            "trust_title": "93“ 四柱深蹲架$48,800",
-            "show_payment_icons": true,
-            "custom_security_badge": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
-            "custom_security_badge_width": 170
-          }
+        "store_pickup_ztNXe8": {
+          "type": "store_pickup",
+          "settings": {}
         },
         "product_meta": {
           "type": "product_meta",
@@ -59,6 +45,12 @@
             "show_gift_card_recipient": true
           }
         },
+        "text_earC7B": {
+          "type": "text",
+          "settings": {
+            "content": "<p><br/></p><p><strong>****************************************</strong></p><p>  此商品為 ❶＋❷ 優惠組合</p><p>  ❶ PR-5000 四柱深蹲架（$48,800） 詳見<br/>  ❷ 雙邊滑輪配重系統 （$75,400） 詳見</p><p><strong>****************************************</strong></p>"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -79,11 +71,11 @@
         }
       },
       "block_order": [
-        "trust_DnGfWB",
-        "trust_y3mtXV",
+        "store_pickup_ztNXe8",
         "product_meta",
         "variant_selector",
         "buy_buttons",
+        "text_earC7B",
         "description",
         "text_9hffW7",
         "text_97FN3K"
