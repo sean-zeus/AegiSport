@@ -25,6 +25,19 @@
             "show_share_buttons": true
           }
         },
+        "text_earC7B": {
+          "type": "text",
+          "settings": {
+            "content": "<h4><strong>內容物：</strong></h4><ul><li><strong>PR-5000 四柱深蹲架 (立柱93\" + 橫梁16\") </strong></li><li><strong>雙邊滑輪配重系統</strong></li><li><strong>左右底架</strong></li></ul><p></p><h4><strong>此商品為 ❶＋❷ 組合商品 ，比單買現省$5,000</strong></h4><p>❶ Athena® 雅典娜Max雙邊滑輪配重系統（$75,400）<a href=\"https://aegisport.com.tw/products/rep-ra-side-4-80-s-2-max\" target=\"_blank\">前往了解</a><br/>❷ PR-5000 四柱深蹲架（$48,800） <a href=\"https://aegisport.com.tw/products/4-post-pr-5000-rack\" target=\"_blank\">前往了解</a></p>"
+          }
+        },
+        "text_z7MYUG": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "content": "<h4><strong>規格：</strong></h4><ul><li><strong>PR-5000 四柱深蹲架 (立柱93\" + 樑柱16\") </strong></li><li><strong>雙邊滑輪配重系統</strong></li><li><strong>左右底架</strong></li></ul><p><br/></p><p><strong>**********************************************************</strong></p><p>Athena® 雅典娜Max雙邊滑輪訓練機 為 ❶＋❷ 組合商品 </p><p>❶ Athena® 雅典娜Max雙邊滑輪配重系統（$75,400）<a href=\"https://aegisport.com.tw/products/rep-ra-side-4-80-s-2-max\" target=\"_blank\">前往了解</a><br/>❷ PR-5000 四柱深蹲架（$48,800） <a href=\"https://aegisport.com.tw/products/4-post-pr-5000-rack\" target=\"_blank\">前往了解</a></p><p><strong>**********************************************************</strong></p>"
+          }
+        },
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
@@ -38,17 +51,18 @@
             "progress_bar_max_value": 50
           }
         },
+        "text_bcVH8L": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "content": "<h4><strong>規格：</strong></h4><p><strong>四柱深蹲架 ( 高度93\" -深度16\") + 雙邊滑輪配重系統 + 左右底架</strong><br/></p><p><strong>**********************************************************</strong></p><p>Athena® 雅典娜Max雙邊滑輪訓練機 為 ❶＋❷ 組合商品 </p><p>❶ Athena® 雅典娜Max雙邊滑輪配重系統（$75,400）<a href=\"https://aegisport.com.tw/products/rep-ra-side-4-80-s-2-max\" target=\"_blank\">前往了解</a><br/>❷ PR-5000 四柱深蹲架（$48,800） <a href=\"https://aegisport.com.tw/products/4-post-pr-5000-rack\" target=\"_blank\">前往了解</a></p><p><strong>**********************************************************</strong></p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "text_earC7B": {
-          "type": "text",
-          "settings": {
-            "content": "<p><br/></p><p><strong>**********************************************************</strong></p><p>Athena® 雅典娜Max雙邊滑輪訓練機 為 ❶＋❷ 組合商品 </p><p>❶ Athena® 雅典娜Max雙邊滑輪配重系統（$75,400）<a href=\"https://aegisport.com.tw/products/rep-ra-side-4-80-s-2-max\" target=\"_blank\">前往了解</a><br/>❷ PR-5000 四柱深蹲架（$48,800） <a href=\"https://aegisport.com.tw/products/4-post-pr-5000-rack\" target=\"_blank\">前往了解</a></p><p><strong>**********************************************************</strong></p>"
           }
         },
         "description": {
@@ -73,9 +87,11 @@
       "block_order": [
         "store_pickup_ztNXe8",
         "product_meta",
-        "variant_selector",
-        "buy_buttons",
         "text_earC7B",
+        "text_z7MYUG",
+        "variant_selector",
+        "text_bcVH8L",
+        "buy_buttons",
         "description",
         "text_9hffW7",
         "text_97FN3K"
