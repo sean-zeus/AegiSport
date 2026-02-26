@@ -25,28 +25,20 @@
         "upsell_products_count": 4
       }
     },
-    "recently-viewed-products": {
-      "type": "recently-viewed-products",
+    "custom_html_cNqCw9": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {background-color: #ededed; padding-bottom: 25px; padding-top: 25px;}"
+      ],
+      "name": "Custom HTML",
       "settings": {
-        "title": "Recently viewed",
-        "show_quick_buy": false
-      }
-    },
-    "rich_text_bCpRan": {
-      "type": "rich-text",
-      "name": "Rich text",
-      "settings": {
-        "text_width": "narrow",
-        "title": "出貨進度",
-        "content": "<p>加入 AegiSport 官方 <a href=\"https://line.me/ti/p/~@581czlfo\" target=\"_blank\"><em><strong>line </strong></em></a>了解更多出貨資訊，查詢及詢問相關訊息</p>",
-        "button_text": "點我加入官方 line",
-        "button_link": "https://line.me/ti/p/~@581czlfo"
+        "title": "",
+        "html": "<p style=\"text-align:center\">加入 AegiSport 官方 <a href=\"https://line.me/ti/p/~@581czlfo\" target=\"_blank\"><em><strong>line </strong></em></a>了解更多出貨資訊，查詢及詢問相關訊息</p>"
       }
     }
   },
   "order": [
     "main",
-    "recently-viewed-products",
-    "rich_text_bCpRan"
+    "custom_html_cNqCw9"
   ]
 }
