@@ -85,7 +85,7 @@
       "name": "Image with text overlay",
       "settings": {
         "image": "shopify://shop_images/3-bg_2468ed60-5163-49d1-bdd9-afd73e789996.webp",
-        "title": "Athena® 雅典娜Max雙邊滑輪訓練機(4-93-S-2)",
+        "title": "Athena® 雅典娜Max雙邊滑輪訓練機(93-S-2)",
         "content": "<h4>最省空間 ｜  沒有多餘的設計，只有你需要的重量、cable訓練</h4>",
         "show_image_overlay": true,
         "color": "#e8e8e8"
@@ -255,7 +255,7 @@
         "item_XM6tE3": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/4-lifestyle-12_d5fb18b4-e600-45f6-871c-290197d9266c.webp",
+            "image": "shopify://shop_images/4-lifestyle-6_c5922218-120c-48b3-acf9-2cf7820f0e08.webp",
             "show_overlay": false,
             "overlay_opacity": 50,
             "background": "#f3f4f4",
