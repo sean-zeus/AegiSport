@@ -174,6 +174,7 @@
     },
     "image_with_text_tawtTH": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         "div {margin-bottom: -30px;}",
         "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
@@ -197,7 +198,7 @@
       "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/8_REP-RA-5080-3016-BLK.webp",
-        "image_position": "right",
+        "image_position": "left",
         "image_width": 50,
         "title": "如果您想要具有槓片存放功能的升級選項",
         "content": "<p>您肯定需要這款六柱入門深蹲架。這款 80 吋高的深蹲架，在另一款入門級深蹲架 30 吋深的基礎上，增加了 16 吋（以及兩根立柱），方便您內建槓鈴片存放空間。它還配備了完美的槓鈴片收納支架，讓您輕鬆實現這一目標。<br/></p><p>PR-5000系列槓鈴架套裝採用聚氨酯塗層、直徑1英吋的實心棒材製成，包含三對6吋槓鈴架和三對12吋槓鈴架。總共可容納四個45磅的槓鈴片（總重180磅）或七個45磅的槓鈴片（總重315磅）。這樣可以防止槓鈴片直接接觸地面，無需額外的儲物櫃佔用更多空間。</p><p></p><p>除此之外，它和其他入門級訓練架一樣，配有小型Logo銘版、1.25吋引體向上桿、標準J型鉤，以及經典的插銷式安全鎖。</p>",
@@ -214,7 +215,7 @@
       "name": "Image with text",
       "settings": {
         "image": "shopify://shop_images/11_REP-RA-5093-3016-BLK.webp",
-        "image_position": "left",
+        "image_position": "right",
         "image_width": 50,
         "title": "如果您想要高階配置和配件",
         "content": "<p>選擇這款六柱中級深蹲架。擁有93英寸的高度、多功能引體向上桿、扁平三明治式J型鉤和2.0安全護帶——此外還增加了兩根立柱用於存放槓片。這兩根立柱使深蹲架的深度增加了16吋。這款深蹲架也配備了完整的PR-5000系列槓片收納支架，可承重高達315磅的槓片。</p>",
@@ -224,6 +225,7 @@
     },
     "image_with_text_h6B7fm": {
       "type": "image-with-text",
+      "disabled": true,
       "name": "Image with text",
       "settings": {
         "image_position": "right",
@@ -237,7 +239,7 @@
     "custom_html_M9cQUF": {
       "type": "custom-html",
       "custom_css": [
-        "div {padding-bottom: -0px;}"
+        "div {padding-bottom: -0px; padding-top: 35px;}"
       ],
       "name": "Custom HTML",
       "settings": {
