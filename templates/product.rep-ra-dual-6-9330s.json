@@ -21,6 +21,12 @@
             "show_share_buttons": true
           }
         },
+        "text_e4JAQA": {
+          "type": "text",
+          "settings": {
+            "content": "<h4><strong>內含：</strong></h4><ul><li><strong>Ares™ 戰神 93\"多功能滑輪系統（底座重量片組 / PR 50 重量片組）</strong></li><li><strong>PR-5000 六柱深蹲架 (立柱93\" + 橫梁16\"＆30\")</strong></li></ul><p></p><p></p>"
+          }
+        },
         "variant_selector": {
           "type": "variant_selector",
           "settings": {
@@ -62,6 +68,7 @@
       },
       "block_order": [
         "product_meta",
+        "text_e4JAQA",
         "variant_selector",
         "buy_buttons",
         "description",
