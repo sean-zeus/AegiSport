@@ -1,6 +1,703 @@
+{% doc %}
+  @prompt
+    一個可以調整欄位跟行列數量的表格。底色可以填入色碼
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-custom-table-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .ai-custom-table__wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-custom-table__table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: {{ block.settings.table_background }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-custom-table__header-cell-{{ ai_gen_id }} {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: {{ block.settings.header_alignment }};
+    background-color: {{ block.settings.header_background }};
+    color: {{ block.settings.header_text_color }};
+    font-weight: 600;
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    font-size: {{ block.settings.header_font_size }}px;
+  }
+
+  .ai-custom-table__cell-{{ ai_gen_id }} {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: {{ block.settings.cell_alignment }};
+    color: {{ block.settings.cell_text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    font-size: {{ block.settings.cell_font_size }}px;
+  }
+
+  .ai-custom-table__row-{{ ai_gen_id }}:nth-child(even) .ai-custom-table__cell-{{ ai_gen_id }} {
+    {% if block.settings.enable_striped %}
+      background-color: {{ block.settings.striped_background }};
+    {% endif %}
+  }
+
+  .ai-custom-table__row-{{ ai_gen_id }}:hover .ai-custom-table__cell-{{ ai_gen_id }} {
+    {% if block.settings.enable_hover %}
+      background-color: {{ block.settings.hover_background }};
+    {% endif %}
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-custom-table__header-cell-{{ ai_gen_id }},
+    .ai-custom-table__cell-{{ ai_gen_id }} {
+      padding: {{ block.settings.cell_padding | times: 0.7 }}px;
+      font-size: {{ block.settings.cell_font_size | times: 0.9 }}px;
+    }
+
+    .ai-custom-table__header-cell-{{ ai_gen_id }} {
+      font-size: {{ block.settings.header_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<custom-table-{{ ai_gen_id }}
+  class="ai-custom-table-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-custom-table__wrapper-{{ ai_gen_id }}">
+    <table class="ai-custom-table__table-{{ ai_gen_id }}">
+      <thead>
+        <tr>
+          {% for i in (1..block.settings.columns) %}
+            {% assign header_key = 'header_' | append: i %}
+            <th class="ai-custom-table__header-cell-{{ ai_gen_id }}">
+              {% if block.settings[header_key] != blank %}
+                {{ block.settings[header_key] }}
+              {% else %}
+                欄位 {{ i }}
+              {% endif %}
+            </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in (1..block.settings.rows) %}
+          <tr class="ai-custom-table__row-{{ ai_gen_id }}">
+            {% for col in (1..block.settings.columns) %}
+              {% assign cell_key = 'row_' | append: row | append: '_col_' | append: col %}
+              <td class="ai-custom-table__cell-{{ ai_gen_id }}">
+                {% if block.settings[cell_key] != blank %}
+                  {{ block.settings[cell_key] }}
+                {% else %}
+                  -
+                {% endif %}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</custom-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CustomTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('custom-table-{{ ai_gen_id }}', CustomTable{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "自訂表格",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "表格結構"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "欄位數量",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "列數",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面版寬度",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "表頭內容"
+    },
+    {
+      "type": "text",
+      "id": "header_1",
+      "label": "表頭 1"
+    },
+    {
+      "type": "text",
+      "id": "header_2",
+      "label": "表頭 2"
+    },
+    {
+      "type": "text",
+      "id": "header_3",
+      "label": "表頭 3"
+    },
+    {
+      "type": "text",
+      "id": "header_4",
+      "label": "表頭 4"
+    },
+    {
+      "type": "text",
+      "id": "header_5",
+      "label": "表頭 5"
+    },
+    {
+      "type": "text",
+      "id": "header_6",
+      "label": "表頭 6"
+    },
+    {
+      "type": "header",
+      "content": "第 1 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_1",
+      "label": "第 1 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_2",
+      "label": "第 1 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_3",
+      "label": "第 1 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_4",
+      "label": "第 1 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_5",
+      "label": "第 1 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_6",
+      "label": "第 1 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 2 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_1",
+      "label": "第 2 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_2",
+      "label": "第 2 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_3",
+      "label": "第 2 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_4",
+      "label": "第 2 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_5",
+      "label": "第 2 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_6",
+      "label": "第 2 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 3 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_1",
+      "label": "第 3 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_2",
+      "label": "第 3 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_3",
+      "label": "第 3 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_4",
+      "label": "第 3 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_5",
+      "label": "第 3 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_6",
+      "label": "第 3 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 4 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_1",
+      "label": "第 4 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_2",
+      "label": "第 4 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_3",
+      "label": "第 4 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_4",
+      "label": "第 4 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_5",
+      "label": "第 4 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_6",
+      "label": "第 4 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 5 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_1",
+      "label": "第 5 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_2",
+      "label": "第 5 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_3",
+      "label": "第 5 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_4",
+      "label": "第 5 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_5",
+      "label": "第 5 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_6",
+      "label": "第 5 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 6 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_1",
+      "label": "第 6 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_2",
+      "label": "第 6 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_3",
+      "label": "第 6 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_4",
+      "label": "第 6 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_5",
+      "label": "第 6 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_6",
+      "label": "第 6 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 7 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_1",
+      "label": "第 7 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_2",
+      "label": "第 7 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_3",
+      "label": "第 7 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_4",
+      "label": "第 7 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_5",
+      "label": "第 7 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_6",
+      "label": "第 7 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 8 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_1",
+      "label": "第 8 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_2",
+      "label": "第 8 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_3",
+      "label": "第 8 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_4",
+      "label": "第 8 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_5",
+      "label": "第 8 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_6",
+      "label": "第 8 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 9 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_1",
+      "label": "第 9 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_2",
+      "label": "第 9 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_3",
+      "label": "第 9 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_4",
+      "label": "第 9 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_5",
+      "label": "第 9 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_6",
+      "label": "第 9 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 10 列內容"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_1",
+      "label": "第 10 列 - 欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_2",
+      "label": "第 10 列 - 欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_3",
+      "label": "第 10 列 - 欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_4",
+      "label": "第 10 列 - 欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_5",
+      "label": "第 10 列 - 欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_6",
+      "label": "第 10 列 - 欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "表頭樣式"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "背景顏色",
+      "default": "#222021"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "文字顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "label": "字體大小",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "select",
+      "id": "header_alignment",
+      "label": "對齊方式",
+      "options": [
+        {
+          "value": "left",
+          "label": "靠左"
+        },
+        {
+          "value": "center",
+          "label": "置中"
+        },
+        {
+          "value": "right",
+          "label": "靠右"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "儲存格樣式"
+    },
+    {
+      "type": "color",
+      "id": "table_background",
+      "label": "表格背景顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cell_text_color",
+      "label": "文字顏色",
+      "default": "#616161"
+    },
+    {
+      "type": "range",
+      "id": "cell_font_size",
+      "label": "字體大小",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "select",
+      "id": "cell_alignment",
+      "label": "對齊方式",
+      "options": [
+        {
+          "value": "left",
+          "label": "靠左"
+        },
+        {
+          "value": "center",
+          "label": "置中"
+        },
+        {
+          "value": "right",
+          "label": "靠右"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "內距",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "邊框樣式"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "邊框顏色",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "邊框寬度",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "圓角",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "互動效果"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_striped",
+      "label": "啟用斑馬紋",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "striped_background",
+      "label": "斑馬紋背景顏色",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hover",
+      "label": "啟用滑鼠懸停效果",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "hover_background",
+      "label": "懸停背景顏色",
+      "default": "#f5f5f5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "自訂表格"
+    }
+  ]
+}
 {% endschema %}
