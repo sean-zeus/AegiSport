@@ -1,6 +1,908 @@
+{% doc %}
+  @prompt
+    一個可以調整欄位跟行列的響應式表格，有手機版本的模板可以調整，可以調整表格背景色跟高度, 欄位1可以調整背景色
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-responsive-table-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .ai-responsive-table__wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: {{ block.settings.table_background_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} th,
+  .ai-responsive-table__table-{{ ai_gen_id }} td {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: {{ block.settings.text_alignment }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    height: {{ block.settings.cell_height }}px;
+    vertical-align: middle;
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} th {
+    background-color: {{ block.settings.header_background_color }};
+    color: {{ block.settings.header_text_color }};
+    font-weight: 600;
+    font-size: {{ block.settings.header_font_size }}px;
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} th:first-child {
+    background-color: {{ block.settings.column_1_header_bg_color }};
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} td {
+    background-color: {{ block.settings.cell_background_color }};
+    color: {{ block.settings.cell_text_color }};
+    font-size: {{ block.settings.cell_font_size }}px;
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} td:first-child {
+    background-color: {{ block.settings.column_1_bg_color }};
+    color: {{ block.settings.column_1_text_color }};
+    font-weight: {{ block.settings.column_1_font_weight }};
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} tr:nth-child(even) td {
+    {% if block.settings.enable_striped_rows %}
+      background-color: {{ block.settings.striped_row_color }};
+    {% endif %}
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} tr:nth-child(even) td:first-child {
+    {% if block.settings.enable_striped_rows %}
+      background-color: {{ block.settings.column_1_bg_color }};
+    {% endif %}
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} tr:hover td {
+    {% if block.settings.enable_hover_effect %}
+      background-color: {{ block.settings.hover_color }};
+    {% endif %}
+  }
+
+  .ai-responsive-table__table-{{ ai_gen_id }} tr:hover td:first-child {
+    {% if block.settings.enable_hover_effect %}
+      background-color: {{ block.settings.column_1_bg_color }};
+      opacity: 0.9;
+    {% endif %}
+  }
+
+  @media screen and (max-width: 749px) {
+    {% if block.settings.mobile_layout == 'stack' %}
+      .ai-responsive-table__table-{{ ai_gen_id }} {
+        border: 0;
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} thead {
+        display: none;
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} tr {
+        display: block;
+        margin-bottom: 16px;
+        border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} td {
+        display: block;
+        text-align: right;
+        border: none;
+        border-bottom: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+        position: relative;
+        padding-left: 50%;
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} td:first-child {
+        background-color: {{ block.settings.column_1_bg_color }};
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} td:last-child {
+        border-bottom: 0;
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: {{ block.settings.cell_padding }}px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: 600;
+        color: {{ block.settings.header_text_color }};
+      }
+    {% elsif block.settings.mobile_layout == 'scroll' %}
+      .ai-responsive-table__wrapper-{{ ai_gen_id }} {
+        overflow-x: scroll;
+      }
+
+      .ai-responsive-table__table-{{ ai_gen_id }} {
+        min-width: 600px;
+      }
+    {% endif %}
+  }
+{% endstyle %}
+
+<responsive-table-{{ ai_gen_id }} class="ai-responsive-table-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-responsive-table__wrapper-{{ ai_gen_id }}">
+    <table class="ai-responsive-table__table-{{ ai_gen_id }}">
+      <thead>
+        <tr>
+          {% for i in (1..block.settings.columns) %}
+            {% assign header_key = 'header_' | append: i %}
+            <th>{{ block.settings[header_key] }}</th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in (1..block.settings.rows) %}
+          <tr>
+            {% for col in (1..block.settings.columns) %}
+              {% assign cell_key = 'row_' | append: row | append: '_col_' | append: col %}
+              {% assign header_key = 'header_' | append: col %}
+              <td data-label="{{ block.settings[header_key] }}">
+                {{ block.settings[cell_key] }}
+              </td>
+            {% endfor %}
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</responsive-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ResponsiveTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.updateDataLabels();
+      }
+
+      updateDataLabels() {
+        const headers = this.querySelectorAll('th');
+        const rows = this.querySelectorAll('tbody tr');
+
+        rows.forEach(row => {
+          const cells = row.querySelectorAll('td');
+          cells.forEach((cell, index) => {
+            if (headers[index]) {
+              cell.setAttribute('data-label', headers[index].textContent);
+            }
+          });
+        });
+      }
+    }
+
+    customElements.define('responsive-table-{{ ai_gen_id }}', ResponsiveTable{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "響應式表格",
+  "settings": [
+    {
+      "type": "header",
+      "content": "表格結構"
+    },
+    {
+      "type": "range",
+      "id": "columns",
+      "label": "欄位數量",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "rows",
+      "label": "行數",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面版寬度",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "表頭欄位 1"
+    },
+    {
+      "type": "text",
+      "id": "header_1",
+      "label": "標題",
+      "default": "欄位 1"
+    },
+    {
+      "type": "header",
+      "content": "表頭欄位 2"
+    },
+    {
+      "type": "text",
+      "id": "header_2",
+      "label": "標題",
+      "default": "欄位 2"
+    },
+    {
+      "type": "header",
+      "content": "表頭欄位 3"
+    },
+    {
+      "type": "text",
+      "id": "header_3",
+      "label": "標題",
+      "default": "欄位 3"
+    },
+    {
+      "type": "header",
+      "content": "表頭欄位 4"
+    },
+    {
+      "type": "text",
+      "id": "header_4",
+      "label": "標題",
+      "default": "欄位 4"
+    },
+    {
+      "type": "header",
+      "content": "表頭欄位 5"
+    },
+    {
+      "type": "text",
+      "id": "header_5",
+      "label": "標題",
+      "default": "欄位 5"
+    },
+    {
+      "type": "header",
+      "content": "表頭欄位 6"
+    },
+    {
+      "type": "text",
+      "id": "header_6",
+      "label": "標題",
+      "default": "欄位 6"
+    },
+    {
+      "type": "header",
+      "content": "第 1 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_1",
+      "label": "欄位 1",
+      "default": "資料 1-1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_2",
+      "label": "欄位 2",
+      "default": "資料 1-2"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_3",
+      "label": "欄位 3",
+      "default": "資料 1-3"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_4",
+      "label": "欄位 4",
+      "default": "資料 1-4"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_5",
+      "label": "欄位 5",
+      "default": "資料 1-5"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_6",
+      "label": "欄位 6",
+      "default": "資料 1-6"
+    },
+    {
+      "type": "header",
+      "content": "第 2 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_1",
+      "label": "欄位 1",
+      "default": "資料 2-1"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_2",
+      "label": "欄位 2",
+      "default": "資料 2-2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_3",
+      "label": "欄位 3",
+      "default": "資料 2-3"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_4",
+      "label": "欄位 4",
+      "default": "資料 2-4"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_5",
+      "label": "欄位 5",
+      "default": "資料 2-5"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_6",
+      "label": "欄位 6",
+      "default": "資料 2-6"
+    },
+    {
+      "type": "header",
+      "content": "第 3 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_1",
+      "label": "欄位 1",
+      "default": "資料 3-1"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_2",
+      "label": "欄位 2",
+      "default": "資料 3-2"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_3",
+      "label": "欄位 3",
+      "default": "資料 3-3"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_4",
+      "label": "欄位 4",
+      "default": "資料 3-4"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_5",
+      "label": "欄位 5",
+      "default": "資料 3-5"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_6",
+      "label": "欄位 6",
+      "default": "資料 3-6"
+    },
+    {
+      "type": "header",
+      "content": "第 4 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_1",
+      "label": "欄位 1",
+      "default": "資料 4-1"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_2",
+      "label": "欄位 2",
+      "default": "資料 4-2"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_3",
+      "label": "欄位 3",
+      "default": "資料 4-3"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_4",
+      "label": "欄位 4",
+      "default": "資料 4-4"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_5",
+      "label": "欄位 5",
+      "default": "資料 4-5"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_6",
+      "label": "欄位 6",
+      "default": "資料 4-6"
+    },
+    {
+      "type": "header",
+      "content": "第 5 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_1",
+      "label": "欄位 1",
+      "default": "資料 5-1"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_2",
+      "label": "欄位 2",
+      "default": "資料 5-2"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_3",
+      "label": "欄位 3",
+      "default": "資料 5-3"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_4",
+      "label": "欄位 4",
+      "default": "資料 5-4"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_5",
+      "label": "欄位 5",
+      "default": "資料 5-5"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_6",
+      "label": "欄位 6",
+      "default": "資料 5-6"
+    },
+    {
+      "type": "header",
+      "content": "第 6 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_1",
+      "label": "欄位 1",
+      "default": "資料 6-1"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_2",
+      "label": "欄位 2",
+      "default": "資料 6-2"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_3",
+      "label": "欄位 3",
+      "default": "資料 6-3"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_4",
+      "label": "欄位 4",
+      "default": "資料 6-4"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_5",
+      "label": "欄位 5",
+      "default": "資料 6-5"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_6",
+      "label": "欄位 6",
+      "default": "資料 6-6"
+    },
+    {
+      "type": "header",
+      "content": "第 7 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_1",
+      "label": "欄位 1",
+      "default": "資料 7-1"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_2",
+      "label": "欄位 2",
+      "default": "資料 7-2"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_3",
+      "label": "欄位 3",
+      "default": "資料 7-3"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_4",
+      "label": "欄位 4",
+      "default": "資料 7-4"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_5",
+      "label": "欄位 5",
+      "default": "資料 7-5"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_6",
+      "label": "欄位 6",
+      "default": "資料 7-6"
+    },
+    {
+      "type": "header",
+      "content": "第 8 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_1",
+      "label": "欄位 1",
+      "default": "資料 8-1"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_2",
+      "label": "欄位 2",
+      "default": "資料 8-2"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_3",
+      "label": "欄位 3",
+      "default": "資料 8-3"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_4",
+      "label": "欄位 4",
+      "default": "資料 8-4"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_5",
+      "label": "欄位 5",
+      "default": "資料 8-5"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_6",
+      "label": "欄位 6",
+      "default": "資料 8-6"
+    },
+    {
+      "type": "header",
+      "content": "第 9 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_1",
+      "label": "欄位 1",
+      "default": "資料 9-1"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_2",
+      "label": "欄位 2",
+      "default": "資料 9-2"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_3",
+      "label": "欄位 3",
+      "default": "資料 9-3"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_4",
+      "label": "欄位 4",
+      "default": "資料 9-4"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_5",
+      "label": "欄位 5",
+      "default": "資料 9-5"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_6",
+      "label": "欄位 6",
+      "default": "資料 9-6"
+    },
+    {
+      "type": "header",
+      "content": "第 10 行資料"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_1",
+      "label": "欄位 1",
+      "default": "資料 10-1"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_2",
+      "label": "欄位 2",
+      "default": "資料 10-2"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_3",
+      "label": "欄位 3",
+      "default": "資料 10-3"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_4",
+      "label": "欄位 4",
+      "default": "資料 10-4"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_5",
+      "label": "欄位 5",
+      "default": "資料 10-5"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_6",
+      "label": "欄位 6",
+      "default": "資料 10-6"
+    },
+    {
+      "type": "header",
+      "content": "手機版顯示"
+    },
+    {
+      "type": "select",
+      "id": "mobile_layout",
+      "label": "手機版佈局",
+      "options": [
+        {
+          "value": "stack",
+          "label": "堆疊顯示"
+        },
+        {
+          "value": "scroll",
+          "label": "橫向滾動"
+        }
+      ],
+      "default": "stack"
+    },
+    {
+      "type": "header",
+      "content": "表格樣式"
+    },
+    {
+      "type": "color",
+      "id": "table_background_color",
+      "label": "表格背景色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "邊框顏色",
+      "default": "#e1e3e4"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "邊框寬度",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "表頭樣式"
+    },
+    {
+      "type": "color",
+      "id": "header_background_color",
+      "label": "背景色",
+      "default": "#222021"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "文字顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "label": "字體大小",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "第 1 欄樣式"
+    },
+    {
+      "type": "color",
+      "id": "column_1_header_bg_color",
+      "label": "表頭背景色",
+      "default": "#c7aa78"
+    },
+    {
+      "type": "color",
+      "id": "column_1_bg_color",
+      "label": "儲存格背景色",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "column_1_text_color",
+      "label": "文字顏色",
+      "default": "#222021"
+    },
+    {
+      "type": "select",
+      "id": "column_1_font_weight",
+      "label": "字體粗細",
+      "options": [
+        {
+          "value": "400",
+          "label": "正常"
+        },
+        {
+          "value": "600",
+          "label": "粗體"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "header",
+      "content": "儲存格樣式"
+    },
+    {
+      "type": "color",
+      "id": "cell_background_color",
+      "label": "背景色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cell_text_color",
+      "label": "文字顏色",
+      "default": "#616161"
+    },
+    {
+      "type": "range",
+      "id": "cell_font_size",
+      "label": "字體大小",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "內距",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "cell_height",
+      "label": "儲存格高度",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "文字對齊",
+      "options": [
+        {
+          "value": "left",
+          "label": "靠左"
+        },
+        {
+          "value": "center",
+          "label": "置中"
+        },
+        {
+          "value": "right",
+          "label": "靠右"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "header",
+      "content": "條紋效果"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_striped_rows",
+      "label": "啟用條紋行",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "striped_row_color",
+      "label": "條紋行顏色",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "header",
+      "content": "懸停效果"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hover_effect",
+      "label": "啟用懸停效果",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "hover_color",
+      "label": "懸停顏色",
+      "default": "#f5f5f5"
+    }
+  ],
+  "presets": [
+    {
+      "name": "響應式表格"
+    }
+  ]
+}
 {% endschema %}
