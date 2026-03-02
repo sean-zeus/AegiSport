@@ -1,6 +1,408 @@
+{% doc %}
+  @prompt
+    大型粗體文字，以圖片填滿。包含一個可控制背景顏色的設定。, 奧林匹克舉重Olympic Weightlifting
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-olympic-weightlifting-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: 60px 20px;
+  }
+
+  .ai-olympic-weightlifting__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-olympic-weightlifting__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ai-olympic-weightlifting__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .ai-olympic-weightlifting__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+  }
+
+  .ai-olympic-weightlifting__grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .ai-olympic-weightlifting__card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .ai-olympic-weightlifting__card-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+  }
+
+  .ai-olympic-weightlifting__card-icon-{{ ai_gen_id }} {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background-color: {{ block.settings.icon_background }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-olympic-weightlifting__card-icon-{{ ai_gen_id }} svg {
+    width: 50px;
+    height: 50px;
+    fill: {{ block.settings.icon_color }};
+  }
+
+  .ai-olympic-weightlifting__card-title-{{ ai_gen_id }} {
+    font-size: 22px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 10px;
+  }
+
+  .ai-olympic-weightlifting__card-text-{{ ai_gen_id }} {
+    font-size: 15px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .ai-olympic-weightlifting__cta-{{ ai_gen_id }} {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .ai-olympic-weightlifting__button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .ai-olympic-weightlifting__button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-olympic-weightlifting__title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.7);
+    }
+
+    .ai-olympic-weightlifting__subtitle-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subtitle_size }}px * 0.9);
+    }
+
+    .ai-olympic-weightlifting__grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  }
+{% endstyle %}
+
+<div
+  class="ai-olympic-weightlifting-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-olympic-weightlifting__container-{{ ai_gen_id }}">
+    <div class="ai-olympic-weightlifting__header-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-olympic-weightlifting__title-{{ ai_gen_id }}">
+          {{ block.settings.title }}
+        </h2>
+      {% endif %}
+      {% if block.settings.subtitle != blank %}
+        <p class="ai-olympic-weightlifting__subtitle-{{ ai_gen_id }}">
+          {{ block.settings.subtitle }}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="ai-olympic-weightlifting__grid-{{ ai_gen_id }}">
+      <div class="ai-olympic-weightlifting__card-{{ ai_gen_id }}">
+        <div class="ai-olympic-weightlifting__card-icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20.5 6h-2V4.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V6h-7V4.5C8.5 3.67 7.83 3 7 3s-1.5.67-1.5 1.5V6h-2C2.67 6 2 6.67 2 7.5v1C2 9.33 2.67 10 3.5 10h17c.83 0 1.5-.67 1.5-1.5v-1c0-.83-.67-1.5-1.5-1.5zM7 20c-.83 0-1.5-.67-1.5-1.5v-7c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5zm5 0c-.83 0-1.5-.67-1.5-1.5v-7c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5zm5 0c-.83 0-1.5-.67-1.5-1.5v-7c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v7c0 .83-.67 1.5-1.5 1.5z"/>
+          </svg>
+        </div>
+        <h3 class="ai-olympic-weightlifting__card-title-{{ ai_gen_id }}">
+          {{ block.settings.card_1_title }}
+        </h3>
+        <p class="ai-olympic-weightlifting__card-text-{{ ai_gen_id }}">
+          {{ block.settings.card_1_text }}
+        </p>
+      </div>
+
+      <div class="ai-olympic-weightlifting__card-{{ ai_gen_id }}">
+        <div class="ai-olympic-weightlifting__card-icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
+          </svg>
+        </div>
+        <h3 class="ai-olympic-weightlifting__card-title-{{ ai_gen_id }}">
+          {{ block.settings.card_2_title }}
+        </h3>
+        <p class="ai-olympic-weightlifting__card-text-{{ ai_gen_id }}">
+          {{ block.settings.card_2_text }}
+        </p>
+      </div>
+
+      <div class="ai-olympic-weightlifting__card-{{ ai_gen_id }}">
+        <div class="ai-olympic-weightlifting__card-icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/>
+          </svg>
+        </div>
+        <h3 class="ai-olympic-weightlifting__card-title-{{ ai_gen_id }}">
+          {{ block.settings.card_3_title }}
+        </h3>
+        <p class="ai-olympic-weightlifting__card-text-{{ ai_gen_id }}">
+          {{ block.settings.card_3_text }}
+        </p>
+      </div>
+    </div>
+
+    {% if block.settings.button_text != blank %}
+      <div class="ai-olympic-weightlifting__cta-{{ ai_gen_id }}">
+        <a
+          href="{{ block.settings.button_link }}"
+          class="ai-olympic-weightlifting__button-{{ ai_gen_id }}"
+        >
+          {{ block.settings.button_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "奧林匹克舉重",
+  "settings": [
+    {
+      "type": "header",
+      "content": "標題"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "主標題",
+      "default": "Olympic Weightlifting"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "副標題",
+      "default": "專業訓練，突破極限"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "主標題大小",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "副標題大小",
+      "min": 14,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "卡片 1"
+    },
+    {
+      "type": "text",
+      "id": "card_1_title",
+      "label": "標題",
+      "default": "抓舉 Snatch"
+    },
+    {
+      "type": "textarea",
+      "id": "card_1_text",
+      "label": "說明文字",
+      "default": "一氣呵成的爆發力動作，從地面直接將槓鈴舉過頭頂"
+    },
+    {
+      "type": "header",
+      "content": "卡片 2"
+    },
+    {
+      "type": "text",
+      "id": "card_2_title",
+      "label": "標題",
+      "default": "挺舉 Clean & Jerk"
+    },
+    {
+      "type": "textarea",
+      "id": "card_2_text",
+      "label": "說明文字",
+      "default": "分兩階段完成，先將槓鈴提至肩部，再推舉過頭"
+    },
+    {
+      "type": "header",
+      "content": "卡片 3"
+    },
+    {
+      "type": "text",
+      "id": "card_3_title",
+      "label": "標題",
+      "default": "專業指導"
+    },
+    {
+      "type": "textarea",
+      "id": "card_3_text",
+      "label": "說明文字",
+      "default": "由認證教練提供專業技術指導，確保安全有效訓練"
+    },
+    {
+      "type": "header",
+      "content": "按鈕"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "按鈕文字",
+      "default": "立即開始訓練"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "按鈕連結"
+    },
+    {
+      "type": "header",
+      "content": "顏色"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "背景顏色",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "標題顏色",
+      "default": "#222021"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "文字顏色",
+      "default": "#616161"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "卡片背景",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "icon_background",
+      "label": "圖示背景",
+      "default": "#aa2424"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "圖示顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "按鈕背景",
+      "default": "#aa2424"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "按鈕文字顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "按鈕懸停背景",
+      "default": "#222021"
+    },
+    {
+      "type": "header",
+      "content": "樣式"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "卡片圓角",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "按鈕圓角",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面寬度",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "奧林匹克舉重"
+    }
+  ]
+}
 {% endschema %}
