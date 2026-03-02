@@ -1,6 +1,414 @@
+{% doc %}
+  @prompt
+    一個產品卡片，上方顯示產品圖片，下方顯示價格和標題。加入平滑的全息光澤效果與陰影。
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-holographic-card-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+  }
+
+  .ai-holographic-card__wrapper-{{ ai_gen_id }} {
+    position: relative;
+    background: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+    box-shadow: 0 {{ block.settings.shadow_offset }}px {{ block.settings.shadow_blur }}px rgba(0, 0, 0, {{ block.settings.shadow_opacity }});
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-holographic-card__wrapper-{{ ai_gen_id }}:hover {
+    transform: translateY(-{{ block.settings.hover_lift }}px);
+    box-shadow: 0 {{ block.settings.shadow_offset | plus: 8 }}px {{ block.settings.shadow_blur | plus: 16 }}px rgba(0, 0, 0, {{ block.settings.shadow_opacity | plus: 0.1 }});
+  }
+
+  .ai-holographic-card__image-container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+
+  .ai-holographic-card__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-holographic-card__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-holographic-card__image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-holographic-card__holographic-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      135deg,
+      rgba(255, 0, 255, 0.2) 0%,
+      rgba(0, 255, 255, 0.2) 25%,
+      rgba(255, 255, 0, 0.2) 50%,
+      rgba(0, 255, 0, 0.2) 75%,
+      rgba(255, 0, 255, 0.2) 100%
+    );
+    background-size: 200% 200%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+  }
+
+  .ai-holographic-card__wrapper-{{ ai_gen_id }}:hover .ai-holographic-card__holographic-overlay-{{ ai_gen_id }} {
+    opacity: {{ block.settings.holographic_intensity }};
+  }
+
+  .ai-holographic-card__content-{{ ai_gen_id }} {
+    padding: {{ block.settings.content_padding }}px;
+  }
+
+  .ai-holographic-card__price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.price_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.price_color }};
+    margin: 0 0 {{ block.settings.spacing }}px 0;
+  }
+
+  .ai-holographic-card__compare-price-{{ ai_gen_id }} {
+    font-size: {{ block.settings.price_size | times: 0.85 }}px;
+    color: {{ block.settings.compare_price_color }};
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+
+  .ai-holographic-card__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 500;
+    color: {{ block.settings.title_color }};
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-holographic-card__link-{{ ai_gen_id }} {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .ai-holographic-card__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-holographic-card-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<holographic-product-card-{{ ai_gen_id }}
+  class="ai-holographic-card-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  {% if block.settings.product != blank %}
+    <a
+      href="{{ block.settings.product.url }}"
+      class="ai-holographic-card__link-{{ ai_gen_id }}"
+    >
+      <div class="ai-holographic-card__wrapper-{{ ai_gen_id }}">
+        <div class="ai-holographic-card__image-container-{{ ai_gen_id }}">
+          {% if block.settings.product.featured_image %}
+            <img
+              src="{{ block.settings.product.featured_image | image_url: width: 800 }}"
+              alt="{{ block.settings.product.featured_image.alt | escape }}"
+              class="ai-holographic-card__image-{{ ai_gen_id }}"
+              loading="lazy"
+              width="800"
+              height="800"
+            >
+          {% else %}
+            <div class="ai-holographic-card__image-placeholder-{{ ai_gen_id }}">
+              {{ 'product-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+          <div
+            class="ai-holographic-card__holographic-overlay-{{ ai_gen_id }}"
+            data-holographic-overlay
+          ></div>
+        </div>
+
+        <div class="ai-holographic-card__content-{{ ai_gen_id }}">
+          <div class="ai-holographic-card__price-{{ ai_gen_id }}">
+            {{ block.settings.product.price | money }}
+            {% if block.settings.product.compare_at_price > block.settings.product.price %}
+              <span class="ai-holographic-card__compare-price-{{ ai_gen_id }}">
+                {{ block.settings.product.compare_at_price | money }}
+              </span>
+            {% endif %}
+          </div>
+          <h3 class="ai-holographic-card__title-{{ ai_gen_id }}">
+            {{ block.settings.product.title }}
+          </h3>
+        </div>
+      </div>
+    </a>
+  {% else %}
+    <div class="ai-holographic-card__wrapper-{{ ai_gen_id }}">
+      <div class="ai-holographic-card__image-container-{{ ai_gen_id }}">
+        <div class="ai-holographic-card__image-placeholder-{{ ai_gen_id }}">
+          {{ 'product-1' | placeholder_svg_tag }}
+          <div class="ai-holographic-card__empty-state-{{ ai_gen_id }}">
+            請選擇一個產品
+          </div>
+        </div>
+        <div
+          class="ai-holographic-card__holographic-overlay-{{ ai_gen_id }}"
+          data-holographic-overlay
+        ></div>
+      </div>
+
+      <div class="ai-holographic-card__content-{{ ai_gen_id }}">
+        <div class="ai-holographic-card__price-{{ ai_gen_id }}">NT$1,200</div>
+        <h3 class="ai-holographic-card__title-{{ ai_gen_id }}">產品標題</h3>
+      </div>
+    </div>
+  {% endif %}
+</holographic-product-card-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HolographicProductCard{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.overlay = this.querySelector('[data-holographic-overlay]');
+        this.wrapper = this.querySelector('.ai-holographic-card__wrapper-{{ ai_gen_id }}');
+        
+        if (this.overlay && this.wrapper) {
+          this.setupHolographicEffect();
+        }
+      }
+
+      setupHolographicEffect() {
+        this.wrapper.addEventListener('mousemove', (e) => {
+          const rect = this.wrapper.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          
+          const xPercent = (x / rect.width) * 100;
+          const yPercent = (y / rect.height) * 100;
+          
+          this.overlay.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
+        });
+
+        this.wrapper.addEventListener('mouseleave', () => {
+          this.overlay.style.backgroundPosition = '50% 50%';
+        });
+      }
+    }
+
+    customElements.define('holographic-product-card-{{ ai_gen_id }}', HolographicProductCard{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "全息產品卡片",
+  "settings": [
+    {
+      "type": "header",
+      "content": "產品"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "產品"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面寬度",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "卡片樣式"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "背景顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "圓角",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "label": "內容間距",
+      "min": 8,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "spacing",
+      "label": "元素間距",
+      "min": 4,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "全息效果"
+    },
+    {
+      "type": "range",
+      "id": "holographic_intensity",
+      "label": "光澤強度",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.6
+    },
+    {
+      "type": "header",
+      "content": "陰影"
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset",
+      "label": "陰影偏移",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "陰影模糊",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "陰影透明度",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.1
+    },
+    {
+      "type": "range",
+      "id": "hover_lift",
+      "label": "懸停上升距離",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "價格"
+    },
+    {
+      "type": "range",
+      "id": "price_size",
+      "label": "價格字體大小",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "price_color",
+      "label": "價格顏色",
+      "default": "#aa2424"
+    },
+    {
+      "type": "color",
+      "id": "compare_price_color",
+      "label": "原價顏色",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "標題"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "標題字體大小",
+      "min": 12,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "標題顏色",
+      "default": "#222021"
+    }
+  ],
+  "presets": [
+    {
+      "name": "全息產品卡片"
+    }
+  ]
+}
 {% endschema %}
