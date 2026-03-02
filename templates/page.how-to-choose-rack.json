@@ -14,7 +14,7 @@
       "custom_css": [
         "h2 {font-size: 48px;}",
         "div {margin-bottom: -30px;}",
-        "@media only screen and (max-width: 769px) {h2 {font-size: 30px;}}"
+        "@media only screen and (max-width: 769px) {h2 {font-size: 30px; }}"
       ],
       "name": "Rich text",
       "settings": {
@@ -40,7 +40,7 @@
             "image": "shopify://shop_images/howtochoose_bn-1.webp",
             "mobile_image": "shopify://shop_images/howtochoose_bn-m.webp",
             "show_overlay": true,
-            "overlay_opacity": 30,
+            "overlay_opacity": 85,
             "text_color": "#ffffff",
             "title": "如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統",
             "content": "",
