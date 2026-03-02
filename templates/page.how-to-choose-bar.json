@@ -1,0 +1,315 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_JEHbgL": {
+      "type": "rich-text",
+      "custom_css": [
+        "h2 {font-size: 48px;}",
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 30px; }}"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "text_width": "narrow",
+        "title": "REP 深蹲架",
+        "content": "",
+        "button_text": "",
+        "button_link": "shopify://collections/all"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {}
+    },
+    "slideshow_pTnWX8": {
+      "type": "slideshow",
+      "blocks": {
+        "image_7Hr3Hi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/howtochoose_bn-1.webp",
+            "mobile_image": "shopify://shop_images/howtochoose_bn-m.webp",
+            "show_overlay": true,
+            "overlay_opacity": 85,
+            "text_color": "#ffffff",
+            "title": "如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統",
+            "content": "",
+            "content_position": "middle_center",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "button_text": "Button",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_7Hr3Hi"
+      ],
+      "custom_css": [
+        "h2 {font-size: 30px;}",
+        "@media only screen and (max-width: 769px) {h2 {font-size: 22px; } p {line-height: 1.4; }}"
+      ],
+      "name": "Slideshow",
+      "settings": {
+        "edge_to_edge": false,
+        "section_size": "preserve_ratio",
+        "carousel_effect": "slide",
+        "autoplay": true,
+        "cycle_speed": 5
+      }
+    },
+    "image_with_text_overlay_t84Bax": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "custom_css": [
+        "h1 {font-size: 48px;}",
+        "@media only screen and (max-width: 769px) {h1 {font-size: 21px; } p {line-height: 1.4; }}"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "image": "shopify://shop_images/howtochoose_bn-1.webp",
+        "title": "如何選擇REP Fitness PR-5000深蹲架及相關配件及滑輪系統",
+        "content": "<p>REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>",
+        "show_image_overlay": true,
+        "color": "#ffffff"
+      }
+    },
+    "custom_html_NnBLCA": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {margin-bottom: -45px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: -35px; margin-top: -35px; }}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<p style=\"text-align:left\">REP Fitness PR-5000深蹲架以高度靈活性為核心設計，支援多樣化配件與訓練應用，可隨需求持續擴充與升級。<br>\n你可以從基礎配置開始，隨著訓練進程與目標成長，逐步打造專屬於自己的完整訓練系統。</p>\n\n<h3 style=\"text-align:left\"><strong>PR-5000基本架構規格</strong></h3>"
+      }
+    },
+    "offers_bH4AiW": {
+      "type": "offers",
+      "blocks": {
+        "offer_yNaijW": {
+          "type": "offer",
+          "settings": {
+            "title": "",
+            "content": "<ul><li>PR-5000 是一款重負載、極高度客製化的力量架，整體結構採用 3×3 吋 11 號鋼材 打造，具備 1,000 磅可上架承重能力，穩定耐用，足以應付長期高重量訓練。立柱全段配置 2 吋孔距搭配 1 吋孔徑，並在每個孔位設有 雷射切割刻度編號，讓配件對齊與訓練設定快速又精準。</li><li> PR-5000 是 REP 最具擴充性的力量架系統，擁有完整且持續成長的配件生態系，可加裝纜繩系統與多種訓練附件，依需求打造專屬訓練配置。</li><li>PR-5000 全程於同一製程中完成 雷射切割、機械手臂焊接與機械噴塗，確保結構精準、品質一致，並成為居家健身房中最具存在感的核心設備。</li><li>PR-5000 榮獲 Reddit r/HomeGym 社群票選「2022 年最受歡迎力量架」。</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "offer_yNaijW"
+      ],
+      "custom_css": [],
+      "name": "Offers",
+      "settings": {
+        "items_per_row": 1,
+        "stack_mobile": true
+      }
+    },
+    "custom_html_qLcNTg": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {margin-bottom: -65px;}",
+        "@media only screen and (max-width: 769px) {div {margin-bottom: -65px; }}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<h3 style=\"text-align:left\"><strong>為了讓您更輕鬆地選擇，這裡提供一份選購指南，幫助您選擇最符合您需求的預建版本。</strong></h3>"
+      }
+    },
+    "offers_khXRgg": {
+      "type": "offers",
+      "custom_css": [],
+      "name": "Offers",
+      "settings": {
+        "items_per_row": 1,
+        "stack_mobile": true
+      }
+    },
+    "image_with_text_KAj4Gi": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/14_REP-RA-5080-0016-MBLK.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "你可以先選擇入門級四柱PR-5000",
+        "content": "<p>這是最經濟實惠、功能最基本的選擇（雖然它是頂級型號，但絕非“基本款”）。這款訓練架高80吋（較矮款，另有93吋），深度為30吋（中等深度款）。它配備了基本的1.25吋引體向上桿、標準J型鉤和基本型插銷式安全桿，以及小型Logo銘版。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://products/rep-ra-5080-0016-mblk"
+      }
+    },
+    "image_with_text_YEYHpH": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/16_PR-5000_93-4-Post-Half_Rack-With_Athena_and_Upgrades_-_Metallic_Black.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果您想要升級選項但空間有限",
+        "content": "<p>選擇四柱中級深蹲架。這款深蹲架更高（93英寸），因此內部空間更大（如果您個子高，這一點尤其重要）。它的深度相同，所以不會佔用更多地面空間。此外，中級深蹲架還有一些不錯的升級：多握把引體向上桿取代了單桿；扁平三明治式J型鉤可以更全面地保護您的槓鈴，取代了標準J型鉤；以及幾乎靜音的2.0版安全護帶，取代了金屬插銷。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://products/4-post-pr-5000-rack"
+      }
+    },
+    "image_with_text_tawtTH": {
+      "type": "image-with-text",
+      "disabled": true,
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image_position": "left",
+        "image_width": 50,
+        "title": "如果您想要高階配置和配件",
+        "content": "<p>入手這款四柱高階訓練架。它高度達 93 英寸，深度也比其他四柱訓練架更深。它配備了頂級配件：精美的 Logo 橫梁、多功能引體向上桿、扁平三明治式 J 型鉤以及可翻轉式安全桿（也可作為拉力平台使用）。此外，它還包含三個配件：雙槓撐體架、地雷管配件和多功能彈性帶掛鉤，方便收納配件或搭配彈性帶使用。</p>",
+        "button_text": "點我了解更多",
+        "button_link": ""
+      }
+    },
+    "image_with_text_YAe9RT": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/8_REP-RA-5080-3016-BLK.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "如果您想要具有槓片存放功能的升級選項",
+        "content": "<p>您肯定需要這款六柱入門深蹲架。這款 80 吋高的深蹲架，在另一款入門級深蹲架 30 吋深的基礎上，增加了 16 吋（以及兩根立柱），方便您內建槓鈴片存放空間。它還配備了完美的槓鈴片收納支架，讓您輕鬆實現這一目標。<br/></p><p>PR-5000系列槓鈴架套裝採用聚氨酯塗層、直徑1英吋的實心棒材製成，包含三對6吋槓鈴架和三對12吋槓鈴架。總共可容納四個45磅的槓鈴片（總重180磅）或七個45磅的槓鈴片（總重315磅）。這樣可以防止槓鈴片直接接觸地面，無需額外的儲物櫃佔用更多空間。</p><p></p><p>除此之外，它和其他入門級訓練架一樣，配有小型Logo銘版、1.25吋引體向上桿、標準J型鉤，以及經典的插銷式安全鎖。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://products/rep-ra-5080-3016-blk"
+      }
+    },
+    "image_with_text_FgLtaa": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/11_REP-RA-5093-3016-BLK.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果您想要高階配置和配件",
+        "content": "<p>選擇這款六柱中級深蹲架。擁有93英寸的高度、多功能引體向上桿、扁平三明治式J型鉤和2.0安全護帶——此外還增加了兩根立柱用於存放槓片。這兩根立柱使深蹲架的深度增加了16吋。這款深蹲架也配備了完整的PR-5000系列槓片收納支架，可承重高達315磅的槓片。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://products/rep-ra-5093-3016-blk"
+      }
+    },
+    "image_with_text_h6B7fm": {
+      "type": "image-with-text",
+      "disabled": true,
+      "name": "Image with text",
+      "settings": {
+        "image_position": "right",
+        "image_width": 50,
+        "title": "如果想要所有齊全功能的升級選項",
+        "content": "<p>這款六柱高階深蹲架是目前預先配置的PR-5000系列中高度最高的型號。它高度達93英寸，深度達41英寸，為您提供充足的訓練空間，並且由於增加了兩根立柱，深度增加了16英寸，可用於存放槓片。產品包含全套5000系列槓片存放支架。</p><p>它還配備了更多收納空間：一個雙槓鈴掛架，方便您存放槓鈴。這個配件可以輕鬆用螺栓固定在您的深蹲架上—無需額外的牆面空間。此外，深蹲架還配有彈力帶掛鉤，可滑入立柱，用於整理彈力帶、鏈條和其他配件。您也可以使用彈力帶掛鉤進行阻力帶訓練。</p><p>這個套裝還包含所有升級選項：Logo 橫樑、多握把引體向上桿、扁平三明治式 J 型鉤和翻轉安全扣。再加上兩個配件——雙槓撐體架和地雷管配件——你就擁有了所有 PR-5000 套裝最齊全的功能，足以讓你練出一身肌肉。</p>",
+        "button_text": "點我了解更多",
+        "button_link": ""
+      }
+    },
+    "custom_html_M9cQUF": {
+      "type": "custom-html",
+      "custom_css": [
+        "div {padding-bottom: -0px; padding-top: 35px;}"
+      ],
+      "name": "Custom HTML",
+      "settings": {
+        "title": "",
+        "html": "<h3 style=\"text-align:left\"><strong>根據上述的深蹲架規格，你還可以選擇搭配Ares滑輪系統或是Athena滑輪系統，讓PR-5000深蹲架升級變身為小飛鳥訓練機</strong></h3>"
+      }
+    },
+    "video_full_sean_XaLLeV": {
+      "type": "videoFull-Sean",
+      "custom_css": [
+        ".video-item {max-width: none; margin: -25px auto;}",
+        "@media only screen and (max-width: 769px) {.video-item {max-width: none; margin: 25px auto; }}"
+      ],
+      "name": "VideoFull-sean",
+      "settings": {
+        "title": "",
+        "videoPC_url": "https://www.youtube.com/watch?v=N0ezNz-70j0",
+        "videoMobile_url": "https://www.youtube.com/watch?v=N0ezNz-70j0"
+      }
+    },
+    "image_with_text_BGGRyF": {
+      "type": "image-with-text",
+      "custom_css": [
+        "div {margin-bottom: -30px;}",
+        "@media only screen and (max-width: 769px) {div {line-height: 1.5; margin-bottom: 5px; margin-top: 5px; }}"
+      ],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/12_13_REP-RA-DUAL-6-9330S--REP-RA-DUAL-UPGR-onlycable.webp",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "Ares滑輪系統",
+        "content": "<p>配重片在深蹲架的後方，配備雙260磅選配式配重塔，可擴充到單邊310磅，使用者可進行單邊或雙邊訓練。</p><p>承重能力最強，佔地面積最小，整合下拉/低位划船功能，配件最多</p><p>如果你的空間有限，但有一個PR-5000深蹲架，可以選擇Ares滑輪系統，為 PR-5000 增加 1.2 英寸（高）x 5 英寸（寬）x 6 英寸（深）。</p><p></p><p>如果你真的需要增加負重才能獲得增肌效果，那麼Ares滑輪系統在承重能力方面勝過其他系統。這款滑輪系統兩側可承受620磅的重量（感覺像310磅）</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://collections/ares-cable-machine"
+      }
+    },
+    "image_with_text_cEyH4A": {
+      "type": "image-with-text",
+      "custom_css": [],
+      "name": "Image with text",
+      "settings": {
+        "image": "shopify://shop_images/17_REP-RA-SIDE-4-93-S-2-MAX.webp",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "Athena滑輪系統",
+        "content": "<p>配重片在深蹲架的兩側，配備雙170磅選配式配重塔，可擴充到單邊220磅，使用者可進行單邊或雙邊訓練。</p><p>佔地面積小，重量調整方便，整合彈力帶掛鉤，Athena擁有所有功能訓練器中最長的鋼索行程。</p><p>由於內建配重塊，您無需擁有（或存放）槓片即可為鋼索增加重量。它的佔地面積略大於同樣採用選擇式設計的 Ares。但是，如果您不需要/不想要整合式背闊肌下拉和低位划船配件（或者您已經擁有/不介意單獨購買），那麼 Athena 將是您的理想之選。</p>",
+        "button_text": "點我了解更多",
+        "button_link": "shopify://collections/athena-rack-cable"
+      }
+    }
+  },
+  "order": [
+    "rich_text_JEHbgL",
+    "main",
+    "slideshow_pTnWX8",
+    "image_with_text_overlay_t84Bax",
+    "custom_html_NnBLCA",
+    "offers_bH4AiW",
+    "custom_html_qLcNTg",
+    "offers_khXRgg",
+    "image_with_text_KAj4Gi",
+    "image_with_text_YEYHpH",
+    "image_with_text_tawtTH",
+    "image_with_text_YAe9RT",
+    "image_with_text_FgLtaa",
+    "image_with_text_h6B7fm",
+    "custom_html_M9cQUF",
+    "video_full_sean_XaLLeV",
+    "image_with_text_BGGRyF",
+    "image_with_text_cEyH4A"
+  ]
+}
