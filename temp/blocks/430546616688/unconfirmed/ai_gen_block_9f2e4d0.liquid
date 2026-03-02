@@ -1,6 +1,463 @@
+{% doc %}
+  @prompt
+    一個可互動的前後對比圖片滑桿。請顯示重疊的兩張圖片，並可透過拖曳滑桿來比較。
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-before-after-slider-{{ ai_gen_id }} {
+    display: block;
+    position: relative;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  .ai-before-after-slider__container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: {{ block.settings.aspect_ratio }}%;
+    overflow: hidden;
+  }
+
+  .ai-before-after-slider__image-wrapper-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-before-after-slider__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-before-after-slider__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-before-after-slider__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-before-after-slider__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-before-after-slider__after-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .ai-before-after-slider__after-image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-before-after-slider__divider-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: {{ block.settings.divider_width }}px;
+    background-color: {{ block.settings.divider_color }};
+    transform: translateX(-50%);
+    cursor: ew-resize;
+    z-index: 3;
+  }
+
+  .ai-before-after-slider__handle-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: {{ block.settings.handle_size }}px;
+    height: {{ block.settings.handle_size }}px;
+    background-color: {{ block.settings.handle_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    pointer-events: none;
+  }
+
+  .ai-before-after-slider__handle-{{ ai_gen_id }}::before,
+  .ai-before-after-slider__handle-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .ai-before-after-slider__handle-{{ ai_gen_id }}::before {
+    left: 25%;
+    border-width: 6px 8px 6px 0;
+    border-color: transparent {{ block.settings.handle_arrow_color }} transparent transparent;
+  }
+
+  .ai-before-after-slider__handle-{{ ai_gen_id }}::after {
+    right: 25%;
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent {{ block.settings.handle_arrow_color }};
+  }
+
+  .ai-before-after-slider__label-{{ ai_gen_id }} {
+    position: absolute;
+    top: 20px;
+    padding: 8px 16px;
+    background-color: {{ block.settings.label_background }};
+    color: {{ block.settings.label_text_color }};
+    font-size: {{ block.settings.label_font_size }}px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .ai-before-after-slider__label--before-{{ ai_gen_id }} {
+    left: 20px;
+  }
+
+  .ai-before-after-slider__label--after-{{ ai_gen_id }} {
+    right: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-before-after-slider-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-before-after-slider__label-{{ ai_gen_id }} {
+      font-size: {{ block.settings.label_font_size | times: 0.85 }}px;
+      padding: 6px 12px;
+    }
+
+    .ai-before-after-slider__handle-{{ ai_gen_id }} {
+      width: {{ block.settings.handle_size | times: 0.8 }}px;
+      height: {{ block.settings.handle_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<before-after-slider-{{ ai_gen_id }}
+  class="ai-before-after-slider-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-before-after-slider__container-{{ ai_gen_id }}">
+    <div class="ai-before-after-slider__image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.before_image %}
+        <img
+          src="{{ block.settings.before_image | image_url: width: 2000 }}"
+          alt="{{ block.settings.before_label | escape }}"
+          loading="lazy"
+          width="{{ block.settings.before_image.width }}"
+          height="{{ block.settings.before_image.height }}"
+          class="ai-before-after-slider__image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-before-after-slider__placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-before-after-slider__empty-state-{{ ai_gen_id }}">
+            新增「之前」圖片
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-before-after-slider__after-{{ ai_gen_id }}" data-after-container>
+      {% if block.settings.after_image %}
+        <img
+          src="{{ block.settings.after_image | image_url: width: 2000 }}"
+          alt="{{ block.settings.after_label | escape }}"
+          loading="lazy"
+          width="{{ block.settings.after_image.width }}"
+          height="{{ block.settings.after_image.height }}"
+          class="ai-before-after-slider__after-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-before-after-slider__placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-before-after-slider__empty-state-{{ ai_gen_id }}">
+            新增「之後」圖片
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    {% if block.settings.show_labels %}
+      {% if block.settings.before_label != blank %}
+        <div class="ai-before-after-slider__label-{{ ai_gen_id }} ai-before-after-slider__label--before-{{ ai_gen_id }}">
+          {{ block.settings.before_label }}
+        </div>
+      {% endif %}
+      {% if block.settings.after_label != blank %}
+        <div class="ai-before-after-slider__label-{{ ai_gen_id }} ai-before-after-slider__label--after-{{ ai_gen_id }}">
+          {{ block.settings.after_label }}
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <div class="ai-before-after-slider__divider-{{ ai_gen_id }}" data-divider>
+      <div class="ai-before-after-slider__handle-{{ ai_gen_id }}"></div>
+    </div>
+  </div>
+</before-after-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BeforeAfterSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.isDragging = false;
+        this.startPosition = {{ block.settings.initial_position }};
+      }
+
+      connectedCallback() {
+        this.container = this.querySelector('.ai-before-after-slider__container-{{ ai_gen_id }}');
+        this.divider = this.querySelector('[data-divider]');
+        this.afterContainer = this.querySelector('[data-after-container]');
+
+        if (!this.container || !this.divider || !this.afterContainer) return;
+
+        this.setInitialPosition();
+        this.setupEventListeners();
+      }
+
+      setInitialPosition() {
+        const position = this.startPosition;
+        this.updatePosition(position);
+      }
+
+      setupEventListeners() {
+        this.divider.addEventListener('mousedown', this.handleStart.bind(this));
+        this.divider.addEventListener('touchstart', this.handleStart.bind(this), { passive: true });
+
+        document.addEventListener('mousemove', this.handleMove.bind(this));
+        document.addEventListener('touchmove', this.handleMove.bind(this), { passive: false });
+
+        document.addEventListener('mouseup', this.handleEnd.bind(this));
+        document.addEventListener('touchend', this.handleEnd.bind(this));
+      }
+
+      handleStart(e) {
+        this.isDragging = true;
+        this.divider.style.transition = 'none';
+        this.afterContainer.style.transition = 'none';
+      }
+
+      handleMove(e) {
+        if (!this.isDragging) return;
+
+        e.preventDefault();
+
+        const rect = this.container.getBoundingClientRect();
+        const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+        const x = clientX - rect.left;
+        const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
+
+        this.updatePosition(percentage);
+      }
+
+      handleEnd() {
+        this.isDragging = false;
+      }
+
+      updatePosition(percentage) {
+        this.divider.style.left = percentage + '%';
+        this.afterContainer.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+      }
+    }
+
+    customElements.define('before-after-slider-{{ ai_gen_id }}', BeforeAfterSlider{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "前後對比滑桿",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "圖片"
+    },
+    {
+      "type": "image_picker",
+      "id": "before_image",
+      "label": "之前圖片"
+    },
+    {
+      "type": "image_picker",
+      "id": "after_image",
+      "label": "之後圖片"
+    },
+    {
+      "type": "range",
+      "id": "aspect_ratio",
+      "label": "圖片高度比例",
+      "min": 30,
+      "max": 150,
+      "step": 5,
+      "unit": "%",
+      "default": 75
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面版寬度",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "圓角",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "標籤"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_labels",
+      "label": "顯示標籤",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "before_label",
+      "label": "之前標籤",
+      "default": "之前"
+    },
+    {
+      "type": "text",
+      "id": "after_label",
+      "label": "之後標籤",
+      "default": "之後"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "label": "標籤字體大小",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "label_background",
+      "label": "標籤背景顏色",
+      "default": "rgba(0, 0, 0, 0.7)"
+    },
+    {
+      "type": "color",
+      "id": "label_text_color",
+      "label": "標籤文字顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "滑桿"
+    },
+    {
+      "type": "range",
+      "id": "initial_position",
+      "label": "初始位置",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "divider_width",
+      "label": "分隔線寬度",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "unit": "px",
+      "default": 3
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "分隔線顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "handle_size",
+      "label": "控制把手大小",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "handle_color",
+      "label": "控制把手顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "handle_arrow_color",
+      "label": "控制把手箭頭顏色",
+      "default": "#222021"
+    }
+  ],
+  "presets": [
+    {
+      "name": "前後對比滑桿"
+    }
+  ]
+}
 {% endschema %}
