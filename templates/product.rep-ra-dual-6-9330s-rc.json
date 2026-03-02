@@ -366,6 +366,7 @@
     },
     "image_with_text_KziCwG": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         "div {margin-top: -50px;}",
         "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -10px; }}"
