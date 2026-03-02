@@ -24,7 +24,7 @@
         "text_9CqWMM": {
           "type": "text",
           "settings": {
-            "content": "<h4><strong>內含：</strong></h4><ul><li><strong>Ares™ 戰神 80\"多功能滑輪系統（ 底座重量片組 / PR 50 重量片組）</strong></li><li><strong>PR-5000 六柱深蹲架 (立柱80\" + 橫梁16\"＆30\")</strong></li></ul><p></p><p></p><p></p><p></p>"
+            "content": "<h4><strong>內含：</strong></h4><ul><li><strong>Ares™ 戰神 80\"多功能滑輪系統（底座重量片組 / PR 50 重量片組）</strong></li><li><strong>PR-5000 六柱深蹲架（立柱80\" + 橫梁16\"＆30\")</strong></li></ul><p></p><p></p><p></p><p></p>"
           }
         },
         "text_e3xxn9": {
@@ -366,6 +366,7 @@
     },
     "image_with_text_KziCwG": {
       "type": "image-with-text",
+      "disabled": true,
       "custom_css": [
         "div {margin-top: -50px;}",
         "@media only screen and (max-width: 769px) {div {margin-top: 10px; margin-bottom: -10px; }}"
