@@ -139,7 +139,7 @@
         "ai_gen_block_5255058_7jMtHz"
       ],
       "custom_css": [
-        "div {padding-top: 20px;}"
+        "div {padding-top: 10px; padding-bottom: 20px;}"
       ],
       "settings": {
         "include_margins": true
