@@ -173,7 +173,7 @@
         "ai_gen_block_5b052d3_TqM3MA"
       ],
       "custom_css": [
-        "div {margin-bottom: 10px;}"
+        "div {margin-bottom: 10px; margin-top:-15px;}"
       ],
       "settings": {
         "include_margins": true
