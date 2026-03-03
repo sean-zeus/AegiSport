@@ -1,6 +1,355 @@
+{% doc %}
+  @prompt
+    響應式圖片，可以調整圖片長寬雨padding，圖片下方ＨＴＭＬ文字編輯器
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-responsive-image-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_right }}px {{ block.settings.padding_bottom }}px {{ block.settings.padding_left }}px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-responsive-image__wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-responsive-image__img-{{ ai_gen_id }} {
+    width: {{ block.settings.image_width }}%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .ai-responsive-image__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 300px;
+  }
+
+  .ai-responsive-image__placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .ai-responsive-image__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-responsive-image__content-{{ ai_gen_id }} {
+    margin-top: {{ block.settings.content_spacing }}px;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    line-height: 1.6;
+  }
+
+  .ai-responsive-image__content-{{ ai_gen_id }} p {
+    margin: 0 0 1em 0;
+  }
+
+  .ai-responsive-image__content-{{ ai_gen_id }} p:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-responsive-image__content-{{ ai_gen_id }} h1,
+  .ai-responsive-image__content-{{ ai_gen_id }} h2,
+  .ai-responsive-image__content-{{ ai_gen_id }} h3,
+  .ai-responsive-image__content-{{ ai_gen_id }} h4,
+  .ai-responsive-image__content-{{ ai_gen_id }} h5,
+  .ai-responsive-image__content-{{ ai_gen_id }} h6 {
+    margin: 0 0 0.5em 0;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-responsive-image__content-{{ ai_gen_id }} ul,
+  .ai-responsive-image__content-{{ ai_gen_id }} ol {
+    margin: 0 0 1em 0;
+    padding-left: 1.5em;
+  }
+
+  .ai-responsive-image__content-{{ ai_gen_id }} a {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-responsive-image-{{ ai_gen_id }} {
+      width: 100%;
+      padding: {{ block.settings.mobile_padding_top }}px {{ block.settings.mobile_padding_right }}px {{ block.settings.mobile_padding_bottom }}px {{ block.settings.mobile_padding_left }}px;
+    }
+
+    .ai-responsive-image__img-{{ ai_gen_id }} {
+      width: {{ block.settings.mobile_image_width }}%;
+    }
+
+    .ai-responsive-image__content-{{ ai_gen_id }} {
+      font-size: {{ block.settings.mobile_text_size }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-responsive-image-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-responsive-image__wrapper-{{ ai_gen_id }}">
+    {% if block.settings.image %}
+      <img
+        src="{{ block.settings.image | image_url: width: 2000 }}"
+        alt="{{ block.settings.image.alt | escape }}"
+        loading="lazy"
+        width="{{ block.settings.image.width }}"
+        height="{{ block.settings.image.height }}"
+        class="ai-responsive-image__img-{{ ai_gen_id }}"
+      >
+    {% else %}
+      <div class="ai-responsive-image__placeholder-{{ ai_gen_id }}">
+        {{ 'image' | placeholder_svg_tag }}
+        <div class="ai-responsive-image__empty-state-{{ ai_gen_id }}">
+          請選擇圖片
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  {% if block.settings.content != blank %}
+    <div class="ai-responsive-image__content-{{ ai_gen_id }}">
+      {{ block.settings.content }}
+    </div>
+  {% endif %}
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "響應式圖片",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "圖片"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "圖片"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "圖片寬度（桌面）",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "mobile_image_width",
+      "label": "圖片寬度（手機）",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "圓角",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "區塊設定"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "桌面寬度",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "背景顏色",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "內距（桌面）"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "上",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_right",
+      "label": "右",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "下",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_left",
+      "label": "左",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "內距（手機）"
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_top",
+      "label": "上",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_right",
+      "label": "右",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_bottom",
+      "label": "下",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "mobile_padding_left",
+      "label": "左",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "文字內容"
+    },
+    {
+      "type": "html",
+      "id": "content",
+      "label": "HTML 內容"
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "label": "與圖片間距",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "文字大小（桌面）",
+      "min": 12,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "mobile_text_size",
+      "label": "文字大小（手機）",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "文字顏色",
+      "default": "#616161"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "標題顏色",
+      "default": "#222021"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "連結顏色",
+      "default": "#aa2424"
+    }
+  ],
+  "presets": [
+    {
+      "name": "響應式圖片"
+    }
+  ]
+}
 {% endschema %}
