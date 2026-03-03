@@ -1,6 +1,649 @@
+{% doc %}
+  @prompt
+    logo list, 可以新增以及刪減數量, logo下方可以上文字及設定連結, 置中對齊, 超過一排的顯示，變成滾動式，左右滑動
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-logo-list-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 0;
+    background-color: {{ block.settings.background_color }};
+    overflow: hidden;
+  }
+
+  .ai-logo-list__container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.desktop_width_percent }}%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .ai-logo-list__heading-{{ ai_gen_id }} {
+    text-align: {{ block.settings.heading_alignment }};
+    color: {{ block.settings.heading_color }};
+    font-size: {{ block.settings.heading_size }}px;
+    margin: 0 0 {{ block.settings.heading_spacing }}px;
+  }
+
+  .ai-logo-list__scroll-wrapper-{{ ai_gen_id }} {
+    position: relative;
+  }
+
+  .ai-logo-list__scroll-container-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.grid_gap }}px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: {{ block.settings.scrollbar_color }} transparent;
+    padding-bottom: 10px;
+  }
+
+  .ai-logo-list__scroll-container-{{ ai_gen_id }}::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .ai-logo-list__scroll-container-{{ ai_gen_id }}::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .ai-logo-list__scroll-container-{{ ai_gen_id }}::-webkit-scrollbar-thumb {
+    background-color: {{ block.settings.scrollbar_color }};
+    border-radius: 4px;
+  }
+
+  .ai-logo-list__item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: {{ block.settings.item_padding }}px;
+    background-color: {{ block.settings.item_background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+    width: {{ block.settings.item_width }}px;
+  }
+
+  .ai-logo-list__item-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+  }
+
+  .ai-logo-list__link-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  .ai-logo-list__image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: {{ block.settings.logo_max_width }}px;
+    margin: 0 auto {{ block.settings.text_spacing }}px;
+  }
+
+  .ai-logo-list__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-logo-list__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+  }
+
+  .ai-logo-list__placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-logo-list__text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-logo-list__item-{{ ai_gen_id }} {
+      width: {{ block.settings.item_width_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<logo-list-{{ ai_gen_id }} class="ai-logo-list-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-logo-list__container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-logo-list__heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-logo-list__scroll-wrapper-{{ ai_gen_id }}">
+      <div class="ai-logo-list__scroll-container-{{ ai_gen_id }}">
+        {% for i in (1..10) %}
+          {% liquid
+            assign logo_key = 'logo_' | append: i
+            assign text_key = 'logo_text_' | append: i
+            assign link_key = 'logo_link_' | append: i
+            assign enabled_key = 'logo_' | append: i | append: '_enabled'
+
+            assign logo = block.settings[logo_key]
+            assign text = block.settings[text_key]
+            assign link = block.settings[link_key]
+            assign enabled = block.settings[enabled_key]
+          %}
+
+          {% if enabled %}
+            <div class="ai-logo-list__item-{{ ai_gen_id }}">
+              {% if link != blank %}
+                <a href="{{ link }}" class="ai-logo-list__link-{{ ai_gen_id }}">
+                  <div class="ai-logo-list__image-wrapper-{{ ai_gen_id }}">
+                    {% if logo != blank %}
+                      <img
+                        src="{{ logo | image_url: width: 400 }}"
+                        alt="{{ text | escape }}"
+                        class="ai-logo-list__image-{{ ai_gen_id }}"
+                        loading="lazy"
+                        width="{{ logo.width }}"
+                        height="{{ logo.height }}"
+                      >
+                    {% else %}
+                      <div class="ai-logo-list__placeholder-{{ ai_gen_id }}">
+                        {{ 'image' | placeholder_svg_tag }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  {% if text != blank %}
+                    <p class="ai-logo-list__text-{{ ai_gen_id }}">{{ text }}</p>
+                  {% endif %}
+                </a>
+              {% else %}
+                <div class="ai-logo-list__image-wrapper-{{ ai_gen_id }}">
+                  {% if logo != blank %}
+                    <img
+                      src="{{ logo | image_url: width: 400 }}"
+                      alt="{{ text | escape }}"
+                      class="ai-logo-list__image-{{ ai_gen_id }}"
+                      loading="lazy"
+                      width="{{ logo.width }}"
+                      height="{{ logo.height }}"
+                    >
+                  {% else %}
+                    <div class="ai-logo-list__placeholder-{{ ai_gen_id }}">
+                      {{ 'image' | placeholder_svg_tag }}
+                    </div>
+                  {% endif %}
+                </div>
+                {% if text != blank %}
+                  <p class="ai-logo-list__text-{{ ai_gen_id }}">{{ text }}</p>
+                {% endif %}
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</logo-list-{{ ai_gen_id }}>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Logo list",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "item_width",
+      "label": "Item width (desktop)",
+      "min": 150,
+      "max": 400,
+      "step": 10,
+      "unit": "px",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "item_width_mobile",
+      "label": "Item width (mobile)",
+      "min": 120,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 160
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "heading_spacing",
+      "label": "Heading spacing",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "label": "Grid gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "label": "Item padding",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "label": "Text spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Logo max width",
+      "min": 50,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 150
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Text size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Item background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#222021"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#616161"
+    },
+    {
+      "type": "color",
+      "id": "scrollbar_color",
+      "label": "Scrollbar",
+      "default": "#cccccc"
+    },
+    {
+      "type": "header",
+      "content": "Logo 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_1_enabled",
+      "label": "Enable logo 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_1",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_1",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_1",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_2_enabled",
+      "label": "Enable logo 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_2",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_2",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_2",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_3_enabled",
+      "label": "Enable logo 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_3",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_3",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_3",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_4_enabled",
+      "label": "Enable logo 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_4",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_4",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_4",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_5_enabled",
+      "label": "Enable logo 5",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_5",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_5",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_5",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_6_enabled",
+      "label": "Enable logo 6",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_6",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_6",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_6",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 7"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_7_enabled",
+      "label": "Enable logo 7",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_7",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_7",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_7",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 8"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_8_enabled",
+      "label": "Enable logo 8",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_8",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_8",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_8",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 9"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_9_enabled",
+      "label": "Enable logo 9",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_9",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_9",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_9",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Logo 10"
+    },
+    {
+      "type": "checkbox",
+      "id": "logo_10_enabled",
+      "label": "Enable logo 10",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_10",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "logo_text_10",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "logo_link_10",
+      "label": "Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo list"
+    }
+  ]
+}
 {% endschema %}
