@@ -29,52 +29,6 @@
         "color": "#ffffff"
       }
     },
-    "blocks_qMag7x": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_5255058_ijLwee": {
-          "type": "ai_gen_block_5255058",
-          "settings": {
-            "layout": "image_top",
-            "desktop_width_percent": 100,
-            "section_padding": 5,
-            "content_gap": 0,
-            "mobile_content_gap": 5,
-            "vertical_alignment": "center",
-            "background_color": "#f9f9f9",
-            "image": "shopify://shop_images/AS_logo.svg",
-            "image_width_percent": 20,
-            "mobile_image_width_percent": 100,
-            "image_aspect_ratio": "natural",
-            "image_fit": "cover",
-            "image_border_radius": 0,
-            "heading": "<strong>Shielding Your Fitness Decisions</strong>",
-            "heading_size": 24,
-            "mobile_heading_size": 20,
-            "heading_spacing": 12,
-            "heading_color": "#222021",
-            "text_content": "<p><strong>Aegisport</strong>，由 <strong>Aegis + Sport</strong> 組成，名稱源自希臘神話中象徵守護與力量的 <strong>Aegis——宙斯與雅典娜的神盾</strong>。</p><p>這面神盾代表的不只是防護，而是一種在關鍵時刻能承擔重量、守住底線的存在。Aegisport 正是以這樣的精神，成為所有健身愛好者在訓練路上的後盾。</p>",
-            "text_size": 16,
-            "mobile_text_size": 14,
-            "text_alignment": "center",
-            "mobile_text_alignment": "center",
-            "mobile_text_padding": 0,
-            "text_color": "#616161",
-            "link_color": "#aa2424"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_5255058_ijLwee"
-      ],
-      "custom_css": [
-        "div {padding-top: 10px; padding-bottom: 20px;}"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "blocks_8NiDLw": {
       "type": "_blocks",
       "blocks": {
@@ -83,14 +37,14 @@
           "settings": {
             "layout": "image_top",
             "desktop_width_percent": 100,
-            "section_padding": 5,
+            "section_padding": 10,
             "content_gap": 0,
-            "mobile_content_gap": 5,
+            "mobile_content_gap": 10,
             "vertical_alignment": "center",
             "background_color": "#f9f9f9",
             "image": "shopify://shop_images/AS_logo.svg",
             "image_width_percent": 20,
-            "mobile_image_width_percent": 100,
+            "mobile_image_width_percent": 70,
             "image_aspect_ratio": "natural",
             "image_fit": "cover",
             "image_border_radius": 0,
@@ -146,7 +100,7 @@
         "ai_gen_block_26e530e_LyAmii"
       ],
       "custom_css": [
-        "div {padding-top: 10px; padding-bottom: 10px; margin-bottom: -10px;}"
+        "div {padding-top: 5px; padding-bottom: 10px; margin-bottom: -10px;}"
       ],
       "settings": {
         "include_margins": true
@@ -273,7 +227,6 @@
   "order": [
     "main",
     "image_with_text_overlay_QMtQLr",
-    "blocks_qMag7x",
     "blocks_8NiDLw",
     "rich_text_jCGYYz",
     "custom_html_YcFcnF",
