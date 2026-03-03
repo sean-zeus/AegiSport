@@ -46,6 +46,9 @@
     },
     "custom_html_YcFcnF": {
       "type": "custom-html",
+      "custom_css": [
+        "div{margin-bottom: -55px;}"
+      ],
       "name": "Custom HTML",
       "settings": {
         "title": "",
@@ -60,8 +63,8 @@
           "settings": {
             "desktop_width_percent": 100,
             "max_width": 600,
-            "section_padding": 40,
-            "gap": 40,
+            "section_padding": 0,
+            "gap": 10,
             "mobile_gap": 20,
             "mobile_item_width": 75,
             "item_gap": 20,
