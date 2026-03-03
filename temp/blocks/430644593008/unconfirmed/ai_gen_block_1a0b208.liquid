@@ -1,6 +1,481 @@
+{% doc %}
+  @prompt
+    一個logo list, 置中對齊, 可以更換圖片, 左右滿版，個別的logo大標題、內容, 手機版要改變成左右滾動, 高度統一
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-logo-list-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding }}px 0;
+  }
+
+  .ai-logo-list-container-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-logo-list-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.logos_per_row }}, 1fr);
+    gap: {{ block.settings.gap }}px;
+    padding: 0 {{ block.settings.horizontal_padding }}px;
+  }
+
+  .ai-logo-list-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: {{ block.settings.logo_height }}px;
+    justify-content: center;
+    padding: {{ block.settings.item_padding }}px;
+    background-color: {{ block.settings.item_background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-logo-list-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+
+  .ai-logo-list-image-{{ ai_gen_id }} {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .ai-logo-list-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+  }
+
+  .ai-logo-list-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-logo-list-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 8px 0;
+  }
+
+  .ai-logo-list-content-{{ ai_gen_id }} {
+    font-size: {{ block.settings.content_size }}px;
+    color: {{ block.settings.content_color }};
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-logo-list-grid-{{ ai_gen_id }} {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: {{ block.settings.gap }}px;
+      padding: 0 {{ block.settings.horizontal_padding }}px;
+    }
+
+    .ai-logo-list-item-{{ ai_gen_id }} {
+      flex: 0 0 {{ block.settings.mobile_item_width }}%;
+      scroll-snap-align: start;
+      height: {{ block.settings.logo_height }}px;
+    }
+
+    .ai-logo-list-grid-{{ ai_gen_id }}::-webkit-scrollbar {
+      display: none;
+    }
+
+    .ai-logo-list-grid-{{ ai_gen_id }} {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+{% endstyle %}
+
+<logo-list-{{ ai_gen_id }} class="ai-logo-list-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-logo-list-container-{{ ai_gen_id }}">
+    <div class="ai-logo-list-grid-{{ ai_gen_id }}">
+      {% for i in (1..6) %}
+        {% liquid
+          assign logo_key = 'logo_' | append: i
+          assign title_key = 'title_' | append: i
+          assign content_key = 'content_' | append: i
+          
+          assign logo = block.settings[logo_key]
+          assign title = block.settings[title_key]
+          assign content = block.settings[content_key]
+        %}
+        
+        <div class="ai-logo-list-item-{{ ai_gen_id }}">
+          <div class="ai-logo-list-image-wrapper-{{ ai_gen_id }}">
+            {% if logo %}
+              <img
+                src="{{ logo | image_url: width: 400 }}"
+                alt="{{ title | escape }}"
+                class="ai-logo-list-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="{{ logo.width }}"
+                height="{{ logo.height }}"
+              >
+            {% else %}
+              <div class="ai-logo-list-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+          
+          {% if title != blank %}
+            <h3 class="ai-logo-list-title-{{ ai_gen_id }}">{{ title }}</h3>
+          {% endif %}
+          
+          {% if content != blank %}
+            <p class="ai-logo-list-content-{{ ai_gen_id }}">{{ content }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</logo-list-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class LogoList{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupMobileScroll();
+      }
+
+      setupMobileScroll() {
+        const grid = this.querySelector('.ai-logo-list-grid-{{ ai_gen_id }}');
+        if (!grid) return;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        grid.addEventListener('mousedown', (e) => {
+          if (window.innerWidth > 749) return;
+          isDown = true;
+          startX = e.pageX - grid.offsetLeft;
+          scrollLeft = grid.scrollLeft;
+        });
+
+        grid.addEventListener('mouseleave', () => {
+          isDown = false;
+        });
+
+        grid.addEventListener('mouseup', () => {
+          isDown = false;
+        });
+
+        grid.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          if (window.innerWidth > 749) return;
+          e.preventDefault();
+          const x = e.pageX - grid.offsetLeft;
+          const walk = (x - startX) * 2;
+          grid.scrollLeft = scrollLeft - walk;
+        });
+      }
+    }
+
+    customElements.define('logo-list-{{ ai_gen_id }}', LogoList{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Logo list",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "logos_per_row",
+      "label": "Logos per row (desktop)",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "mobile_item_width",
+      "label": "Item width (mobile)",
+      "min": 60,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "default": 75
+    },
+    {
+      "type": "range",
+      "id": "logo_height",
+      "label": "Item height",
+      "min": 100,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap between items",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Section padding (top/bottom)",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "label": "Horizontal padding",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "label": "Item padding",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Item background",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title",
+      "default": "#222021"
+    },
+    {
+      "type": "color",
+      "id": "content_color",
+      "label": "Content",
+      "default": "#616161"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 12,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "range",
+      "id": "content_size",
+      "label": "Content size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Logo 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_1",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_1",
+      "label": "Title",
+      "default": "品牌名稱"
+    },
+    {
+      "type": "textarea",
+      "id": "content_1",
+      "label": "Content",
+      "default": "品牌介紹內容"
+    },
+    {
+      "type": "header",
+      "content": "Logo 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_2",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_2",
+      "label": "Title",
+      "default": "品牌名稱"
+    },
+    {
+      "type": "textarea",
+      "id": "content_2",
+      "label": "Content",
+      "default": "品牌介紹內容"
+    },
+    {
+      "type": "header",
+      "content": "Logo 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_3",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_3",
+      "label": "Title",
+      "default": "品牌名稱"
+    },
+    {
+      "type": "textarea",
+      "id": "content_3",
+      "label": "Content",
+      "default": "品牌介紹內容"
+    },
+    {
+      "type": "header",
+      "content": "Logo 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_4",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_4",
+      "label": "Title",
+      "default": "品牌名稱"
+    },
+    {
+      "type": "textarea",
+      "id": "content_4",
+      "label": "Content",
+      "default": "品牌介紹內容"
+    },
+    {
+      "type": "header",
+      "content": "Logo 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_5",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_5",
+      "label": "Title",
+      "default": "品牌名稱"
+    },
+    {
+      "type": "textarea",
+      "id": "content_5",
+      "label": "Content",
+      "default": "品牌介紹內容"
+    },
+    {
+      "type": "header",
+      "content": "Logo 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo_6",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "title_6",
+      "label": "Title",
+      "default": "品牌名稱"
+    },
+    {
+      "type": "textarea",
+      "id": "content_6",
+      "label": "Content",
+      "default": "品牌介紹內容"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo list"
+    }
+  ]
+}
 {% endschema %}
