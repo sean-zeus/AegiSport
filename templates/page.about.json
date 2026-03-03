@@ -72,7 +72,7 @@
             "heading_size": 38,
             "heading_weight": "700",
             "heading_line_height": 2,
-            "content": "<p>Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。</p><p>在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p><p>Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>",
+            "content": "<h1><strong>健身選擇，神盾保固</strong></h1><p>Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。</p><p>在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p><p>Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>",
             "content_color": "#616161",
             "content_size": 16,
             "content_line_height": 1.5,
@@ -100,7 +100,8 @@
         "ai_gen_block_26e530e_LyAmii"
       ],
       "custom_css": [
-        "div {padding-top: 5px; padding-bottom: 10px; margin-bottom: -10px;}"
+        "div {padding-top: 5px; padding-bottom: 10px; margin-bottom: -10px;}",
+        "h1 {font-size: 24px; margin-top: -20px; color: #000000;}"
       ],
       "settings": {
         "include_margins": true
@@ -144,17 +145,17 @@
             "section_padding": 30,
             "gap": 10,
             "mobile_gap": 10,
-            "mobile_item_width": 70,
-            "item_gap": 5,
+            "mobile_item_width": 65,
+            "item_gap": 15,
             "logo_max_width": 400,
-            "logo_height": 100,
+            "logo_height": 90,
             "border_radius": 2,
             "placeholder_bg_color": "#f5f5f5",
-            "title_size": 18,
+            "title_size": 14,
             "title_weight": "600",
             "title_color": "#222021",
             "title_margin": 0,
-            "text_size": 15,
+            "text_size": 14,
             "text_color": "#616161",
             "logo_1": "shopify://shop_images/1.svg",
             "title_1": "專注運動產業選品",
@@ -173,7 +174,7 @@
         "ai_gen_block_5b052d3_TqM3MA"
       ],
       "custom_css": [
-        "div {margin-bottom: 10px; margin-top:-15px;}"
+        "div {margin-bottom: 10px; margin-top: -15px;}"
       ],
       "settings": {
         "include_margins": true
