@@ -109,13 +109,44 @@
             "link_color": "#aa2424"
           },
           "blocks": {}
+        },
+        "ai_gen_block_26e530e_LyAmii": {
+          "type": "ai_gen_block_26e530e",
+          "settings": {
+            "heading": "<strong>神盾優勢</strong>",
+            "heading_color": "#222021",
+            "heading_size": 38,
+            "heading_weight": "700",
+            "heading_line_height": 1.2,
+            "content": "<p>Aegisport 是一個專注於<strong>國際專業運動產業選品的電商品牌</strong>。我們全部心力投注在一件事上——<strong>替市場挑選真正值得信賴、符合需求使用及安心的產品</strong>。</p><p>在資訊過度氾濫、器材選擇看似豐富卻良莠不齊的市場中，我們選擇站在使用者這一側，替您做最重要的判斷。</p><p>Aegisport 的使命，是在眾多國際品牌與產品之中，幫助你找到<strong>最適合自己的選擇</strong>。</p>",
+            "content_color": "#616161",
+            "content_size": 16,
+            "content_line_height": 1.8,
+            "link_color": "#222021",
+            "link_hover_color": "#aa2424",
+            "spacing_between": 20,
+            "text_alignment": "center",
+            "content_max_width": 800,
+            "desktop_width_percent": 100,
+            "background_color": "#f9f9f9",
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "padding_left": 40,
+            "padding_right": 40,
+            "padding_top_mobile": 20,
+            "padding_bottom_mobile": 20,
+            "padding_left_mobile": 20,
+            "padding_right_mobile": 20
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "ai_gen_block_5255058_a9yUgJ"
+        "ai_gen_block_5255058_a9yUgJ",
+        "ai_gen_block_26e530e_LyAmii"
       ],
       "custom_css": [
-        "div {padding-top: 10px; padding-bottom: 20px;}"
+        "div {padding-top: 10px; padding-bottom: 10px; margin-bottom: -10px;}"
       ],
       "settings": {
         "include_margins": true
@@ -138,6 +169,7 @@
     },
     "custom_html_YcFcnF": {
       "type": "custom-html",
+      "disabled": true,
       "custom_css": [
         "div {margin-bottom: -55px;}"
       ],
