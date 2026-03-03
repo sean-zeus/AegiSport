@@ -9,40 +9,6 @@
  */
 {
   "sections": {
-    "177244121891a606f0": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_9f2e4d0_eyWXjV": {
-          "type": "ai_gen_block_9f2e4d0",
-          "settings": {
-            "before_image": "shopify://shop_images/4-lifestyle-8_a3dd8e58-2088-4279-a611-1646fd655859.webp",
-            "after_image": "shopify://shop_images/4-lifestyle-10_adc1e5ee-6db8-47b1-b4f5-83f5d78d3360.webp",
-            "aspect_ratio": 75,
-            "desktop_width_percent": 100,
-            "border_radius": 0,
-            "show_labels": true,
-            "before_label": "之前",
-            "after_label": "之後",
-            "label_font_size": 14,
-            "label_background": "rgba(0, 0, 0, 0.7)",
-            "label_text_color": "#ffffff",
-            "initial_position": 50,
-            "divider_width": 3,
-            "divider_color": "#ffffff",
-            "handle_size": 50,
-            "handle_color": "#ffffff",
-            "handle_arrow_color": "#222021"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_9f2e4d0_eyWXjV"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "rich_text_JEHbgL": {
       "type": "rich-text",
       "custom_css": [
@@ -134,6 +100,49 @@
       "settings": {
         "items_per_row": 1,
         "stack_mobile": true
+      }
+    },
+    "blocks_kTfkem": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c5a848d_dVeghK": {
+          "type": "ai_gen_block_c5a848d",
+          "settings": {
+            "desktop_width_percent": 100,
+            "alignment": "center",
+            "text_alignment": "center",
+            "card_spacing": 30,
+            "transition_effect": "fade",
+            "image_border_radius": 8,
+            "image_spacing": 20,
+            "image_background_color": "#f4f4f4",
+            "title_size": 24,
+            "title_color": "#222021",
+            "title_spacing": 12,
+            "description_size": 16,
+            "description_color": "#616161",
+            "product_1": "",
+            "link_1": "",
+            "title_1": "",
+            "description_1": "",
+            "product_2": "",
+            "link_2": "",
+            "title_2": "",
+            "description_2": "<p>如果您正在尋找一款高階舉重槓鈴: Alpine Weightlifting Bar(超連結)</p><p>這款 20 公斤的 Alpine 舉重槓鈴從混合式滾針軸承套筒到高端細節，處處彰顯品質。槓鈴提供多種表面處理可選，包括全不銹鋼（令人心動）。您也可以選擇硬鉻表面處理，或黑色鍍鉻桿身搭配硬鉻套筒。</p><p>Alpine Weightlifting Bar, 20kg, Stainless Steel</p><p>Alpine Weightlifting Bar, 20kg, Black Chrome</p><p>Alpine Weightlifting Bar, 20kg, Hard Chrome</p><p>這款槓鈴非常適合競技選手，因為它符合國際舉重聯合會（IWF）的規格，包括28毫米的直徑和滾花紋路，幫助您確定槓鈴上的正確握法。特點是：20公斤的Alpine槓鈴採用了中心滾花紋路，這種滾花紋路更加光滑，適合高強度訓練，同時在深蹲時仍能提供額外的抓握力。</p>",
+            "product_3": "",
+            "link_3": "",
+            "title_3": "",
+            "description_3": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c5a848d_dVeghK"
+      ],
+      "name": "Product cards",
+      "settings": {
+        "include_margins": true
       }
     },
     "custom_html_qLcNTg": {
@@ -282,12 +291,12 @@
     }
   },
   "order": [
-    "177244121891a606f0",
     "rich_text_JEHbgL",
     "main",
     "slideshow_pTnWX8",
     "custom_html_NnBLCA",
     "offers_bH4AiW",
+    "blocks_kTfkem",
     "custom_html_qLcNTg",
     "offers_khXRgg",
     "image_with_text_KAj4Gi",
